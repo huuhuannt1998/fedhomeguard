@@ -1,0 +1,27 @@
+  iid             k=1 s=0 exact=True  beta_geo=0.450 beta*=0.450 censored=False [8s]
+  iid             k=1 s=1 exact=True  beta_geo=0.450 beta*=0.450 censored=False [16s]
+  iid             k=1 s=2 exact=True  beta_geo=0.450 beta*=0.450 censored=False [23s]
+  iid             k=2 s=0 exact=True  beta_geo=0.250 beta*=0.250 censored=False [82s]
+  iid             k=2 s=1 exact=True  beta_geo=0.250 beta*=0.250 censored=False [139s]
+  iid             k=2 s=2 exact=True  beta_geo=0.250 beta*=0.250 censored=False [193s]
+  iid             k=3 s=0 exact=False beta_geo=0.150 beta*=0.150 censored=False [434s]
+  iid             k=3 s=1 exact=False beta_geo=0.150 beta*=0.150 censored=False [677s]
+  iid             k=3 s=2 exact=False beta_geo=0.150 beta*=0.150 censored=False [916s]
+  device_derived  k=1 s=0 exact=True  beta_geo=0.450 beta*=0.125 censored=False [924s]
+  device_derived  k=1 s=1 exact=True  beta_geo=0.450 beta*=0.000 censored=False [932s]
+  device_derived  k=1 s=2 exact=True  beta_geo=0.450 beta*=0.225 censored=False [939s]
+  device_derived  k=2 s=0 exact=True  beta_geo=0.250 beta*=0.150 censored=False [993s]
+  device_derived  k=2 s=1 exact=True  beta_geo=0.250 beta*=0.050 censored=False [1046s]
+  device_derived  k=2 s=2 exact=True  beta_geo=0.250 beta*=0.225 censored=False [1098s]
+  device_derived  k=3 s=0 exact=False beta_geo=0.150 beta*=0.150 censored=False [1329s]
+  device_derived  k=3 s=1 exact=False beta_geo=0.150 beta*=0.050 censored=False [1550s]
+  device_derived  k=3 s=2 exact=False beta_geo=0.150 beta*=0.150 censored=False [1781s]
+
+MEDIAN beta* (fine grid) vs analytic ceiling:
+  iid             k=1  beta*=0.450  beta_geo=0.450
+  iid             k=2  beta*=0.250  beta_geo=0.250
+  iid             k=3  beta*=0.150  beta_geo=0.150
+  device_derived  k=1  beta*=0.125  beta_geo=0.450
+  device_derived  k=2  beta*=0.150  beta_geo=0.250
+  device_derived  k=3  beta*=0.150  beta_geo=0.150
+DECENSOR DONE

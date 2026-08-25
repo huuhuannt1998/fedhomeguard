@@ -1,0 +1,87 @@
+#!/usr/bin/env python3
+"""E7 -- which component of heterogeneity breaks small-k certification.
+
+Two controlled families sweep the same concentration grid: device-Dirichlet
+allocates each DEVICE's records across clients, label-Dirichlet allocates each
+CLASS's records. Comparing them at matched realised skew isolates the component.
+"""
+import collections, json, os, sys
+import numpy as np
+sys.path.insert(0, os.path.dirname(__file__))
+from aggregate import load
+
+OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+
+
+def summarise(path, k=1):
+    r = [x for x in load(path) if x["k"] == k]
+    by = collections.defaultdict(list)
+    for x in r:
+        by[x["dirichlet_alpha"]].append(x)
+    out = []
+    for a, v in sorted(by.items(), key=lambda z: -(z[0] or 0)):
+        seeds = {x["partition_seed"] for x in v}
+        bstar = np.median([max([y["beta"] for y in v
+                                if y["partition_seed"] == s and y["CA"] > y["tau_triv"]] + [0.0])
+                           for s in seeds])
+        out.append(dict(alpha=a,
+                        S_JS=float(np.mean([x["S_JS"] for x in v])),
+                        S_dev=float(np.mean([x["S_dev"] or 0.0 for x in v])),
+                        margin=float(np.median([x["mean_vote_margin"] for x in v])),
+                        ens=float(np.median([x["clean_ensemble_acc"] for x in v])),
+                        bstar=float(bstar)))
+    return out
+
+
+def main():
+    dev = summarise("results/canonical/e7_devskew.jsonl")
+    lab = summarise("results/canonical/e7_labelskew.jsonl")
+    vol = (summarise("results/canonical/e7_volskew.jsonl")
+           if os.path.exists("results/canonical/e7_volskew.jsonl") else [])
+    if not dev or not lab:
+        print("e7 incomplete"); return
+
+    rows = ["% GENERATED -- do not edit", "\\begin{tabular}{lccccc}", "\\toprule",
+            "Family & $\\alpha$ & $S_{\\mathrm{JS}}$ & $S_{\\mathrm{dev}}$ & "
+            "margin & $\\beta^{*}$ \\\\", "\\midrule"]
+    # concentrations at or above 3 are near-uniform in both families and add nothing
+    KEEP = {1.0, 0.5, 0.2, 0.1}
+    fams = [("device", dev), ("label", lab)] + ([("volume", vol)] if vol else [])
+    for lab_name, tab in fams:
+        for e in [x for x in tab if x["alpha"] in KEEP]:
+            rows.append(f"{lab_name} & {e['alpha']:g} & {e['S_JS']:.3f} & "
+                        f"{e['S_dev']:.3f} & {e['margin']:.3f} & {e['bstar']:.3f} \\\\")
+        rows.append("\\midrule")
+    rows = rows[:-1] + ["\\bottomrule", "\\end{tabular}"]
+    open(os.path.join(OUT, "tab_ablation.tex"), "w").write("\n".join(rows) + "\n")
+
+    # closest matched pair on S_JS, and the highest-skew device point
+    pair = min(((d, l) for d in dev for l in lab),
+               key=lambda p: abs(p[0]["S_JS"] - p[1]["S_JS"]) - 0.5 * min(p[0]["S_JS"], p[1]["S_JS"]))
+    best = max((d for d in dev), key=lambda d: d["S_JS"])
+    worst = min((l for l in lab), key=lambda l: l["margin"])
+    if vol:
+        vlo = min(vol, key=lambda e: e["margin"])
+        m_vol = dict(abVolWorstSJS=f"{vlo['S_JS']:.3f}",
+                     abVolWorstMargin=f"{vlo['margin']:.3f}",
+                     abVolWorstBstar=f"{vlo['bstar']:.3f}",
+                     abVolMinMargin=f"{min(e['margin'] for e in vol):.3f}")
+    else:
+        m_vol = {}
+    m = dict(abDevSJS=f"{pair[0]['S_JS']:.3f}", abLabSJS=f"{pair[1]['S_JS']:.3f}",
+             abDevMargin=f"{pair[0]['margin']:.3f}", abLabMargin=f"{pair[1]['margin']:.3f}",
+             abDevBstar=f"{pair[0]['bstar']:.3f}", abLabBstar=f"{pair[1]['bstar']:.3f}",
+             abDevTopSJS=f"{best['S_JS']:.3f}", abDevTopMargin=f"{best['margin']:.3f}",
+             abDevTopBstar=f"{best['bstar']:.3f}",
+             abLabWorstSJS=f"{worst['S_JS']:.3f}", abLabWorstMargin=f"{worst['margin']:.3f}",
+             **m_vol)
+    mac = ["% GENERATED -- do not edit"] + \
+          [f"\\newcommand{{\\{k}}}{{{v}}}" for k, v in m.items()]
+    open(os.path.join(OUT, "ablation_macros.tex"), "w").write("\n".join(mac) + "\n")
+    print("wrote tab_ablation.tex, ablation_macros.tex")
+    print(f"  matched pair: device S_JS={m['abDevSJS']} margin={m['abDevMargin']} "
+          f"| label S_JS={m['abLabSJS']} margin={m['abLabMargin']}")
+
+
+if __name__ == "__main__":
+    main()

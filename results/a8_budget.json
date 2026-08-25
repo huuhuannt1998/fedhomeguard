@@ -1,0 +1,192 @@
+{
+  "rows": [
+    {
+      "arm": "baseline",
+      "T": 15,
+      "beta": 0.2,
+      "attack": "label_flip",
+      "defense": "norm_clip",
+      "EA": 0.980967,
+      "client_rounds": 300
+    },
+    {
+      "arm": "baseline",
+      "T": 15,
+      "beta": 0.2,
+      "attack": "sign_flip",
+      "defense": "norm_clip",
+      "EA": 0.980396,
+      "client_rounds": 300
+    },
+    {
+      "arm": "baseline",
+      "T": 15,
+      "beta": 0.2,
+      "attack": "gaussian",
+      "defense": "norm_clip",
+      "EA": 0.981357,
+      "client_rounds": 300
+    },
+    {
+      "arm": "baseline",
+      "T": 15,
+      "beta": 0.2,
+      "attack": "ipm",
+      "defense": "norm_clip",
+      "EA": 0.979766,
+      "client_rounds": 300
+    },
+    {
+      "arm": "baseline",
+      "T": 15,
+      "beta": 0.2,
+      "attack": "alie",
+      "defense": "norm_clip",
+      "EA": 0.980847,
+      "client_rounds": 300
+    },
+    {
+      "arm": "baseline",
+      "T": 15,
+      "beta": 0.3,
+      "attack": "label_flip",
+      "defense": "norm_clip",
+      "EA": 0.932933,
+      "client_rounds": 300
+    },
+    {
+      "arm": "baseline",
+      "T": 15,
+      "beta": 0.3,
+      "attack": "sign_flip",
+      "defense": "norm_clip",
+      "EA": 0.979616,
+      "client_rounds": 300
+    },
+    {
+      "arm": "baseline",
+      "T": 15,
+      "beta": 0.3,
+      "attack": "gaussian",
+      "defense": "norm_clip",
+      "EA": 0.979225,
+      "client_rounds": 300
+    },
+    {
+      "arm": "baseline",
+      "T": 15,
+      "beta": 0.3,
+      "attack": "ipm",
+      "defense": "norm_clip",
+      "EA": 0.980126,
+      "client_rounds": 300
+    },
+    {
+      "arm": "baseline",
+      "T": 15,
+      "beta": 0.3,
+      "attack": "alie",
+      "defense": "norm_clip",
+      "EA": 0.983218,
+      "client_rounds": 300
+    },
+    {
+      "arm": "budget_matched",
+      "T": 375,
+      "beta": 0.2,
+      "attack": "label_flip",
+      "defense": "norm_clip",
+      "EA": 0.980967,
+      "client_rounds": 7500
+    },
+    {
+      "arm": "budget_matched",
+      "T": 375,
+      "beta": 0.2,
+      "attack": "sign_flip",
+      "defense": "norm_clip",
+      "EA": 0.983969,
+      "client_rounds": 7500
+    },
+    {
+      "arm": "budget_matched",
+      "T": 375,
+      "beta": 0.2,
+      "attack": "gaussian",
+      "defense": "norm_clip",
+      "EA": 0.983879,
+      "client_rounds": 7500
+    },
+    {
+      "arm": "budget_matched",
+      "T": 375,
+      "beta": 0.2,
+      "attack": "ipm",
+      "defense": "norm_clip",
+      "EA": 0.983729,
+      "client_rounds": 7500
+    },
+    {
+      "arm": "budget_matched",
+      "T": 375,
+      "beta": 0.2,
+      "attack": "alie",
+      "defense": "norm_clip",
+      "EA": 0.982288,
+      "client_rounds": 7500
+    },
+    {
+      "arm": "budget_matched",
+      "T": 375,
+      "beta": 0.3,
+      "attack": "label_flip",
+      "defense": "norm_clip",
+      "EA": 0.94341,
+      "client_rounds": 7500
+    },
+    {
+      "arm": "budget_matched",
+      "T": 375,
+      "beta": 0.3,
+      "attack": "sign_flip",
+      "defense": "norm_clip",
+      "EA": 0.983849,
+      "client_rounds": 7500
+    },
+    {
+      "arm": "budget_matched",
+      "T": 375,
+      "beta": 0.3,
+      "attack": "gaussian",
+      "defense": "norm_clip",
+      "EA": 0.983789,
+      "client_rounds": 7500
+    },
+    {
+      "arm": "budget_matched",
+      "T": 375,
+      "beta": 0.3,
+      "attack": "ipm",
+      "defense": "norm_clip",
+      "EA": 0.982468,
+      "client_rounds": 7500
+    },
+    {
+      "arm": "budget_matched",
+      "T": 375,
+      "beta": 0.3,
+      "attack": "alie",
+      "defense": "norm_clip",
+      "EA": 0.981747,
+      "client_rounds": 7500
+    }
+  ],
+  "cert_client_rounds": 7500,
+  "T_matched": 375,
+  "ea_min": {
+    "baseline_0.2": 0.979766,
+    "baseline_0.3": 0.932933,
+    "budget_matched_0.2": 0.980967,
+    "budget_matched_0.3": 0.94341
+  }
+}

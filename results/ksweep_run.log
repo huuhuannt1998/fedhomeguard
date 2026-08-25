@@ -1,0 +1,100 @@
+######## device-derived k=1 ########
+device=mps  dataset=iot-23
+  CTU-Honeypot-Capture-4-1           rows=    452 mal=0.000
+  CTU-Honeypot-Capture-5-1           rows=   1374 mal=0.000
+  CTU-IoT-Malware-Capture-1-1        rows=  60000 mal=0.542
+  CTU-IoT-Malware-Capture-20-1       rows=   3209 mal=0.005
+  CTU-IoT-Malware-Capture-21-1       rows=   3286 mal=0.004
+  CTU-IoT-Malware-Capture-3-1        rows=  60000 mal=0.971
+  CTU-IoT-Malware-Capture-34-1       rows=  23145 mal=0.917
+  CTU-IoT-Malware-Capture-42-1       rows=   4426 mal=0.001
+  CTU-IoT-Malware-Capture-44-1       rows=    237 mal=0.110
+  CTU-IoT-Malware-Capture-8-1        rows=  10403 mal=0.790
+train=133222 test=33310 dim=31 tau_triv=0.7300
+partition={'kind': 'device_derived', 'N': 20, 'seed': 0, 'drop_device': None, 'S_JS': 0.844533, 'S_dev': 0.882281, 'size_min': 31, 'size_med': 5684, 'size_max': 19515, 'n_empty': 0}
+C(20,1)=20  K=20  exact=True  beta_geo=0.450 (ceiling 1-2^(-1/k)=0.500)
+  ensemble 2/20  [1s]
+  ensemble 4/20  [2s]
+  ensemble 6/20  [2s]
+  ensemble 8/20  [2s]
+  ensemble 10/20  [3s]
+  ensemble 12/20  [3s]
+  ensemble 14/20  [3s]
+  ensemble 16/20  [4s]
+  ensemble 18/20  [4s]
+  ensemble 20/20  [5s]
+  beta=0.00 CA=0.9517 (tau=0.730) S0_informative       possible=True
+  beta=0.05 CA=0.8323 (tau=0.730) S0_informative       possible=True
+  beta=0.10 CA=0.8323 (tau=0.730) S0_informative       possible=True
+  beta=0.20 CA=0.6807 (tau=0.730) S2_vacuous           possible=True
+  beta=0.30 CA=0.2354 (tau=0.730) S2_vacuous           possible=True
+  beta=0.40 CA=0.0492 (tau=0.730) S2_vacuous           possible=True
+  GATE G1 -> EXIT_1_GO: CA(0.1)=0.8323 > tau_triv+0.10=0.8300 (S0). Full paper; Act II is live.
+wrote results/stage3_dev_k1.json
+######## IID control k=1 ########
+device=mps  dataset=iot-23
+  CTU-Honeypot-Capture-4-1           rows=    452 mal=0.000
+  CTU-Honeypot-Capture-5-1           rows=   1374 mal=0.000
+  CTU-IoT-Malware-Capture-1-1        rows=  60000 mal=0.542
+  CTU-IoT-Malware-Capture-20-1       rows=   3209 mal=0.005
+  CTU-IoT-Malware-Capture-21-1       rows=   3286 mal=0.004
+  CTU-IoT-Malware-Capture-3-1        rows=  60000 mal=0.971
+  CTU-IoT-Malware-Capture-34-1       rows=  23145 mal=0.917
+  CTU-IoT-Malware-Capture-42-1       rows=   4426 mal=0.001
+  CTU-IoT-Malware-Capture-44-1       rows=    237 mal=0.110
+  CTU-IoT-Malware-Capture-8-1        rows=  10403 mal=0.790
+train=133222 test=33310 dim=31 tau_triv=0.7300
+partition={'kind': 'iid', 'N': 20, 'seed': 0, 'S_JS': 0.001107, 'S_dev': 0.0, 'size_min': 6661, 'size_med': 6661, 'size_max': 6662, 'n_empty': 0}
+C(20,1)=20  K=20  exact=True  beta_geo=0.450 (ceiling 1-2^(-1/k)=0.500)
+  ensemble 2/20  [1s]
+  ensemble 4/20  [1s]
+  ensemble 6/20  [2s]
+  ensemble 8/20  [2s]
+  ensemble 10/20  [2s]
+  ensemble 12/20  [2s]
+  ensemble 14/20  [3s]
+  ensemble 16/20  [3s]
+  ensemble 18/20  [3s]
+  ensemble 20/20  [4s]
+  beta=0.00 CA=0.9826 (tau=0.730) S0_informative       possible=True
+  beta=0.05 CA=0.9821 (tau=0.730) S0_informative       possible=True
+  beta=0.10 CA=0.9821 (tau=0.730) S0_informative       possible=True
+  beta=0.20 CA=0.9816 (tau=0.730) S0_informative       possible=True
+  beta=0.30 CA=0.9786 (tau=0.730) S0_informative       possible=True
+  beta=0.40 CA=0.9775 (tau=0.730) S0_informative       possible=True
+  GATE G1 -> EXIT_1_GO: CA(0.1)=0.9821 > tau_triv+0.10=0.8300 (S0). Full paper; Act II is live.
+wrote results/stage3_iid_k1.json
+######## device-derived k=2 ########
+device=mps  dataset=iot-23
+  CTU-Honeypot-Capture-4-1           rows=    452 mal=0.000
+  CTU-Honeypot-Capture-5-1           rows=   1374 mal=0.000
+  CTU-IoT-Malware-Capture-1-1        rows=  60000 mal=0.542
+  CTU-IoT-Malware-Capture-20-1       rows=   3209 mal=0.005
+  CTU-IoT-Malware-Capture-21-1       rows=   3286 mal=0.004
+  CTU-IoT-Malware-Capture-3-1        rows=  60000 mal=0.971
+  CTU-IoT-Malware-Capture-34-1       rows=  23145 mal=0.917
+  CTU-IoT-Malware-Capture-42-1       rows=   4426 mal=0.001
+  CTU-IoT-Malware-Capture-44-1       rows=    237 mal=0.110
+  CTU-IoT-Malware-Capture-8-1        rows=  10403 mal=0.790
+train=133222 test=33310 dim=31 tau_triv=0.7300
+partition={'kind': 'device_derived', 'N': 20, 'seed': 0, 'drop_device': None, 'S_JS': 0.844533, 'S_dev': 0.882281, 'size_min': 31, 'size_med': 5684, 'size_max': 19515, 'n_empty': 0}
+C(20,2)=190  K=100  exact=False  beta_geo=0.250 (ceiling 1-2^(-1/k)=0.293)
+  ensemble 10/100  [4s]
+  ensemble 20/100  [7s]
+  ensemble 30/100  [9s]
+  ensemble 40/100  [11s]
+  ensemble 50/100  [15s]
+  ensemble 60/100  [17s]
+  ensemble 70/100  [20s]
+  ensemble 80/100  [23s]
+  ensemble 90/100  [26s]
+  ensemble 100/100  [30s]
+  beta=0.00 CA=0.9641 (tau=0.730) S0_informative       possible=True
+  beta=0.05 CA=0.9452 (tau=0.730) S0_informative       possible=True
+  beta=0.10 CA=0.8246 (tau=0.730) S1_marginal          possible=True
+  beta=0.20 CA=0.0492 (tau=0.730) S2_vacuous           possible=True
+  beta=0.30 CA=0.0000 (tau=0.730) S2_vacuous           possible=False
+  beta=0.40 CA=0.0000 (tau=0.730) S2_vacuous           possible=False
+  GATE G1 -> EXIT_2_NARROW: CA(0.1)=0.8246 is above tau_triv=0.7300 but not by 0.10 (S1). Frontier paper: certification works below where the field publishes.
+wrote results/stage3_dev_k2.json
+######## IID control k=2 ########

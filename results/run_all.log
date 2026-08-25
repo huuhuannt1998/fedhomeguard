@@ -1,0 +1,322 @@
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 24 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 24 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 24 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 24 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 25 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 25 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 25 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 26 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 26 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 26 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 27 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 27 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 27 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 27 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 27 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 27 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 28 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 28 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 28 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 28 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 28 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 29 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 29 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 29 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 29 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 29 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 29 = 30 ']'
++ sleep 20
+++ python3 -c 'import json;print(len(json.load(open('\''results/ksweep_seeds.json'\''))['\''rows'\'']))'
++ '[' 30 = 30 ']'
++ echo '=== KSWEEP DONE ==='
+=== KSWEEP DONE ===
++ python3 -m fedhomeguard.runner --stage 3 --config configs/stage3_certification.yaml --name main
+device=mps  dataset=iot-23
+  CTU-Honeypot-Capture-4-1           rows=    452 mal=0.000
+  CTU-Honeypot-Capture-5-1           rows=   1374 mal=0.000
+  CTU-IoT-Malware-Capture-1-1        rows=  60000 mal=0.542
+  CTU-IoT-Malware-Capture-20-1       rows=   3209 mal=0.005
+  CTU-IoT-Malware-Capture-21-1       rows=   3286 mal=0.004
+  CTU-IoT-Malware-Capture-3-1        rows=  60000 mal=0.971
+  CTU-IoT-Malware-Capture-34-1       rows=  23145 mal=0.917
+  CTU-IoT-Malware-Capture-42-1       rows=   4426 mal=0.001
+  CTU-IoT-Malware-Capture-44-1       rows=    237 mal=0.110
+  CTU-IoT-Malware-Capture-8-1        rows=  10403 mal=0.790
+train=133222 test=33310 dim=31 tau_triv=0.7300
+partition={'kind': 'device_derived', 'N': 20, 'seed': 0, 'drop_device': None, 'S_JS': 0.844533, 'S_dev': 0.882281, 'size_min': 31, 'size_med': 5684, 'size_max': 19515, 'n_empty': 0}
+C(20,5)=15504  K=100  exact=False  beta_geo=0.100 (ceiling 1-2^(-1/k)=0.129)
+  ensemble 10/100  [7s]
+  ensemble 20/100  [13s]
+  ensemble 30/100  [19s]
+  ensemble 40/100  [26s]
+  ensemble 50/100  [32s]
+  ensemble 60/100  [38s]
+  ensemble 70/100  [44s]
+  ensemble 80/100  [49s]
+  ensemble 90/100  [54s]
+  ensemble 100/100  [61s]
+  beta=0.00 CA=0.9784 (tau=0.730) S0_informative       possible=True
+  beta=0.05 CA=0.9595 (tau=0.730) S0_informative       possible=True
+  beta=0.10 CA=0.0000 (tau=0.730) S2_vacuous           possible=True
+  beta=0.20 CA=0.0000 (tau=0.730) S2_vacuous           possible=False
+  beta=0.30 CA=0.0000 (tau=0.730) S2_vacuous           possible=False
+  beta=0.40 CA=0.0000 (tau=0.730) S2_vacuous           possible=False
+  GATE G1 -> EXIT_3_PIVOT: CA(0.1)=0.0000 <= tau_triv=0.7300 (S2 vacuous). Negative-result paper (D2). Do not manufacture a positive result.
+wrote results/stage3_main.json
++ echo '=== STAGE3 DONE ==='
+=== STAGE3 DONE ===
++ python3 -m fedhomeguard.runner --stage 2 --config configs/stage2_empirical.yaml --name main
+device=mps  dataset=iot-23
+  CTU-Honeypot-Capture-4-1           rows=    452 mal=0.000
+  CTU-Honeypot-Capture-5-1           rows=   1374 mal=0.000
+  CTU-IoT-Malware-Capture-1-1        rows=  60000 mal=0.542
+  CTU-IoT-Malware-Capture-20-1       rows=   3209 mal=0.005
+  CTU-IoT-Malware-Capture-21-1       rows=   3286 mal=0.004
+  CTU-IoT-Malware-Capture-3-1        rows=  60000 mal=0.971
+  CTU-IoT-Malware-Capture-34-1       rows=  23145 mal=0.917
+  CTU-IoT-Malware-Capture-42-1       rows=   4426 mal=0.001
+  CTU-IoT-Malware-Capture-44-1       rows=    237 mal=0.110
+  CTU-IoT-Malware-Capture-8-1        rows=  10403 mal=0.790
+train=133222 test=33310 dim=31 tau_triv=0.7300
+partition={'kind': 'device_derived', 'N': 20, 'seed': 0, 'drop_device': None, 'S_JS': 0.844533, 'S_dev': 0.882281, 'size_min': 31, 'size_med': 5684, 'size_max': 19515, 'n_empty': 0}
+  fedavg         none        beta=0.00 EA=0.9803
+  fedavg         label_flip  beta=0.05 EA=0.9803
+  fedavg         sign_flip   beta=0.05 EA=0.9804
+  fedavg         gaussian    beta=0.05 EA=0.9804
+  fedavg         ipm         beta=0.05 EA=0.9805
+  fedavg         alie        beta=0.05 EA=0.9801
+  fedavg         label_flip  beta=0.10 EA=0.8786
+  fedavg         sign_flip   beta=0.10 EA=0.9802
+  fedavg         gaussian    beta=0.10 EA=0.9803
+  fedavg         ipm         beta=0.10 EA=0.9805
+  fedavg         alie        beta=0.10 EA=0.9808
+  fedavg         label_flip  beta=0.20 EA=0.8372
+  fedavg         sign_flip   beta=0.20 EA=0.9802
+  fedavg         gaussian    beta=0.20 EA=0.9805
+  fedavg         ipm         beta=0.20 EA=0.9804
+  fedavg         alie        beta=0.20 EA=0.9804
+  fedavg         label_flip  beta=0.30 EA=0.3460
+  fedavg         sign_flip   beta=0.30 EA=0.9791
+  fedavg         gaussian    beta=0.30 EA=0.9818
+  fedavg         ipm         beta=0.30 EA=0.9790
+  fedavg         alie        beta=0.30 EA=0.9804
+  fedavg         label_flip  beta=0.40 EA=0.4415
+  fedavg         sign_flip   beta=0.40 EA=0.9794
+  fedavg         gaussian    beta=0.40 EA=0.9765
+  fedavg         ipm         beta=0.40 EA=0.9778
+  fedavg         alie        beta=0.40 EA=0.9778
+  krum           none        beta=0.00 EA=0.9518
+  krum           label_flip  beta=0.05 EA=0.9520
+  krum           sign_flip   beta=0.05 EA=0.9398
+  krum           gaussian    beta=0.05 EA=0.9375
+  krum           ipm         beta=0.05 EA=0.9518
+  krum           alie        beta=0.05 EA=0.9434
+  krum           label_flip  beta=0.10 EA=0.9491
+  krum           sign_flip   beta=0.10 EA=0.9397
+  krum           gaussian    beta=0.10 EA=0.8877
+  krum           ipm         beta=0.10 EA=0.9624
+  krum           alie        beta=0.10 EA=0.9520
+  krum           label_flip  beta=0.20 EA=0.9505
+  krum           sign_flip   beta=0.20 EA=0.2699
+  krum           gaussian    beta=0.20 EA=0.9547
+  krum           ipm         beta=0.20 EA=0.2698
+  krum           alie        beta=0.20 EA=0.7769
+  krum           label_flip  beta=0.30 EA=0.2699
+  krum           sign_flip   beta=0.30 EA=0.2700
+  krum           gaussian    beta=0.30 EA=0.9516
+  krum           ipm         beta=0.30 EA=0.2700
+  krum           alie        beta=0.30 EA=0.9794
+  krum           label_flip  beta=0.40 EA=0.7300
+  krum           sign_flip   beta=0.40 EA=0.2700
+  krum           gaussian    beta=0.40 EA=0.9492
+  krum           ipm         beta=0.40 EA=0.2700
+  krum           alie        beta=0.40 EA=0.9773
+  trimmed_mean   none        beta=0.00 EA=0.9802
+  trimmed_mean   label_flip  beta=0.05 EA=0.9797
+  trimmed_mean   sign_flip   beta=0.05 EA=0.9789
+  trimmed_mean   gaussian    beta=0.05 EA=0.9793
+  trimmed_mean   ipm         beta=0.05 EA=0.9804
+  trimmed_mean   alie        beta=0.05 EA=0.9787
+  trimmed_mean   label_flip  beta=0.10 EA=0.9805
+  trimmed_mean   sign_flip   beta=0.10 EA=0.9780
+  trimmed_mean   gaussian    beta=0.10 EA=0.9805
+  trimmed_mean   ipm         beta=0.10 EA=0.9791
+  trimmed_mean   alie        beta=0.10 EA=0.9800
+  trimmed_mean   label_flip  beta=0.20 EA=0.9782
+  trimmed_mean   sign_flip   beta=0.20 EA=0.9780
+  trimmed_mean   gaussian    beta=0.20 EA=0.9810
+  trimmed_mean   ipm         beta=0.20 EA=0.9783
+  trimmed_mean   alie        beta=0.20 EA=0.9805
+  trimmed_mean   label_flip  beta=0.30 EA=0.9814
+  trimmed_mean   sign_flip   beta=0.30 EA=0.8989
+  trimmed_mean   gaussian    beta=0.30 EA=0.9805
+  trimmed_mean   ipm         beta=0.30 EA=0.8984
+  trimmed_mean   alie        beta=0.30 EA=0.9786
+  trimmed_mean   label_flip  beta=0.40 EA=0.9636
+  trimmed_mean   sign_flip   beta=0.40 EA=0.2700
+  trimmed_mean   gaussian    beta=0.40 EA=0.9784
+  trimmed_mean   ipm         beta=0.40 EA=0.6443
+  trimmed_mean   alie        beta=0.40 EA=0.9784
+  median         none        beta=0.00 EA=0.9789
+  median         label_flip  beta=0.05 EA=0.9809
+  median         sign_flip   beta=0.05 EA=0.9791
+  median         gaussian    beta=0.05 EA=0.9791
+  median         ipm         beta=0.05 EA=0.9801
+  median         alie        beta=0.05 EA=0.9795
+  median         label_flip  beta=0.10 EA=0.9689
+  median         sign_flip   beta=0.10 EA=0.9654
+  median         gaussian    beta=0.10 EA=0.9802
+  median         ipm         beta=0.10 EA=0.9791
+  median         alie        beta=0.10 EA=0.9806
+  median         label_flip  beta=0.20 EA=0.9783
+  median         sign_flip   beta=0.20 EA=0.9792
+  median         gaussian    beta=0.20 EA=0.9777
+  median         ipm         beta=0.20 EA=0.9775
+  median         alie        beta=0.20 EA=0.9796
+  median         label_flip  beta=0.30 EA=0.9789
+  median         sign_flip   beta=0.30 EA=0.8989
+  median         gaussian    beta=0.30 EA=0.9808
+  median         ipm         beta=0.30 EA=0.7127
+  median         alie        beta=0.30 EA=0.9770
+  median         label_flip  beta=0.40 EA=0.9770
+  median         sign_flip   beta=0.40 EA=0.2700
+  median         gaussian    beta=0.40 EA=0.9777
+  median         ipm         beta=0.40 EA=0.2700
+  median         alie        beta=0.40 EA=0.9785
+  norm_clip      none        beta=0.00 EA=0.9826
+  norm_clip      label_flip  beta=0.05 EA=0.9798
+  norm_clip      sign_flip   beta=0.05 EA=0.9818
+  norm_clip      gaussian    beta=0.05 EA=0.9806
+  norm_clip      ipm         beta=0.05 EA=0.9807
+  norm_clip      alie        beta=0.05 EA=0.9825
+  norm_clip      label_flip  beta=0.10 EA=0.9813
+  norm_clip      sign_flip   beta=0.10 EA=0.9815
+  norm_clip      gaussian    beta=0.10 EA=0.9823
+  norm_clip      ipm         beta=0.10 EA=0.9820
+  norm_clip      alie        beta=0.10 EA=0.9808
+  norm_clip      label_flip  beta=0.20 EA=0.9788
+  norm_clip      sign_flip   beta=0.20 EA=0.9809
+  norm_clip      gaussian    beta=0.20 EA=0.9809
+  norm_clip      ipm         beta=0.20 EA=0.9799
+  norm_clip      alie        beta=0.20 EA=0.9820
+  norm_clip      label_flip  beta=0.30 EA=0.9258
+  norm_clip      sign_flip   beta=0.30 EA=0.9805
+  norm_clip      gaussian    beta=0.30 EA=0.9816
+  norm_clip      ipm         beta=0.30 EA=0.9792
+  norm_clip      alie        beta=0.30 EA=0.9813
+  norm_clip      label_flip  beta=0.40 EA=0.4517
+  norm_clip      sign_flip   beta=0.40 EA=0.9788
+  norm_clip      gaussian    beta=0.40 EA=0.9778
+  norm_clip      ipm         beta=0.40 EA=0.9775
+  norm_clip      alie        beta=0.40 EA=0.9776
+wrote results/stage2_main.json
++ echo '=== STAGE2 DONE ==='
+=== STAGE2 DONE ===
++ python3 -m fedhomeguard.runner --stage 4 --config configs/stage3_certification.yaml --name main
+  beta=0.00 CA=0.9784 EA_min=0.982588 Gamma=0.004173
+  beta=0.05 CA=0.9595 EA_min=0.980096 Gamma=0.020564
+  beta=0.10 CA=0.0000 EA_min=0.980847 Gamma=0.980847
+  beta=0.20 CA=0.0000 EA_min=0.978775 Gamma=0.978775
+  beta=0.30 CA=0.0000 EA_min=0.925818 Gamma=0.925818
+  beta=0.40 CA=0.0000 EA_min=0.451696 Gamma=0.451696
+wrote results/stage4_main.json
++ echo '=== STAGE4 DONE ==='
+=== STAGE4 DONE ===
++ python3 -m fedhomeguard.runner --stage 5 --config configs/stage5_skew.yaml --name main
+device=mps  dataset=iot-23
+  CTU-Honeypot-Capture-4-1           rows=    452 mal=0.000
+  CTU-Honeypot-Capture-5-1           rows=   1374 mal=0.000
+  CTU-IoT-Malware-Capture-1-1        rows=  60000 mal=0.542
+  CTU-IoT-Malware-Capture-20-1       rows=   3209 mal=0.005
+  CTU-IoT-Malware-Capture-21-1       rows=   3286 mal=0.004
+  CTU-IoT-Malware-Capture-3-1        rows=  60000 mal=0.971
+  CTU-IoT-Malware-Capture-34-1       rows=  23145 mal=0.917
+  CTU-IoT-Malware-Capture-42-1       rows=   4426 mal=0.001
+  CTU-IoT-Malware-Capture-44-1       rows=    237 mal=0.110
+  CTU-IoT-Malware-Capture-8-1        rows=  10403 mal=0.790
+train=133222 test=33310 dim=31 tau_triv=0.7300
+partition={'kind': 'device_derived', 'N': 20, 'seed': 0, 'drop_device': None, 'S_JS': 0.844533, 'S_dev': 0.882281, 'size_min': 31, 'size_med': 5684, 'size_max': 19515, 'n_empty': 0}
+device-derived S_JS=0.8445; matching Dirichlet control to it (Alg 4)
+  device_derived             S_JS=0.8445 beta*=0.05 ens_acc=0.9803 MC_het=0.259
+  iid                        S_JS=0.0011 beta*=0.05 ens_acc=0.9827 MC_het=0.220
+  matched_control            S_JS=0.8545 beta*=0.00 ens_acc=0.9696 MC_het=0.549
+  dirichlet_label_a100       S_JS=0.0016 beta*=0.05 ens_acc=0.9828 MC_het=0.220
+  dirichlet_device_a100      S_JS=0.0030 beta*=0.05 ens_acc=0.9828 MC_het=0.220
+  dirichlet_label_a10        S_JS=0.0089 beta*=0.05 ens_acc=0.9827 MC_het=0.220
+  dirichlet_device_a10       S_JS=0.0265 beta*=0.05 ens_acc=0.9828 MC_het=0.220
+  dirichlet_label_a1         S_JS=0.0855 beta*=0.05 ens_acc=0.9827 MC_het=0.221
+  dirichlet_device_a1        S_JS=0.1823 beta*=0.05 ens_acc=0.9825 MC_het=0.221
+  dirichlet_label_a0.5       S_JS=0.2039 beta*=0.05 ens_acc=0.9827 MC_het=0.255
+  dirichlet_device_a0.5      S_JS=0.3603 beta*=0.05 ens_acc=0.9827 MC_het=0.229
+  dirichlet_label_a0.1       S_JS=0.3078 beta*=0.00 ens_acc=0.9802 MC_het=0.666
+  dirichlet_device_a0.1      S_JS=0.7096 beta*=0.05 ens_acc=0.9809 MC_het=0.275
+  LODO_drop_CTU-Honeypot-Capture-4-1 S_JS=0.8568 beta*=0.05 ens_acc=0.9804 MC_het=0.272
+  LODO_drop_CTU-Honeypot-Capture-5-1 S_JS=0.8577 beta*=0.05 ens_acc=0.9809 MC_het=0.270
+  LODO_drop_CTU-IoT-Malware-Capture-1-1 S_JS=0.8489 beta*=0.05 ens_acc=0.9806 MC_het=0.264
+  LODO_drop_CTU-IoT-Malware-Capture-20-1 S_JS=0.8463 beta*=0.05 ens_acc=0.9804 MC_het=0.249
+  LODO_drop_CTU-IoT-Malware-Capture-21-1 S_JS=0.8464 beta*=0.05 ens_acc=0.9803 MC_het=0.249
+  LODO_drop_CTU-IoT-Malware-Capture-3-1 S_JS=0.8474 beta*=0.05 ens_acc=0.9345 MC_het=0.324
+  LODO_drop_CTU-IoT-Malware-Capture-34-1 S_JS=0.8465 beta*=0.05 ens_acc=0.9678 MC_het=0.311
+  LODO_drop_CTU-IoT-Malware-Capture-42-1 S_JS=0.8486 beta*=0.05 ens_acc=0.9789 MC_het=0.257
+  LODO_drop_CTU-IoT-Malware-Capture-44-1 S_JS=0.8312 beta*=0.05 ens_acc=0.9806 MC_het=0.288
+  LODO_drop_CTU-IoT-Malware-Capture-8-1 S_JS=0.8321 beta*=0.05 ens_acc=0.9803 MC_het=0.267
+  NECESSITY: delta beta* = +0.050 -> NOT supported: skew magnitude, not device structure, drives the effect. Design Algorithm 4 line 8 -- report this and downgrade the D1 claim. Single seed here; the confirmatory version needs paired seeds + 99% CI. If control_valid is False the two partitions differ in skew MAGNITUDE and the comparison is confounded -- do not report necessity from it.
+  LODO: dominant=LODO_drop_CTU-Honeypot-Capture-4-1 share=0.00 structural=True
+wrote results/stage5_main.json
++ echo '=== STAGE5 DONE ==='
+=== STAGE5 DONE ===
++ echo 'ALL EXPERIMENTS COMPLETE'
+ALL EXPERIMENTS COMPLETE

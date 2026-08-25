@@ -1,0 +1,170 @@
+{
+  "stage": 3,
+  "partition": {
+    "kind": "iid",
+    "N": 20,
+    "seed": 0,
+    "S_JS": 0.001107,
+    "S_dev": 0.0,
+    "size_min": 6661,
+    "size_med": 6661,
+    "size_max": 6662,
+    "n_empty": 0,
+    "min_client_rows": 16,
+    "n_starved": 0
+  },
+  "certification": {
+    "K": 100,
+    "k": 5,
+    "N": 20,
+    "exact": false,
+    "tau_triv": 0.729961,
+    "ensemble_acc": 0.982708,
+    "mean_margin": 0.864023,
+    "MC_het": 0.135781,
+    "MC_adv": {
+      "0.0": 0.0,
+      "0.05": 0.5,
+      "0.1": 0.894737,
+      "0.2": 1.436533,
+      "0.3": 1.741744,
+      "0.4": 1.897833
+    },
+    "beta_star": 0.05,
+    "beta_geo": 0.1,
+    "grid": [
+      {
+        "beta": 0.0,
+        "m": 0,
+        "p_clean": 1.0,
+        "threshold": 0.0,
+        "combinatorially_possible": true,
+        "CA": 0.981597,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.251636,
+        "certified_frac": 0.998679,
+        "cert_wrong": 0.017082,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.0,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.05,
+        "m": 1,
+        "p_clean": 0.75,
+        "threshold": 0.5,
+        "combinatorially_possible": true,
+        "CA": 0.980847,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.250886,
+        "certified_frac": 0.997688,
+        "cert_wrong": 0.016842,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.000991,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.1,
+        "m": 2,
+        "p_clean": 0.552632,
+        "threshold": 0.894737,
+        "combinatorially_possible": true,
+        "CA": 0.0,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.729961,
+        "certified_frac": 0.0,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.998679,
+        "severity": "S2_vacuous"
+      },
+      {
+        "beta": 0.2,
+        "m": 4,
+        "p_clean": 0.281734,
+        "threshold": 1.436533,
+        "combinatorially_possible": false,
+        "CA": 0.0,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.729961,
+        "certified_frac": 0.0,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.998679,
+        "severity": "S2_vacuous"
+      },
+      {
+        "beta": 0.3,
+        "m": 6,
+        "p_clean": 0.129128,
+        "threshold": 1.741744,
+        "combinatorially_possible": false,
+        "CA": 0.0,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.729961,
+        "certified_frac": 0.0,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.998679,
+        "severity": "S2_vacuous"
+      },
+      {
+        "beta": 0.4,
+        "m": 8,
+        "p_clean": 0.051084,
+        "threshold": 1.897833,
+        "combinatorially_possible": false,
+        "CA": 0.0,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.729961,
+        "certified_frac": 0.0,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.998679,
+        "severity": "S2_vacuous"
+      }
+    ],
+    "balanced": {
+      "tau_triv": 0.5,
+      "beta_star": 0.05,
+      "grid": [
+        {
+          "beta": 0.0,
+          "CA": 0.97015,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.05,
+          "CA": 0.96876,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.1,
+          "CA": 0.0,
+          "severity": "S2_vacuous"
+        },
+        {
+          "beta": 0.2,
+          "CA": 0.0,
+          "severity": "S2_vacuous"
+        },
+        {
+          "beta": 0.3,
+          "CA": 0.0,
+          "severity": "S2_vacuous"
+        },
+        {
+          "beta": 0.4,
+          "CA": 0.0,
+          "severity": "S2_vacuous"
+        }
+      ]
+    },
+    "S_JS": 0.001107
+  },
+  "gate": {
+    "exit": "EXIT_3_PIVOT",
+    "reason": "CA(0.1)=0.0000 <= tau_triv=0.7300 (S2 vacuous). Negative-result paper (D2). Do not manufacture a positive result."
+  },
+  "secs": 63.2
+}

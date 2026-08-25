@@ -1,0 +1,169 @@
+{
+  "stage": 3,
+  "partition": {
+    "kind": "device_derived",
+    "N": 20,
+    "seed": 0,
+    "drop_device": null,
+    "S_JS": 0.844533,
+    "S_dev": 0.882281,
+    "size_min": 31,
+    "size_med": 5684,
+    "size_max": 19515,
+    "n_empty": 0
+  },
+  "certification": {
+    "K": 100,
+    "k": 2,
+    "N": 20,
+    "exact": false,
+    "tau_triv": 0.729961,
+    "ensemble_acc": 0.979436,
+    "mean_margin": 0.567288,
+    "MC_het": 0.430896,
+    "MC_adv": {
+      "0.0": 0.0,
+      "0.05": 0.2,
+      "0.1": 0.389474,
+      "0.2": 0.736842,
+      "0.3": 1.042105,
+      "0.4": 1.305263
+    },
+    "beta_star": 0.1,
+    "beta_geo": 0.25,
+    "grid": [
+      {
+        "beta": 0.0,
+        "m": 0,
+        "p_clean": 1.0,
+        "threshold": 0.0,
+        "combinatorially_possible": true,
+        "CA": 0.964095,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.234134,
+        "certified_frac": 0.981717,
+        "cert_wrong": 0.017622,
+        "abstain_het": 0.018283,
+        "abstain_adv": 0.0,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.05,
+        "m": 1,
+        "p_clean": 0.9,
+        "threshold": 0.2,
+        "combinatorially_possible": true,
+        "CA": 0.945212,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.215251,
+        "certified_frac": 0.959712,
+        "cert_wrong": 0.0145,
+        "abstain_het": 0.018283,
+        "abstain_adv": 0.022005,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.1,
+        "m": 2,
+        "p_clean": 0.805263,
+        "threshold": 0.389474,
+        "combinatorially_possible": true,
+        "CA": 0.824617,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.094656,
+        "certified_frac": 0.829601,
+        "cert_wrong": 0.004983,
+        "abstain_het": 0.018283,
+        "abstain_adv": 0.152116,
+        "severity": "S1_marginal"
+      },
+      {
+        "beta": 0.2,
+        "m": 4,
+        "p_clean": 0.631579,
+        "threshold": 0.736842,
+        "combinatorially_possible": true,
+        "CA": 0.049234,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.680727,
+        "certified_frac": 0.049234,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.018283,
+        "abstain_adv": 0.932483,
+        "severity": "S2_vacuous"
+      },
+      {
+        "beta": 0.3,
+        "m": 6,
+        "p_clean": 0.478947,
+        "threshold": 1.042105,
+        "combinatorially_possible": false,
+        "CA": 0.0,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.729961,
+        "certified_frac": 0.0,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.018283,
+        "abstain_adv": 0.981717,
+        "severity": "S2_vacuous"
+      },
+      {
+        "beta": 0.4,
+        "m": 8,
+        "p_clean": 0.347368,
+        "threshold": 1.305263,
+        "combinatorially_possible": false,
+        "CA": 0.0,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.729961,
+        "certified_frac": 0.0,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.018283,
+        "abstain_adv": 0.981717,
+        "severity": "S2_vacuous"
+      }
+    ],
+    "balanced": {
+      "tau_triv": 0.5,
+      "beta_star": 0.1,
+      "grid": [
+        {
+          "beta": 0.0,
+          "CA": 0.952807,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.05,
+          "CA": 0.936854,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.1,
+          "CA": 0.855142,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.2,
+          "CA": 0.091162,
+          "severity": "S2_vacuous"
+        },
+        {
+          "beta": 0.3,
+          "CA": 0.0,
+          "severity": "S2_vacuous"
+        },
+        {
+          "beta": 0.4,
+          "CA": 0.0,
+          "severity": "S2_vacuous"
+        }
+      ]
+    },
+    "S_JS": 0.844533
+  },
+  "gate": {
+    "exit": "EXIT_2_NARROW",
+    "reason": "CA(0.1)=0.8246 is above tau_triv=0.7300 but not by 0.10 (S1). Frontier paper: certification works below where the field publishes."
+  },
+  "secs": 32.1
+}

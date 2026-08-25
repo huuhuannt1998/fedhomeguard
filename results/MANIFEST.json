@@ -1,0 +1,733 @@
+{
+ "schema": "fedhomeguard.manifest/v1",
+ "files": {
+  "data/raw/fetch_nbaiot.sh": {
+   "sha256": "4fac702eda99ebd60f6ca8bc345399dcb9fe3794c872c8e1d6b8a580d536c88f",
+   "bytes": 479
+  },
+  "data/raw/iot23/CTU-Honeypot-Capture-4-1.conn.log.labeled": {
+   "sha256": "aebe40ea0e03b120265a5c7bc140dd9b0d3fe2fce65559e84776b7dd5360e71e",
+   "bytes": 61653
+  },
+  "data/raw/iot23/CTU-Honeypot-Capture-5-1.conn.log.labeled": {
+   "sha256": "f36db06e7d6ba7364e932a5b003f75835e004b320d70019e8a2f0ba8685d9262",
+   "bytes": 182147
+  },
+  "data/raw/iot23/CTU-IoT-Malware-Capture-1-1.conn.log.labeled": {
+   "sha256": "953e8c27a9b2fcfc2776aa136baf9249e6dde4cf752b9192ac7ca0e63b86e232",
+   "bytes": 148305428
+  },
+  "data/raw/iot23/CTU-IoT-Malware-Capture-20-1.conn.log.labeled": {
+   "sha256": "ef48ad72f65efd13d517223e61e4d877ba53a082ddb8159324b18d3f310d0711",
+   "bytes": 419604
+  },
+  "data/raw/iot23/CTU-IoT-Malware-Capture-21-1.conn.log.labeled": {
+   "sha256": "b63db259aead078f50fc150aa97ace4d1f69576e1245334962759d978ce437eb",
+   "bytes": 428943
+  },
+  "data/raw/iot23/CTU-IoT-Malware-Capture-3-1.conn.log.labeled": {
+   "sha256": "9851009bbca03e15089fa1a356dd4b5eee4a98161a51703626058a0b507f50d0",
+   "bytes": 24383537
+  },
+  "data/raw/iot23/CTU-IoT-Malware-Capture-34-1.conn.log.labeled": {
+   "sha256": "d69e49b2aae8c1bd33286936531658202dec47d989f0439bad3f8be180467a6e",
+   "bytes": 2926718
+  },
+  "data/raw/iot23/CTU-IoT-Malware-Capture-42-1.conn.log.labeled": {
+   "sha256": "269fa1b22d9a37e159cf41b81a213a0032d21306f5d39b4c20cb0d211b04e8aa",
+   "bytes": 585829
+  },
+  "data/raw/iot23/CTU-IoT-Malware-Capture-44-1.conn.log.labeled": {
+   "sha256": "12cd99bcda78140dd5f31cf3d786642f150e42e0ebc3599190f35314e406f71f",
+   "bytes": 31179
+  },
+  "data/raw/iot23/CTU-IoT-Malware-Capture-8-1.conn.log.labeled": {
+   "sha256": "4877ca8f0f01902fbd18d28b7d06cb3d0be082355b7f2c8862c9deef1782eb8a",
+   "bytes": 1431000
+  },
+  "data/raw/nbaiot.zip": {
+   "sha256": "28b7f4a436c318dfdbd40994a134d8a62d6fda552ce4fdc97a41b107f2b2fa03",
+   "bytes": 393145496
+  },
+  "data/raw/nbaiot/COMPLETE_DEVICES.txt": {
+   "sha256": "c656fe287b6507c228d08a887eebf3507ff45401fa03058ee111bdc8afc9054f",
+   "bytes": 254
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/benign_traffic.csv": {
+   "sha256": "866083fd18f52b6ddde94e47b4d27925432bb83d5f547868f143d87c50354650",
+   "bytes": 46537568
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/gafgyt_attacks.rar": {
+   "sha256": "16e98ece8eaa23d8ded2e17f95fe7cbfd1b1380f74f0ae38d2a78fa66142ef03",
+   "bytes": 55773915
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/gafgyt_attacks/combo.csv": {
+   "sha256": "99755635b255c1b05f1605259dbbf3f77200fc284930be888d4c3423a95815d9",
+   "bytes": 105833909
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/gafgyt_attacks/junk.csv": {
+   "sha256": "aafbfc32aef267dee69d9937a69e9561a636762a02a19bcbf437812325863842",
+   "bytes": 49322665
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/gafgyt_attacks/scan.csv": {
+   "sha256": "cca1095c1872c20a299fa522987f50bf9ec9828e2bd6983aef604ddc8a8eb2b5",
+   "bytes": 40177901
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/gafgyt_attacks/tcp.csv": {
+   "sha256": "deb5e28f12424c4b8b5fd62706b7609bdaacf38a380b5eb3aa01e292f00af7c1",
+   "bytes": 51866227
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/gafgyt_attacks/udp.csv": {
+   "sha256": "10f3cfff3c04016668a3a4904722bd9a9930bb17fbebaaf3b2dcd4df2b6e7fec",
+   "bytes": 59597256
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/mirai_attacks.rar": {
+   "sha256": "0ea226eb58247d47572dae69085999566c22cd8931d626ec6439ef80df1fef8f",
+   "bytes": 186512293
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/mirai_attacks/ack.csv": {
+   "sha256": "ef411d0b9d9021c209e3c52cf83e3dd628ee3137c370c0a73c741dd3b0375483",
+   "bytes": 135498914
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/mirai_attacks/scan.csv": {
+   "sha256": "33184b64cf3edc279bd8001301409afb1f3b137f380cabf6d8519ee0343d085e",
+   "bytes": 107510905
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/mirai_attacks/syn.csv": {
+   "sha256": "58d4a359b9d0b1bd7f0ce49ba239e18fc0b27a361e8386413a61faec9d99c3e7",
+   "bytes": 164633193
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/mirai_attacks/udp.csv": {
+   "sha256": "bfc623dc77506276ff2af501ce02ecb40f6a6d812c3908fbab0a77776b29a490",
+   "bytes": 315304260
+  },
+  "data/raw/nbaiot/Danmini_Doorbell/mirai_attacks/udpplain.csv": {
+   "sha256": "1f888f66c06dde773e1534cbcf35920717fbf35593583373b365c9b859afff2d",
+   "bytes": 120365536
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/benign_traffic.csv": {
+   "sha256": "87cc2a3d516491e92314d8a515dd2335cfe18c5dbef8a67328d78aed01f4dcfc",
+   "bytes": 13953719
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/gafgyt_attacks.rar": {
+   "sha256": "aba9967c310ce6eb3506013abb838b5b4df33bd94b3ff69c4185c67ef1bb18ff",
+   "bytes": 52529684
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/gafgyt_attacks/combo.csv": {
+   "sha256": "2d2e95bd76c31d6efc17b47bde802ae711358df6d41e0ba9c19965f6f6dab14f",
+   "bytes": 94251568
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/gafgyt_attacks/junk.csv": {
+   "sha256": "f530a9c8c3582499121595c6bcfd04228dd807e1a20a3a5dcb7ab7c42fd4a258",
+   "bytes": 51673314
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/gafgyt_attacks/scan.csv": {
+   "sha256": "2f4f304637155627a083637e0a0b97dc7077f7ed810fb6f0a93874c629a086a7",
+   "bytes": 37108696
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/gafgyt_attacks/tcp.csv": {
+   "sha256": "0283467266ee6d46d8a9208102246ab48783f47ef9878e5d5a7eb9bcb0a53c3d",
+   "bytes": 53485288
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/gafgyt_attacks/udp.csv": {
+   "sha256": "b03f41406c92f655b517e6839a5dc4036bfd5206a5ee30cb0366cd1f624890a1",
+   "bytes": 58988910
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/mirai_attacks.rar": {
+   "sha256": "5f0ae26fe4845e24156fe77ade384c3593ddbd7c9f6ead53412453b38d026944",
+   "bytes": 170608746
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/mirai_attacks/ack.csv": {
+   "sha256": "1bed3daa5688fcc5ebf3d6b67c51cff43165d45bb97fab76eef0460d3fce5706",
+   "bytes": 155635866
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/mirai_attacks/scan.csv": {
+   "sha256": "504328ca668a7c762f756702f2498f6f6b9c70f68d690454f6198945454da8a0",
+   "bytes": 43078827
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/mirai_attacks/syn.csv": {
+   "sha256": "c7cec6b498eab4a99ff63b4f6ca80fc8a4be433f0a9d282ff9dcb03f1b284cac",
+   "bytes": 161570382
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/mirai_attacks/udp.csv": {
+   "sha256": "db06c4cbdc550727c9f2886767123b3551a41fb85181a264a6193cf49a695e52",
+   "bytes": 207783110
+  },
+  "data/raw/nbaiot/Ecobee_Thermostat/mirai_attacks/udpplain.csv": {
+   "sha256": "3654c1188fbc2b4c7b59fcc2d06a39042edce949396b2b098f968aadd1b9f341",
+   "bytes": 138671843
+  },
+  "data/raw/nbaiot/Ennio_Doorbell/benign_traffic.csv": {
+   "sha256": "75cc608d3196950ad1cb14fc050babb96098128106b55ed84226e3ea97dba821",
+   "bytes": 37135498
+  },
+  "data/raw/nbaiot/Ennio_Doorbell/gafgyt_attacks.rar": {
+   "sha256": "2ded0dca827f13a921bf5b36f3b257ed65c83d60095cc7c78ecdbcf343f2b7ba",
+   "bytes": 52525066
+  },
+  "data/raw/nbaiot/Ennio_Doorbell/gafgyt_attacks/combo.csv": {
+   "sha256": "8d943d53ba021d56721134b0582c9f3ddd2484c8bd7645230abd5a72df29290e",
+   "bytes": 94030426
+  },
+  "data/raw/nbaiot/Ennio_Doorbell/gafgyt_attacks/junk.csv": {
+   "sha256": "5cc1a8a1615a30de172aaa0443d992a93bb32b30e38798a74968c152a8fffc75",
+   "bytes": 50828262
+  },
+  "data/raw/nbaiot/Ennio_Doorbell/gafgyt_attacks/scan.csv": {
+   "sha256": "52e0f81933a4672251a7c62c6bdb67fe49c156245acd4b4ee15f9f2ec06838ae",
+   "bytes": 37971404
+  },
+  "data/raw/nbaiot/Ennio_Doorbell/gafgyt_attacks/tcp.csv": {
+   "sha256": "aebe5ac63d59408112bc292a5480617c02d815723201c94f7b9dad43dce5cf01",
+   "bytes": 57149667
+  },
+  "data/raw/nbaiot/Ennio_Doorbell/gafgyt_attacks/udp.csv": {
+   "sha256": "cd4777ed44ff01eff437dcb3458bec2b8ddb86db58879c32781bcffa384bcd64",
+   "bytes": 58507137
+  },
+  "data/raw/nbaiot/N_BaIoT_dataset_description_v1.txt": {
+   "sha256": "801d1fd92831e261f914c2721bf2ff80189599eb0eb7b1d226b1488fca42dee7",
+   "bytes": 4626
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/benign_traffic.csv": {
+   "sha256": "10a3508cbbbcd6b3e7647e570f0ab9c72f01f05c32660d2f25f537f9d4efe151",
+   "bytes": 214374672
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/gafgyt_attacks.rar": {
+   "sha256": "6877f5a2ec94d0a5c5b8366dcf047d28bd9f7057508ee4ec2a27292fe02cb5ad",
+   "bytes": 54552166
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/gafgyt_attacks/combo.csv": {
+   "sha256": "923377bf736a67973fc4cd6b36455a44d07932b1b3a825d7ac5063069c8227b5",
+   "bytes": 103451636
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/gafgyt_attacks/junk.csv": {
+   "sha256": "3347890c08b2610e8dca0bb58d9406e9727520eb5308af35f1f84e392da7f746",
+   "bytes": 48260845
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/gafgyt_attacks/scan.csv": {
+   "sha256": "8eb3c88639feb9882126097cc743959e20ba59f25a3cdec079159364884bd792",
+   "bytes": 37535324
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/gafgyt_attacks/tcp.csv": {
+   "sha256": "2eca9dc174682ba154b8c311b705b4acf2b0af82ff9c05f51b735416f3e7a315",
+   "bytes": 52113658
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/gafgyt_attacks/udp.csv": {
+   "sha256": "76cceeac5043ca45939381a8d5c97dbcb8bac00d3293408a7cdf5b1cd908b7aa",
+   "bytes": 59545509
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/mirai_attacks.rar": {
+   "sha256": "fdf291eb847b829bea6c44acc66aaa3e3d91fa91990102991bfa9008eaf1982c",
+   "bytes": 174434910
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/mirai_attacks/ack.csv": {
+   "sha256": "f78ec751df687bcba48ed79b30b4d945eeeb1d40de6fdf10bd05cbd0a29a4ee9",
+   "bytes": 120882839
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/mirai_attacks/scan.csv": {
+   "sha256": "4ed36577a5e0db1d31b8621dbf3227ae59ce8e674a8d852386e74abbef442513",
+   "bytes": 103452295
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/mirai_attacks/syn.csv": {
+   "sha256": "e715fb18f8d6279dab93760ab30587a595b2f99344fb55d754f250cf48715112",
+   "bytes": 158976651
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/mirai_attacks/udp.csv": {
+   "sha256": "cc1558f17896514d52ac9f23856a9beac0cec8369a2d93d58be99360599455f0",
+   "bytes": 287994126
+  },
+  "data/raw/nbaiot/Philips_B120N10_Baby_Monitor/mirai_attacks/udpplain.csv": {
+   "sha256": "8562521c9e85353dd32bb1fa616ce4d908a0f4231006c1955cf5a9df0ec195a6",
+   "bytes": 118674570
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/benign_traffic.csv": {
+   "sha256": "521cd6f18ecb53dee6c750b6139a035179109988f75aeb81fa26f549a8084ae8",
+   "bytes": 64576152
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/gafgyt_attacks.rar": {
+   "sha256": "a4d80492516ecf0edf38bd038c85fad93fbda8cc92f6b796aa6d286b4528c33a",
+   "bytes": 57817852
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/gafgyt_attacks/combo.csv": {
+   "sha256": "836bd15576c15b64fcfca36720ec3e3929328d6d362cc3cd829336b65aec92e7",
+   "bytes": 109076363
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/gafgyt_attacks/junk.csv": {
+   "sha256": "043ce520adc36255d4f36bde7b243fdf07f2171443c4b11d44ec9894f7ed9dcb",
+   "bytes": 52629481
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/gafgyt_attacks/scan.csv": {
+   "sha256": "7946a18b9336cc719e1658e568b470f46f243a2ec4fafcb2477f23afc76e57a1",
+   "bytes": 39580175
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/gafgyt_attacks/tcp.csv": {
+   "sha256": "bb9233efb3497494fcb71f19199d49ce18b7013f2aa371b92b8d86d91388298a",
+   "bytes": 58822798
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/gafgyt_attacks/udp.csv": {
+   "sha256": "bd9107b757128091288af71a69453136710907cc29f27313801274a0fc79eeaa",
+   "bytes": 58550975
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/mirai_attacks.rar": {
+   "sha256": "5eee14664a4feaa1efe4d55d18555b0ca116a490865bb8426eb1527b7aefcd6d",
+   "bytes": 116155051
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/mirai_attacks/ack.csv": {
+   "sha256": "3e38fe04f99c69cf7fd24b4ccb0cfa7c411b56cabfbb0d505fe13ce0506c9374",
+   "bytes": 76849640
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/mirai_attacks/scan.csv": {
+   "sha256": "2dcfcad287eff7ce72cc61a2c45e7f0d6888cbfd3eb8d177f59f15360f3e30c5",
+   "bytes": 96028732
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/mirai_attacks/syn.csv": {
+   "sha256": "d49b750bfa9c0178da5c517d180509bdc6a890485c11dbba8029e424ac1869cd",
+   "bytes": 83285871
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/mirai_attacks/udp.csv": {
+   "sha256": "568fc142fd90176ccde0953bc5c272499cf01bf0c268425c18a56591dedac978",
+   "bytes": 200357797
+  },
+  "data/raw/nbaiot/Provision_PT_737E_Security_Camera/mirai_attacks/udpplain.csv": {
+   "sha256": "32ed5a5e34515d33a42f51132c1e5c03edf08b956f447ce68a7ddc92b5960597",
+   "bytes": 79817584
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/benign_traffic.csv": {
+   "sha256": "f897d6e347bd2cee9518c8aa6cdf873a793d505b341169383b52c7b1402affd3",
+   "bytes": 103620766
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/gafgyt_attacks.rar": {
+   "sha256": "47980ad56e75c0315868d6a6159446f6ecbe556f60b164fbbd738109c9ec070c",
+   "bytes": 54700507
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/gafgyt_attacks/combo.csv": {
+   "sha256": "55f4a7c419113e0acd426ae7e5242725b5031e481af2eed9c815bb3be406a666",
+   "bytes": 102197160
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/gafgyt_attacks/junk.csv": {
+   "sha256": "c0b932340fb605b9e50f3d9acd1662995e81c2af127a141e911ee6509d495cad",
+   "bytes": 49536332
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/gafgyt_attacks/scan.csv": {
+   "sha256": "386b1753a817e3fd2241d005a3231703e5494d76e901b5f62f969c6a18ec24d2",
+   "bytes": 38452514
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/gafgyt_attacks/tcp.csv": {
+   "sha256": "311c7d6d76284e3f7767656e9fe44291a6112dc64524c2c0b79475bfa73c1295",
+   "bytes": 50316596
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/gafgyt_attacks/udp.csv": {
+   "sha256": "04b0cba05d2971df748ec742cbdd7dd1969172910cb86aece78fa1dd4f19cfe7",
+   "bytes": 58912912
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/mirai_attacks.rar": {
+   "sha256": "b6ff2d2d064d78c279b168d35d450dc95576b5a48cc9fb370a1ee36ea7146f74",
+   "bytes": 114129659
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/mirai_attacks/ack.csv": {
+   "sha256": "3c514a706e57eae295d23d2cff00f895af9f2148f2f7214578f55b24078c56f9",
+   "bytes": 73553957
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/mirai_attacks/scan.csv": {
+   "sha256": "316919fe2550ffd8fbd1cf9312478f830a34437dae29dd2097cddf5466ab94fb",
+   "bytes": 96333715
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/mirai_attacks/syn.csv": {
+   "sha256": "5c0f18df7d4e50eb72c46bc0ad86d9d0b17cff3daa9c0458003e2f40f1a866c6",
+   "bytes": 78548822
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/mirai_attacks/udp.csv": {
+   "sha256": "c5fe69868536d87b5422e0c04d6f300f026adbb16c6a6797f3dae649a708883d",
+   "bytes": 203388721
+  },
+  "data/raw/nbaiot/Provision_PT_838_Security_Camera/mirai_attacks/udpplain.csv": {
+   "sha256": "6bfdf6d88ceeb1a397ab51afad0a372c0c2ac1e7937870946aa1e94e80328562",
+   "bytes": 75727146
+  },
+  "data/raw/nbaiot/Samsung_SNH_1011_N_Webcam/benign_traffic.csv": {
+   "sha256": "b2f63cf6a42061de8d44f6d23be92a7e27c8ebb71edda80424b1897de304372f",
+   "bytes": 54969458
+  },
+  "data/raw/nbaiot/Samsung_SNH_1011_N_Webcam/gafgyt_attacks.rar": {
+   "sha256": "022050d8a06ed4e9015666de0719617007eaf1d27e2a22ed265e8090abf492b5",
+   "bytes": 54718809
+  },
+  "data/raw/nbaiot/Samsung_SNH_1011_N_Webcam/gafgyt_attacks/combo.csv": {
+   "sha256": "6571ae13c9eede42ca9f74f552c4599ce8003f37b18018dbd32cbce53a758748",
+   "bytes": 104015943
+  },
+  "data/raw/nbaiot/Samsung_SNH_1011_N_Webcam/gafgyt_attacks/junk.csv": {
+   "sha256": "afd30eb66d4a82735a93b3a195412ffcf347710eb6463002984d8d75e4027d3d",
+   "bytes": 48261599
+  },
+  "data/raw/nbaiot/Samsung_SNH_1011_N_Webcam/gafgyt_attacks/scan.csv": {
+   "sha256": "7660dca4cbc510a92ae7698b0321bbdd8e7b97eb0f70596291c9ba2f6c302921",
+   "bytes": 37441442
+  },
+  "data/raw/nbaiot/Samsung_SNH_1011_N_Webcam/gafgyt_attacks/tcp.csv": {
+   "sha256": "030c8ecec1525308aa533784d8035168b9a136e08e11fbcc104236ee5b2c0c7e",
+   "bytes": 55038941
+  },
+  "data/raw/nbaiot/Samsung_SNH_1011_N_Webcam/gafgyt_attacks/udp.csv": {
+   "sha256": "921beb8b9bf270614089eee524d21745787552010e7671330636955923f39aa4",
+   "bytes": 62265519
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/benign_traffic.csv": {
+   "sha256": "6ec7c1a83e1aa0ec510e63721e3e52d5f307b939c3807cd6accd284e8f6f6c43",
+   "bytes": 47616941
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/gafgyt_attacks.rar": {
+   "sha256": "0c50f0c21bc272e9213e363325ae6d8727422b8c29a88d884553f71d0c220c99",
+   "bytes": 52358396
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/gafgyt_attacks/combo.csv": {
+   "sha256": "36114961849a84f39f5e0935f97ea67e8e69ccb1da3e01d13cc4cc6ca583215f",
+   "bytes": 96595924
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/gafgyt_attacks/junk.csv": {
+   "sha256": "4b55b24c90399fb51d0578bdc21de6183502b3903f5a215e158e2d1288e6d74b",
+   "bytes": 48585877
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/gafgyt_attacks/scan.csv": {
+   "sha256": "204fadeb472d67e47ecdcad0ad7faf317ef0037ed431cfcd19664704fe575068",
+   "bytes": 37511054
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/gafgyt_attacks/tcp.csv": {
+   "sha256": "8d22555dd7db69573f62f71628b38670df3fb144219d51d97119a82b10235d96",
+   "bytes": 49995960
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/gafgyt_attacks/udp.csv": {
+   "sha256": "83c3ea1de563b44d28c19309928039426b71c26a438c8e571b1281a5c32decfe",
+   "bytes": 58385654
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/mirai_attacks.rar": {
+   "sha256": "8da9e7a51599b983eab2dc368db1bfddf590d7f220fb893eb415a6f7bb9e171f",
+   "bytes": 169986822
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/mirai_attacks/ack.csv": {
+   "sha256": "30d66df604c4b46b417547d64e9f7e6fb9a1fa04cc4936aa4c2cf56ac9c78273",
+   "bytes": 153189923
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/mirai_attacks/scan.csv": {
+   "sha256": "17c6f5c00cadae95a55fca1a9e2829f3830b1cd8a14970c817a778f4e312a6a8",
+   "bytes": 45823393
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/mirai_attacks/syn.csv": {
+   "sha256": "d233b084dc3d9e508b4302a62094859985300a8dd2f99c41a53414e3ea757171",
+   "bytes": 173607186
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/mirai_attacks/udp.csv": {
+   "sha256": "d79e3ceb3a93bdf758852d2e497128cbe342f3474090b5abfe508dcebdbacbd5",
+   "bytes": 208331925
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1002_WHT_Security_Camera/mirai_attacks/udpplain.csv": {
+   "sha256": "d5427a26d670848be77e1ae9ceeb5aa27e2920c958a9795001887bf3bc7cfcbb",
+   "bytes": 124485105
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/benign_traffic.csv": {
+   "sha256": "0e0f9c19bce92b3ebbf3173baff120d9ac99ffafb207618cbaea3eba53bcfac3",
+   "bytes": 17632741
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/gafgyt_attacks.rar": {
+   "sha256": "6a27d867dddd07b5fde35363f63192c64b35daf67bf0774709cb3e1c2280ff51",
+   "bytes": 54906058
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/gafgyt_attacks/combo.csv": {
+   "sha256": "3b0e8d6ecfe610a953d700da0e4b170b3a552513ace8c08d5d038169625acee4",
+   "bytes": 105589038
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/gafgyt_attacks/junk.csv": {
+   "sha256": "204e0933db90873f91954de666894a27c78c07d103fba2d1faa1d62d4fc1090f",
+   "bytes": 46573306
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/gafgyt_attacks/scan.csv": {
+   "sha256": "309d2d47b1360589bd3457b1d73033a2b4eeab275599363be01bf0eba909fdd6",
+   "bytes": 38455148
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/gafgyt_attacks/tcp.csv": {
+   "sha256": "22608905531b663482dc45c66d95199a879e006cd171284bf16f7a72bdaf634e",
+   "bytes": 55203340
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/gafgyt_attacks/udp.csv": {
+   "sha256": "0905dbd1ff34eaad2b4e977fe58ffe0e3aab81e79b2499cc295f2cd5e327d607",
+   "bytes": 57969199
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/mirai_attacks.rar": {
+   "sha256": "1d94b20b7663d4398f4b33f07962bd7d9a22645e8ba3aa7c62bec94318c00283",
+   "bytes": 171095934
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/mirai_attacks/ack.csv": {
+   "sha256": "67434b1b64e3e27fa3415732f749e4b1c4c099485c156f5aca3c7c0790cf4ff9",
+   "bytes": 147187372
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/mirai_attacks/scan.csv": {
+   "sha256": "bc15d2a4833b9f12f51837c6581fb55c6cf8ed13bc8699c77dcd29c3988b359d",
+   "bytes": 43554193
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/mirai_attacks/syn.csv": {
+   "sha256": "9545795b938ef0ad6744154dd47fe7245e16f45aaebb4fa5ed5196859f035498",
+   "bytes": 169089092
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/mirai_attacks/udp.csv": {
+   "sha256": "bb6f6958b74be6a4055f8795950deefcfd41e4447c04ca48555d2adeae5418a3",
+   "bytes": 215629797
+  },
+  "data/raw/nbaiot/SimpleHome_XCS7_1003_WHT_Security_Camera/mirai_attacks/udpplain.csv": {
+   "sha256": "606bb98a6ffd746e2a33dffc373e8910762f81a90048d2d497a7e0734ed594fb",
+   "bytes": 133920179
+  },
+  "data/raw/nbaiot/demonstrate_structure.csv": {
+   "sha256": "7ef0a9e20164c601b8f79311174a32758e5a3bd4e8bb525627369af8cf3fcb6f",
+   "bytes": 1776
+  },
+  "data/raw/nbaiot_fetch.log": {
+   "sha256": "f2f942d86e4f2ba10c9929fce3910f7fb69b4148db3aba3b0d0c149358c4d3cb",
+   "bytes": 216
+  },
+  "results/canonical/e10_N10_device_derived.jsonl": {
+   "sha256": "14c685c45ac99f36b92cf3993538366cf920b0d236aa7f1f24eaa694aa7ec8f2",
+   "bytes": 43889
+  },
+  "results/canonical/e10_N10_iid.jsonl": {
+   "sha256": "5742b2ab302a178e6ad2c5fb346058fdc744ce53e36b09ad74430ac5709b380c",
+   "bytes": 43516
+  },
+  "results/canonical/e10_N50_device_derived.jsonl": {
+   "sha256": "dc9a1a407d5190ec625d8f832fe24220f5d7b387d9dd2fc2c19c8de8be8a6549",
+   "bytes": 67976
+  },
+  "results/canonical/e10_N50_iid.jsonl": {
+   "sha256": "d3a8a3cea0276c6bc3842cc5fcb9f2638724bfde705354734dd273bbe39194f5",
+   "bytes": 67227
+  },
+  "results/canonical/e11_dph1_1.jsonl": {
+   "sha256": "a394fa93c1898c1782663f0a96d044e55d65eeace5acab948bcb6f7f9a748cfc",
+   "bytes": 44180
+  },
+  "results/canonical/e11_dph2_5.jsonl": {
+   "sha256": "2edfc17c042ea5d29abb3ff4a0d0d2eed10f4e386578e4566a22afb953e1422b",
+   "bytes": 44622
+  },
+  "results/canonical/e13_device_derived.jsonl": {
+   "sha256": "fa0d650a4c9d645d40cdc3c0ec673f58081da4ce1b17fd7ef90a99b1ce40aea6",
+   "bytes": 108837
+  },
+  "results/canonical/e13_iid.jsonl": {
+   "sha256": "95dc4e6730ea6c21bb9b39f76c8ce0b6cafbcc23c1171075e65b1f25af985f60",
+   "bytes": 106446
+  },
+  "results/canonical/e1_validation.json": {
+   "sha256": "48dac93c3bcaa42b4656636a28f4b25199ea7b55c901f16115626b1b29f0ec55",
+   "bytes": 21214
+  },
+  "results/canonical/e2_device_derived_s0.jsonl": {
+   "sha256": "52bf196aa5372fb97f0129d4e2a990549a0d677055d616b70cc32e5b5e676c90",
+   "bytes": 61807
+  },
+  "results/canonical/e2_device_derived_s1.jsonl": {
+   "sha256": "8108e5ed2ca40d6ec32bb9074e23a0af9db6188290a7f060bdc5c8b0bf033992",
+   "bytes": 61260
+  },
+  "results/canonical/e2_device_derived_s2.jsonl": {
+   "sha256": "5106c1c39cd2ebaf8dcdf88d3f5a5c2ceff511c39b2b73d6333477489afb4590",
+   "bytes": 61744
+  },
+  "results/canonical/e2_iid_s0.jsonl": {
+   "sha256": "3171d0b1e937a937aabdedd0bf6d20bb61ca7893183eca4271628e4a59740d3b",
+   "bytes": 61001
+  },
+  "results/canonical/e2_iid_s1.jsonl": {
+   "sha256": "621e084cca24bba55e7137ba7faeb84e82d3bd45958b35da958a518a73c4eddb",
+   "bytes": 60912
+  },
+  "results/canonical/e2_iid_s2.jsonl": {
+   "sha256": "9134fda95bdada6257ab6b9f808bdc78c19e5ca01d7e148cf6d0a5828c320825",
+   "bytes": 60926
+  },
+  "results/canonical/e2f_device_derived.jsonl": {
+   "sha256": "7c22b11c63279502cf33751d093fd70ec8076e1bffdac83bff9d51b9bde6a458",
+   "bytes": 122513
+  },
+  "results/canonical/e2f_iid.jsonl": {
+   "sha256": "35e65f88c4a3929091896b60b563561a5497a8bf5d79a7f94607258a6feaf7d9",
+   "bytes": 121325
+  },
+  "results/canonical/e2k3full_device_derived_s0.jsonl": {
+   "sha256": "8a9745847d1197ae8e5724b1c6d6dd8fa794d85468590ac8e371d62647a5c923",
+   "bytes": 13674
+  },
+  "results/canonical/e2k3full_device_derived_s1.jsonl": {
+   "sha256": "cc5c6eadd32ad009556d906fb2a8c6bac00759f76b86bd385cd7ffb347377dc1",
+   "bytes": 13648
+  },
+  "results/canonical/e2k3full_device_derived_s2.jsonl": {
+   "sha256": "07866b3dca684485c51a41990f558a77173b7ca58643e9a9763cd4937f8f1f81",
+   "bytes": 13675
+  },
+  "results/canonical/e2k3full_iid_s0.jsonl": {
+   "sha256": "c9cef1de4ba4fbff1fdc96799a55ab53eb832a21a42abb71d3d7fef828cf5a99",
+   "bytes": 13456
+  },
+  "results/canonical/e2k3full_iid_s1.jsonl": {
+   "sha256": "5907e6639c1e14560ba42f7c2646dc477b5289b38da5da3a75bec8be4a6c21e0",
+   "bytes": 13457
+  },
+  "results/canonical/e2k3full_iid_s2.jsonl": {
+   "sha256": "43ede8ac3547c716f7275d87ff8077889f49808d538688d5a28f6001a27f0e63",
+   "bytes": 13446
+  },
+  "results/canonical/e2k58_cert_device_derived_s0.jsonl": {
+   "sha256": "14c5714e8ba61a676f54355af12bd34c5b7f45b29cbfb1baaec2b82b4b78c185",
+   "bytes": 26859
+  },
+  "results/canonical/e2k58_cert_device_derived_s1.jsonl": {
+   "sha256": "348a3d3887398decdbc988ee6eb8dbdfd73ac9a7460976382dffc0552ec816e2",
+   "bytes": 26873
+  },
+  "results/canonical/e2k58_cert_device_derived_s2.jsonl": {
+   "sha256": "f627e28d607a1d5c64210b05764c1c308a917a1cc2d112905f09e61eeeebd0da",
+   "bytes": 26860
+  },
+  "results/canonical/e2k58_cert_iid_s0.jsonl": {
+   "sha256": "40e9d1f5190c1e2adc4b782dc8f0e63a68eb1d8dfd93951a936acf41f0554024",
+   "bytes": 26463
+  },
+  "results/canonical/e2k58_cert_iid_s1.jsonl": {
+   "sha256": "5f11f4bfcea68854a7c91669063eae635bc8ed9edef21ce0a62facd16d48c293",
+   "bytes": 26485
+  },
+  "results/canonical/e2k58_cert_iid_s2.jsonl": {
+   "sha256": "b930ea3927dd5a6e80b5228e1b211ae13c6c89de18e43f65c395c4f5bf69579a",
+   "bytes": 26530
+  },
+  "results/canonical/e2k58_device_derived_s0.jsonl": {
+   "sha256": "d729ad9a903b05d6b5a9d6deec5cf8ba875c8f2ba896faae8f12c140135b2002",
+   "bytes": 7865
+  },
+  "results/canonical/e2k58_device_derived_s1.jsonl": {
+   "sha256": "4f4be7cb72f8dda418bd3d1696f3f2e2877c24c3fe9348a69a8443e5fb1254a1",
+   "bytes": 7899
+  },
+  "results/canonical/e2k58_device_derived_s2.jsonl": {
+   "sha256": "60d2551de5ddf8a30471957ba74b6ae905ddd7d5d945606b6064dc1d33584396",
+   "bytes": 7884
+  },
+  "results/canonical/e2k58_iid_s0.jsonl": {
+   "sha256": "ec9dc70e5edc1ad798f98f2393a299dbee8b17e7db8965246cb7722f05206c10",
+   "bytes": 7778
+  },
+  "results/canonical/e2k58_iid_s1.jsonl": {
+   "sha256": "09884797182bd92b2c903252f269754579b8d70741dbaf4e490d78d1410a8b78",
+   "bytes": 7778
+  },
+  "results/canonical/e2k58_iid_s2.jsonl": {
+   "sha256": "eee50ec18089ac748b39a9398691d3214f4362b4dbf95346ab77b28f07bc9ed3",
+   "bytes": 7784
+  },
+  "results/canonical/e3_device_derived.jsonl": {
+   "sha256": "d2b33773765cbd56d8806921478696f6ee824bfd55bb25944fb152c28ad17ad7",
+   "bytes": 856202
+  },
+  "results/canonical/e3_iid.jsonl": {
+   "sha256": "7760f6975ee10b6af8add08f08d3082d99d1bc5d3f8f12ae7721f89cf3b49168",
+   "bytes": 839320
+  },
+  "results/canonical/e3rep_device_derived.jsonl": {
+   "sha256": "9203406e4dc0d177d242895db73680d9de9f0c937bffd8df37ff278c5a812d98",
+   "bytes": 163318
+  },
+  "results/canonical/e3rep_iid.jsonl": {
+   "sha256": "29c0d923487ade0910f18ebf80d740bfe6283b1267b0f5420b780e25ae05ac03",
+   "bytes": 161030
+  },
+  "results/canonical/e4_highinf_device_derived.jsonl": {
+   "sha256": "d91d680ac7bec0c884a88a64b8de3e69f29809142d2559c52691cae72c77e85d",
+   "bytes": 81365
+  },
+  "results/canonical/e4_highinf_iid.jsonl": {
+   "sha256": "da87a5075c4d4373562d6c49806cb9d0a0538541bbe658b5aa3ec7053189c4b4",
+   "bytes": 80710
+  },
+  "results/canonical/e5_device_derived.jsonl": {
+   "sha256": "6e3c9687f9629f31fe2ec6270fef6c77f731f60a0cbac8048c148a0b46796e23",
+   "bytes": 421032
+  },
+  "results/canonical/e5_iid.jsonl": {
+   "sha256": "d441c6b2c49b75a7f0a659081aec958486bf3aeb3fab0208e4b0cc2a3baab9b3",
+   "bytes": 415724
+  },
+  "results/canonical/e5f_device_derived.jsonl": {
+   "sha256": "5c4123369b3a9158881dd2561f8a940646b21fdd748d6e057f4aeef80465fc76",
+   "bytes": 817082
+  },
+  "results/canonical/e5f_iid.jsonl": {
+   "sha256": "42f4438b717e489a06833e49d511f532934c5e583c5f5088228e37a2f3eb7357",
+   "bytes": 807933
+  },
+  "results/canonical/e7_devskew.jsonl": {
+   "sha256": "cf2e305082a77ffd1259947d832a9ba5839865b7b3f3ede94f5e6da6da9980c7",
+   "bytes": 312027
+  },
+  "results/canonical/e7_labelskew.jsonl": {
+   "sha256": "88309ff9aa798400c6d61852e8bc698019bd6b1054807b24a32a26eede05f995",
+   "bytes": 310056
+  },
+  "results/canonical/e7_volskew.jsonl": {
+   "sha256": "1afdf084832bc267affdc36f4efac43348eaccc9b6b8e3b02501ae277b21c44b",
+   "bytes": 406115
+  },
+  "results/canonical/e7f_devskew.jsonl": {
+   "sha256": "f080747f1d225d1c49e94187653dd8bc49e4afbef9165e63c73f18c1896a4edd",
+   "bytes": 329761
+  },
+  "results/canonical/e7f_labelskew.jsonl": {
+   "sha256": "dc09acabd048408d552e56b43816738e0d2fc525dc5519f08a489e0a4de84fd5",
+   "bytes": 326143
+  },
+  "results/canonical/e9_logreg_device_derived.jsonl": {
+   "sha256": "9194cdcaadc5279f1c0e29b59d4a2f09feba53d6e67efc36cb80d9825aa9fd1b",
+   "bytes": 48458
+  },
+  "results/canonical/e9_logreg_iid.jsonl": {
+   "sha256": "4515eae040234bc98a8fe6bcb3b07d0b988f40e27bb2ac1468be25f3aec0b6f6",
+   "bytes": 47796
+  },
+  "results/canonical/instruments.jsonl": {
+   "sha256": "a6250270059ada54e32da0a61607d7894b5bd295aa909bd3952ca9a67c86fb4b",
+   "bytes": 61083
+  },
+  "results/canonical/nb9_cert_device_derived.jsonl": {
+   "sha256": "521b69ec128cfa919af6177d6979e5156c2aaaebf3fd5c4dde5f37a6bb9bb3b2",
+   "bytes": 136956
+  },
+  "results/canonical/nb9_cert_iid.jsonl": {
+   "sha256": "63984b0eb11f8c75dbaf6065d0fad897d560c18664ed403203169b691e6e983b",
+   "bytes": 135157
+  },
+  "results/canonical/nb9_device_derived.jsonl": {
+   "sha256": "da0f65eca4a439ebd9c44b9a0ab48b894da2afd6458c1238b9cbd8d22c2fdb46",
+   "bytes": 130867
+  },
+  "results/canonical/nb9_iid.jsonl": {
+   "sha256": "e2def195b34e18951105afea48d931176af0d8fa655f7627a608f7c4faa908fe",
+   "bytes": 129419
+  },
+  "results/canonical/nb_cert_device_derived.jsonl": {
+   "sha256": "be7656722521801d316f39f56e9c69d26d60cec5dfd559aaf0442e693e8f5f71",
+   "bytes": 136820
+  },
+  "results/canonical/nb_cert_iid.jsonl": {
+   "sha256": "9ae82e0c449fee20b1174cce0a3d07e912f98ed547a5e4a694e56d42a54e5a5c",
+   "bytes": 135031
+  },
+  "results/canonical/nb_device_derived.jsonl": {
+   "sha256": "6cc5e9ead82214a49e7e5d184a0210df27d4244d08c267c7a69ade6542b2b0b5",
+   "bytes": 130911
+  },
+  "results/canonical/nb_iid.jsonl": {
+   "sha256": "0e2d118607a45325a3da1ef25788121524dbe6a1506d61326303508a4481152d",
+   "bytes": 129272
+  }
+ }
+}

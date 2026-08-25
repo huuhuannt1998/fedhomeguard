@@ -1,0 +1,15 @@
+# Pinned environment for the FedHomeGuard artifact (review sec 48).
+# The whole pipeline runs on CPU on a single laptop; no accelerator or cluster.
+name: fedhomeguard
+channels: [conda-forge]
+dependencies:
+  - python=3.13
+  - numpy>=2.0
+  - pandas>=2.2
+  - scipy>=1.14
+  - matplotlib>=3.9
+  - pyyaml>=6.0
+  - pytest>=8.0
+  - pip
+  - pip:
+      - torch>=2.4        # CPU build is sufficient and is what we measured

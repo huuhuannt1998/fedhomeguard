@@ -1,0 +1,16 @@
+{
+  "n": 9,
+  "mean": 0.03300300000000001,
+  "sd": 0.5414583067774009,
+  "ci99": [
+    -0.4115748888888889,
+    0.43993849166666754
+  ],
+  "ci_excludes_zero": false,
+  "sign_test_p": 0.5078125,
+  "n_positive": 6,
+  "verdict": "INCONCLUSIVE",
+  "bimodal": true,
+  "device_collapses": 3,
+  "matched_collapses": 4
+}

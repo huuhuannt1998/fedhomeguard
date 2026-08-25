@@ -1,0 +1,20 @@
+{
+  "stage": 1,
+  "partition": {
+    "kind": "device_derived",
+    "N": 20,
+    "seed": 0,
+    "drop_device": null,
+    "S_JS": 0.844533,
+    "S_dev": 0.882281,
+    "size_min": 31,
+    "size_med": 5684,
+    "size_max": 19515,
+    "n_empty": 0
+  },
+  "tau_triv": 0.729961,
+  "fedavg_acc": 0.980486,
+  "fedavg_acc_balanced": 0.967037,
+  "beats_trivial": true,
+  "secs": 7.6
+}

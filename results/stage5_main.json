@@ -1,0 +1,331 @@
+{
+  "stage": 5,
+  "rows": [
+    {
+      "kind": "device_derived",
+      "tag": "device_derived",
+      "S_JS": 0.844533,
+      "S_dev": 0.882281,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.980276,
+      "MC_het": 0.258565,
+      "meta": {
+        "drop_device": null
+      }
+    },
+    {
+      "kind": "iid",
+      "tag": "iid",
+      "S_JS": 0.001107,
+      "S_dev": 0.0,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.982708,
+      "MC_het": 0.220012,
+      "meta": {}
+    },
+    {
+      "kind": "dirichlet_matched",
+      "tag": "matched_control",
+      "S_JS": 0.854497,
+      "S_dev": 0.822239,
+      "beta_star": 0.0,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.969589,
+      "MC_het": 0.548972,
+      "meta": {
+        "alpha": 0.03596225847475547,
+        "matched_S_JS": 0.8544970772060165,
+        "matched_within_tol": true
+      }
+    },
+    {
+      "kind": "dirichlet",
+      "tag": "dirichlet_label_a100",
+      "S_JS": 0.001561,
+      "S_dev": 0.0,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.982798,
+      "MC_het": 0.220031,
+      "meta": {
+        "alpha": 100.0
+      }
+    },
+    {
+      "kind": "dirichlet_device",
+      "tag": "dirichlet_device_a100",
+      "S_JS": 0.002995,
+      "S_dev": 0.0,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.982768,
+      "MC_het": 0.220124,
+      "meta": {
+        "alpha": 100.0
+      }
+    },
+    {
+      "kind": "dirichlet",
+      "tag": "dirichlet_label_a10",
+      "S_JS": 0.008853,
+      "S_dev": 0.0,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.982678,
+      "MC_het": 0.219781,
+      "meta": {
+        "alpha": 10.0
+      }
+    },
+    {
+      "kind": "dirichlet_device",
+      "tag": "dirichlet_device_a10",
+      "S_JS": 0.026531,
+      "S_dev": 0.0,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.982768,
+      "MC_het": 0.220043,
+      "meta": {
+        "alpha": 10.0
+      }
+    },
+    {
+      "kind": "dirichlet",
+      "tag": "dirichlet_label_a1",
+      "S_JS": 0.085538,
+      "S_dev": 0.02,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.982708,
+      "MC_het": 0.221411,
+      "meta": {
+        "alpha": 1.0
+      }
+    },
+    {
+      "kind": "dirichlet_device",
+      "tag": "dirichlet_device_a1",
+      "S_JS": 0.182334,
+      "S_dev": 0.028947,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.982498,
+      "MC_het": 0.220932,
+      "meta": {
+        "alpha": 1.0
+      }
+    },
+    {
+      "kind": "dirichlet",
+      "tag": "dirichlet_label_a0.5",
+      "S_JS": 0.203948,
+      "S_dev": 0.100965,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.982678,
+      "MC_het": 0.254833,
+      "meta": {
+        "alpha": 0.5
+      }
+    },
+    {
+      "kind": "dirichlet_device",
+      "tag": "dirichlet_device_a0.5",
+      "S_JS": 0.360305,
+      "S_dev": 0.094678,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.982708,
+      "MC_het": 0.228711,
+      "meta": {
+        "alpha": 0.5
+      }
+    },
+    {
+      "kind": "dirichlet",
+      "tag": "dirichlet_label_a0.1",
+      "S_JS": 0.307825,
+      "S_dev": 0.462982,
+      "beta_star": 0.0,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.980186,
+      "MC_het": 0.665511,
+      "meta": {
+        "alpha": 0.1
+      }
+    },
+    {
+      "kind": "dirichlet_device",
+      "tag": "dirichlet_device_a0.1",
+      "S_JS": 0.709616,
+      "S_dev": 0.589741,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.980877,
+      "MC_het": 0.275005,
+      "meta": {
+        "alpha": 0.1
+      }
+    },
+    {
+      "kind": "device_derived",
+      "tag": "LODO_drop_CTU-Honeypot-Capture-4-1",
+      "S_JS": 0.856837,
+      "S_dev": 0.871579,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.980396,
+      "MC_het": 0.272239,
+      "meta": {
+        "drop_device": 0
+      }
+    },
+    {
+      "kind": "device_derived",
+      "tag": "LODO_drop_CTU-Honeypot-Capture-5-1",
+      "S_JS": 0.857709,
+      "S_dev": 0.871579,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.980937,
+      "MC_het": 0.269628,
+      "meta": {
+        "drop_device": 1
+      }
+    },
+    {
+      "kind": "device_derived",
+      "tag": "LODO_drop_CTU-IoT-Malware-Capture-1-1",
+      "S_JS": 0.848901,
+      "S_dev": 0.871579,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.980606,
+      "MC_het": 0.264392,
+      "meta": {
+        "drop_device": 2
+      }
+    },
+    {
+      "kind": "device_derived",
+      "tag": "LODO_drop_CTU-IoT-Malware-Capture-20-1",
+      "S_JS": 0.846337,
+      "S_dev": 0.871579,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.980366,
+      "MC_het": 0.248841,
+      "meta": {
+        "drop_device": 3
+      }
+    },
+    {
+      "kind": "device_derived",
+      "tag": "LODO_drop_CTU-IoT-Malware-Capture-21-1",
+      "S_JS": 0.846402,
+      "S_dev": 0.871579,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.980306,
+      "MC_het": 0.24869,
+      "meta": {
+        "drop_device": 4
+      }
+    },
+    {
+      "kind": "device_derived",
+      "tag": "LODO_drop_CTU-IoT-Malware-Capture-3-1",
+      "S_JS": 0.847389,
+      "S_dev": 0.871579,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.934524,
+      "MC_het": 0.323758,
+      "meta": {
+        "drop_device": 5
+      }
+    },
+    {
+      "kind": "device_derived",
+      "tag": "LODO_drop_CTU-IoT-Malware-Capture-34-1",
+      "S_JS": 0.846519,
+      "S_dev": 0.871579,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.967847,
+      "MC_het": 0.311324,
+      "meta": {
+        "drop_device": 6
+      }
+    },
+    {
+      "kind": "device_derived",
+      "tag": "LODO_drop_CTU-IoT-Malware-Capture-42-1",
+      "S_JS": 0.848648,
+      "S_dev": 0.871579,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.978895,
+      "MC_het": 0.257295,
+      "meta": {
+        "drop_device": 7
+      }
+    },
+    {
+      "kind": "device_derived",
+      "tag": "LODO_drop_CTU-IoT-Malware-Capture-44-1",
+      "S_JS": 0.83122,
+      "S_dev": 0.871579,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.980576,
+      "MC_het": 0.287503,
+      "meta": {
+        "drop_device": 8
+      }
+    },
+    {
+      "kind": "device_derived",
+      "tag": "LODO_drop_CTU-IoT-Malware-Capture-8-1",
+      "S_JS": 0.832092,
+      "S_dev": 0.871579,
+      "beta_star": 0.05,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.980336,
+      "MC_het": 0.26729,
+      "meta": {
+        "drop_device": 9
+      }
+    }
+  ],
+  "necessity": {
+    "delta_beta_star": 0.05,
+    "matched_S_JS": 0.854497,
+    "device_S_JS": 0.844533,
+    "skew_residual": -0.009964,
+    "control_valid": true,
+    "necessity_supported": false,
+    "note": "NOT supported: skew magnitude, not device structure, drives the effect. Design Algorithm 4 line 8 -- report this and downgrade the D1 claim. Single seed here; the confirmatory version needs paired seeds + 99% CI. If control_valid is False the two partitions differ in skew MAGNITUDE and the comparison is confounded -- do not report necessity from it."
+  },
+  "structural": {
+    "contributions": {
+      "LODO_drop_CTU-Honeypot-Capture-4-1": 0.0,
+      "LODO_drop_CTU-Honeypot-Capture-5-1": 0.0,
+      "LODO_drop_CTU-IoT-Malware-Capture-1-1": 0.0,
+      "LODO_drop_CTU-IoT-Malware-Capture-20-1": 0.0,
+      "LODO_drop_CTU-IoT-Malware-Capture-21-1": 0.0,
+      "LODO_drop_CTU-IoT-Malware-Capture-3-1": 0.0,
+      "LODO_drop_CTU-IoT-Malware-Capture-34-1": 0.0,
+      "LODO_drop_CTU-IoT-Malware-Capture-42-1": 0.0,
+      "LODO_drop_CTU-IoT-Malware-Capture-44-1": 0.0,
+      "LODO_drop_CTU-IoT-Malware-Capture-8-1": 0.0
+    },
+    "dominant": "LODO_drop_CTU-Honeypot-Capture-4-1",
+    "dominant_share": 0.0,
+    "collapse_is_structural": true,
+    "note": "ALGORITHM 5: if one device accounts for >50% of the effect the collapse is that device's artifact, not a structural property, and must be reported as such."
+  }
+}
