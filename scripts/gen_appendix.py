@@ -193,6 +193,7 @@ $\\beta = 0.20$, by attack magnitude $\\lambda$.}}
                            ("floats/tab_cost.tex", "Cost of certifiability"),
                            ("floats/tab_ablation.tex", "Skew-component ablation"),
                            ("floats/fig_pincer.tex", "The pincer in vote-margin units"),
+                           ("floats/tab_instruments.tex", "Partition-statistic ranking"),
                            ("config_table_appendix.tex", "Complete configuration"),
                            ("floats/tab_ids.tex", "Certified detection, per class"),
                            ("floats/tab_decomp.tex", "Where certification fails")):
