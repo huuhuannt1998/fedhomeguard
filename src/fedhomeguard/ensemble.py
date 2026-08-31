@@ -51,15 +51,23 @@ class MemberCache:
             return self.store[kk]
         self.misses += 1
         try:
-            g = FL.fl_run(cfg, list(S), t["Xtr"], t["ytr"], t["parts"],
-                          malicious_ids=tuple(mal_in_S),
-                          attack=None if not mal_in_S else attack)
+            g, snaps = FL.fl_run(cfg, list(S), t["Xtr"], t["ytr"], t["parts"],
+                                 malicious_ids=tuple(mal_in_S),
+                                 attack=None if not mal_in_S else attack,
+                                 snapshot_last=FL.EA_WINDOW)
         except ValueError as e:
             if "enough rows" not in str(e):
                 raise
             self.store[kk] = None
             return None
-        pred = FL.predict(g, t["Xte"])
+        # One prediction row per round in the window. Stored as int8: the ensemble
+        # holds up to 200 members and a float array per round would not fit.
+        import numpy as _np
+        rows = []
+        for th in snaps:
+            FL.set_flat(g, th)
+            rows.append(FL.predict(g, t["Xte"]).astype(_np.int8))
+        pred = _np.stack(rows)
         self.store[kk] = pred
         return pred
 
@@ -78,10 +86,17 @@ def votes_from_preds(preds: list[np.ndarray], n_test: int, n_class: int = 2) -> 
 
 
 def ensemble_votes(cfg, t, subsets, B=(), attack=None, cache: MemberCache | None = None,
-                   progress: int = 0):
+                   progress: int = 0, window: bool = False):
     """Votes of the K-member ensemble when the clients in B run `attack`.
 
     B=() reproduces the clean ensemble exactly, which is the certificate's predictor.
+
+    window=False returns the deployed ensemble's votes, shape (n_test, 2). That is
+    what the CERTIFIED arm needs: the certificate is a statement about the predictor
+    that is actually deployed, which is the one at the final round.
+    window=True returns (EA_WINDOW, n_test, 2), one vote array per round in the
+    window, which the EMPIRICAL arm reduces over. Keeping the default at False means
+    the certified arm is untouched by the windowing change.
     """
     cache = cache if cache is not None else MemberCache()
     Bs = set(int(i) for i in B)
@@ -96,7 +111,13 @@ def ensemble_votes(cfg, t, subsets, B=(), attack=None, cache: MemberCache | None
         preds.append(pred); kept.append(S)
         if progress and (j + 1) % progress == 0:
             print(f"      member {j+1}/{len(subsets)}", flush=True)
-    return votes_from_preds(preds, n_test), n_touched, kept
+    if not preds:
+        return votes_from_preds(preds, n_test), n_touched, kept
+    if not window:
+        return votes_from_preds([p[-1] for p in preds], n_test), n_touched, kept
+    W = preds[0].shape[0]
+    stacked = [votes_from_preds([p[r] for p in preds], n_test) for r in range(W)]
+    return np.stack(stacked), n_touched, kept
 
 
 def attacked_ensemble_accuracy(cfg, t, subsets, B, attacks, cache=None) -> dict:
@@ -105,9 +126,13 @@ def attacked_ensemble_accuracy(cfg, t, subsets, B, attacks, cache=None) -> dict:
     y = t["yte_np"]
     per = {}
     for a in attacks:
-        v, touched, _ = ensemble_votes(cfg, t, subsets, B, a, cache)
-        top = v.argmax(1)
-        per[a] = dict(EA=round(float((top == y).mean()), 6),
+        v, touched, _ = ensemble_votes(cfg, t, subsets, B, a, cache, window=True)
+        # v is (window, n_test, 2): the ensemble's votes at each round in the window.
+        # EA is the worst round, because a robustness number read off a single round
+        # of an oscillating process is not a measurement of robustness.
+        accs = [float((v[r].argmax(1) == y).mean()) for r in range(v.shape[0])]
+        per[a] = dict(EA=round(min(accs), 6), EA_final_round=round(accs[-1], 6),
+                      EA_window_spread=round(max(accs) - min(accs), 6),
                       members_touched=touched)
     worst = min(per, key=lambda a: per[a]["EA"]) if per else None
     return dict(per_attack=per, worst_attack=worst,
