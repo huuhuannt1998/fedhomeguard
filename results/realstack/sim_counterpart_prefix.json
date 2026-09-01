@@ -1,0 +1,226 @@
+[
+  {
+    "partition": "device_derived",
+    "attack": "none",
+    "m": 0,
+    "beta": 0.0,
+    "accuracy": 0.980216
+  },
+  {
+    "partition": "device_derived",
+    "attack": "label_flip",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.976554
+  },
+  {
+    "partition": "device_derived",
+    "attack": "label_flip",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.965836
+  },
+  {
+    "partition": "device_derived",
+    "attack": "label_flip",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.791294
+  },
+  {
+    "partition": "device_derived",
+    "attack": "sign_flip",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.980096
+  },
+  {
+    "partition": "device_derived",
+    "attack": "sign_flip",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.979886
+  },
+  {
+    "partition": "device_derived",
+    "attack": "sign_flip",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.977334
+  },
+  {
+    "partition": "device_derived",
+    "attack": "gaussian",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.978295
+  },
+  {
+    "partition": "device_derived",
+    "attack": "gaussian",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.980036
+  },
+  {
+    "partition": "device_derived",
+    "attack": "gaussian",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.980036
+  },
+  {
+    "partition": "device_derived",
+    "attack": "ipm",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.977424
+  },
+  {
+    "partition": "device_derived",
+    "attack": "ipm",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.978715
+  },
+  {
+    "partition": "device_derived",
+    "attack": "ipm",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.978445
+  },
+  {
+    "partition": "device_derived",
+    "attack": "alie",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.980186
+  },
+  {
+    "partition": "device_derived",
+    "attack": "alie",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.980246
+  },
+  {
+    "partition": "device_derived",
+    "attack": "alie",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.978595
+  },
+  {
+    "partition": "iid",
+    "attack": "none",
+    "m": 0,
+    "beta": 0.0,
+    "accuracy": 0.982558
+  },
+  {
+    "partition": "iid",
+    "attack": "label_flip",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.982077
+  },
+  {
+    "partition": "iid",
+    "attack": "label_flip",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.979225
+  },
+  {
+    "partition": "iid",
+    "attack": "label_flip",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.980937
+  },
+  {
+    "partition": "iid",
+    "attack": "sign_flip",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.982137
+  },
+  {
+    "partition": "iid",
+    "attack": "sign_flip",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.982198
+  },
+  {
+    "partition": "iid",
+    "attack": "sign_flip",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.981897
+  },
+  {
+    "partition": "iid",
+    "attack": "gaussian",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.982288
+  },
+  {
+    "partition": "iid",
+    "attack": "gaussian",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.982498
+  },
+  {
+    "partition": "iid",
+    "attack": "gaussian",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.982408
+  },
+  {
+    "partition": "iid",
+    "attack": "ipm",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.981747
+  },
+  {
+    "partition": "iid",
+    "attack": "ipm",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.980606
+  },
+  {
+    "partition": "iid",
+    "attack": "ipm",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.981807
+  },
+  {
+    "partition": "iid",
+    "attack": "alie",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.981927
+  },
+  {
+    "partition": "iid",
+    "attack": "alie",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.981897
+  },
+  {
+    "partition": "iid",
+    "attack": "alie",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.982678
+  }
+]

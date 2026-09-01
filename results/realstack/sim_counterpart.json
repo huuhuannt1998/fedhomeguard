@@ -4,7 +4,7 @@
     "attack": "none",
     "m": 0,
     "beta": 0.0,
-    "accuracy": 0.980216
+    "accuracy": 0.980186
   },
   {
     "partition": "device_derived",
@@ -18,209 +18,209 @@
     "attack": "label_flip",
     "m": 4,
     "beta": 0.2,
-    "accuracy": 0.965836
+    "accuracy": 0.977124
   },
   {
     "partition": "device_derived",
     "attack": "label_flip",
     "m": 8,
     "beta": 0.4,
-    "accuracy": 0.791294
+    "accuracy": 0.729901
   },
   {
     "partition": "device_derived",
     "attack": "sign_flip",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.979105
+  },
+  {
+    "partition": "device_derived",
+    "attack": "sign_flip",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.979826
+  },
+  {
+    "partition": "device_derived",
+    "attack": "sign_flip",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.977484
+  },
+  {
+    "partition": "device_derived",
+    "attack": "gaussian",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.980006
+  },
+  {
+    "partition": "device_derived",
+    "attack": "gaussian",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.980006
+  },
+  {
+    "partition": "device_derived",
+    "attack": "gaussian",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.980066
+  },
+  {
+    "partition": "device_derived",
+    "attack": "ipm",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.979105
+  },
+  {
+    "partition": "device_derived",
+    "attack": "ipm",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.979826
+  },
+  {
+    "partition": "device_derived",
+    "attack": "ipm",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.977484
+  },
+  {
+    "partition": "device_derived",
+    "attack": "alie",
     "m": 2,
     "beta": 0.1,
     "accuracy": 0.980096
   },
   {
     "partition": "device_derived",
-    "attack": "sign_flip",
-    "m": 4,
-    "beta": 0.2,
-    "accuracy": 0.979886
-  },
-  {
-    "partition": "device_derived",
-    "attack": "sign_flip",
-    "m": 8,
-    "beta": 0.4,
-    "accuracy": 0.977334
-  },
-  {
-    "partition": "device_derived",
-    "attack": "gaussian",
-    "m": 2,
-    "beta": 0.1,
-    "accuracy": 0.978295
-  },
-  {
-    "partition": "device_derived",
-    "attack": "gaussian",
-    "m": 4,
-    "beta": 0.2,
-    "accuracy": 0.980036
-  },
-  {
-    "partition": "device_derived",
-    "attack": "gaussian",
-    "m": 8,
-    "beta": 0.4,
-    "accuracy": 0.980036
-  },
-  {
-    "partition": "device_derived",
-    "attack": "ipm",
-    "m": 2,
-    "beta": 0.1,
-    "accuracy": 0.977424
-  },
-  {
-    "partition": "device_derived",
-    "attack": "ipm",
-    "m": 4,
-    "beta": 0.2,
-    "accuracy": 0.978715
-  },
-  {
-    "partition": "device_derived",
-    "attack": "ipm",
-    "m": 8,
-    "beta": 0.4,
-    "accuracy": 0.978445
-  },
-  {
-    "partition": "device_derived",
-    "attack": "alie",
-    "m": 2,
-    "beta": 0.1,
-    "accuracy": 0.980186
-  },
-  {
-    "partition": "device_derived",
     "attack": "alie",
     "m": 4,
     "beta": 0.2,
-    "accuracy": 0.980246
+    "accuracy": 0.980126
   },
   {
     "partition": "device_derived",
     "attack": "alie",
     "m": 8,
     "beta": 0.4,
-    "accuracy": 0.978595
+    "accuracy": 0.978355
   },
   {
     "partition": "iid",
     "attack": "none",
     "m": 0,
     "beta": 0.0,
-    "accuracy": 0.982558
+    "accuracy": 0.981267
   },
   {
     "partition": "iid",
     "attack": "label_flip",
     "m": 2,
     "beta": 0.1,
-    "accuracy": 0.982077
+    "accuracy": 0.981867
   },
   {
     "partition": "iid",
     "attack": "label_flip",
     "m": 4,
     "beta": 0.2,
-    "accuracy": 0.979225
+    "accuracy": 0.979616
   },
   {
     "partition": "iid",
     "attack": "label_flip",
     "m": 8,
     "beta": 0.4,
-    "accuracy": 0.980937
+    "accuracy": 0.87082
   },
   {
     "partition": "iid",
     "attack": "sign_flip",
     "m": 2,
     "beta": 0.1,
-    "accuracy": 0.982137
+    "accuracy": 0.981867
   },
   {
     "partition": "iid",
     "attack": "sign_flip",
     "m": 4,
     "beta": 0.2,
-    "accuracy": 0.982198
+    "accuracy": 0.980877
   },
   {
     "partition": "iid",
     "attack": "sign_flip",
     "m": 8,
     "beta": 0.4,
-    "accuracy": 0.981897
+    "accuracy": 0.980336
   },
   {
     "partition": "iid",
     "attack": "gaussian",
     "m": 2,
     "beta": 0.1,
-    "accuracy": 0.982288
+    "accuracy": 0.981597
   },
   {
     "partition": "iid",
     "attack": "gaussian",
     "m": 4,
     "beta": 0.2,
-    "accuracy": 0.982498
-  },
-  {
-    "partition": "iid",
-    "attack": "gaussian",
-    "m": 8,
-    "beta": 0.4,
-    "accuracy": 0.982408
-  },
-  {
-    "partition": "iid",
-    "attack": "ipm",
-    "m": 2,
-    "beta": 0.1,
-    "accuracy": 0.981747
-  },
-  {
-    "partition": "iid",
-    "attack": "ipm",
-    "m": 4,
-    "beta": 0.2,
-    "accuracy": 0.980606
-  },
-  {
-    "partition": "iid",
-    "attack": "ipm",
-    "m": 8,
-    "beta": 0.4,
-    "accuracy": 0.981807
-  },
-  {
-    "partition": "iid",
-    "attack": "alie",
-    "m": 2,
-    "beta": 0.1,
     "accuracy": 0.981927
   },
   {
     "partition": "iid",
+    "attack": "gaussian",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.981987
+  },
+  {
+    "partition": "iid",
+    "attack": "ipm",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.981867
+  },
+  {
+    "partition": "iid",
+    "attack": "ipm",
+    "m": 4,
+    "beta": 0.2,
+    "accuracy": 0.980877
+  },
+  {
+    "partition": "iid",
+    "attack": "ipm",
+    "m": 8,
+    "beta": 0.4,
+    "accuracy": 0.980336
+  },
+  {
+    "partition": "iid",
+    "attack": "alie",
+    "m": 2,
+    "beta": 0.1,
+    "accuracy": 0.981987
+  },
+  {
+    "partition": "iid",
     "attack": "alie",
     "m": 4,
     "beta": 0.2,
-    "accuracy": 0.981897
+    "accuracy": 0.981177
   },
   {
     "partition": "iid",
     "attack": "alie",
     "m": 8,
     "beta": 0.4,
-    "accuracy": 0.982678
+    "accuracy": 0.981117
   }
 ]
