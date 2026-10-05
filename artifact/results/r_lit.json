@@ -1,0 +1,32 @@
+{
+  "schema": "fedhomeguard.r_lit/v1",
+  "note": "Operating points at which the surveyed FL-IoT-IDS literature asserts robustness. Each entry cites the project-log record it was extracted from. NO entry invents a beta value: where a paper's fraction was not recorded in the audit, the entry is a band rather than a point.",
+  "critical_observation": "None of the surveyed defenses reports a MEASURED heterogeneity statistic. They describe their partitions as 'non-IID' without quantifying skew. R_lit is therefore a band in beta whose S extent is unspecified by the sources themselves, and a claim of robustness 'under non-IID data' implicitly ranges over the whole S axis. That absence is itself a systematization finding.",
+  "entries": [
+    {
+      "id": "band_routine",
+      "kind": "band",
+      "beta_lo": 0.10, "beta_hi": 0.40,
+      "S_extent": "unspecified by sources",
+      "label": "fractions routinely evaluated by FL-IoT-IDS defenses",
+      "provenance": ["jrn_01M0EE7W6CMRCZF7CQDCGEP2N3", "jrn_01M0EH588QPK1GM29PT0EETW10"]
+    },
+    {
+      "id": "trust_aware_20_40",
+      "kind": "points",
+      "betas": [0.20, 0.40],
+      "S_extent": "unspecified",
+      "label": "trust-aware federated IDS, evaluated at 20% and 40% malicious (CICIDS2017 / CSE-CIC-IDS2018)",
+      "provenance": ["jrn_01M0EE7W6CMRCZF7CQDCGEP2N3"]
+    },
+    {
+      "id": "flcert_generic",
+      "kind": "points",
+      "betas": [0.02],
+      "S_extent": "low (homogeneous image benchmark)",
+      "label": "strongest published subsample certification: 2% malicious, MNIST",
+      "provenance": ["jrn_01M0EH588QPK1GM29PT0EETW10"],
+      "note": "This is the only CERTIFIED point in the comparison and it sits far left of the band, which is the asymmetry the paper is about."
+    }
+  ]
+}

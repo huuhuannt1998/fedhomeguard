@@ -1,0 +1,168 @@
+{
+  "stage": 3,
+  "partition": {
+    "kind": "iid",
+    "N": 20,
+    "seed": 0,
+    "S_JS": 0.001107,
+    "S_dev": 0.0,
+    "size_min": 6661,
+    "size_med": 6661,
+    "size_max": 6662,
+    "n_empty": 0
+  },
+  "certification": {
+    "K": 20,
+    "k": 1,
+    "N": 20,
+    "exact": true,
+    "tau_triv": 0.729961,
+    "ensemble_acc": 0.982678,
+    "mean_margin": 0.996575,
+    "MC_het": 0.003425,
+    "MC_adv": {
+      "0.0": 0.0,
+      "0.05": 0.1,
+      "0.1": 0.2,
+      "0.2": 0.4,
+      "0.3": 0.6,
+      "0.4": 0.8
+    },
+    "beta_star": 0.4,
+    "beta_geo": 0.45,
+    "grid": [
+      {
+        "beta": 0.0,
+        "m": 0,
+        "p_clean": 1.0,
+        "threshold": 0.0,
+        "combinatorially_possible": true,
+        "CA": 0.982588,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.252627,
+        "certified_frac": 0.99988,
+        "cert_wrong": 0.017292,
+        "abstain_het": 0.00012,
+        "abstain_adv": 0.0,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.05,
+        "m": 1,
+        "p_clean": 0.95,
+        "threshold": 0.1,
+        "combinatorially_possible": true,
+        "CA": 0.982107,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.252147,
+        "certified_frac": 0.999159,
+        "cert_wrong": 0.017052,
+        "abstain_het": 0.00012,
+        "abstain_adv": 0.000721,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.1,
+        "m": 2,
+        "p_clean": 0.9,
+        "threshold": 0.2,
+        "combinatorially_possible": true,
+        "CA": 0.982107,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.252147,
+        "certified_frac": 0.999159,
+        "cert_wrong": 0.017052,
+        "abstain_het": 0.00012,
+        "abstain_adv": 0.000721,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.2,
+        "m": 4,
+        "p_clean": 0.8,
+        "threshold": 0.4,
+        "combinatorially_possible": true,
+        "CA": 0.981597,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.251636,
+        "certified_frac": 0.998499,
+        "cert_wrong": 0.016902,
+        "abstain_het": 0.00012,
+        "abstain_adv": 0.001381,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.3,
+        "m": 6,
+        "p_clean": 0.7,
+        "threshold": 0.6,
+        "combinatorially_possible": true,
+        "CA": 0.978595,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.248634,
+        "certified_frac": 0.995437,
+        "cert_wrong": 0.016842,
+        "abstain_het": 0.00012,
+        "abstain_adv": 0.004443,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.4,
+        "m": 8,
+        "p_clean": 0.6,
+        "threshold": 0.8,
+        "combinatorially_possible": true,
+        "CA": 0.977544,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.247583,
+        "certified_frac": 0.994356,
+        "cert_wrong": 0.016812,
+        "abstain_het": 0.00012,
+        "abstain_adv": 0.005524,
+        "severity": "S0_informative"
+      }
+    ],
+    "balanced": {
+      "tau_triv": 0.5,
+      "beta_star": 0.4,
+      "grid": [
+        {
+          "beta": 0.0,
+          "CA": 0.970984,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.05,
+          "CA": 0.970094,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.1,
+          "CA": 0.970094,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.2,
+          "CA": 0.969261,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.3,
+          "CA": 0.965092,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.4,
+          "CA": 0.964036,
+          "severity": "S0_informative"
+        }
+      ]
+    },
+    "S_JS": 0.001107
+  },
+  "gate": {
+    "exit": "EXIT_1_GO",
+    "reason": "CA(0.1)=0.9821 > tau_triv+0.10=0.8300 (S0). Full paper; Act II is live."
+  },
+  "secs": 3.7
+}

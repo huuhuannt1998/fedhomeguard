@@ -1,0 +1,1502 @@
+[
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 0,
+    "attack": "label_flip",
+    "EA_window": 0.948544,
+    "EA_final": 0.948544,
+    "spread": 0.01369
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 0,
+    "attack": "sign_flip",
+    "EA_window": 0.918283,
+    "EA_final": 0.918793,
+    "spread": 0.000961
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 0,
+    "attack": "gaussian",
+    "EA_window": 0.902582,
+    "EA_final": 0.919364,
+    "spread": 0.060582
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 0,
+    "attack": "ipm",
+    "EA_window": 0.918283,
+    "EA_final": 0.918793,
+    "spread": 0.000961
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 0,
+    "attack": "alie",
+    "EA_window": 0.902732,
+    "EA_final": 0.906184,
+    "spread": 0.003452
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 1,
+    "attack": "label_flip",
+    "EA_window": 0.951816,
+    "EA_final": 0.952687,
+    "spread": 0.001291
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 1,
+    "attack": "sign_flip",
+    "EA_window": 0.951216,
+    "EA_final": 0.951216,
+    "spread": 0.000901
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 1,
+    "attack": "gaussian",
+    "EA_window": 0.906815,
+    "EA_final": 0.907625,
+    "spread": 0.044971
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 1,
+    "attack": "ipm",
+    "EA_window": 0.951216,
+    "EA_final": 0.951216,
+    "spread": 0.000901
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 1,
+    "attack": "alie",
+    "EA_window": 0.951516,
+    "EA_final": 0.951516,
+    "spread": 0.0006
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 2,
+    "attack": "label_flip",
+    "EA_window": 0.950285,
+    "EA_final": 0.963044,
+    "spread": 0.012759
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 2,
+    "attack": "sign_flip",
+    "EA_window": 0.962234,
+    "EA_final": 0.962564,
+    "spread": 0.001471
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 2,
+    "attack": "gaussian",
+    "EA_window": 0.905794,
+    "EA_final": 0.918523,
+    "spread": 0.05677
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 2,
+    "attack": "ipm",
+    "EA_window": 0.962234,
+    "EA_final": 0.962564,
+    "spread": 0.001471
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 2,
+    "attack": "alie",
+    "EA_window": 0.905974,
+    "EA_final": 0.907355,
+    "spread": 0.001711
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 3,
+    "attack": "label_flip",
+    "EA_window": 0.951036,
+    "EA_final": 0.951366,
+    "spread": 0.00036
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 3,
+    "attack": "sign_flip",
+    "EA_window": 0.904623,
+    "EA_final": 0.906815,
+    "spread": 0.002192
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 3,
+    "attack": "gaussian",
+    "EA_window": 0.865596,
+    "EA_final": 0.906875,
+    "spread": 0.08514
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 3,
+    "attack": "ipm",
+    "EA_window": 0.904623,
+    "EA_final": 0.906815,
+    "spread": 0.002192
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 3,
+    "attack": "alie",
+    "EA_window": 0.84257,
+    "EA_final": 0.84347,
+    "spread": 0.064785
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 4,
+    "attack": "label_flip",
+    "EA_window": 0.950826,
+    "EA_final": 0.950826,
+    "spread": 0.012309
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 4,
+    "attack": "sign_flip",
+    "EA_window": 0.84323,
+    "EA_final": 0.843711,
+    "spread": 0.074242
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 4,
+    "attack": "gaussian",
+    "EA_window": 0.84275,
+    "EA_final": 0.908406,
+    "spread": 0.109547
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 4,
+    "attack": "ipm",
+    "EA_window": 0.84323,
+    "EA_final": 0.843711,
+    "spread": 0.074242
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 4,
+    "attack": "alie",
+    "EA_window": 0.84272,
+    "EA_final": 0.844071,
+    "spread": 0.064095
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 0,
+    "attack": "label_flip",
+    "EA_window": 0.949084,
+    "EA_final": 0.949084,
+    "spread": 0.012669
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 0,
+    "attack": "sign_flip",
+    "EA_window": 0.777514,
+    "EA_final": 0.777514,
+    "spread": 0.14323
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 0,
+    "attack": "gaussian",
+    "EA_window": 0.887781,
+    "EA_final": 0.935275,
+    "spread": 0.089973
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 0,
+    "attack": "ipm",
+    "EA_window": 0.777514,
+    "EA_final": 0.777514,
+    "spread": 0.14323
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 0,
+    "attack": "alie",
+    "EA_window": 0.762924,
+    "EA_final": 0.763014,
+    "spread": 0.144251
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 1,
+    "attack": "label_flip",
+    "EA_window": 0.952987,
+    "EA_final": 0.954878,
+    "spread": 0.002522
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 1,
+    "attack": "sign_flip",
+    "EA_window": 0.965806,
+    "EA_final": 0.967787,
+    "spread": 0.001981
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 1,
+    "attack": "gaussian",
+    "EA_window": 0.843681,
+    "EA_final": 0.902972,
+    "spread": 0.122936
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 1,
+    "attack": "ipm",
+    "EA_window": 0.965806,
+    "EA_final": 0.967787,
+    "spread": 0.001981
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 1,
+    "attack": "alie",
+    "EA_window": 0.965926,
+    "EA_final": 0.967938,
+    "spread": 0.002011
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 2,
+    "attack": "label_flip",
+    "EA_window": 0.949865,
+    "EA_final": 0.962954,
+    "spread": 0.013089
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 2,
+    "attack": "sign_flip",
+    "EA_window": 0.962264,
+    "EA_final": 0.962444,
+    "spread": 0.00018
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 2,
+    "attack": "gaussian",
+    "EA_window": 0.904863,
+    "EA_final": 0.924767,
+    "spread": 0.074332
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 2,
+    "attack": "ipm",
+    "EA_window": 0.962264,
+    "EA_final": 0.962444,
+    "spread": 0.00018
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 2,
+    "attack": "alie",
+    "EA_window": 0.762624,
+    "EA_final": 0.763224,
+    "spread": 0.144701
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 3,
+    "attack": "label_flip",
+    "EA_window": 0.962534,
+    "EA_final": 0.962804,
+    "spread": 0.001051
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 3,
+    "attack": "sign_flip",
+    "EA_window": 0.784119,
+    "EA_final": 0.787811,
+    "spread": 0.146743
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 3,
+    "attack": "gaussian",
+    "EA_window": 0.856379,
+    "EA_final": 0.875473,
+    "spread": 0.120234
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 3,
+    "attack": "ipm",
+    "EA_window": 0.784119,
+    "EA_final": 0.787811,
+    "spread": 0.146743
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 3,
+    "attack": "alie",
+    "EA_window": 0.699249,
+    "EA_final": 0.69943,
+    "spread": 0.208436
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 4,
+    "attack": "label_flip",
+    "EA_window": 0.951036,
+    "EA_final": 0.951426,
+    "spread": 0.00039
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 4,
+    "attack": "sign_flip",
+    "EA_window": 0.723927,
+    "EA_final": 0.724797,
+    "spread": 0.144821
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 4,
+    "attack": "gaussian",
+    "EA_window": 0.826929,
+    "EA_final": 0.876614,
+    "spread": 0.150886
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 4,
+    "attack": "ipm",
+    "EA_window": 0.723927,
+    "EA_final": 0.724797,
+    "spread": 0.144821
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 4,
+    "attack": "alie",
+    "EA_window": 0.699039,
+    "EA_final": 0.69985,
+    "spread": 0.144131
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 0,
+    "attack": "label_flip",
+    "EA_window": 0.949535,
+    "EA_final": 0.949535,
+    "spread": 0.015041
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 0,
+    "attack": "sign_flip",
+    "EA_window": 0.136596,
+    "EA_final": 0.27115,
+    "spread": 0.134554
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 0,
+    "attack": "gaussian",
+    "EA_window": 0.615731,
+    "EA_final": 0.738667,
+    "spread": 0.349835
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 0,
+    "attack": "ipm",
+    "EA_window": 0.136596,
+    "EA_final": 0.27115,
+    "spread": 0.134554
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 0,
+    "attack": "alie",
+    "EA_window": 0.270039,
+    "EA_final": 0.270039,
+    "spread": 0.0
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 1,
+    "attack": "label_flip",
+    "EA_window": 0.950916,
+    "EA_final": 0.951126,
+    "spread": 0.00021
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 1,
+    "attack": "sign_flip",
+    "EA_window": 0.965086,
+    "EA_final": 0.965086,
+    "spread": 3e-05
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 1,
+    "attack": "gaussian",
+    "EA_window": 0.5852,
+    "EA_final": 0.708316,
+    "spread": 0.380576
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 1,
+    "attack": "ipm",
+    "EA_window": 0.965086,
+    "EA_final": 0.965086,
+    "spread": 3e-05
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 1,
+    "attack": "alie",
+    "EA_window": 0.965116,
+    "EA_final": 0.965116,
+    "spread": 3e-05
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 2,
+    "attack": "label_flip",
+    "EA_window": 0.95683,
+    "EA_final": 0.962744,
+    "spread": 0.006034
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 2,
+    "attack": "sign_flip",
+    "EA_window": 0.961873,
+    "EA_final": 0.961933,
+    "spread": 6e-05
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 2,
+    "attack": "gaussian",
+    "EA_window": 0.548724,
+    "EA_final": 0.739267,
+    "spread": 0.42876
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 2,
+    "attack": "ipm",
+    "EA_window": 0.961873,
+    "EA_final": 0.961933,
+    "spread": 6e-05
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 2,
+    "attack": "alie",
+    "EA_window": 0.270039,
+    "EA_final": 0.270039,
+    "spread": 0.0
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 3,
+    "attack": "label_flip",
+    "EA_window": 0.947223,
+    "EA_final": 0.947433,
+    "spread": 0.000841
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 3,
+    "attack": "sign_flip",
+    "EA_window": 0.346322,
+    "EA_final": 0.346352,
+    "spread": 6e-05
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 3,
+    "attack": "gaussian",
+    "EA_window": 0.617082,
+    "EA_final": 0.679586,
+    "spread": 0.347703
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 3,
+    "attack": "ipm",
+    "EA_window": 0.346322,
+    "EA_final": 0.346352,
+    "spread": 6e-05
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 3,
+    "attack": "alie",
+    "EA_window": 0.270039,
+    "EA_final": 0.270039,
+    "spread": 0.0
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 4,
+    "attack": "label_flip",
+    "EA_window": 0.947823,
+    "EA_final": 0.949144,
+    "spread": 0.002071
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 4,
+    "attack": "sign_flip",
+    "EA_window": 0.1577,
+    "EA_final": 0.282738,
+    "spread": 0.125038
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 4,
+    "attack": "gaussian",
+    "EA_window": 0.503302,
+    "EA_final": 0.680967,
+    "spread": 0.462204
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 4,
+    "attack": "ipm",
+    "EA_window": 0.1577,
+    "EA_final": 0.282738,
+    "spread": 0.125038
+  },
+  {
+    "partition": "device_derived",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 4,
+    "attack": "alie",
+    "EA_window": 0.270039,
+    "EA_final": 0.270039,
+    "spread": 0.0
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 0,
+    "attack": "label_flip",
+    "EA_window": 0.980787,
+    "EA_final": 0.980967,
+    "spread": 0.00018
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 0,
+    "attack": "sign_flip",
+    "EA_window": 0.980907,
+    "EA_final": 0.981477,
+    "spread": 0.000721
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 0,
+    "attack": "gaussian",
+    "EA_window": 0.980907,
+    "EA_final": 0.981177,
+    "spread": 0.000721
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 0,
+    "attack": "ipm",
+    "EA_window": 0.980907,
+    "EA_final": 0.981477,
+    "spread": 0.000721
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 0,
+    "attack": "alie",
+    "EA_window": 0.980997,
+    "EA_final": 0.981417,
+    "spread": 0.00042
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 1,
+    "attack": "label_flip",
+    "EA_window": 0.981387,
+    "EA_final": 0.982348,
+    "spread": 0.001051
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 1,
+    "attack": "sign_flip",
+    "EA_window": 0.981777,
+    "EA_final": 0.982378,
+    "spread": 0.000721
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 1,
+    "attack": "gaussian",
+    "EA_window": 0.981537,
+    "EA_final": 0.982378,
+    "spread": 0.000961
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 1,
+    "attack": "ipm",
+    "EA_window": 0.981777,
+    "EA_final": 0.982378,
+    "spread": 0.000721
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 1,
+    "attack": "alie",
+    "EA_window": 0.981687,
+    "EA_final": 0.982378,
+    "spread": 0.000811
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 2,
+    "attack": "label_flip",
+    "EA_window": 0.980516,
+    "EA_final": 0.980757,
+    "spread": 0.00033
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 2,
+    "attack": "sign_flip",
+    "EA_window": 0.980486,
+    "EA_final": 0.980817,
+    "spread": 0.00036
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 2,
+    "attack": "gaussian",
+    "EA_window": 0.980576,
+    "EA_final": 0.980757,
+    "spread": 0.00024
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 2,
+    "attack": "ipm",
+    "EA_window": 0.980486,
+    "EA_final": 0.980817,
+    "spread": 0.00036
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 2,
+    "attack": "alie",
+    "EA_window": 0.980606,
+    "EA_final": 0.980847,
+    "spread": 0.00036
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 3,
+    "attack": "label_flip",
+    "EA_window": 0.981537,
+    "EA_final": 0.981687,
+    "spread": 0.000931
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 3,
+    "attack": "sign_flip",
+    "EA_window": 0.981237,
+    "EA_final": 0.982618,
+    "spread": 0.001381
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 3,
+    "attack": "gaussian",
+    "EA_window": 0.981687,
+    "EA_final": 0.982588,
+    "spread": 0.000901
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 3,
+    "attack": "ipm",
+    "EA_window": 0.981237,
+    "EA_final": 0.982618,
+    "spread": 0.001381
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 3,
+    "attack": "alie",
+    "EA_window": 0.981627,
+    "EA_final": 0.981657,
+    "spread": 0.000901
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 4,
+    "attack": "label_flip",
+    "EA_window": 0.980606,
+    "EA_final": 0.981897,
+    "spread": 0.001291
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 4,
+    "attack": "sign_flip",
+    "EA_window": 0.980546,
+    "EA_final": 0.981627,
+    "spread": 0.001141
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 4,
+    "attack": "gaussian",
+    "EA_window": 0.980636,
+    "EA_final": 0.981657,
+    "spread": 0.001051
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 4,
+    "attack": "ipm",
+    "EA_window": 0.980546,
+    "EA_final": 0.981627,
+    "spread": 0.001141
+  },
+  {
+    "partition": "iid",
+    "beta": 0.1,
+    "m": 2,
+    "seed": 4,
+    "attack": "alie",
+    "EA_window": 0.980636,
+    "EA_final": 0.981927,
+    "spread": 0.001291
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 0,
+    "attack": "label_flip",
+    "EA_window": 0.980546,
+    "EA_final": 0.980877,
+    "spread": 0.00039
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 0,
+    "attack": "sign_flip",
+    "EA_window": 0.980727,
+    "EA_final": 0.982017,
+    "spread": 0.001291
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 0,
+    "attack": "gaussian",
+    "EA_window": 0.980817,
+    "EA_final": 0.981717,
+    "spread": 0.000961
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 0,
+    "attack": "ipm",
+    "EA_window": 0.980727,
+    "EA_final": 0.982017,
+    "spread": 0.001291
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 0,
+    "attack": "alie",
+    "EA_window": 0.980787,
+    "EA_final": 0.981477,
+    "spread": 0.00069
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 1,
+    "attack": "label_flip",
+    "EA_window": 0.981117,
+    "EA_final": 0.982198,
+    "spread": 0.001411
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 1,
+    "attack": "sign_flip",
+    "EA_window": 0.980997,
+    "EA_final": 0.982198,
+    "spread": 0.001351
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 1,
+    "attack": "gaussian",
+    "EA_window": 0.981537,
+    "EA_final": 0.982318,
+    "spread": 0.000871
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 1,
+    "attack": "ipm",
+    "EA_window": 0.980997,
+    "EA_final": 0.982198,
+    "spread": 0.001351
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 1,
+    "attack": "alie",
+    "EA_window": 0.980877,
+    "EA_final": 0.982168,
+    "spread": 0.001531
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 2,
+    "attack": "label_flip",
+    "EA_window": 0.980576,
+    "EA_final": 0.980877,
+    "spread": 0.00036
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 2,
+    "attack": "sign_flip",
+    "EA_window": 0.980516,
+    "EA_final": 0.980877,
+    "spread": 0.00036
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 2,
+    "attack": "gaussian",
+    "EA_window": 0.980306,
+    "EA_final": 0.980847,
+    "spread": 0.00054
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 2,
+    "attack": "ipm",
+    "EA_window": 0.980516,
+    "EA_final": 0.980877,
+    "spread": 0.00036
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 2,
+    "attack": "alie",
+    "EA_window": 0.980757,
+    "EA_final": 0.981087,
+    "spread": 0.00036
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 3,
+    "attack": "label_flip",
+    "EA_window": 0.980847,
+    "EA_final": 0.981717,
+    "spread": 0.000871
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 3,
+    "attack": "sign_flip",
+    "EA_window": 0.980877,
+    "EA_final": 0.982528,
+    "spread": 0.001651
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 3,
+    "attack": "gaussian",
+    "EA_window": 0.981207,
+    "EA_final": 0.982438,
+    "spread": 0.001261
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 3,
+    "attack": "ipm",
+    "EA_window": 0.980877,
+    "EA_final": 0.982528,
+    "spread": 0.001651
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 3,
+    "attack": "alie",
+    "EA_window": 0.981687,
+    "EA_final": 0.981747,
+    "spread": 6e-05
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 4,
+    "attack": "label_flip",
+    "EA_window": 0.980036,
+    "EA_final": 0.981447,
+    "spread": 0.001441
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 4,
+    "attack": "sign_flip",
+    "EA_window": 0.980366,
+    "EA_final": 0.981507,
+    "spread": 0.001141
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 4,
+    "attack": "gaussian",
+    "EA_window": 0.980366,
+    "EA_final": 0.981537,
+    "spread": 0.001171
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 4,
+    "attack": "ipm",
+    "EA_window": 0.980366,
+    "EA_final": 0.981507,
+    "spread": 0.001141
+  },
+  {
+    "partition": "iid",
+    "beta": 0.2,
+    "m": 4,
+    "seed": 4,
+    "attack": "alie",
+    "EA_window": 0.980066,
+    "EA_final": 0.981657,
+    "spread": 0.001711
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 0,
+    "attack": "label_flip",
+    "EA_window": 0.980156,
+    "EA_final": 0.980456,
+    "spread": 0.00069
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 0,
+    "attack": "sign_flip",
+    "EA_window": 0.979346,
+    "EA_final": 0.981117,
+    "spread": 0.001771
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 0,
+    "attack": "gaussian",
+    "EA_window": 0.979976,
+    "EA_final": 0.981207,
+    "spread": 0.001231
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 0,
+    "attack": "ipm",
+    "EA_window": 0.979346,
+    "EA_final": 0.981117,
+    "spread": 0.001771
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 0,
+    "attack": "alie",
+    "EA_window": 0.980516,
+    "EA_final": 0.981177,
+    "spread": 0.00066
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 1,
+    "attack": "label_flip",
+    "EA_window": 0.980787,
+    "EA_final": 0.982168,
+    "spread": 0.001381
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 1,
+    "attack": "sign_flip",
+    "EA_window": 0.980126,
+    "EA_final": 0.981237,
+    "spread": 0.001681
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 1,
+    "attack": "gaussian",
+    "EA_window": 0.980336,
+    "EA_final": 0.981597,
+    "spread": 0.001411
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 1,
+    "attack": "ipm",
+    "EA_window": 0.980126,
+    "EA_final": 0.981237,
+    "spread": 0.001681
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 1,
+    "attack": "alie",
+    "EA_window": 0.980276,
+    "EA_final": 0.981417,
+    "spread": 0.001501
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 2,
+    "attack": "label_flip",
+    "EA_window": 0.980006,
+    "EA_final": 0.980336,
+    "spread": 0.000721
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 2,
+    "attack": "sign_flip",
+    "EA_window": 0.980666,
+    "EA_final": 0.980696,
+    "spread": 0.00012
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 2,
+    "attack": "gaussian",
+    "EA_window": 0.979616,
+    "EA_final": 0.982168,
+    "spread": 0.002552
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 2,
+    "attack": "ipm",
+    "EA_window": 0.980666,
+    "EA_final": 0.980696,
+    "spread": 0.00012
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 2,
+    "attack": "alie",
+    "EA_window": 0.980696,
+    "EA_final": 0.980696,
+    "spread": 0.00033
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 3,
+    "attack": "label_flip",
+    "EA_window": 0.979556,
+    "EA_final": 0.981627,
+    "spread": 0.002342
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 3,
+    "attack": "sign_flip",
+    "EA_window": 0.980696,
+    "EA_final": 0.981447,
+    "spread": 0.000751
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 3,
+    "attack": "gaussian",
+    "EA_window": 0.980727,
+    "EA_final": 0.981387,
+    "spread": 0.000931
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 3,
+    "attack": "ipm",
+    "EA_window": 0.980696,
+    "EA_final": 0.981447,
+    "spread": 0.000751
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 3,
+    "attack": "alie",
+    "EA_window": 0.981147,
+    "EA_final": 0.981147,
+    "spread": 0.000811
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 4,
+    "attack": "label_flip",
+    "EA_window": 0.980426,
+    "EA_final": 0.981507,
+    "spread": 0.001081
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 4,
+    "attack": "sign_flip",
+    "EA_window": 0.979916,
+    "EA_final": 0.980576,
+    "spread": 0.000871
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 4,
+    "attack": "gaussian",
+    "EA_window": 0.980006,
+    "EA_final": 0.980696,
+    "spread": 0.001711
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 4,
+    "attack": "ipm",
+    "EA_window": 0.979916,
+    "EA_final": 0.980576,
+    "spread": 0.000871
+  },
+  {
+    "partition": "iid",
+    "beta": 0.4,
+    "m": 8,
+    "seed": 4,
+    "attack": "alie",
+    "EA_window": 0.980847,
+    "EA_final": 0.981147,
+    "spread": 0.00033
+  }
+]

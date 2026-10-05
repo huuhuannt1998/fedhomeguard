@@ -1,0 +1,9 @@
+[iid pseed=22] S_JS=0.0011 S_dev=0.0 tau=0.5330
+  k=2 K=190/190 full_enum=True ens_acc=0.8750 mean_margin=0.9981 beta*=0.200  [26s]
+    b=0.00 m=0 random/0 CA=0.8750 EA_ens=0.874962 G=0.0 [0s trainings=190]
+    b=0.05 m=1 random/0 CA=0.8748 EA_ens=0.873401 G=9e-05 [3s trainings=228]
+    b=0.10 m=2 random/0 CA=0.8744 EA_ens=0.873461 G=0.00054 [6s trainings=302]
+    b=0.20 m=4 random/0 CA=0.8731 EA_ens=0.873732 G=0.001801 [9s trainings=412]
+    b=0.30 m=6 random/0 CA=0.0000 EA_ens=0.872441 G=0.874482 [8s trainings=526]
+    b=0.40 m=8 random/0 CA=0.0000 EA_ens=0.872471 G=0.874242 [8s trainings=652]
+DONE in 1.1 min -> results/r9_mc_nanfix/e25fix_iid_s22.jsonl

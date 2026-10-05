@@ -1,0 +1,187 @@
+=== NECESSITY DONE ===
+device=mps  dataset=iot-23
+  CTU-Honeypot-Capture-4-1           rows=    452 mal=0.000
+  CTU-Honeypot-Capture-5-1           rows=   1374 mal=0.000
+  CTU-IoT-Malware-Capture-1-1        rows=  60000 mal=0.542
+  CTU-IoT-Malware-Capture-20-1       rows=   3209 mal=0.005
+  CTU-IoT-Malware-Capture-21-1       rows=   3286 mal=0.004
+  CTU-IoT-Malware-Capture-3-1        rows=  60000 mal=0.971
+  CTU-IoT-Malware-Capture-34-1       rows=  23145 mal=0.917
+  CTU-IoT-Malware-Capture-42-1       rows=   4426 mal=0.001
+  CTU-IoT-Malware-Capture-44-1       rows=    237 mal=0.110
+  CTU-IoT-Malware-Capture-8-1        rows=  10403 mal=0.790
+train=133222 test=33310 dim=31 tau_triv=0.7300
+partition={'kind': 'iid', 'N': 20, 'seed': 0, 'S_JS': 0.001107, 'S_dev': 0.0, 'size_min': 6661, 'size_med': 6661, 'size_max': 6662, 'n_empty': 0}
+  fedavg         none        beta=0.00 EA=0.9820
+  fedavg         label_flip  beta=0.05 EA=0.9820
+  fedavg         sign_flip   beta=0.05 EA=0.9827
+  fedavg         gaussian    beta=0.05 EA=0.9804
+  fedavg         ipm         beta=0.05 EA=0.9822
+  fedavg         alie        beta=0.05 EA=0.9829
+  fedavg         label_flip  beta=0.10 EA=0.9808
+  fedavg         sign_flip   beta=0.10 EA=0.9815
+  fedavg         gaussian    beta=0.10 EA=0.9823
+  fedavg         ipm         beta=0.10 EA=0.9824
+  fedavg         alie        beta=0.10 EA=0.9810
+  fedavg         label_flip  beta=0.20 EA=0.3524
+  fedavg         sign_flip   beta=0.20 EA=0.9820
+  fedavg         gaussian    beta=0.20 EA=0.9819
+  fedavg         ipm         beta=0.20 EA=0.9813
+  fedavg         alie        beta=0.20 EA=0.9829
+  fedavg         label_flip  beta=0.30 EA=0.6212
+  fedavg         sign_flip   beta=0.30 EA=0.9814
+  fedavg         gaussian    beta=0.30 EA=0.9819
+  fedavg         ipm         beta=0.30 EA=0.9816
+  fedavg         alie        beta=0.30 EA=0.9815
+  fedavg         label_flip  beta=0.40 EA=0.9802
+  fedavg         sign_flip   beta=0.40 EA=0.9816
+  fedavg         gaussian    beta=0.40 EA=0.9827
+  fedavg         ipm         beta=0.40 EA=0.9805
+  fedavg         alie        beta=0.40 EA=0.9820
+  krum           none        beta=0.00 EA=0.9802
+  krum           label_flip  beta=0.05 EA=0.9815
+  krum           sign_flip   beta=0.05 EA=0.9825
+  krum           gaussian    beta=0.05 EA=0.9825
+  krum           ipm         beta=0.05 EA=0.9820
+  krum           alie        beta=0.05 EA=0.9816
+  krum           label_flip  beta=0.10 EA=0.9826
+  krum           sign_flip   beta=0.10 EA=0.9819
+  krum           gaussian    beta=0.10 EA=0.9806
+  krum           ipm         beta=0.10 EA=0.9819
+  krum           alie        beta=0.10 EA=0.9815
+  krum           label_flip  beta=0.20 EA=0.9817
+  krum           sign_flip   beta=0.20 EA=0.9826
+  krum           gaussian    beta=0.20 EA=0.9824
+  krum           ipm         beta=0.20 EA=0.9811
+  krum           alie        beta=0.20 EA=0.9803
+  krum           label_flip  beta=0.30 EA=0.9817
+  krum           sign_flip   beta=0.30 EA=0.9816
+  krum           gaussian    beta=0.30 EA=0.9825
+  krum           ipm         beta=0.30 EA=0.9821
+  krum           alie        beta=0.30 EA=0.9827
+  krum           label_flip  beta=0.40 EA=0.9804
+  krum           sign_flip   beta=0.40 EA=0.9799
+  krum           gaussian    beta=0.40 EA=0.9827
+  krum           ipm         beta=0.40 EA=0.9801
+  krum           alie        beta=0.40 EA=0.9828
+  trimmed_mean   none        beta=0.00 EA=0.9813
+  trimmed_mean   label_flip  beta=0.05 EA=0.9823
+  trimmed_mean   sign_flip   beta=0.05 EA=0.9824
+  trimmed_mean   gaussian    beta=0.05 EA=0.9816
+  trimmed_mean   ipm         beta=0.05 EA=0.9828
+  trimmed_mean   alie        beta=0.05 EA=0.9823
+  trimmed_mean   label_flip  beta=0.10 EA=0.9817
+  trimmed_mean   sign_flip   beta=0.10 EA=0.9826
+  trimmed_mean   gaussian    beta=0.10 EA=0.9808
+  trimmed_mean   ipm         beta=0.10 EA=0.9817
+  trimmed_mean   alie        beta=0.10 EA=0.9828
+  trimmed_mean   label_flip  beta=0.20 EA=0.9827
+  trimmed_mean   sign_flip   beta=0.20 EA=0.9823
+  trimmed_mean   gaussian    beta=0.20 EA=0.9819
+  trimmed_mean   ipm         beta=0.20 EA=0.9825
+  trimmed_mean   alie        beta=0.20 EA=0.9827
+  trimmed_mean   label_flip  beta=0.30 EA=0.9547
+  trimmed_mean   sign_flip   beta=0.30 EA=0.9816
+  trimmed_mean   gaussian    beta=0.30 EA=0.9819
+  trimmed_mean   ipm         beta=0.30 EA=0.9821
+  trimmed_mean   alie        beta=0.30 EA=0.9825
+  trimmed_mean   label_flip  beta=0.40 EA=0.2707
+  trimmed_mean   sign_flip   beta=0.40 EA=0.9822
+  trimmed_mean   gaussian    beta=0.40 EA=0.9827
+  trimmed_mean   ipm         beta=0.40 EA=0.9805
+  trimmed_mean   alie        beta=0.40 EA=0.9827
+  median         none        beta=0.00 EA=0.9825
+  median         label_flip  beta=0.05 EA=0.9826
+  median         sign_flip   beta=0.05 EA=0.9820
+  median         gaussian    beta=0.05 EA=0.9827
+  median         ipm         beta=0.05 EA=0.9823
+  median         alie        beta=0.05 EA=0.9827
+  median         label_flip  beta=0.10 EA=0.9827
+  median         sign_flip   beta=0.10 EA=0.9817
+  median         gaussian    beta=0.10 EA=0.9826
+  median         ipm         beta=0.10 EA=0.9817
+  median         alie        beta=0.10 EA=0.9815
+  median         label_flip  beta=0.20 EA=0.9826
+  median         sign_flip   beta=0.20 EA=0.9813
+  median         gaussian    beta=0.20 EA=0.9820
+  median         ipm         beta=0.20 EA=0.9815
+  median         alie        beta=0.20 EA=0.9820
+  median         label_flip  beta=0.30 EA=0.9817
+  median         sign_flip   beta=0.30 EA=0.9817
+  median         gaussian    beta=0.30 EA=0.9827
+  median         ipm         beta=0.30 EA=0.9819
+  median         alie        beta=0.30 EA=0.9826
+  median         label_flip  beta=0.40 EA=0.9820
+  median         sign_flip   beta=0.40 EA=0.9808
+  median         gaussian    beta=0.40 EA=0.9826
+  median         ipm         beta=0.40 EA=0.9814
+  median         alie        beta=0.40 EA=0.9819
+  norm_clip      none        beta=0.00 EA=0.9812
+  norm_clip      label_flip  beta=0.05 EA=0.9818
+  norm_clip      sign_flip   beta=0.05 EA=0.9822
+  norm_clip      gaussian    beta=0.05 EA=0.9821
+  norm_clip      ipm         beta=0.05 EA=0.9810
+  norm_clip      alie        beta=0.05 EA=0.9822
+  norm_clip      label_flip  beta=0.10 EA=0.9808
+  norm_clip      sign_flip   beta=0.10 EA=0.9808
+  norm_clip      gaussian    beta=0.10 EA=0.9822
+  norm_clip      ipm         beta=0.10 EA=0.9819
+  norm_clip      alie        beta=0.10 EA=0.9825
+  norm_clip      label_flip  beta=0.20 EA=0.9809
+  norm_clip      sign_flip   beta=0.20 EA=0.9803
+  norm_clip      gaussian    beta=0.20 EA=0.9820
+  norm_clip      ipm         beta=0.20 EA=0.9819
+  norm_clip      alie        beta=0.20 EA=0.9821
+  norm_clip      label_flip  beta=0.30 EA=0.5599
+  norm_clip      sign_flip   beta=0.30 EA=0.9812
+  norm_clip      gaussian    beta=0.30 EA=0.9812
+  norm_clip      ipm         beta=0.30 EA=0.9809
+  norm_clip      alie        beta=0.30 EA=0.9828
+  norm_clip      label_flip  beta=0.40 EA=0.7300
+  norm_clip      sign_flip   beta=0.40 EA=0.9797
+  norm_clip      gaussian    beta=0.40 EA=0.9820
+  norm_clip      ipm         beta=0.40 EA=0.9805
+  norm_clip      alie        beta=0.40 EA=0.9824
+wrote results/stage2_iid.json
+=== STAGE2_IID DONE ===
+device=mps  dataset=iot-23
+  CTU-Honeypot-Capture-4-1           rows=    452 mal=0.000
+  CTU-Honeypot-Capture-5-1           rows=   1374 mal=0.000
+  CTU-IoT-Malware-Capture-1-1        rows=  60000 mal=0.542
+  CTU-IoT-Malware-Capture-20-1       rows=   3209 mal=0.005
+  CTU-IoT-Malware-Capture-21-1       rows=   3286 mal=0.004
+  CTU-IoT-Malware-Capture-3-1        rows=  60000 mal=0.971
+  CTU-IoT-Malware-Capture-34-1       rows=  23145 mal=0.917
+  CTU-IoT-Malware-Capture-42-1       rows=   4426 mal=0.001
+  CTU-IoT-Malware-Capture-44-1       rows=    237 mal=0.110
+  CTU-IoT-Malware-Capture-8-1        rows=  10403 mal=0.790
+train=133222 test=33310 dim=31 tau_triv=0.7300
+partition={'kind': 'iid', 'N': 20, 'seed': 0, 'S_JS': 0.001107, 'S_dev': 0.0, 'size_min': 6661, 'size_med': 6661, 'size_max': 6662, 'n_empty': 0, 'min_client_rows': 16, 'n_starved': 0}
+C(20,5)=15504  K=100  exact=False  beta_geo=0.100 (ceiling 1-2^(-1/k)=0.129)
+  ensemble 10/100  [7s]
+  ensemble 20/100  [13s]
+  ensemble 30/100  [19s]
+  ensemble 40/100  [25s]
+  ensemble 50/100  [31s]
+  ensemble 60/100  [37s]
+  ensemble 70/100  [43s]
+  ensemble 80/100  [49s]
+  ensemble 90/100  [55s]
+  ensemble 100/100  [61s]
+  beta=0.00 CA=0.9816 (tau=0.730) S0_informative       possible=True
+  beta=0.05 CA=0.9808 (tau=0.730) S0_informative       possible=True
+  beta=0.10 CA=0.0000 (tau=0.730) S2_vacuous           possible=True
+  beta=0.20 CA=0.0000 (tau=0.730) S2_vacuous           possible=False
+  beta=0.30 CA=0.0000 (tau=0.730) S2_vacuous           possible=False
+  beta=0.40 CA=0.0000 (tau=0.730) S2_vacuous           possible=False
+  GATE G1 -> EXIT_3_PIVOT: CA(0.1)=0.0000 <= tau_triv=0.7300 (S2 vacuous). Negative-result paper (D2). Do not manufacture a positive result.
+wrote results/stage3_iid.json
+=== STAGE3_IID DONE ===
+  beta=0.00 CA=0.9816 EA_min=0.982498 Gamma=0.000901
+  beta=0.05 CA=0.9808 EA_min=0.981987 Gamma=0.00114
+  beta=0.10 CA=0.0000 EA_min=0.981507 Gamma=0.981507
+  beta=0.20 CA=0.0000 EA_min=0.981897 Gamma=0.981897
+  beta=0.30 CA=0.0000 EA_min=0.981687 Gamma=0.981687
+  beta=0.40 CA=0.0000 EA_min=0.980847 Gamma=0.980847
+wrote results/stage4_iid.json
+=== ALL TAIL DONE ===

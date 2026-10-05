@@ -1,0 +1,715 @@
+{
+  "N": 20,
+  "K": 100,
+  "tau_triv": 0.73,
+  "note": "beta_cert < 1 - 2^(-1/k) is a combinatorial ceiling, independent of N, data and model.",
+  "asymptotic_ceiling": {
+    "1": 0.5,
+    "2": 0.2929,
+    "3": 0.2063,
+    "5": 0.1294,
+    "8": 0.083
+  },
+  "results": [
+    {
+      "partition": "iid_mild",
+      "S_JS": 0.0009,
+      "k": 1,
+      "K": 20,
+      "exact": true,
+      "beta_geo": 0.45,
+      "ensemble_acc": 0.9827,
+      "mean_margin": 0.997,
+      "MC_het": 0.003,
+      "tau_triv": 0.73,
+      "beta_star": 0.4,
+      "grid": [
+        {
+          "beta": 0.0,
+          "m": 0,
+          "p_clean": 1.0,
+          "thr": 0.0,
+          "CA": 0.9826,
+          "CA_bal": 0.9711,
+          "impossible": false
+        },
+        {
+          "beta": 0.05,
+          "m": 1,
+          "p_clean": 0.95,
+          "thr": 0.1,
+          "CA": 0.9823,
+          "CA_bal": 0.9706,
+          "impossible": false
+        },
+        {
+          "beta": 0.1,
+          "m": 2,
+          "p_clean": 0.9,
+          "thr": 0.2,
+          "CA": 0.9823,
+          "CA_bal": 0.9706,
+          "impossible": false
+        },
+        {
+          "beta": 0.2,
+          "m": 4,
+          "p_clean": 0.8,
+          "thr": 0.4,
+          "CA": 0.9815,
+          "CA_bal": 0.97,
+          "impossible": false
+        },
+        {
+          "beta": 0.3,
+          "m": 6,
+          "p_clean": 0.7,
+          "thr": 0.6,
+          "CA": 0.9793,
+          "CA_bal": 0.9667,
+          "impossible": false
+        },
+        {
+          "beta": 0.4,
+          "m": 8,
+          "p_clean": 0.6,
+          "thr": 0.8,
+          "CA": 0.978,
+          "CA_bal": 0.9648,
+          "impossible": false
+        }
+      ],
+      "secs": 4.8
+    },
+    {
+      "partition": "iid_mild",
+      "S_JS": 0.0009,
+      "k": 2,
+      "K": 100,
+      "exact": false,
+      "beta_geo": 0.25,
+      "ensemble_acc": 0.9826,
+      "mean_margin": 0.9973,
+      "MC_het": 0.0027,
+      "tau_triv": 0.73,
+      "beta_star": 0.2,
+      "grid": [
+        {
+          "beta": 0.0,
+          "m": 0,
+          "p_clean": 1.0,
+          "thr": 0.0,
+          "CA": 0.9826,
+          "CA_bal": 0.9709,
+          "impossible": false
+        },
+        {
+          "beta": 0.05,
+          "m": 1,
+          "p_clean": 0.9,
+          "thr": 0.2,
+          "CA": 0.9824,
+          "CA_bal": 0.9708,
+          "impossible": false
+        },
+        {
+          "beta": 0.1,
+          "m": 2,
+          "p_clean": 0.8053,
+          "thr": 0.3895,
+          "CA": 0.9821,
+          "CA_bal": 0.9702,
+          "impossible": false
+        },
+        {
+          "beta": 0.2,
+          "m": 4,
+          "p_clean": 0.6316,
+          "thr": 0.7368,
+          "CA": 0.9794,
+          "CA_bal": 0.966,
+          "impossible": false
+        },
+        {
+          "beta": 0.3,
+          "m": 6,
+          "p_clean": 0.4789,
+          "thr": 1.0421,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.4,
+          "m": 8,
+          "p_clean": 0.3474,
+          "thr": 1.3053,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        }
+      ],
+      "secs": 26.9
+    },
+    {
+      "partition": "iid_mild",
+      "S_JS": 0.0009,
+      "k": 3,
+      "K": 100,
+      "exact": false,
+      "beta_geo": 0.15,
+      "ensemble_acc": 0.9827,
+      "mean_margin": 0.998,
+      "MC_het": 0.002,
+      "tau_triv": 0.73,
+      "beta_star": 0.1,
+      "grid": [
+        {
+          "beta": 0.0,
+          "m": 0,
+          "p_clean": 1.0,
+          "thr": 0.0,
+          "CA": 0.9827,
+          "CA_bal": 0.9712,
+          "impossible": false
+        },
+        {
+          "beta": 0.05,
+          "m": 1,
+          "p_clean": 0.85,
+          "thr": 0.3,
+          "CA": 0.9825,
+          "CA_bal": 0.9708,
+          "impossible": false
+        },
+        {
+          "beta": 0.1,
+          "m": 2,
+          "p_clean": 0.7158,
+          "thr": 0.5684,
+          "CA": 0.9817,
+          "CA_bal": 0.9694,
+          "impossible": false
+        },
+        {
+          "beta": 0.2,
+          "m": 4,
+          "p_clean": 0.4912,
+          "thr": 1.0175,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.3,
+          "m": 6,
+          "p_clean": 0.3193,
+          "thr": 1.3614,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.4,
+          "m": 8,
+          "p_clean": 0.193,
+          "thr": 1.614,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        }
+      ],
+      "secs": 36.4
+    },
+    {
+      "partition": "iid_mild",
+      "S_JS": 0.0009,
+      "k": 5,
+      "K": 100,
+      "exact": false,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.9826,
+      "mean_margin": 0.9982,
+      "MC_het": 0.0018,
+      "tau_triv": 0.73,
+      "beta_star": 0.1,
+      "grid": [
+        {
+          "beta": 0.0,
+          "m": 0,
+          "p_clean": 1.0,
+          "thr": 0.0,
+          "CA": 0.9826,
+          "CA_bal": 0.9711,
+          "impossible": false
+        },
+        {
+          "beta": 0.05,
+          "m": 1,
+          "p_clean": 0.75,
+          "thr": 0.5,
+          "CA": 0.9824,
+          "CA_bal": 0.9707,
+          "impossible": false
+        },
+        {
+          "beta": 0.1,
+          "m": 2,
+          "p_clean": 0.5526,
+          "thr": 0.8947,
+          "CA": 0.9793,
+          "CA_bal": 0.9659,
+          "impossible": false
+        },
+        {
+          "beta": 0.2,
+          "m": 4,
+          "p_clean": 0.2817,
+          "thr": 1.4365,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.3,
+          "m": 6,
+          "p_clean": 0.1291,
+          "thr": 1.7417,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.4,
+          "m": 8,
+          "p_clean": 0.0511,
+          "thr": 1.8978,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        }
+      ],
+      "secs": 62.4
+    },
+    {
+      "partition": "iid_mild",
+      "S_JS": 0.0009,
+      "k": 8,
+      "K": 100,
+      "exact": false,
+      "beta_geo": 0.05,
+      "ensemble_acc": 0.9828,
+      "mean_margin": 0.9981,
+      "MC_het": 0.0019,
+      "tau_triv": 0.73,
+      "beta_star": 0.05,
+      "grid": [
+        {
+          "beta": 0.0,
+          "m": 0,
+          "p_clean": 1.0,
+          "thr": 0.0,
+          "CA": 0.9828,
+          "CA_bal": 0.9713,
+          "impossible": false
+        },
+        {
+          "beta": 0.05,
+          "m": 1,
+          "p_clean": 0.6,
+          "thr": 0.8,
+          "CA": 0.9797,
+          "CA_bal": 0.9667,
+          "impossible": false
+        },
+        {
+          "beta": 0.1,
+          "m": 2,
+          "p_clean": 0.3474,
+          "thr": 1.3053,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.2,
+          "m": 4,
+          "p_clean": 0.1022,
+          "thr": 1.7957,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.3,
+          "m": 6,
+          "p_clean": 0.0238,
+          "thr": 1.9523,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.4,
+          "m": 8,
+          "p_clean": 0.0039,
+          "thr": 1.9921,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        }
+      ],
+      "secs": 97.1
+    },
+    {
+      "partition": "device_derived",
+      "S_JS": 0.8456,
+      "k": 1,
+      "K": 20,
+      "exact": true,
+      "beta_geo": 0.45,
+      "ensemble_acc": 0.27,
+      "mean_margin": 0.3958,
+      "MC_het": 0.6042,
+      "tau_triv": 0.73,
+      "beta_star": 0.0,
+      "grid": [
+        {
+          "beta": 0.0,
+          "m": 0,
+          "p_clean": 1.0,
+          "thr": 0.0,
+          "CA": 0.27,
+          "CA_bal": 0.5,
+          "impossible": false
+        },
+        {
+          "beta": 0.05,
+          "m": 1,
+          "p_clean": 0.95,
+          "thr": 0.1,
+          "CA": 0.2693,
+          "CA_bal": 0.4987,
+          "impossible": false
+        },
+        {
+          "beta": 0.1,
+          "m": 2,
+          "p_clean": 0.9,
+          "thr": 0.2,
+          "CA": 0.2693,
+          "CA_bal": 0.4987,
+          "impossible": false
+        },
+        {
+          "beta": 0.2,
+          "m": 4,
+          "p_clean": 0.8,
+          "thr": 0.4,
+          "CA": 0.2655,
+          "CA_bal": 0.4916,
+          "impossible": false
+        },
+        {
+          "beta": 0.3,
+          "m": 6,
+          "p_clean": 0.7,
+          "thr": 0.6,
+          "CA": 0.2597,
+          "CA_bal": 0.4809,
+          "impossible": false
+        },
+        {
+          "beta": 0.4,
+          "m": 8,
+          "p_clean": 0.6,
+          "thr": 0.8,
+          "CA": 0.2483,
+          "CA_bal": 0.4598,
+          "impossible": false
+        }
+      ],
+      "secs": 4.4
+    },
+    {
+      "partition": "device_derived",
+      "S_JS": 0.8456,
+      "k": 2,
+      "K": 100,
+      "exact": false,
+      "beta_geo": 0.25,
+      "ensemble_acc": 0.9243,
+      "mean_margin": 0.5362,
+      "MC_het": 0.4638,
+      "tau_triv": 0.73,
+      "beta_star": 0.05,
+      "grid": [
+        {
+          "beta": 0.0,
+          "m": 0,
+          "p_clean": 1.0,
+          "thr": 0.0,
+          "CA": 0.9243,
+          "CA_bal": 0.9443,
+          "impossible": false
+        },
+        {
+          "beta": 0.05,
+          "m": 1,
+          "p_clean": 0.9,
+          "thr": 0.2,
+          "CA": 0.8446,
+          "CA_bal": 0.8875,
+          "impossible": false
+        },
+        {
+          "beta": 0.1,
+          "m": 2,
+          "p_clean": 0.8053,
+          "thr": 0.3895,
+          "CA": 0.6907,
+          "CA_bal": 0.7742,
+          "impossible": false
+        },
+        {
+          "beta": 0.2,
+          "m": 4,
+          "p_clean": 0.6316,
+          "thr": 0.7368,
+          "CA": 0.2488,
+          "CA_bal": 0.4608,
+          "impossible": false
+        },
+        {
+          "beta": 0.3,
+          "m": 6,
+          "p_clean": 0.4789,
+          "thr": 1.0421,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.4,
+          "m": 8,
+          "p_clean": 0.3474,
+          "thr": 1.3053,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        }
+      ],
+      "secs": 26.7
+    },
+    {
+      "partition": "device_derived",
+      "S_JS": 0.8456,
+      "k": 3,
+      "K": 100,
+      "exact": false,
+      "beta_geo": 0.15,
+      "ensemble_acc": 0.9245,
+      "mean_margin": 0.6872,
+      "MC_het": 0.3128,
+      "tau_triv": 0.73,
+      "beta_star": 0.05,
+      "grid": [
+        {
+          "beta": 0.0,
+          "m": 0,
+          "p_clean": 1.0,
+          "thr": 0.0,
+          "CA": 0.924,
+          "CA_bal": 0.9419,
+          "impossible": false
+        },
+        {
+          "beta": 0.05,
+          "m": 1,
+          "p_clean": 0.85,
+          "thr": 0.3,
+          "CA": 0.9102,
+          "CA_bal": 0.9173,
+          "impossible": false
+        },
+        {
+          "beta": 0.1,
+          "m": 2,
+          "p_clean": 0.7158,
+          "thr": 0.5684,
+          "CA": 0.7125,
+          "CA_bal": 0.7797,
+          "impossible": false
+        },
+        {
+          "beta": 0.2,
+          "m": 4,
+          "p_clean": 0.4912,
+          "thr": 1.0175,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.3,
+          "m": 6,
+          "p_clean": 0.3193,
+          "thr": 1.3614,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.4,
+          "m": 8,
+          "p_clean": 0.193,
+          "thr": 1.614,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        }
+      ],
+      "secs": 45.7
+    },
+    {
+      "partition": "device_derived",
+      "S_JS": 0.8456,
+      "k": 5,
+      "K": 100,
+      "exact": false,
+      "beta_geo": 0.1,
+      "ensemble_acc": 0.9681,
+      "mean_margin": 0.8936,
+      "MC_het": 0.1064,
+      "tau_triv": 0.73,
+      "beta_star": 0.1,
+      "grid": [
+        {
+          "beta": 0.0,
+          "m": 0,
+          "p_clean": 1.0,
+          "thr": 0.0,
+          "CA": 0.968,
+          "CA_bal": 0.9581,
+          "impossible": false
+        },
+        {
+          "beta": 0.05,
+          "m": 1,
+          "p_clean": 0.75,
+          "thr": 0.5,
+          "CA": 0.9107,
+          "CA_bal": 0.9175,
+          "impossible": false
+        },
+        {
+          "beta": 0.1,
+          "m": 2,
+          "p_clean": 0.5526,
+          "thr": 0.8947,
+          "CA": 0.8275,
+          "CA_bal": 0.8572,
+          "impossible": false
+        },
+        {
+          "beta": 0.2,
+          "m": 4,
+          "p_clean": 0.2817,
+          "thr": 1.4365,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.3,
+          "m": 6,
+          "p_clean": 0.1291,
+          "thr": 1.7417,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.4,
+          "m": 8,
+          "p_clean": 0.0511,
+          "thr": 1.8978,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        }
+      ],
+      "secs": 92.4
+    },
+    {
+      "partition": "device_derived",
+      "S_JS": 0.8456,
+      "k": 8,
+      "K": 100,
+      "exact": false,
+      "beta_geo": 0.05,
+      "ensemble_acc": 0.9806,
+      "mean_margin": 0.9269,
+      "MC_het": 0.0731,
+      "tau_triv": 0.73,
+      "beta_star": 0.05,
+      "grid": [
+        {
+          "beta": 0.0,
+          "m": 0,
+          "p_clean": 1.0,
+          "thr": 0.0,
+          "CA": 0.9806,
+          "CA_bal": 0.9673,
+          "impossible": false
+        },
+        {
+          "beta": 0.05,
+          "m": 1,
+          "p_clean": 0.6,
+          "thr": 0.8,
+          "CA": 0.9094,
+          "CA_bal": 0.9162,
+          "impossible": false
+        },
+        {
+          "beta": 0.1,
+          "m": 2,
+          "p_clean": 0.3474,
+          "thr": 1.3053,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.2,
+          "m": 4,
+          "p_clean": 0.1022,
+          "thr": 1.7957,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.3,
+          "m": 6,
+          "p_clean": 0.0238,
+          "thr": 1.9523,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        },
+        {
+          "beta": 0.4,
+          "m": 8,
+          "p_clean": 0.0039,
+          "thr": 1.9921,
+          "CA": 0.0,
+          "CA_bal": 0.0,
+          "impossible": true
+        }
+      ],
+      "secs": 165.0
+    }
+  ]
+}

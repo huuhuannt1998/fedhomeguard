@@ -1,0 +1,5 @@
+  device_derived seed=1 done [290s] rows=130
+  device_derived seed=2 done [600s] rows=260
+  iid seed=1 done [880s] rows=390
+  iid seed=2 done [1250s] rows=520
+DONE

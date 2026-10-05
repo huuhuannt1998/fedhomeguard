@@ -1,0 +1,1562 @@
+[
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.0,
+    "attack": "none",
+    "EA": 0.980336,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.05,
+    "attack": "label_flip",
+    "EA": 0.979075,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.05,
+    "attack": "sign_flip",
+    "EA": 0.979976,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.05,
+    "attack": "gaussian",
+    "EA": 0.980096,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.05,
+    "attack": "ipm",
+    "EA": 0.981717,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.05,
+    "attack": "alie",
+    "EA": 0.979135,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.1,
+    "attack": "label_flip",
+    "EA": 0.980787,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.1,
+    "attack": "sign_flip",
+    "EA": 0.981447,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.1,
+    "attack": "gaussian",
+    "EA": 0.979346,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.1,
+    "attack": "ipm",
+    "EA": 0.979886,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.1,
+    "attack": "alie",
+    "EA": 0.979466,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.2,
+    "attack": "label_flip",
+    "EA": 0.980306,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.2,
+    "attack": "sign_flip",
+    "EA": 0.798229,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.2,
+    "attack": "gaussian",
+    "EA": 0.980396,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.2,
+    "attack": "ipm",
+    "EA": 0.798349,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.2,
+    "attack": "alie",
+    "EA": 0.979376,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.3,
+    "attack": "label_flip",
+    "EA": 0.981927,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.3,
+    "attack": "sign_flip",
+    "EA": 0.270039,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.3,
+    "attack": "gaussian",
+    "EA": 0.978385,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.3,
+    "attack": "ipm",
+    "EA": 0.270039,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.3,
+    "attack": "alie",
+    "EA": 0.978265,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.4,
+    "attack": "label_flip",
+    "EA": 0.977094,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.4,
+    "attack": "sign_flip",
+    "EA": 0.270039,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.4,
+    "attack": "gaussian",
+    "EA": 0.979255,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.4,
+    "attack": "ipm",
+    "EA": 0.270039,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.4,
+    "attack": "alie",
+    "EA": 0.977214,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.0,
+    "attack": "none",
+    "EA": 0.980246,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.05,
+    "attack": "label_flip",
+    "EA": 0.980336,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.05,
+    "attack": "sign_flip",
+    "EA": 0.979556,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.05,
+    "attack": "gaussian",
+    "EA": 0.980396,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.05,
+    "attack": "ipm",
+    "EA": 0.980937,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.05,
+    "attack": "alie",
+    "EA": 0.979316,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.1,
+    "attack": "label_flip",
+    "EA": 0.980426,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.1,
+    "attack": "sign_flip",
+    "EA": 0.981387,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.1,
+    "attack": "gaussian",
+    "EA": 0.980156,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.1,
+    "attack": "ipm",
+    "EA": 0.980757,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.1,
+    "attack": "alie",
+    "EA": 0.980787,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.2,
+    "attack": "label_flip",
+    "EA": 0.937556,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.2,
+    "attack": "sign_flip",
+    "EA": 0.980907,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.2,
+    "attack": "gaussian",
+    "EA": 0.980006,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.2,
+    "attack": "ipm",
+    "EA": 0.980096,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.2,
+    "attack": "alie",
+    "EA": 0.980696,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.3,
+    "attack": "label_flip",
+    "EA": 0.953557,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.3,
+    "attack": "sign_flip",
+    "EA": 0.979766,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.3,
+    "attack": "gaussian",
+    "EA": 0.980666,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.3,
+    "attack": "ipm",
+    "EA": 0.979946,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.3,
+    "attack": "alie",
+    "EA": 0.983008,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.4,
+    "attack": "label_flip",
+    "EA": 0.960763,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.4,
+    "attack": "sign_flip",
+    "EA": 0.79931,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.4,
+    "attack": "gaussian",
+    "EA": 0.977724,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.4,
+    "attack": "ipm",
+    "EA": 0.729961,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.4,
+    "attack": "alie",
+    "EA": 0.978595,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.0,
+    "attack": "none",
+    "EA": 0.980486,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.05,
+    "attack": "label_flip",
+    "EA": 0.980787,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.05,
+    "attack": "sign_flip",
+    "EA": 0.980276,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.05,
+    "attack": "gaussian",
+    "EA": 0.981207,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.05,
+    "attack": "ipm",
+    "EA": 0.980666,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.05,
+    "attack": "alie",
+    "EA": 0.980907,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.1,
+    "attack": "label_flip",
+    "EA": 0.979946,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.1,
+    "attack": "sign_flip",
+    "EA": 0.980877,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.1,
+    "attack": "gaussian",
+    "EA": 0.981777,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.1,
+    "attack": "ipm",
+    "EA": 0.981537,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.1,
+    "attack": "alie",
+    "EA": 0.981477,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.2,
+    "attack": "label_flip",
+    "EA": 0.979346,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.2,
+    "attack": "sign_flip",
+    "EA": 0.980696,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.2,
+    "attack": "gaussian",
+    "EA": 0.980907,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.2,
+    "attack": "ipm",
+    "EA": 0.981477,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.2,
+    "attack": "alie",
+    "EA": 0.981927,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.3,
+    "attack": "label_flip",
+    "EA": 0.981087,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.3,
+    "attack": "sign_flip",
+    "EA": 0.982588,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.3,
+    "attack": "gaussian",
+    "EA": 0.982738,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.3,
+    "attack": "ipm",
+    "EA": 0.981687,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.3,
+    "attack": "alie",
+    "EA": 0.980246,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.4,
+    "attack": "label_flip",
+    "EA": 0.978835,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.4,
+    "attack": "sign_flip",
+    "EA": 0.977935,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.4,
+    "attack": "gaussian",
+    "EA": 0.978565,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.4,
+    "attack": "ipm",
+    "EA": 0.978535,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "device_derived",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.4,
+    "attack": "alie",
+    "EA": 0.978235,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.0,
+    "attack": "none",
+    "EA": 0.982828,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.05,
+    "attack": "label_flip",
+    "EA": 0.982137,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.05,
+    "attack": "sign_flip",
+    "EA": 0.982768,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.05,
+    "attack": "gaussian",
+    "EA": 0.982888,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.05,
+    "attack": "ipm",
+    "EA": 0.982017,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.05,
+    "attack": "alie",
+    "EA": 0.982738,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.1,
+    "attack": "label_flip",
+    "EA": 0.982948,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.1,
+    "attack": "sign_flip",
+    "EA": 0.982708,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.1,
+    "attack": "gaussian",
+    "EA": 0.982648,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.1,
+    "attack": "ipm",
+    "EA": 0.982708,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.1,
+    "attack": "alie",
+    "EA": 0.982438,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.2,
+    "attack": "label_flip",
+    "EA": 0.982348,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.2,
+    "attack": "sign_flip",
+    "EA": 0.982137,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.2,
+    "attack": "gaussian",
+    "EA": 0.982648,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.2,
+    "attack": "ipm",
+    "EA": 0.982228,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.2,
+    "attack": "alie",
+    "EA": 0.982708,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.3,
+    "attack": "label_flip",
+    "EA": 0.981807,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.3,
+    "attack": "sign_flip",
+    "EA": 0.982228,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.3,
+    "attack": "gaussian",
+    "EA": 0.982228,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.3,
+    "attack": "ipm",
+    "EA": 0.981027,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.3,
+    "attack": "alie",
+    "EA": 0.981957,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.4,
+    "attack": "label_flip",
+    "EA": 0.982648,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.4,
+    "attack": "sign_flip",
+    "EA": 0.981417,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.4,
+    "attack": "gaussian",
+    "EA": 0.982468,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.4,
+    "attack": "ipm",
+    "EA": 0.981417,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "multikrum",
+    "level": "L1",
+    "beta": 0.4,
+    "attack": "alie",
+    "EA": 0.982408,
+    "is_upper_bound": false,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.0,
+    "attack": "none",
+    "EA": 0.982077,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.05,
+    "attack": "label_flip",
+    "EA": 0.981177,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.05,
+    "attack": "sign_flip",
+    "EA": 0.982558,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.05,
+    "attack": "gaussian",
+    "EA": 0.982047,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.05,
+    "attack": "ipm",
+    "EA": 0.981957,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.05,
+    "attack": "alie",
+    "EA": 0.981867,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.1,
+    "attack": "label_flip",
+    "EA": 0.981927,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.1,
+    "attack": "sign_flip",
+    "EA": 0.982198,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.1,
+    "attack": "gaussian",
+    "EA": 0.981717,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.1,
+    "attack": "ipm",
+    "EA": 0.981687,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.1,
+    "attack": "alie",
+    "EA": 0.982828,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.2,
+    "attack": "label_flip",
+    "EA": 0.982198,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.2,
+    "attack": "sign_flip",
+    "EA": 0.981087,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.2,
+    "attack": "gaussian",
+    "EA": 0.981687,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.2,
+    "attack": "ipm",
+    "EA": 0.980426,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.2,
+    "attack": "alie",
+    "EA": 0.982648,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.3,
+    "attack": "label_flip",
+    "EA": 0.980576,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.3,
+    "attack": "sign_flip",
+    "EA": 0.981747,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.3,
+    "attack": "gaussian",
+    "EA": 0.982558,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.3,
+    "attack": "ipm",
+    "EA": 0.982318,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.3,
+    "attack": "alie",
+    "EA": 0.982588,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.4,
+    "attack": "label_flip",
+    "EA": 0.744551,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.4,
+    "attack": "sign_flip",
+    "EA": 0.766737,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.4,
+    "attack": "gaussian",
+    "EA": 0.982348,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.4,
+    "attack": "ipm",
+    "EA": 0.974902,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "fltrust",
+    "level": "L2",
+    "beta": 0.4,
+    "attack": "alie",
+    "EA": 0.982918,
+    "is_upper_bound": false,
+    "requires_clean_server_data": true
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.0,
+    "attack": "none",
+    "EA": 0.981987,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.05,
+    "attack": "label_flip",
+    "EA": 0.982918,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.05,
+    "attack": "sign_flip",
+    "EA": 0.982618,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.05,
+    "attack": "gaussian",
+    "EA": 0.980006,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.05,
+    "attack": "ipm",
+    "EA": 0.982738,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.05,
+    "attack": "alie",
+    "EA": 0.982708,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.1,
+    "attack": "label_flip",
+    "EA": 0.980156,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.1,
+    "attack": "sign_flip",
+    "EA": 0.981837,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.1,
+    "attack": "gaussian",
+    "EA": 0.982438,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.1,
+    "attack": "ipm",
+    "EA": 0.981087,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.1,
+    "attack": "alie",
+    "EA": 0.981717,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.2,
+    "attack": "label_flip",
+    "EA": 0.982648,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.2,
+    "attack": "sign_flip",
+    "EA": 0.981807,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.2,
+    "attack": "gaussian",
+    "EA": 0.981897,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.2,
+    "attack": "ipm",
+    "EA": 0.981957,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.2,
+    "attack": "alie",
+    "EA": 0.982678,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.3,
+    "attack": "label_flip",
+    "EA": 0.981807,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.3,
+    "attack": "sign_flip",
+    "EA": 0.982768,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.3,
+    "attack": "gaussian",
+    "EA": 0.982648,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.3,
+    "attack": "ipm",
+    "EA": 0.982978,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.3,
+    "attack": "alie",
+    "EA": 0.982228,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.4,
+    "attack": "label_flip",
+    "EA": 0.982438,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.4,
+    "attack": "sign_flip",
+    "EA": 0.982648,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.4,
+    "attack": "gaussian",
+    "EA": 0.982678,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.4,
+    "attack": "ipm",
+    "EA": 0.982047,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  },
+  {
+    "kind": "iid",
+    "defense": "oracle_trimmed",
+    "level": "L3",
+    "beta": 0.4,
+    "attack": "alie",
+    "EA": 0.982798,
+    "is_upper_bound": true,
+    "requires_clean_server_data": false
+  }
+]

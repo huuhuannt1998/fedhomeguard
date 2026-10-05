@@ -1,0 +1,9 @@
+[device_derived pseed=38] S_JS=0.8601 S_dev=0.876754 tau=0.5330
+  k=2 K=190/190 full_enum=True ens_acc=0.8382 mean_margin=0.3574 beta*=0.050  [21s]
+    b=0.00 m=0 random/0 CA=0.8372 EA_ens=0.838247 G=0.001021 [0s trainings=190]
+    b=0.05 m=1 random/0 CA=0.7060 EA_ens=0.810838 G=0.132303 [3s trainings=228]
+    b=0.10 m=2 random/0 CA=0.2491 EA_ens=0.811858 G=0.562924 [6s trainings=302]
+    b=0.20 m=4 random/0 CA=0.2358 EA_ens=0.774182 G=0.538547 [7s trainings=412]
+    b=0.30 m=6 random/0 CA=0.0000 EA_ens=0.436896 G=0.474572 [6s trainings=526]
+    b=0.40 m=8 random/0 CA=0.0000 EA_ens=0.739358 G=0.741549 [7s trainings=652]
+DONE in 0.9 min -> results/r9_mc_nanfix/e25fix_device_derived_s38.jsonl

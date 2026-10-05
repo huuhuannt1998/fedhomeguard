@@ -1,0 +1,11 @@
+  attempt 1: truncated at 519 MB (UCI streams without Content-Length/ranges, so resume is impossible)
+  attempt 2: truncated at 295 MB (UCI streams without Content-Length/ranges, so resume is impossible)
+  attempt 3: truncated at 663 MB (UCI streams without Content-Length/ranges, so resume is impossible)
+  attempt 4: truncated at 441 MB (UCI streams without Content-Length/ranges, so resume is impossible)
+  attempt 5: truncated at 511 MB (UCI streams without Content-Length/ranges, so resume is impossible)
+  attempt 6: truncated at 706 MB (UCI streams without Content-Length/ranges, so resume is impossible)
+  attempt 7: truncated at 518 MB (UCI streams without Content-Length/ranges, so resume is impossible)
+  attempt 8: truncated at 533 MB (UCI streams without Content-Length/ranges, so resume is impossible)
+n-baiot: FAILED. Fallbacks: (a) a Kaggle mirror with credentials in ~/.kaggle/kaggle.json, (b) download the per-device CSVs manually in a browser into data/raw/nbaiot/<Device>/. This is logistics, not science.
+
+summary: {'n-baiot': False}

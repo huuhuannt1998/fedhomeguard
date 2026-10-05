@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fedhomeguard"
+version = "0.1.0"
+description = "Certified robustness and the certification gap for federated IoT intrusion detection"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "torch", "pyyaml"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+data = ["huggingface_hub"]
+
+[project.scripts]
+fedhomeguard = "fedhomeguard.runner:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

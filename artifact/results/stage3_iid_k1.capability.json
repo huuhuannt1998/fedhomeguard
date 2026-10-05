@@ -1,0 +1,98 @@
+{
+  "record_version": "1.0",
+  "run_id": "stage3_iid_k1",
+  "created_utc": "2026-08-20T19:31:33Z",
+  "git_rev": null,
+  "federation": {
+    "N": 20,
+    "rounds_T": 15,
+    "local_epochs_E": 1,
+    "batch_size": 512,
+    "optimizer": "sgd",
+    "lr": 0.05,
+    "momentum": 0.9,
+    "model": {
+      "arch": "mlp",
+      "hidden": [
+        32,
+        16
+      ],
+      "params_p": 1586
+    }
+  },
+  "partition": {
+    "dataset": "iot-23",
+    "split": "time_within_device",
+    "kind": "iid",
+    "N": 20,
+    "seed": 0,
+    "S_JS": 0.001107,
+    "S_dev": 0.0,
+    "size_min": 6661,
+    "size_med": 6661,
+    "size_max": 6662,
+    "n_empty": 0,
+    "note": "S_JS / S_dev are MEASURED from the realized partition, never set"
+  },
+  "adversary": {
+    "beta": 0.0,
+    "m": 0,
+    "malicious_ids": [],
+    "F1_count_bound": 0,
+    "F2_update_space": "byzantine_unbounded",
+    "F2_rho": null,
+    "F3_knowledge": "gray_box",
+    "F4_knows_subsample_seed": false,
+    "F5_membership": "static",
+    "F6_may_poison_data": false,
+    "attack_ids": []
+  },
+  "defense": {
+    "name": "fedavg",
+    "observability_level": "L0",
+    "declared_level_required": "L0",
+    "requires_clean_server_data": false,
+    "is_upper_bound_not_achievable": false,
+    "knows_true_beta": false
+  },
+  "certification": {
+    "family": "flcert_subsample",
+    "K": 100,
+    "k": 1,
+    "prefer_exact": true,
+    "confidence": 0.999,
+    "interval": "clopper_pearson_when_sampled_none_when_exact"
+  },
+  "budget": {
+    "total_gradient_steps": 1998330,
+    "wall_clock_s": 3.6,
+    "headline": "equal_total_gradient_steps",
+    "device": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "note": "single laptop; no cluster; no GPU tier"
+  },
+  "metrics": {
+    "beta_star": 0.4,
+    "beta_geo": 0.45,
+    "ensemble_acc": 0.982678,
+    "MC_het": 0.003425,
+    "tau_triv": 0.729961
+  },
+  "seeds": {
+    "partition_seed": 0,
+    "train_seed": 0,
+    "adversary_seed": 0
+  },
+  "non_guarantees": [
+    "nothing if |B| > m (cliff, not a slope)",
+    "nothing if the adversary learns the subsample seed (F4 violated)",
+    "nothing about sybils: m bounds clients, not humans",
+    "nothing about server compromise or server-adversary collusion",
+    "no privacy claim of any kind",
+    "nothing about availability / DoS on aggregation",
+    "abstention is not safety; abstaining points are still classified in deployment",
+    "CERT-WRONG points are provably stable AND wrong",
+    "nothing across time: drift, new firmware, new attack families",
+    "nothing about devices outside the catalog",
+    "the smoothing certificate bounds MAGNITUDE, not client count; never add them"
+  ]
+}

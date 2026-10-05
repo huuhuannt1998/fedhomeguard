@@ -1,0 +1,10 @@
+  s0 device_derived     k=1 S_JS=0.8445 ens=0.9643 margin=0.4342 CA(.10)=0.8959 beta*=0.10
+  s0 device_derived     k=2 S_JS=0.8445 ens=0.9794 margin=0.5817 CA(.10)=0.8246 beta*=0.10
+  s0 device_derived     k=3 S_JS=0.8445 ens=0.9787 margin=0.7381 CA(.10)=0.8764 beta*=0.10
+Traceback (most recent call last):
+  File "<artifact-root>/scripts/run_necessity.py", line 42, in <module>
+    pr = FL.predict(FL.fl_run(cfg, list(S), t["Xtr"], t["ytr"], t["parts"]), t["Xte"])
+                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<artifact-root>/src/fedhomeguard/fl.py", line 49, in fl_run
+    raise ValueError("no client in this subset has enough rows; lower min_rows or N")
+ValueError: no client in this subset has enough rows; lower min_rows or N

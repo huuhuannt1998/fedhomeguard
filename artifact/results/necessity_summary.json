@@ -1,0 +1,101 @@
+{
+  "pairs": [
+    {
+      "k": 1,
+      "seed": 0,
+      "CA_dev": 0.894506,
+      "CA_matched": 0.401831,
+      "S_JS_dev": 0.844533,
+      "S_JS_matched": 0.78109,
+      "b_dev": 0.1,
+      "b_matched": 0.0
+    },
+    {
+      "k": 1,
+      "seed": 1,
+      "CA_dev": 0.269289,
+      "CA_matched": 0.950375,
+      "S_JS_dev": 0.845556,
+      "S_JS_matched": 0.816279,
+      "b_dev": 0.0,
+      "b_matched": 0.2
+    },
+    {
+      "k": 1,
+      "seed": 2,
+      "CA_dev": 0.951546,
+      "CA_matched": 0.894386,
+      "S_JS_dev": 0.837617,
+      "S_JS_matched": 0.80179,
+      "b_dev": 0.2,
+      "b_matched": 0.1
+    },
+    {
+      "k": 2,
+      "seed": 0,
+      "CA_dev": 0.824617,
+      "CA_matched": 0.247103,
+      "S_JS_dev": 0.844533,
+      "S_JS_matched": 0.78109,
+      "b_dev": 0.1,
+      "b_matched": 0.05
+    },
+    {
+      "k": 2,
+      "seed": 1,
+      "CA_dev": 0.250495,
+      "CA_matched": 0.825458,
+      "S_JS_dev": 0.845556,
+      "S_JS_matched": 0.816279,
+      "b_dev": 0.0,
+      "b_matched": 0.1
+    },
+    {
+      "k": 2,
+      "seed": 2,
+      "CA_dev": 0.875473,
+      "CA_matched": 0.248154,
+      "S_JS_dev": 0.837617,
+      "S_JS_matched": 0.80179,
+      "b_dev": 0.1,
+      "b_matched": 0.05
+    },
+    {
+      "k": 3,
+      "seed": 0,
+      "CA_dev": 0.812639,
+      "CA_matched": 0.389613,
+      "S_JS_dev": 0.844533,
+      "S_JS_matched": 0.78109,
+      "b_dev": 0.1,
+      "b_matched": 0.05
+    },
+    {
+      "k": 3,
+      "seed": 1,
+      "CA_dev": 0.250165,
+      "CA_matched": 0.889343,
+      "S_JS_dev": 0.845556,
+      "S_JS_matched": 0.816279,
+      "b_dev": 0.0,
+      "b_matched": 0.1
+    },
+    {
+      "k": 3,
+      "seed": 2,
+      "CA_dev": 0.811978,
+      "CA_matched": 0.797418,
+      "S_JS_dev": 0.837617,
+      "S_JS_matched": 0.80179,
+      "b_dev": 0.1,
+      "b_matched": 0.1
+    }
+  ],
+  "mean_CA_diff": 0.03300300000000001,
+  "median_CA_diff": 0.05715999999999999,
+  "n_device_worse": 3,
+  "n": 9,
+  "mean_skew_residual": 0.04284899999999999,
+  "control_valid_pairs": 6,
+  "necessity_supported": false
+}

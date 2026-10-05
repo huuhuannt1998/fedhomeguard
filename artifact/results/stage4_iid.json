@@ -1,0 +1,287 @@
+{
+  "stage": 4,
+  "summary": {
+    "beta_star": 0.05,
+    "beta_geo": 0.1,
+    "tau_triv": 0.729961,
+    "ensemble_acc": 0.982708,
+    "MC_het": 0.135781,
+    "exact": false,
+    "K": 100,
+    "k": 5,
+    "N": 20,
+    "rows": [
+      {
+        "beta": 0.0,
+        "m": 0,
+        "p_clean": 1.0,
+        "threshold": 0.0,
+        "combinatorially_possible": true,
+        "CA": 0.981597,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.251636,
+        "certified_frac": 0.998679,
+        "cert_wrong": 0.017082,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.0,
+        "severity": "S0_informative",
+        "emp_EA_min": 0.982498,
+        "emp_best_defense": "median",
+        "emp_argmin_attack": "none",
+        "emp_n_attacks": 5,
+        "emp_per_defense": {
+          "fedavg": {
+            "EA_min": 0.982017,
+            "worst_attack": "none"
+          },
+          "krum": {
+            "EA_min": 0.980186,
+            "worst_attack": "none"
+          },
+          "trimmed_mean": {
+            "EA_min": 0.981297,
+            "worst_attack": "none"
+          },
+          "median": {
+            "EA_min": 0.982498,
+            "worst_attack": "none"
+          },
+          "norm_clip": {
+            "EA_min": 0.981207,
+            "worst_attack": "none"
+          }
+        },
+        "emp_note": "max over defenses of min over attacks; upper bound on empirical robustness, so Gamma is a lower bound on the true gap",
+        "Gamma": 0.000901,
+        "bug": false,
+        "note": "ok"
+      },
+      {
+        "beta": 0.05,
+        "m": 1,
+        "p_clean": 0.75,
+        "threshold": 0.5,
+        "combinatorially_possible": true,
+        "CA": 0.980847,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.250886,
+        "certified_frac": 0.997688,
+        "cert_wrong": 0.016842,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.000991,
+        "severity": "S0_informative",
+        "emp_EA_min": 0.981987,
+        "emp_best_defense": "median",
+        "emp_argmin_attack": "sign_flip",
+        "emp_n_attacks": 25,
+        "emp_per_defense": {
+          "fedavg": {
+            "EA_min": 0.980426,
+            "worst_attack": "gaussian"
+          },
+          "krum": {
+            "EA_min": 0.981507,
+            "worst_attack": "label_flip"
+          },
+          "trimmed_mean": {
+            "EA_min": 0.981597,
+            "worst_attack": "gaussian"
+          },
+          "median": {
+            "EA_min": 0.981987,
+            "worst_attack": "sign_flip"
+          },
+          "norm_clip": {
+            "EA_min": 0.981027,
+            "worst_attack": "ipm"
+          }
+        },
+        "emp_note": "max over defenses of min over attacks; upper bound on empirical robustness, so Gamma is a lower bound on the true gap",
+        "Gamma": 0.00114,
+        "bug": false,
+        "note": "ok"
+      },
+      {
+        "beta": 0.1,
+        "m": 2,
+        "p_clean": 0.552632,
+        "threshold": 0.894737,
+        "combinatorially_possible": true,
+        "CA": 0.0,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.729961,
+        "certified_frac": 0.0,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.998679,
+        "severity": "S2_vacuous",
+        "emp_EA_min": 0.981507,
+        "emp_best_defense": "median",
+        "emp_argmin_attack": "alie",
+        "emp_n_attacks": 25,
+        "emp_per_defense": {
+          "fedavg": {
+            "EA_min": 0.980787,
+            "worst_attack": "label_flip"
+          },
+          "krum": {
+            "EA_min": 0.980636,
+            "worst_attack": "gaussian"
+          },
+          "trimmed_mean": {
+            "EA_min": 0.980757,
+            "worst_attack": "gaussian"
+          },
+          "median": {
+            "EA_min": 0.981507,
+            "worst_attack": "alie"
+          },
+          "norm_clip": {
+            "EA_min": 0.980817,
+            "worst_attack": "label_flip"
+          }
+        },
+        "emp_note": "max over defenses of min over attacks; upper bound on empirical robustness, so Gamma is a lower bound on the true gap",
+        "Gamma": 0.981507,
+        "bug": false,
+        "note": "ok"
+      },
+      {
+        "beta": 0.2,
+        "m": 4,
+        "p_clean": 0.281734,
+        "threshold": 1.436533,
+        "combinatorially_possible": false,
+        "CA": 0.0,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.729961,
+        "certified_frac": 0.0,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.998679,
+        "severity": "S2_vacuous",
+        "emp_EA_min": 0.981897,
+        "emp_best_defense": "trimmed_mean",
+        "emp_argmin_attack": "gaussian",
+        "emp_n_attacks": 25,
+        "emp_per_defense": {
+          "fedavg": {
+            "EA_min": 0.352417,
+            "worst_attack": "label_flip"
+          },
+          "krum": {
+            "EA_min": 0.980276,
+            "worst_attack": "alie"
+          },
+          "trimmed_mean": {
+            "EA_min": 0.981897,
+            "worst_attack": "gaussian"
+          },
+          "median": {
+            "EA_min": 0.981297,
+            "worst_attack": "sign_flip"
+          },
+          "norm_clip": {
+            "EA_min": 0.980336,
+            "worst_attack": "sign_flip"
+          }
+        },
+        "emp_note": "max over defenses of min over attacks; upper bound on empirical robustness, so Gamma is a lower bound on the true gap",
+        "Gamma": 0.981897,
+        "bug": false,
+        "note": "ok"
+      },
+      {
+        "beta": 0.3,
+        "m": 6,
+        "p_clean": 0.129128,
+        "threshold": 1.741744,
+        "combinatorially_possible": false,
+        "CA": 0.0,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.729961,
+        "certified_frac": 0.0,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.998679,
+        "severity": "S2_vacuous",
+        "emp_EA_min": 0.981687,
+        "emp_best_defense": "median",
+        "emp_argmin_attack": "label_flip",
+        "emp_n_attacks": 25,
+        "emp_per_defense": {
+          "fedavg": {
+            "EA_min": 0.621225,
+            "worst_attack": "label_flip"
+          },
+          "krum": {
+            "EA_min": 0.981597,
+            "worst_attack": "sign_flip"
+          },
+          "trimmed_mean": {
+            "EA_min": 0.954728,
+            "worst_attack": "label_flip"
+          },
+          "median": {
+            "EA_min": 0.981687,
+            "worst_attack": "label_flip"
+          },
+          "norm_clip": {
+            "EA_min": 0.559922,
+            "worst_attack": "label_flip"
+          }
+        },
+        "emp_note": "max over defenses of min over attacks; upper bound on empirical robustness, so Gamma is a lower bound on the true gap",
+        "Gamma": 0.981687,
+        "bug": false,
+        "note": "ok"
+      },
+      {
+        "beta": 0.4,
+        "m": 8,
+        "p_clean": 0.051084,
+        "threshold": 1.897833,
+        "combinatorially_possible": false,
+        "CA": 0.0,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.729961,
+        "certified_frac": 0.0,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.001321,
+        "abstain_adv": 0.998679,
+        "severity": "S2_vacuous",
+        "emp_EA_min": 0.980847,
+        "emp_best_defense": "median",
+        "emp_argmin_attack": "sign_flip",
+        "emp_n_attacks": 25,
+        "emp_per_defense": {
+          "fedavg": {
+            "EA_min": 0.980246,
+            "worst_attack": "label_flip"
+          },
+          "krum": {
+            "EA_min": 0.979886,
+            "worst_attack": "sign_flip"
+          },
+          "trimmed_mean": {
+            "EA_min": 0.27073,
+            "worst_attack": "label_flip"
+          },
+          "median": {
+            "EA_min": 0.980847,
+            "worst_attack": "sign_flip"
+          },
+          "norm_clip": {
+            "EA_min": 0.729961,
+            "worst_attack": "label_flip"
+          }
+        },
+        "emp_note": "max over defenses of min over attacks; upper bound on empirical robustness, so Gamma is a lower bound on the true gap",
+        "Gamma": 0.980847,
+        "bug": false,
+        "note": "ok"
+      }
+    ],
+    "any_bug": false
+  }
+}

@@ -1,0 +1,141 @@
+schema: fedhomeguard.literature-inventory/v1
+audited_on: 2026-08-24
+protocol: literature/PROTOCOL.md
+exhaustive: false
+note: >
+  A documented, reproducible sample, not an exhaustive audit. Every manuscript claim
+  derived from this file states its denominator and is scoped to the records whose
+  relevant field is non-null. Fields that could not be determined at the available
+  source level are null and are never guessed.
+
+included:
+
+  - key: fedmade2024
+    citation: Sun et al., FedMADE, ISC 2024
+    source_level: full_text
+    datasets: [CICIoT2023]
+    fl_setting: cross-device
+    partition: device-derived (traffic assigned to clients by victim MAC address)
+    skew_measured: false
+    skew_knob: per-class sample counts and victim-device counts (Table 2)
+    attacks: [label_flip_attack_to_benign, label_flip_benign_to_attack, model_poisoning_scaled_weights]
+    beta_evaluated: "0.05-0.40"
+    defense: dynamic aggregation over per-class probability matrices
+    observability: L2
+    observability_evidence: >
+      server computes each client's class-probability matrix on an auxiliary
+      validation set of ten samples per class
+    theorem: false
+    guarantee_type: none
+    accuracy_guarantee: none
+
+  - key: weidetect2025
+    citation: WeiDetect, arXiv:2504.04367
+    source_level: full_text
+    datasets: [CIC-Darknet2020, CSE-CIC-IDS2018]
+    fl_setting: cross-device (20 clients)
+    partition: synthetic non-IID
+    skew_measured: false
+    skew_knob: Dirichlet concentration 0.4
+    attacks: [label_flip_single, label_flip_triple, FGSM, PGD, gaussian_noise]
+    beta_evaluated: "0.15"
+    defense: Weibull-distribution scoring of per-client validation scores
+    observability: L2
+    observability_evidence: >
+      server maintains an auxiliary dataset of high-confidence instances and scores
+      each client update against it before aggregation
+    theorem: false
+    guarantee_type: none
+    accuracy_guarantee: none
+
+  - key: li2022iotpoison
+    citation: Li et al., Federated Learning based on Defending Against Data Poisoning Attacks in IoT, arXiv:2209.06397
+    source_level: abstract_only
+    datasets: null
+    fl_setting: null
+    partition: null
+    skew_measured: null
+    skew_knob: null
+    attacks: [label_flip]
+    beta_evaluated: null
+    defense: LMTV (trusted test set) and KLAD (KL divergence between local models)
+    observability: L2
+    observability_evidence: >
+      the LMTV variant evaluates local models on a trusted test dataset; the KLAD
+      variant does not and would be L1
+    theorem: false
+    guarantee_type: none
+    accuracy_guarantee: none
+
+  - key: nguyen2020poison
+    citation: Nguyen et al., Poisoning Attacks on Federated Learning-based IoT Intrusion Detection System, NDSS DISS 2020
+    source_level: abstract_only
+    role: attack
+    datasets: null
+    fl_setting: cross-device
+    partition: null
+    skew_measured: null
+    attacks: [backdoor_injection]
+    beta_evaluated: null
+    defense: none (attack paper)
+    observability: n/a
+    theorem: false
+    guarantee_type: none
+    accuracy_guarantee: none
+
+certification_family:
+  note: >
+    Generic federated-learning certification, developed outside intrusion detection.
+    Recorded separately because it supplies the machinery this paper transfers, and
+    because its operating points are what the manuscript compares against.
+  entries:
+
+  - key: cao2021provably
+    citation: Cao, Jia, Gong, Provably Secure Federated Learning against Malicious Clients, AAAI 2021
+    source_level: abstract_verified
+    datasets: [MNIST, Human Activity Recognition]
+    application: generic classification, not intrusion detection
+    guarantee_type: certified_prediction
+    accuracy_guarantee: certified accuracy lower bound
+    strongest_reported_operating_point:
+      certified_accuracy: 0.88
+      dataset: MNIST
+      n_clients: 1000
+      n_malicious: 20
+      beta: 0.02
+    verified_quote: >
+      "88% on MNIST when 20 out of 1,000 clients are malicious"
+
+  - key: flcert2022
+    citation: Cao, Zhang, Jia, Gong, FLCert, IEEE TIFS 2022
+    source_level: metadata_only
+    application: generic classification, not intrusion detection
+    guarantee_type: certified_prediction
+
+  - key: crfl2021
+    citation: Xie, Chen, Chen, Li, CRFL, ICML 2021
+    source_level: metadata_only
+    application: generic classification, not intrusion detection
+    guarantee_type: certified_prediction
+    threat_class: bounded-magnitude backdoor (parameter smoothing), not client count
+
+excluded:
+  - key: diot2019
+    citation: Nguyen et al., DIoT, ICDCS 2019
+    reason: I3
+    detail: >
+      Federated self-learning anomaly detection for IoT. Its adversary compromises
+      IoT devices whose traffic is being classified; it does not propose or evaluate
+      a defence against training-time poisoning by malicious FL clients. Retained as
+      a citation for the FL-IoT-IDS setting, not counted in the defence inventory.
+  - key: fedidsdp2025
+    citation: Privacy Preserving Federated Learning for Distributed Intrusion Detection (DP, NonIID Convergence, Byzantine Robustness)
+    reason: E4
+    detail: >
+      Surfaced by query 4 and clearly in scope on title. Only a ResearchGate record
+      was reachable and it returned HTTP 403, so no field could be coded at even
+      abstract level. Recorded as retrieval-blocked rather than dropped silently:
+      the title asserts differential-privacy guarantees, non-IID convergence, and
+      Byzantine robustness via Krum, which would code as privacy + convergence +
+      byzantine_statistical rather than certified_prediction, but that is an
+      inference from the title and is NOT counted.

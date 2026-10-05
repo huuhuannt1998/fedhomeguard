@@ -1,0 +1,39 @@
+=== TAIL DONE, starting necessity rerun ===
+  s0 device_derived     k=1 S_JS=0.8445 ens=0.9519 margin=0.4394 CA(.10)=0.8945 beta*=0.10
+  s0 device_derived     k=2 S_JS=0.8445 ens=0.9801 margin=0.5699 CA(.10)=0.8246 beta*=0.10
+  s0 device_derived     k=3 S_JS=0.8445 ens=0.9787 margin=0.7334 CA(.10)=0.8126 beta*=0.10
+  WARNING: matched control reached S_JS=0.7811 vs target 0.8445; the necessity test is NOT valid until these match (design Algorithm 4).
+  s0 dirichlet_matched  k=1 S_JS=0.7811 ens=0.8408 margin=0.2659 CA(.10)=0.4018 beta*=0.00
+  WARNING: matched control reached S_JS=0.7811 vs target 0.8445; the necessity test is NOT valid until these match (design Algorithm 4).
+  s0 dirichlet_matched  k=2 S_JS=0.7811 ens=0.9812 margin=0.3032 CA(.10)=0.2471 beta*=0.05
+  WARNING: matched control reached S_JS=0.7811 vs target 0.8445; the necessity test is NOT valid until these match (design Algorithm 4).
+  s0 dirichlet_matched  k=3 S_JS=0.7811 ens=0.9815 margin=0.4697 CA(.10)=0.3896 beta*=0.05
+  s0 iid                k=1 S_JS=0.0011 ens=0.9826 margin=0.9973 CA(.10)=0.9822 beta*=0.40
+  s0 iid                k=2 S_JS=0.0011 ens=0.9825 margin=0.8631 CA(.10)=0.9801 beta*=0.20
+  s0 iid                k=3 S_JS=0.0011 ens=0.9827 margin=0.8636 CA(.10)=0.9794 beta*=0.10
+  s1 device_derived     k=1 S_JS=0.8456 ens=0.2700 margin=0.4033 CA(.10)=0.2693 beta*=0.00
+  s1 device_derived     k=2 S_JS=0.8456 ens=0.9243 margin=0.2571 CA(.10)=0.2505 beta*=0.00
+  s1 device_derived     k=3 S_JS=0.8456 ens=0.9242 margin=0.4191 CA(.10)=0.2502 beta*=0.00
+  WARNING: matched control reached S_JS=0.8163 vs target 0.8456; the necessity test is NOT valid until these match (design Algorithm 4).
+  s1 dirichlet_matched  k=1 S_JS=0.8163 ens=0.9651 margin=0.4960 CA(.10)=0.9504 beta*=0.20
+  WARNING: matched control reached S_JS=0.8163 vs target 0.8456; the necessity test is NOT valid until these match (design Algorithm 4).
+  s1 dirichlet_matched  k=2 S_JS=0.8163 ens=0.9805 margin=0.5026 CA(.10)=0.8255 beta*=0.10
+  WARNING: matched control reached S_JS=0.8163 vs target 0.8456; the necessity test is NOT valid until these match (design Algorithm 4).
+  s1 dirichlet_matched  k=3 S_JS=0.8163 ens=0.9815 margin=0.6468 CA(.10)=0.8893 beta*=0.10
+  s1 iid                k=1 S_JS=0.0010 ens=0.9822 margin=0.9962 CA(.10)=0.9819 beta*=0.40
+  s1 iid                k=2 S_JS=0.0010 ens=0.9827 margin=0.8624 CA(.10)=0.9798 beta*=0.20
+  s1 iid                k=3 S_JS=0.0010 ens=0.9827 margin=0.8631 CA(.10)=0.9792 beta*=0.10
+  s2 device_derived     k=1 S_JS=0.8376 ens=0.9518 margin=0.5460 CA(.10)=0.9515 beta*=0.20
+  s2 device_derived     k=2 S_JS=0.8376 ens=0.9811 margin=0.5991 CA(.10)=0.8755 beta*=0.10
+  s2 device_derived     k=3 S_JS=0.8376 ens=0.9806 margin=0.6829 CA(.10)=0.8120 beta*=0.10
+  WARNING: matched control reached S_JS=0.8018 vs target 0.8376; the necessity test is NOT valid until these match (design Algorithm 4).
+  s2 dirichlet_matched  k=1 S_JS=0.8018 ens=0.9048 margin=0.3680 CA(.10)=0.8944 beta*=0.10
+  WARNING: matched control reached S_JS=0.8018 vs target 0.8376; the necessity test is NOT valid until these match (design Algorithm 4).
+  s2 dirichlet_matched  k=2 S_JS=0.8018 ens=0.9682 margin=0.2534 CA(.10)=0.2482 beta*=0.05
+  WARNING: matched control reached S_JS=0.8018 vs target 0.8376; the necessity test is NOT valid until these match (design Algorithm 4).
+  s2 dirichlet_matched  k=3 S_JS=0.8018 ens=0.9811 margin=0.5594 CA(.10)=0.7974 beta*=0.10
+  s2 iid                k=1 S_JS=0.0010 ens=0.9827 margin=0.9974 CA(.10)=0.9824 beta*=0.40
+  s2 iid                k=2 S_JS=0.0010 ens=0.9827 margin=0.8629 CA(.10)=0.9794 beta*=0.20
+  s2 iid                k=3 S_JS=0.0010 ens=0.9827 margin=0.8639 CA(.10)=0.9793 beta*=0.10
+DONE
+=== NECESSITY2 DONE ===

@@ -1,0 +1,169 @@
+{
+  "stage": 3,
+  "partition": {
+    "kind": "device_derived",
+    "N": 20,
+    "seed": 0,
+    "drop_device": null,
+    "S_JS": 0.844533,
+    "S_dev": 0.882281,
+    "size_min": 31,
+    "size_med": 5684,
+    "size_max": 19515,
+    "n_empty": 0
+  },
+  "certification": {
+    "K": 20,
+    "k": 1,
+    "N": 20,
+    "exact": true,
+    "tau_triv": 0.729961,
+    "ensemble_acc": 0.951816,
+    "mean_margin": 0.434437,
+    "MC_het": 0.565563,
+    "MC_adv": {
+      "0.0": 0.0,
+      "0.05": 0.1,
+      "0.1": 0.2,
+      "0.2": 0.4,
+      "0.3": 0.6,
+      "0.4": 0.8
+    },
+    "beta_star": 0.1,
+    "beta_geo": 0.45,
+    "grid": [
+      {
+        "beta": 0.0,
+        "m": 0,
+        "p_clean": 1.0,
+        "threshold": 0.0,
+        "combinatorially_possible": true,
+        "CA": 0.951666,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.221705,
+        "certified_frac": 0.990003,
+        "cert_wrong": 0.038337,
+        "abstain_het": 0.009997,
+        "abstain_adv": 0.0,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.05,
+        "m": 1,
+        "p_clean": 0.95,
+        "threshold": 0.1,
+        "combinatorially_possible": true,
+        "CA": 0.832273,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.102312,
+        "certified_frac": 0.849985,
+        "cert_wrong": 0.017712,
+        "abstain_het": 0.009997,
+        "abstain_adv": 0.140018,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.1,
+        "m": 2,
+        "p_clean": 0.9,
+        "threshold": 0.2,
+        "combinatorially_possible": true,
+        "CA": 0.832273,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": 0.102312,
+        "certified_frac": 0.849985,
+        "cert_wrong": 0.017712,
+        "abstain_het": 0.009997,
+        "abstain_adv": 0.140018,
+        "severity": "S0_informative"
+      },
+      {
+        "beta": 0.2,
+        "m": 4,
+        "p_clean": 0.8,
+        "threshold": 0.4,
+        "combinatorially_possible": true,
+        "CA": 0.680666,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.049295,
+        "certified_frac": 0.682348,
+        "cert_wrong": 0.001681,
+        "abstain_het": 0.009997,
+        "abstain_adv": 0.307655,
+        "severity": "S2_vacuous"
+      },
+      {
+        "beta": 0.3,
+        "m": 6,
+        "p_clean": 0.7,
+        "threshold": 0.6,
+        "combinatorially_possible": true,
+        "CA": 0.235365,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.494596,
+        "certified_frac": 0.235455,
+        "cert_wrong": 9e-05,
+        "abstain_het": 0.009997,
+        "abstain_adv": 0.754548,
+        "severity": "S2_vacuous"
+      },
+      {
+        "beta": 0.4,
+        "m": 8,
+        "p_clean": 0.6,
+        "threshold": 0.8,
+        "combinatorially_possible": true,
+        "CA": 0.049174,
+        "tau_triv": 0.729961,
+        "CA_minus_tau": -0.680787,
+        "certified_frac": 0.049174,
+        "cert_wrong": 0.0,
+        "abstain_het": 0.009997,
+        "abstain_adv": 0.940829,
+        "severity": "S2_vacuous"
+      }
+    ],
+    "balanced": {
+      "tau_triv": 0.5,
+      "beta_star": 0.2,
+      "grid": [
+        {
+          "beta": 0.0,
+          "CA": 0.949305,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.05,
+          "CA": 0.868927,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.1,
+          "CA": 0.868927,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.2,
+          "CA": 0.755642,
+          "severity": "S0_informative"
+        },
+        {
+          "beta": 0.3,
+          "CA": 0.435798,
+          "severity": "S2_vacuous"
+        },
+        {
+          "beta": 0.4,
+          "CA": 0.091051,
+          "severity": "S2_vacuous"
+        }
+      ]
+    },
+    "S_JS": 0.844533
+  },
+  "gate": {
+    "exit": "EXIT_1_GO",
+    "reason": "CA(0.1)=0.8323 > tau_triv+0.10=0.8300 (S0). Full paper; Act II is live."
+  },
+  "secs": 4.7
+}

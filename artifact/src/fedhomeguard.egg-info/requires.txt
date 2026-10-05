@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+scikit-learn
+torch
+pyyaml
+
+[data]
+huggingface_hub
+
+[dev]
+pytest

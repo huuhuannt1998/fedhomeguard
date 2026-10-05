@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: fedhomeguard
+Version: 0.1.0
+Summary: Certified robustness and the certification gap for federated IoT intrusion detection
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Provides-Extra: data
+Requires-Dist: huggingface_hub; extra == "data"
