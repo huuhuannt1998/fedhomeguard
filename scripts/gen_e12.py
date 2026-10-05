@@ -80,7 +80,7 @@ def main():
     para += ["",
              "% provenance: jrn_01M0SH0V4DR4AYK59BJCN230Q5 supports the cost and sensitivity measurements",
              f"One statement survives it. At $\\beta = {b:.2f}$ the best deployable rule reaches",
-             f"${v:.3f}$ and $L_2$ reaches ${l2:.3f}$, while the oracle still holds ${l3:.3f}$:",
+             f"${v:.3f}$ and $L_2$ reaches ${l2:.3f}$, while the $L_3$ oracle still holds ${l3:.3f}$:",
              "robustness under this threat model is limited by \\emph{identification} rather",
              "than by what an aggregation rule can do once the adversary is known. That is",
              "exactly the problem the subsampling certificate declines to solve, buying its",

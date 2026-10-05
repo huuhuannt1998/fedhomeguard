@@ -11,9 +11,23 @@ from . import attacks as A, defenses as D
 from .models import build_model, get_flat, set_flat
 
 
-def local_train(model, Xc, yc, epochs, lr, momentum, bs, gen):
+def local_train(model, Xc, yc, epochs, lr, momentum, bs, gen, class_balanced=False):
+    """One client's local update.
+
+    class_balanced weights the loss by inverse class frequency ON THIS CLIENT. Under
+    device-derived partitioning a household can hold 97% one class, and unweighted
+    cross-entropy then drives its member to a near-constant predictor -- which is a
+    training choice, not a property of the data. Reviewers correctly asked whether the
+    measured competence collapse survives the obvious fix; this flag is how we answer.
+    """
     opt = torch.optim.SGD(model.parameters(), lr=lr, momentum=momentum)
-    lossf = nn.CrossEntropyLoss()
+    if class_balanced:
+        cnt = torch.bincount(yc, minlength=2).float()
+        w = torch.where(cnt > 0, cnt.sum() / (2.0 * cnt.clamp(min=1)),
+                        torch.ones_like(cnt))
+        lossf = nn.CrossEntropyLoss(weight=w.to(Xc.device))
+    else:
+        lossf = nn.CrossEntropyLoss()
     n = len(yc)
     for _ in range(epochs):
         perm = torch.randperm(n, generator=gen, device=yc.device)
@@ -81,18 +95,67 @@ def fl_run(cfg, client_ids, Xtr, ytr, parts, *, malicious_ids=(), attack=None,
             idx = parts[i]
             set_flat(local, theta)
             u = local_train(local, Xtr[idx], ytr[idx], cfg.fl.local_epochs_E,
-                            cfg.fl.lr, cfg.fl.momentum, cfg.fl.batch_size, gen)
+                            cfg.fl.lr, cfg.fl.momentum, cfg.fl.batch_size, gen,
+                            class_balanced=getattr(cfg.fl, "class_balanced", False))
             updates[i] = u; weights[i] = len(idx); honest_u.append(u)
 
+        ri_target = None                                   # replace_invert, per round
         for i in active:                                   # then the adversary
             if i not in mal:
                 continue
             idx = parts[i]
-            if attack == "label_flip":
+            if attack == "replace_invert":
+                # Review r4 (A-W1): model replacement toward an inverted member. The
+                # target is this round's clean aggregate with its output inverted: the
+                # weighted mean of the honest updates, or, in a member with no honest
+                # client, the adversary's own honest training on its own data. It is
+                # computed once per round so every malicious client sends the same
+                # vector and the aggregate equals the target exactly.
+                if ri_target is None:
+                    if honest_u:
+                        hw = [weights[j] for j in active if j not in mal and j in weights]
+                        cons = (torch.stack([u_ * float(w_) for u_, w_ in zip(honest_u, hw)])
+                                .sum(0) / float(sum(hw)))
+                    else:
+                        set_flat(local, theta)
+                        cons = local_train(local, Xtr[idx], ytr[idx], cfg.fl.local_epochs_E,
+                                           cfg.fl.lr, cfg.fl.momentum, cfg.fl.batch_size, gen)
+                    ri_target = A.invert_output(local, cons)
+                honest_w = [weights[j] for j in active if j not in mal and j in weights]
+                mal_w = float(sum(len(parts[j]) for j in active if j in mal))
+                u = A.replace_to_target(ri_target, honest_u, honest_w, mal_w)
+            elif attack == "label_flip":
                 set_flat(local, theta)
-                u = local_train(local, Xtr[idx], A.poison_labels(ytr[idx]),
+                u = local_train(local, Xtr[idx],
+                                A.poison_labels(ytr[idx],
+                                                getattr(cfg.model, "n_class", 2) or 2),
                                 cfg.fl.local_epochs_E, cfg.fl.lr, cfg.fl.momentum,
-                                cfg.fl.batch_size, gen)
+                                cfg.fl.batch_size, gen,
+                                class_balanced=getattr(cfg.fl, "class_balanced", False))
+            elif attack == "rand_flip":
+                # budget-matched control for vote_shape: same number of flipped
+                # labels, placed at random instead of at the margin.
+                set_flat(local, theta)
+                yv = A.poison_labels_random(
+                    ytr[idx], frac=float(getattr(cfg.adversary, "vote_shape_frac", 0.5)),
+                    gen=agen, n_class=getattr(cfg.model, "n_class", 2) or 2)
+                u = local_train(local, Xtr[idx], yv,
+                                cfg.fl.local_epochs_E, cfg.fl.lr, cfg.fl.momentum,
+                                cfg.fl.batch_size, gen,
+                                class_balanced=getattr(cfg.fl, "class_balanced", False))
+            elif attack == "vote_shape":
+                # Review W8/E6: spend the label budget on the lowest-margin samples
+                # under the CURRENT global model, so the flips land where a member's
+                # vote is cheapest to move. Targets ensemble agreement rather than
+                # parameter displacement, which is the axis the certificate binds.
+                set_flat(local, theta)
+                yv = A.poison_labels_vote_shaping(
+                    local, Xtr[idx], ytr[idx],
+                    frac=float(getattr(cfg.adversary, "vote_shape_frac", 0.5)))
+                u = local_train(local, Xtr[idx], yv,
+                                cfg.fl.local_epochs_E, cfg.fl.lr, cfg.fl.momentum,
+                                cfg.fl.batch_size, gen,
+                                class_balanced=getattr(cfg.fl, "class_balanced", False))
             elif attack == "backdoor":
                 if backdoor_feat is None:
                     raise ValueError("backdoor attack requires backdoor_feat indices")
@@ -101,13 +164,26 @@ def fl_run(cfg, client_ids, Xtr, ytr, parts, *, malicious_ids=(), attack=None,
                 u = local_train(local, Xp, yp, cfg.fl.local_epochs_E, cfg.fl.lr,
                                 cfg.fl.momentum, cfg.fl.batch_size, gen)
             else:
-                u = A.malicious_update(attack, theta, honest_u, cfg.adversary.scale, agen)
+                # honest_w is built in the same order honest_u was appended, so the
+                # adaptive attack can reconstruct the exact FedAvg aggregate.
+                honest_w = [weights[j] for j in active if j not in mal and j in weights]
+                mal_w = float(sum(len(parts[j]) for j in active if j in mal))
+                u = A.malicious_update(attack, theta, honest_u, cfg.adversary.scale, agen,
+                                       honest_w=honest_w, mal_w=mal_w,
+                                       pop_std=bool(getattr(cfg.adversary, "pop_std", False)),
+                                       # the r6 correction is the default;
+                                       # legacy_nan_std reproduces the frozen results
+                                       single_honest_zero_sd=not bool(getattr(
+                                           cfg.adversary, "legacy_nan_std", False)))
             u = A.project(u, cfg.adversary.F2_update_space, cfg.adversary.F2_rho)
             updates[i] = u; weights[i] = len(idx)
 
         kw = dict(weights=weights, n_mal=len(mal), trim_frac=cfg.defense.trim_frac or 0.2,
                   clip_norm=cfg.defense.clip_norm or 5.0, malicious_ids=tuple(mal),
-                  server_update=server_root)
+                  server_update=server_root,
+                  # CRFL (review W6/E3): per-round noise on the aggregate. Drawn from
+                  # the run's own generator so a run stays reproducible.
+                  noise_sigma=getattr(cfg.defense, "noise_sigma", 0.0), gen=gen)
         theta = agg(updates, **kw)
         if snapshot_last and t >= cfg.fl.rounds_T - snapshot_last:
             snaps.append(theta.clone())

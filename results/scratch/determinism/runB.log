@@ -1,0 +1,4 @@
+[iid pseed=2] S_JS=0.0010 S_dev=0.0 tau=0.7300
+  k=1 K=20/20 full_enum=True ens_acc=0.9817 mean_margin=0.9970 beta*=0.050  [1s]
+    b=0.05 m=1 random/0 CA=0.9814 EA_ens=0.980727 G=-0.00072 [0s trainings=25]
+DONE in 0.1 min -> results/scratch/determinism/runB.jsonl

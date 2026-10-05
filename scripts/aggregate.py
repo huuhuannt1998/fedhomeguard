@@ -10,6 +10,22 @@ import glob, json, os
 import numpy as np
 
 
+# Review r6. results/canonical/e2_* and adaptive_* are FROZEN pre-correction rows: their
+# alie and gaussian members were non-finite wherever a member held exactly one honest
+# client (the unbiased std of one update is NaN). The corrected rows -- the same rows with
+# those two attacks re-run under the minimal fix, every other value unchanged -- live in
+# results/r6_nan_fix/corrected/ and are what the paper prints. FHG_FROZEN=1 points every
+# generator back at the frozen rows, which reproduces the pre-correction manuscript.
+CORRECTED = "results/r6_nan_fix/corrected"
+
+
+def src(name: str) -> str:
+    """Path pattern for a same-predictor result family, e.g. src("e2_*.jsonl")."""
+    if os.environ.get("FHG_FROZEN") == "1":
+        return os.path.join("results/canonical", name)
+    return os.path.join(CORRECTED, name)
+
+
 def _key(r: dict) -> tuple:
     return (r.get("partition_type"), r.get("partition_seed"), r.get("k"),
             round(r.get("beta", 0.0), 4), r.get("mal_mode"), r.get("mal_seed"),
@@ -17,7 +33,7 @@ def _key(r: dict) -> tuple:
             tuple(r.get("devices_per_household") or ()))
 
 
-def load(pattern="results/canonical/e2_*.jsonl") -> list[dict]:
+def load(pattern=None) -> list[dict]:
     """Load canonical rows, preferring the same-predictor row where a cell was also
     measured certified-arm-only.
 
@@ -27,6 +43,7 @@ def load(pattern="results/canonical/e2_*.jsonl") -> list[dict]:
     second carries EA_ensemble. Keeping both would double-count the cell; keeping the
     richer one loses nothing.
     """
+    pattern = pattern or src("e2_*.jsonl")
     rows = []
     for path in sorted(glob.glob(pattern)):
         for line in open(path):
@@ -74,7 +91,15 @@ def gap_table(rows, ptypes=("iid", "device_derived")):
                     n_partition_draws=len({r["partition_seed"] for r in sel}),
                     n_mal_sets=len({(r["mal_mode"], r["mal_seed"]) for r in sel}),
                     CA=med_iqr([r["CA"] for r in sel]),
-                    EA_ens=med_iqr([r["EA_ensemble"] for r in sel]),
+                    # The EA printed beside CA and G must be the SAME estimator they
+                    # are: CA is final-round and G is min(EA_final_round) - CA. Printing
+                    # EA_ensemble here (an 8-round window minimum) let a reader subtract
+                    # two visible columns and get a negative slack, which is the symptom
+                    # that made the certificate look unsound.
+                    EA_ens=med_iqr([(min(r["EA_final_round"].values())
+                                     if r.get("EA_final_round") else r["EA_ensemble"])
+                                    for r in sel]),
+                    EA_windowmin=med_iqr([r["EA_ensemble"] for r in sel]),
                     G_cert=med_iqr([r["G_cert"] for r in sel]),
                     coverage=med_iqr([r["coverage"] for r in sel]),
                     ens_acc=med_iqr([r["clean_ensemble_acc"] for r in sel]),
@@ -193,7 +218,7 @@ def assertions(rows, gt) -> list[dict]:
     return out
 
 
-def build(pattern="results/canonical/e2_*.jsonl") -> dict:
+def build(pattern=None) -> dict:
     rows = load(pattern)
     gt = gap_table(rows)
     return dict(n_rows=len(rows), rows=rows, gap=gt, assertions=assertions(rows, gt))
@@ -201,7 +226,7 @@ def build(pattern="results/canonical/e2_*.jsonl") -> dict:
 
 if __name__ == "__main__":
     import sys
-    pat = sys.argv[1] if len(sys.argv) > 1 else "results/canonical/e2_*.jsonl"
+    pat = sys.argv[1] if len(sys.argv) > 1 else src("e2_*.jsonl")
     a = build(pat)
     print(f"rows={a['n_rows']}")
     for c in a["assertions"]:

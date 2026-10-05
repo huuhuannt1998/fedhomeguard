@@ -88,3 +88,60 @@ def test_flat_roundtrip_preserves_parameters():
     v = get_flat(m).clone()
     set_flat(m, torch.zeros_like(v)); set_flat(m, v)
     assert torch.allclose(get_flat(m), v) and n_params(m) == v.numel()
+
+
+# --- review r6: the single-honest-update NaN in alie/gaussian and its correction ---
+def _honest(n, d=7, seed=0):
+    g = torch.Generator(); g.manual_seed(seed)
+    return [torch.randn(d, generator=g) for _ in range(n)]
+
+
+@pytest.mark.parametrize("attack", ["alie", "gaussian"])
+def test_single_honest_update_is_finite_by_default_and_nan_only_in_legacy_mode(attack):
+    theta = torch.zeros(7); h = _honest(1)
+    ok = A.malicious_update(attack, theta, h, 1.0, torch.Generator().manual_seed(1))
+    assert torch.isfinite(ok).all()
+    assert torch.allclose(ok, h[0], atol=1e-9)   # sd = 0: the attack returns the peer
+    import warnings
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        bad = A.malicious_update(attack, theta, h, 1.0, torch.Generator().manual_seed(1),
+                                 single_honest_zero_sd=False)
+    assert torch.isnan(bad).all()            # the frozen pre-correction behaviour
+
+
+@pytest.mark.parametrize("attack", ["alie", "gaussian"])
+@pytest.mark.parametrize("n", [2, 3, 5])
+def test_correction_is_bit_identical_with_two_or_more_honest_updates(attack, n):
+    theta = torch.zeros(7); h = _honest(n, seed=n)
+    a = A.malicious_update(attack, theta, h, 1.0, torch.Generator().manual_seed(3),
+                           single_honest_zero_sd=False)
+    b = A.malicious_update(attack, theta, h, 1.0, torch.Generator().manual_seed(3))
+    assert torch.equal(a, b)
+
+
+def test_population_std_arm_also_gives_zero_spread_for_one_update():
+    h = _honest(1, d=3)
+    out = A.malicious_update("alie", torch.zeros(3), h, 1.0, pop_std=True)
+    assert torch.allclose(out, h[0], atol=1e-9)
+
+
+@pytest.mark.parametrize("legacy", [False, True])
+def test_one_honest_one_malicious_member_end_to_end(legacy):
+    """fl_run with one honest and one alie client: finite by default, non-finite only
+    when the config asks for the frozen legacy behaviour."""
+    import warnings
+    from fedhomeguard import fl as FL
+    cfg = CFG.load(os.path.join(os.path.dirname(__file__), "..", "configs",
+                                "stage3_certification.yaml"))
+    cfg.device = "cpu"; cfg.fl.rounds_T = 2
+    cfg.adversary.F3_knowledge = "white_box"
+    cfg.adversary.legacy_nan_std = legacy
+    g = torch.Generator().manual_seed(0)
+    X = torch.randn(80, 5, generator=g); y = (X[:, 0] > 0).long()
+    parts = {0: torch.arange(0, 40), 1: torch.arange(40, 80)}
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        m = FL.fl_run(cfg, [0, 1], X, y, parts, malicious_ids=(1,), attack="alie")
+    finite = all(torch.isfinite(p).all() for p in m.parameters())
+    assert finite is (not legacy)

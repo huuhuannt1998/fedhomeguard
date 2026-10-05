@@ -134,10 +134,16 @@ def c_max_table(subsets, N: int, ms) -> dict:
 
 def certify_exact(votes: np.ndarray, y_true: np.ndarray, subsets, N: int, k: int,
                   betas, tau_triv: float | None = None,
-                  mal_label: int = 1) -> dict:
+                  mal_label: int = 1, family: np.ndarray | None = None,
+                  class_names: list | None = None) -> dict:
     """Exact certification of the realised ensemble + the full IDS metric panel.
 
     votes[i, c] = number of members predicting class c for test point i.
+
+    The counting argument below never looks at how many classes there are: the margin
+    is top-1 minus top-2 whatever the width of `votes`, so the certificate carries to
+    the multi-class control (E2) unchanged. Only the IDS panel needs to know, and it
+    is told through `class_names`, which is None for the binary detector.
     """
     K = int(votes[0].sum())
     assert K == len(subsets), f"votes sum to {K} but there are {len(subsets)} members"
@@ -145,8 +151,11 @@ def certify_exact(votes: np.ndarray, y_true: np.ndarray, subsets, N: int, k: int
     margin = (srt[:, -1] - srt[:, -2]) / K
     top = votes.argmax(1)
     correct = (top == y_true)
+    n_class = int(votes.shape[1])
     if tau_triv is None:
-        tau_triv = float(max(y_true.mean(), 1 - y_true.mean()))
+        # largest class frequency; identical to max(p, 1-p) when there are two classes
+        tau_triv = float(np.bincount(y_true.astype(int), minlength=n_class).max()
+                         / max(len(y_true), 1))
 
     ms = [int(round(b * N)) for b in betas]
     ctab = c_max_table(subsets, N, ms)
@@ -185,10 +194,11 @@ def certify_exact(votes: np.ndarray, y_true: np.ndarray, subsets, N: int, k: int
             # legacy abstention split, kept for continuity with the old tables
             abstain_het=round(float((~cert & ~cert0).mean()), 6),
             abstain_adv=round(float((~cert & cert0).mean()), 6),
-            **_ids_panel(top, y_true, cert, mal_label),
+            **_ids_panel(top, y_true, cert, mal_label, family, class_names),
         ))
     beta_star = max([g["beta"] for g in grid if g["CA"] > tau_triv], default=0.0)
     return dict(mode="exact_finite_ensemble", K=K, k=k, N=N,
+                n_class=n_class, class_names=list(class_names) if class_names else None,
                 tau_triv=round(tau_triv, 6),
                 ensemble_acc=round(float(correct.mean()), 6),
                 mean_margin=round(float(margin.mean()), 6),
@@ -198,12 +208,28 @@ def certify_exact(votes: np.ndarray, y_true: np.ndarray, subsets, N: int, k: int
                 c_max_table={str(m): v for m, v in ctab.items()})
 
 
-def _ids_panel(top: np.ndarray, y: np.ndarray, cert: np.ndarray, mal: int) -> dict:
-    """Class-conditional IDS metrics, clean and certified (review sec 11)."""
-    ben = 1 - mal
-    P = (y == mal); Nn = (y == ben)
-    tp = int(((top == mal) & P).sum()); fn = int(((top == ben) & P).sum())
-    fp = int(((top == mal) & Nn).sum()); tn = int(((top == ben) & Nn).sum())
+def _ids_panel(top: np.ndarray, y: np.ndarray, cert: np.ndarray, mal: int,
+               family: np.ndarray | None = None,
+               class_names: list | None = None) -> dict:
+    """Class-conditional IDS metrics, clean and certified (review sec 11).
+
+    In the multi-class control (E2) the label space is benign plus one class per
+    attack family, benign fixed at index 0 by load_dataset. Detection is then
+    "predicted some attack for a row that is some attack", which is the same security
+    question the binary panel answers, so TPR/FPR stay comparable across the two label
+    spaces; the per-class certified-correct rates are reported separately because
+    predicting DDoS for a port scan is a detection but not a correct label.
+    """
+    multi = bool(class_names) and len(class_names) > 2
+    if multi:
+        P = (y != 0); Nn = (y == 0)
+        pred_mal = (top != 0); pred_ben = (top == 0)
+    else:
+        ben = 1 - mal
+        P = (y == mal); Nn = (y == ben)
+        pred_mal = (top == mal); pred_ben = (top == ben)
+    tp = int((pred_mal & P).sum()); fn = int((pred_ben & P).sum())
+    fp = int((pred_mal & Nn).sum()); tn = int((pred_ben & Nn).sum())
     tpr = tp / max(P.sum(), 1); fpr = fp / max(Nn.sum(), 1)
     tnr = tn / max(Nn.sum(), 1)
     prec = tp / max(tp + fp, 1)
@@ -211,12 +237,39 @@ def _ids_panel(top: np.ndarray, y: np.ndarray, cert: np.ndarray, mal: int) -> di
     prec_b = tn / max(tn + fn, 1); rec_b = tnr
     f1b = 2 * prec_b * rec_b / max(prec_b + rec_b, 1e-12)
     # certified-and-correct, per class -- the security-relevant quantity
-    ctr_mal = float(((top == mal) & P & cert).sum()) / max(int(P.sum()), 1)
-    ctr_ben = float(((top == ben) & Nn & cert).sum()) / max(int(Nn.sum()), 1)
+    ctr_mal = float((pred_mal & P & cert).sum()) / max(int(P.sum()), 1)
+    ctr_ben = float((pred_ben & Nn & cert).sum()) / max(int(Nn.sum()), 1)
+    # E2 asks for CA against tau_triv per class, so record, for every class in the
+    # label space, the share of its test rows that are both labelled correctly and
+    # certified, and the share that are merely correct. Absent for the binary run.
+    per_class = None
+    if multi:
+        per_class = {}
+        for c, nm in enumerate(class_names):
+            inc = (y == c)
+            n = int(inc.sum())
+            if n == 0:
+                continue
+            per_class[str(nm)] = dict(
+                n=n, share=round(n / len(y), 6),
+                acc=round(float(((top == c) & inc).sum()) / n, 6),
+                certified_correct=round(float(((top == c) & inc & cert).sum()) / n, 6),
+                coverage=round(float((inc & cert).sum()) / n, 6))
     return dict(
+        per_class_certified=per_class,
         TPR=round(float(tpr), 6), FNR=round(float(1 - tpr), 6),
         FPR=round(float(fpr), 6), precision=round(float(prec), 6),
         balanced_acc=round(float(0.5 * (tpr + tnr)), 6),
         macro_F1=round(float(0.5 * (f1m + f1b)), 6),
         CTR_mal=round(ctr_mal, 6), CTR_ben=round(ctr_ben, 6),
-        n_mal_test=int(P.sum()), n_ben_test=int(Nn.sum()))
+        n_mal_test=int(P.sum()), n_ben_test=int(Nn.sum()),
+        # review comment 5: CTR_mal per attack family. A certificate covering C&C
+        # beacons but not port scans is a different security statement, and the
+        # aggregate hides which one holds.
+        CTR_mal_by_family=(None if family is None else {
+            str(f): round(float(((top == mal) & P & cert & (family == f)).sum())
+                          / max(int((P & (family == f)).sum()), 1), 6)
+            for f in sorted({str(x) for x in family[P]})}),
+        n_mal_by_family=(None if family is None else {
+            str(f): int((P & (family == f)).sum())
+            for f in sorted({str(x) for x in family[P]})}))

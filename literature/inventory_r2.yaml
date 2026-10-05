@@ -1,0 +1,152 @@
+schema: fedhomeguard.literature-inventory/v2-screen
+audited_on: 2026-09-03
+protocol: literature/PROTOCOL.md  # section 'Round 2'
+source: arXiv API, four queries (see protocol); records generated, never hand-typed
+scope: >
+  A SCREEN, not a full coding. Every record is coded only on whether its
+  abstract asserts a guarantee quantifying over a threat class -- the single
+  field the manuscript's negative claim depends on. All other fields are
+  null at this source level and are not guessed.
+n_screened: 50
+n_included: 18
+n_guarantee_words: 2
+n_asserts_threat_class_guarantee: 0
+n_excluded_after_screen: 6
+included:
+  - key: arxiv210102281
+    citation: "Thien Duc Nguyen et al., FLAME: Taming Backdoors in Federated Learning (Extended Version 1), arXiv:2101.02281v5 (2021)"
+    arxiv_id: 2101.02281v5
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv210210799
+    citation: "Krishna Yadav et al., Clustering Algorithm to Detect Adversaries in Federated Learning, arXiv:2102.10799v1 (2021)"
+    arxiv_id: 2102.10799v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv210409994
+    citation: "Valerian Rey et al., Federated Learning for Malware Detection in IoT Devices, arXiv:2104.09994v3 (2021)"
+    arxiv_id: 2104.09994v3
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv220200137
+    citation: "Pedro Miguel S\u00e1nchez S\u00e1nchez et al., Studying the Robustness of Anti-adversarial Federated Learning Models Detecting Cyberattacks in IoT Spectrum Sensors, arXiv:2202.00137v1 (2022)"
+    arxiv_id: 2202.00137v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv230109508
+    citation: "Kavita Kumari et al., BayBFed: Bayesian Backdoor Defense for Federated Learning, arXiv:2301.09508v1 (2023)"
+    arxiv_id: 2301.09508v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv231108621
+    citation: "Angela Grace Famera et al., Cross Device Federated Intrusion Detector for Early Stage Botnet Propagation in IoT, arXiv:2311.08621v1 (2023)"
+    arxiv_id: 2311.08621v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv231204432
+    citation: "Hossein Fereidooni et al., FreqFed: A Frequency Analysis-Based Approach for Mitigating Poisoning Attacks in Federated Learning, arXiv:2312.04432v2 (2023)"
+    arxiv_id: 2312.04432v2
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv240807152
+    citation: "Shihua Sun et al., FedMADE: Robust Federated Learning for Intrusion Detection in IoT Networks Using a Dynamic Aggregation Method, arXiv:2408.07152v1 (2024)"
+    arxiv_id: 2408.07152v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv240909794
+    citation: "Hao Jian Huang et al., Federated Learning in Adversarial Environments: Testbed Design and Poisoning Resilience in Cybersecurity, arXiv:2409.09794v2 (2024)"
+    arxiv_id: 2409.09794v2
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv241101490
+    citation: "Dipanwita Thakur et al., Anomalous Client Detection in Federated Learning, arXiv:2411.01490v1 (2024)"
+    arxiv_id: 2411.01490v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv250314284
+    citation: "Jiacen Xu et al., Entente: Cross-silo Intrusion Detection on Network Log Graphs with Federated Learning, arXiv:2503.14284v2 (2025)"
+    arxiv_id: 2503.14284v2
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv250404367
+    citation: "Sameera K. M. et al., WeiDetect: Weibull Distribution-Based Defense against Poisoning Attacks in Federated Learning for Network Intrusion Detection Systems, arXiv:2504.04367v2 (2025)"
+    arxiv_id: 2504.04367v2
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv250716134
+    citation: "Baofu Han et al., DP2Guard: A Lightweight and Byzantine-Robust Privacy-Preserving Federated Learning Scheme for Industrial IoT, arXiv:2507.16134v2 (2025)"
+    arxiv_id: 2507.16134v2
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv251223809
+    citation: "Samaresh Kumar Singh et al., Zero-Trust Agentic Federated Learning for Secure IIoT Defense Systems, arXiv:2512.23809v1 (2025)"
+    arxiv_id: 2512.23809v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: ['guarantees']
+    asserts_threat_class_guarantee: false
+    guarantee_type_at_abstract_level: byzantine_detection_with_unspecified_theory
+    coding_evidence: "The guarantee attaches to Byzantine DETECTION ('SHAP-weighted aggregation providing explainable Byzantine detection under non-IID conditions with theoretical guarantees'), not to a per-prediction property holding for every attack in a stated class. The form of the theory is not stated at abstract level."
+  - key: arxiv260101053
+    citation: "Milad Rahmati et al., Byzantine-Robust Federated Learning Framework with Post-Quantum Secure Aggregation for Real-Time Threat Intelligence Sharing in Critical IoT Infrastructure, arXiv:2601.01053v1 (2026)"
+    arxiv_id: 2601.01053v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: ['guarantees']
+    asserts_threat_class_guarantee: false
+    guarantee_type_at_abstract_level: privacy
+    coding_evidence: "The guarantee is differential privacy ('excludes Byzantine participants while maintaining differential privacy guarantees'), which is a confidentiality property, not a robustness certificate over a threat class."
+  - key: arxiv260106466
+    citation: "Imtiaz Ali Soomro et al., SecureDyn-FL: A Robust Privacy-Preserving Federated Learning Framework for Intrusion Detection in IoT Networks, arXiv:2601.06466v1 (2026)"
+    arxiv_id: 2601.06466v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv260414663
+    citation: "Noor Islam S. Mohammad et al., EdgeDetect: Importance-Aware Gradient Compression with Homomorphic Aggregation for Federated Intrusion Detection, arXiv:2604.14663v1 (2026)"
+    arxiv_id: 2604.14663v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+  - key: arxiv260505644
+    citation: "Chun Yin Chiu et al., AoI-Guided Client Selection for Robust and Timely Federated Intrusion Detection in Cloud-Edge Security Analytics, arXiv:2605.05644v1 (2026)"
+    arxiv_id: 2605.05644v1
+    source_level: abstract_only
+    guarantee_words_in_abstract: []
+    asserts_threat_class_guarantee: false
+excluded:
+  - arxiv_id: 2012.06974
+    title: "Federated Mimic Learning for Privacy Preserving Intrusion Detection"
+    reason: I3
+    detail: "Backdoors here are attacks on IoT devices ('these attacks vary from exploiting backdoors to disrupting the communication network of the devices'); no training-time client-poisoning defence is proposed or evaluated."
+  - arxiv_id: 2111.12241
+    title: "Hierarchical Federated Learning based Anomaly Detection using Digital Twins for Smart Healthcare"
+    reason: I3
+    detail: "IoMT anomaly detection with digital twins; data poisoning is named as a motivation for moving away from centralized models, not defended against."
+  - arxiv_id: 2506.06730
+    title: "Fuse and Federate: Enhancing EV Charging Station Security with Multimodal Fusion and Federated Learning"
+    reason: I3
+    detail: "EVSE security; 'backdoor intrusions' is one of the network threats being detected, not poisoning of the federated training process."
+  - arxiv_id: 2603.16881
+    title: "Federated Multi Agent Deep Learning and Neural Networks for Advanced Distributed Sensing in Wireless Networks"
+    reason: E3
+    detail: "Survey of multi-agent/federated deep learning for wireless systems; poisoning appears in a list of open challenges, with no primary evaluation."
+  - arxiv_id: 2607.10914
+    title: "SoK: Federated Learning for Intrusion Detection in Vehicular Networks"
+    reason: E3
+    detail: "Explicit SoK ('By auditing over 60 publications'); systematisation rather than a primary evaluation of its own."
+  - arxiv_id: 2608.19135
+    title: "Autonomous Cyber Defense in Connected Vehicles: A Multi-Agent Approach to V2X Security"
+    reason: I3
+    detail: "V2X basic-safety-message authenticity; Byzantine fault tolerance is an architectural component and no training-time poisoning is evaluated at abstract level."

@@ -2,14 +2,15 @@
 """E9 second-model sensitivity paragraph, generated from the canonical rows."""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-from aggregate import load, gap_table
+from aggregate import load, gap_table, src
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+OUT = os.environ.get("FHG_GENERATED",
+                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
 
 
 def main():
     lg = gap_table(load("results/canonical/e9_logreg_*.jsonl"))
-    mlp = gap_table(load("results/canonical/e2_*.jsonl"))
+    mlp = gap_table(load(src("e2_*.jsonl")))
     if not lg:
         print("no e9 rows"); return
 
@@ -43,13 +44,15 @@ def main():
         "The \\emph{magnitude} does not replicate, and that is informative. The linear model\n"
         "generalises better from a single household, so its mean vote margin under\n"
         "device-derived skew at $k=1$ is $%.4f$ against the perceptron's $%.4f$. At\n"
-        "$\\beta = 0.40$ it still certifies $%.4f$, above the trivial floor of $%.4f$, where\n"
+        "$\\beta = 0.40$ it certifies $%.4f$, still below the trivial floor of $%.4f$, where\n"
         "the perceptron certifies $%.4f$, and it collapses on a fraction $%.2f$ of partition\n"
-        "draws against $%.2f$. Ensemble agreement, not accuracy, is what certification\n"
-        "consumes, and a model that agrees with itself across households under skew buys back\n"
-        "part of the small-$k$ region. We therefore state the competence arm as a property of\n"
-        "the model family as well as of the partition, and the pincer as a tension whose\n"
-        "severity a deployer can influence by choosing a simpler detector.\n"
+        "draws against $%.2f$: the simpler model delays collapse but does not avert it at the\n"
+        "fraction $k=1$ exists to reach. Ensemble agreement, not accuracy, is what\n"
+        "certification consumes, and a model that agrees with itself across households under\n"
+        "skew shifts the collapse boundary outward without removing it. We therefore state the competence arm as a property of\n"
+        "the model family as well as of the partition, and the tension between the two\n"
+        "constraints as one whose severity a deployer can influence by choosing a simpler\n"
+        "detector.\n"
     ) % (vals["slackLR"], vals["mLR"], vals["mMLP"], vals["caLR"], vals["tau"],
          vals["caMLP"], vals["collLR"], vals["collMLP"])
     open(os.path.join(OUT, "e9_paragraph.tex"), "w").write(para)

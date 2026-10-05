@@ -97,10 +97,18 @@ def load_nbaiot(root: str = "data/raw/nbaiot", max_rows_per_device: int = 60_000
     ckey = f"{max_rows_per_device}_{'-'.join(sorted(keep))}"
     cpath = os.path.join(root, f".cache_{hashlib.sha1(ckey.encode()).hexdigest()[:12]}.parquet")
     if cache and os.path.exists(cpath):
-        df = pd.read_parquet(cpath)
-        if verbose:
-            print(f"  n-baiot rows={len(df)} devices={df.device.nunique()} (cached)")
-        return df
+        # The WRITE below is guarded but the read was not, so a machine without a
+        # parquet engine -- or one that lost it -- died here on a cache another run
+        # had left behind, rather than falling back to the CSVs that are the actual
+        # source. Anyone running the artifact without pyarrow/fastparquet hits this.
+        try:
+            df = pd.read_parquet(cpath)
+            if verbose:
+                print(f"  n-baiot rows={len(df)} devices={df.device.nunique()} (cached)")
+            return df
+        except Exception as e:
+            if verbose:
+                print(f"  n-baiot cache unreadable ({e}); rebuilding from CSV")
     frames, used = [], []
     for dev in NBAIOT_DEVICES:
         ddir = os.path.join(root, dev)
@@ -210,8 +218,42 @@ def load_dataset(cfg, verbose: bool = True) -> dict:
     # time; the splitter blocks on it when present.
     block = (df["traffic_type"].astype(str).to_numpy(dtype=object)
              if "traffic_type" in df.columns else None)
+    # IoT-23 carries a detailed attack family per flow (C&C, DDoS, port scan, ...).
+    # A certificate that covers C&C beacons but not scans is a different security
+    # statement, so the family travels with the row (review technical comment 5).
+    fam = None
+    if "detailed" in df.columns:
+        fam = (df["detailed"].astype(str).str.strip()
+               .replace({"-": "benign", "": "benign", "nan": "benign"})
+               .to_numpy(dtype=object))
+    # E2 multi-class control (review sec 8). The binary detector is near-saturated:
+    # one household's data already trains a 0.98-accurate member, so every member is
+    # near-perfect and every vote near-unanimous, and "the certificate is nearly exact
+    # under IID" may be a property of the task rather than of the certificate. Relabel
+    # to the per-family label space, where tau_triv falls from 0.72 to 0.53, and the
+    # same certificate machinery runs on a harder task.
+    #
+    # Class 0 is always benign and every attack family is a class above it, ordered by
+    # descending frequency with ties broken by name, so the mapping is deterministic
+    # across runs and "malicious" stays expressible as y != 0.
+    class_names = None
+    if not cfg.data.binary:
+        if fam is None:
+            raise ValueError(f"{name} carries no per-row attack family, so the "
+                             "multi-class label space is not defined for it")
+        counts = pd.Series(fam).value_counts()
+        attack_fams = sorted([f for f in counts.index if f != "benign"],
+                             key=lambda f: (-int(counts[f]), str(f)))
+        class_names = ["benign"] + attack_fams
+        code = {f: i for i, f in enumerate(class_names)}
+        y = np.array([code[f] for f in fam], dtype=np.int64)
+    # The head has to match the label space, and every ensemble member has to be
+    # built with the same head, so the width is recorded on the config here -- the one
+    # place that knows what the labels are.
+    cfg.model.n_class = int(len(class_names)) if class_names else 2
     return dict(X=X, y=y, device=dev_codes, device_names=dev_names,
-                feature_names=names, block=block, df=df)
+                feature_names=names, block=block, df=df, family=fam,
+                class_names=class_names)
 
 
 def time_split_within_device(y: np.ndarray, device: np.ndarray, train_frac: float = 0.8,
@@ -242,3 +284,27 @@ def time_split_within_device(y: np.ndarray, device: np.ndarray, train_frac: floa
 def standardize(Xtr: np.ndarray, Xte: np.ndarray):
     mu, sd = Xtr.mean(0), Xtr.std(0) + 1e-6
     return (Xtr - mu) / sd, (Xte - mu) / sd, mu, sd
+
+
+def leave_one_device_out(device: np.ndarray, holdout: str):
+    """Train on every device except `holdout`; test only on `holdout`.
+
+    Review W7/E5. The default protocol takes a time-ordered tail within each
+    device, so every test device is also a training device. A federated IDS is
+    deployed to catch attacks on homes whose devices it has not trained on, and
+    the within-device split cannot speak to that: it measures generalisation
+    across time, not across devices. This mask measures the other one.
+
+    Note the class prior moves with the fold -- a held-out device carries its own
+    benign/malicious mix -- so tau_triv is fold-specific and must be recomputed,
+    never carried over from the pooled split.
+    """
+    # the device column may be integer-coded or string-coded depending on the
+    # loader; compare on the string form so a CLI-supplied fold id matches either.
+    te = (np.asarray(device).astype(str) == str(holdout))
+    if not te.any():
+        raise ValueError(f"leave_one_device_out: no rows for device {holdout!r}; "
+                         f"have {sorted(set(map(str, device)))}")
+    if te.all():
+        raise ValueError(f"leave_one_device_out: {holdout!r} is the only device")
+    return ~te, te

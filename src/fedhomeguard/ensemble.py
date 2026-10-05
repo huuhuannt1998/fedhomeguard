@@ -101,6 +101,10 @@ def ensemble_votes(cfg, t, subsets, B=(), attack=None, cache: MemberCache | None
     cache = cache if cache is not None else MemberCache()
     Bs = set(int(i) for i in B)
     n_test = len(t["yte_np"])
+    # 2 for the binary detector, |families| for the multi-class control. A vote array
+    # narrower than the label space would silently drop every vote for a class the
+    # array has no column for.
+    n_class = int(t.get("n_class", 2) or 2)
     preds, kept, n_touched = [], [], 0
     for j, S in enumerate(subsets):
         inter = sorted(Bs.intersection(int(i) for i in S))
@@ -112,11 +116,11 @@ def ensemble_votes(cfg, t, subsets, B=(), attack=None, cache: MemberCache | None
         if progress and (j + 1) % progress == 0:
             print(f"      member {j+1}/{len(subsets)}", flush=True)
     if not preds:
-        return votes_from_preds(preds, n_test), n_touched, kept
+        return votes_from_preds(preds, n_test, n_class), n_touched, kept
     if not window:
-        return votes_from_preds([p[-1] for p in preds], n_test), n_touched, kept
+        return votes_from_preds([p[-1] for p in preds], n_test, n_class), n_touched, kept
     W = preds[0].shape[0]
-    stacked = [votes_from_preds([p[r] for p in preds], n_test) for r in range(W)]
+    stacked = [votes_from_preds([p[r] for p in preds], n_test, n_class) for r in range(W)]
     return np.stack(stacked), n_touched, kept
 
 

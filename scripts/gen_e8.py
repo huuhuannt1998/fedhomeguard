@@ -93,8 +93,14 @@ def main():
                         hi=[float(np.median(ys[xs > 0.60])) if (xs > 0.60).any() else None])
     # Volume-skew draws are plotted separately because they are the counterexample:
     # they lose breakdown point at S_JS near zero, so beta* is not a function of S_JS.
+    vstat = {}
     if vol:
         vp = [p for p in points(vol, 1, full_only=True) if p[0] < 0.02]
+        # the plotted diamonds themselves (review r6 item 5): the prose quotes these,
+        # not Table 10's per-level means, which also average the starved draws
+        if vp:
+            vstat = dict(n=len(vp), sjs=max(p[0] for p in vp),
+                         bhi=max(p[1] for p in vp), blo=min(p[1] for p in vp))
         if vp:
             vx = np.array([p[0] for p in vp]); vy = np.array([p[1] for p in vp])
             ax.scatter(vx, vy, s=26, facecolors="none", edgecolors="#52514e",
@@ -131,29 +137,33 @@ def main():
 % provenance: jrn_01M0SH05VQQZV4NQA53GCYPW99 supports the collapse and margin measurements
 Figure~\\ref{{fig:frontier}} plots the largest certifiable fraction against measured
 skew, one marker per partition draw over {n1} draws at $k=1$ and {n2} at $k=2$, pooled
-across every partition family we built. Two things are visible that a single curve
-would hide. The breakdown point sits \\emph{{on}} the geometric ceiling across the whole
-low-skew range and falls only as skew grows, so combinatorics rather than data binds
-there. And the fall is not a clean boundary: at intermediate skew the same nominal
+across the device-derived, IID, device-Dirichlet and label-Dirichlet families; the volume
+and N-BaIoT draws are the two open series below. Two features are visible that a single
+curve would hide. The breakdown point sits \\emph{{on}} the geometric ceiling across
+the whole low-skew range and falls only as skew grows, so combinatorics rather than
+data binds there. The fall is not a clean boundary: at intermediate skew the same nominal
 partition family yields draws that certify at the ceiling and draws that certify
 nothing, which is why we plot the draws and a binned median and decline to draw a
 phase transition through them.
 
 % provenance: jrn_01M0WANCPPMEWGWW0J4JKT6SKA supports the volume-skew counterexample
-The open diamonds are the counterexample, and they are the reason this figure is not
-a curve. They are data-volume-skewed partitions: every client draws from the same
-pool, so their distributions are identical and $S_{{\\mathrm{{JS}}}}$ stays below
-$0.01$, yet their breakdown point falls as far as $0.300$. Only their
-full-enumeration draws are plotted, for the same reason.
+The open diamonds are the counterexample that keeps this figure from being a curve.
+They are data-volume-skewed partitions: every client draws from the same
+pool, so their distributions are near-identical. As in the paired test, only draws that
+kept every member are plotted: those {vstat['n']} never exceed
+$S_{{\\mathrm{{JS}}}} = {vstat['sjs']:.3f}$, yet their breakdown point runs from
+${vstat['bhi']:.3f}$ down to ${vstat['blo']:.3f}$. The draws that lost members to starved
+clients reach higher $S_{{\\mathrm{{JS}}}}$ and lift Table~\\ref{{tab:ablation}}'s volume means.
 
 % provenance: jrn_01M0WPYA144JWHAV4FACAQFD8R supports the N-BaIoT counterexample
 The open triangles are the counterexample in the other direction. They are N-BaIoT
 device-derived partitions, built by the identical construction that collapses on
 IoT-23 and landing at the same measured skew, and they certify at the ceiling. Taken
 together the two open series show that measured skew is neither sufficient nor
-necessary for certifiability, and that $\\beta^{{*}}$ is not a function of it. We report this against our own instrument: a federation can look homogeneous
-by $S_{{\\mathrm{{JS}}}}$ and still be uncertifiable, because a client holding few rows
-trains a weak member whatever its distribution looks like.
+necessary for certifiability, and that $\\beta^{{*}}$ is not a function of it. A
+federation can look homogeneous by $S_{{\\mathrm{{JS}}}}$ and still be uncertifiable,
+because a client holding few rows trains a weak member whatever its distribution
+looks like.
 
 \\begin{{figure}}[t]
 \\centering

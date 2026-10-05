@@ -18,6 +18,8 @@ class DataCfg:
     train_frac: float = 0.8
     split: str = "time_within_device"    # never random row shuffle (design 11.4)
     binary: bool = True
+    lodo_device: str | None = None   # W7: hold this device out of training
+
 
 
 @dataclass
@@ -38,12 +40,18 @@ class PartitionCfg:
 class ModelCfg:
     arch: str = "mlp"                    # mlp | mlp_large | autoencoder
     hidden: tuple[int, ...] = (32, 16)
+    # Output width. Stays 2 for the binary detector; load_dataset raises it to the
+    # number of IoT-23 attack families when data.binary is False (E2 multi-class
+    # control). Carried on the config rather than inferred at each call site so that
+    # every member of an ensemble is built with the same head.
+    n_class: int = 2
 
 
 @dataclass
 class FLCfg:
     rounds_T: int = 15
     local_epochs_E: int = 1
+    class_balanced: bool = False   # inverse-frequency local loss (review W3/E2)
     lr: float = 0.05
     momentum: float = 0.9
     batch_size: int = 512
@@ -61,6 +69,8 @@ class AdversaryCfg:
     F5_membership: str = "static"
     F6_may_poison_data: bool = False
     scale: float = 1.0
+    vote_shape_frac: float = 0.5   # share of local labels the
+                                   # vote_shape attack flips
     seed: int = 0
 
 
@@ -72,6 +82,8 @@ class DefenseCfg:
     clip_norm: float | None = None
     knows_true_beta: bool = False
     root_size: int = 100                 # FLTrust server root set (L2)
+    noise_sigma: float = 0.0   # CRFL: Gaussian noise added to the aggregate
+
 
 
 @dataclass

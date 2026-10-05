@@ -6,8 +6,17 @@ import numpy as np
 def tau_triv(y: np.ndarray) -> float:
     """The trivial certificate: a constant predictor is certifiably robust to EVERY
     beta. Any CA at or below this conveys zero information. It is the mandatory
-    hardest baseline (design 11.2)."""
-    return float(max(y.mean(), 1 - y.mean()))
+    hardest baseline (design 11.2).
+
+    Written for the binary detector as max(p, 1-p); stated generally it is the largest
+    class frequency, which is the same number when there are two classes and is what
+    the multi-class control (E2) needs. The binary form is not merely loose on a wider
+    label space, it is wrong: y.mean() over class INDICES is not a frequency at all,
+    and on the eight-family IoT-23 space it returns 1.0223."""
+    y = np.asarray(y)
+    if y.size == 0:
+        return 0.0
+    return float(np.bincount(y.astype(int)).max() / y.size)
 
 
 def balanced_index(y: np.ndarray, seed: int = 0) -> np.ndarray:

@@ -19,6 +19,7 @@
 #
 #   bash scripts/run_experiments.sh --plan     # print what would run, run nothing
 #   bash scripts/run_experiments.sh            # run the remaining stages
+#   bash scripts/run_experiments.sh -j 3       # up to three stages at once
 #   bash scripts/run_experiments.sh e9 e3      # run only the named stages
 set -u
 cd "$(dirname "$0")/.."
@@ -124,7 +125,14 @@ stage_nbsamepred(){ for P in iid device_derived; do
     --k-caps "$KC12" --dph 1 2 --tag NBAIOT_SAMEPRED \
     --out results/scratch/nb_$P.jsonl; done; }
 
-PLAN=0; [ "${1:-}" = "--plan" ] && { PLAN=1; shift; }
+PLAN=0; JOBS=1
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --plan) PLAN=1; shift ;;
+    -j)     JOBS="$2"; shift 2 ;;
+    *)      break ;;
+  esac
+done
 WANT="$*"
 total=0
 echo "stage         targets                                        est  status"
@@ -137,13 +145,27 @@ done <<< "$STAGES"
 echo "  estimated remaining: ${total} min (sequential, nice -n 19, one BLAS thread)"
 [ "$PLAN" = 1 ] && { echo; echo "--plan: nothing was run."; exit 0; }
 
-log "=== run_experiments start ==="
-while IFS= read -r line; do
-  name=${line%%:*}; rest=${line#*:}; files=${rest%:*}
-  [ -n "$WANT" ] && ! echo " $WANT " | grep -q " $name " && continue
-  if done_already "$files"; then log "skip $name (already re-run)"; continue; fi
-  log "stage $name"
-  "stage_$name"
-done <<< "$STAGES"
+log "=== run_experiments start (concurrency $JOBS) ==="
+# Batches of $JOBS. bash 3.2 here has no `wait -n`, so each batch is launched and
+# waited on as a group -- less optimal than a rolling pool but correct, and stages
+# never contend because each writes only its own scratch file.
+PEND=""
+for_each_pending(){
+  while IFS= read -r line; do
+    name=${line%%:*}; rest=${line#*:}; files=${rest%:*}
+    [ -n "$WANT" ] && ! echo " $WANT " | grep -q " $name " && continue
+    if done_already "$files"; then log "skip $name (already re-run)"; continue; fi
+    PEND="$PEND $name"
+  done <<< "$STAGES"
+}
+for_each_pending
+n=0
+for name in $PEND; do
+  log "stage $name (started)"
+  ( "stage_$name" ) &
+  n=$((n+1))
+  if [ $((n % JOBS)) -eq 0 ]; then wait; log "  -- batch of $JOBS finished --"; fi
+done
+wait
 log "=== run_experiments complete ==="
 $PY scripts/compare_rerun.py 2>&1 | tail -6 | tee -a "$M"

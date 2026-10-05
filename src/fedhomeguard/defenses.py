@@ -9,6 +9,7 @@ from __future__ import annotations
 import torch
 
 LEVEL = {"fedavg": "L0", "krum": "L1", "multikrum": "L1", "trimmed_mean": "L1",
+         "crfl": "L1",   # clipping requires seeing each client update
          "median": "L1", "norm_clip": "L1", "fltrust": "L2", "oracle_trimmed": "L3"}
 REQUIRES_CLEAN_SERVER_DATA = {"fltrust"}
 IS_UPPER_BOUND = {"oracle_trimmed"}
@@ -107,3 +108,32 @@ def check_observability(name: str, declared: str) -> None:
     if order[declared] < order[need]:
         raise ValueError(f"defense {name!r} consumes {need} but the capability record "
                          f"declares {declared}. Raise defense.observability or change defense.")
+
+
+def crfl(updates, clip_norm=5.0, noise_sigma=0.0, gen=None, **_):
+    """CRFL-style aggregation (Xie et al., ICML 2021): clip every update, then add
+    isotropic Gaussian noise to the aggregate.
+
+    This is the second certification family the review asks for (W6/E3), and it buys
+    its guarantee differently from client subsampling. Clipping is what makes the
+    bound hold against an UNBOUNDED Byzantine adversary: whatever a malicious client
+    sends, the server truncates it to `clip_norm`, so m malicious clients displace the
+    FedAvg aggregate by at most m*clip_norm/N. The noise then supports a
+    randomised-smoothing certificate in parameter space.
+
+    The cost is observability. Clipping requires the server to see each client's
+    update, so CRFL sits at L1; the subsampling certificate operates at L0, seeing
+    only aggregates. That difference is the point of comparing them here.
+    """
+    ids, U = _stack(updates)
+    nrm = U.norm(dim=1, keepdim=True)
+    agg = (U * torch.clamp(clip_norm / (nrm + 1e-12), max=1.0)).mean(0)
+    if noise_sigma and noise_sigma > 0:
+        noise = torch.randn(agg.shape, generator=gen, device=agg.device,
+                            dtype=agg.dtype) * noise_sigma
+        agg = agg + noise
+    return agg
+
+
+# registered after definition: crfl is appended below the original registry block
+REGISTRY["crfl"] = crfl

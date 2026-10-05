@@ -8,6 +8,7 @@ export PATH="/Users/huanbui/miniconda3/bin:/Library/TeX/texbin:/opt/homebrew/bin
 MAN=manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP
 M=logs/finalize.log; : > $M
 log(){ echo "[$(date +%H:%M:%S)] $*" | tee -a $M; }
+FAIL=0
 
 log "=== audit ==="
 $PY scripts/check_completeness.py  >> $M 2>&1
@@ -22,7 +23,9 @@ done
 $PY $MAN/charts/make_figures_v2.py >> $M 2>&1 || log "  figures FAILED"
 log "=== verify ==="
 $PY scripts/verify_paper_claims.py 2>&1 | tail -2 | tee -a $M
-$PY scripts/aggregate.py 2>&1 | grep -c PASS | xargs -I{} log "  canonical assertions passing: {}/10"
+ASSERT=$($PY scripts/aggregate.py 2>&1 | grep -c PASS)
+log "  canonical assertions passing: ${ASSERT}/10"
+[ "$ASSERT" -eq 10 ] || { log "  BLOCK: assertions ${ASSERT}/10"; FAIL=1; }
 $PY -m pytest -q 2>&1 | tail -1 | tee -a $M
 ( cd $MAN && $PY charts/texlint.py 'sections/*.tex' 2>&1 | tail -1 ) | tee -a $M
 ( cd $MAN && $PY /Users/huanbui/rka/plugin/skills/writer/scripts/verify_provenance.py \
@@ -38,7 +41,11 @@ log "=== rebuild ==="
 import sys,re
 pg=sys.stdin.read().split('\f'); n=len([p for p in pg if p.strip()])
 app=next(i for i,p in enumerate(pg,1) if re.search(r'(?m)^\s*A\.\d\.',p))
-print(f'  TEXT {app-1}/13   APP+REFS {n-app+1}/5   TOTAL {n}/18')" ) | tee -a $M
+t,a,tot = app-1, n-app+1, n
+print(f'  TEXT {t}/13   APP+REFS {a}/5   TOTAL {tot}/18')
+bad=[x for x,lim,nm in ((t,13,'TEXT'),(a,5,'APP+REFS'),(tot,18,'TOTAL')) if x>lim]
+sys.exit(3 if bad else 0)" ) | tee -a $M
+[ ${PIPESTATUS[0]:-0} -eq 0 ] || { log "  BLOCK: over IEEE S&P page limit"; FAIL=1; }
 log "=== delta against pre-fix ==="
 $PY scripts/compare_rerun.py 2>&1 | tail -6 | tee -a $M
-log "FINALIZE COMPLETE"
+if [ "${FAIL:-0}" -ne 0 ]; then log "FINALIZE COMPLETE WITH BLOCKERS"; exit 1; else log "FINALIZE COMPLETE"; fi

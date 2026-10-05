@@ -16,8 +16,10 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 ROOT = "/Users/huanbui/Research/FedHomeGuard-P10"
-FIG = os.path.join(ROOT, "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/figures")
-OUT = os.path.join(ROOT, "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+FIG = os.environ.get("FHG_FIGURES", os.path.join(ROOT, "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/figures"))
+OUT = os.environ.get("FHG_GENERATED", os.path.join(ROOT, "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from bstar import bstar as _bstar  # the one definition of beta* (per-draw, then median over draws)
 BLUE, ORANGE, MUTED, GRID = "#2a78d6", "#eb6834", "#898781", "#e1e0d9"
 BETA_GEO = {1: 0.450, 2: 0.250, 3: 0.150, 5: 0.100, 8: 0.050}
 # k=1,2 fully enumerated; k=3 full C(20,3); k=5,8 sampled, so those two are LOWER
@@ -44,22 +46,24 @@ def style(ax):
 
 
 def beta_star():
-    cell, tau = collections.defaultdict(dict), {}
+    """Median over partition draws of the per-draw beta* (scripts/bstar.py), per (partition, k).
+
+    Stage C (2026-10-02): this figure used to plot the MEAN over draws of a min-over-malicious-sets
+    beta*, while the text and tables print the canonical median; it now uses the canonical
+    estimator so the plotted values are the printed ones."""
+    rows = collections.defaultdict(list)
     for pat in SRC:
         for f in glob.glob(os.path.join(ROOT, "results/canonical", pat + ".jsonl")):
             for line in open(f):
                 if not line.startswith("{"):
                     continue
                 r = json.loads(line)
-                key = (r["partition_type"], int(r["k"]), int(r["partition_seed"]))
-                b, ca = round(float(r["beta"]), 4), float(r["CA"])
-                cell[key][b] = min(cell[key].get(b, ca), ca)
-                tau[key] = float(r["tau_triv"])
-    out = collections.defaultdict(list)
-    for key, d in cell.items():
-        ok = [b for b, ca in d.items() if ca > tau[key] + 1e-9]
-        out[(key[0], key[1])].append(max(ok) if ok else 0.0)
-    return {k: float(np.mean(v)) for k, v in out.items()}
+                rows[(r["partition_type"], int(r["k"]))].append(r)
+    out = {}
+    for key, rs in rows.items():
+        med, _mean, _n, _v = _bstar(rs, rs[0]["tau_triv"])
+        out[key] = float(med)
+    return out
 
 
 def main():
@@ -75,13 +79,13 @@ def main():
     fig, ax = plt.subplots(figsize=(3.4, 2.05))
     style(ax)
     ax.plot(x, ceil, color=MUTED, linewidth=3.2, alpha=0.45, solid_capstyle="round",
-            zorder=1, label=r"geometric ceiling $\beta_{\mathrm{geo}}$")
+            zorder=1, label=r"ceiling $\beta_{\mathrm{geo}}(20,k)$")
     ax.plot(x, iid, color=BLUE, marker="o", markersize=5, linestyle="-",
             markeredgecolor="#fcfcfb", markeredgewidth=0.8, zorder=3,
-            label=r"IID clients")
+            label=r"IID partition")
     ax.plot(x, dev, color=ORANGE, marker="s", markersize=4.5, linestyle="--",
             markeredgecolor="#fcfcfb", markeredgewidth=0.8, zorder=4,
-            label=r"device-derived clients")
+            label=r"device-derived partition")
 
     # The two facts the figure exists to carry, direct-labelled; nothing else.
     i1 = ks.index(1)
@@ -94,7 +98,7 @@ def main():
 
     ax.set_xticks(x); ax.set_xticklabels([str(k) for k in ks])
     ax.set_xlabel(r"subsample size $k$")
-    ax.set_ylabel("certifiable malicious\nfraction $\\beta^{*}$")
+    ax.set_ylabel("certified breakdown\npoint $\\beta^{*}$")
     ax.set_ylim(0, 0.52); ax.set_xlim(-0.25, len(ks) - 0.55)
     ax.legend(frameon=False, loc="upper right", handlelength=2.0,
               borderaxespad=0.2, labelspacing=0.35)

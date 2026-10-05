@@ -17,14 +17,15 @@ The oracle picks the k that maximises CA after the fact.
 import collections, json, os, sys
 import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
-from aggregate import load
+from aggregate import load, src
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+OUT = os.environ.get("FHG_GENERATED",
+                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
 SAFETY = 1.05          # coverage must clear the trivial floor by 5%, fixed in advance
 
 
 def main():
-    rows = load("results/canonical/e2_*.jsonl")
+    rows = load(src("e2_*.jsonl"))
     tau = rows[0]["tau_triv"]
     idx = collections.defaultdict(dict)
     for r in rows:

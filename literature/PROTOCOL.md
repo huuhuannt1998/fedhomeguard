@@ -74,3 +74,60 @@ non-null, and the denominator must be stated.
 This inventory is **not exhaustive** and the manuscript must not describe it as
 such. It is a documented, reproducible sample. Every universal statement in the
 paper is scoped to it explicitly, with the denominator given.
+
+---
+
+## Round 2 (2026-09-03): wider screen for the negative claim
+
+Round 1 coded three defences in full against the codebook above. That is enough
+to motivate two design choices, but not enough to support the manuscript's
+*negative* claim that no guarantee quantifying over a threat class has been
+carried into this application. Round 2 widens the base for that claim only.
+
+**What round 2 is.** A screen, not a full coding. Every record is coded on one
+field -- whether its abstract asserts a guarantee holding for every attack in a
+stated threat class -- plus the inclusion decision. All other codebook fields
+are null at this source level and are not guessed. The manuscript states it as a
+screen.
+
+**Why one field is defensible at abstract level.** A certified-robustness result
+is a headline contribution; when a paper has one, it appears in the abstract.
+The screen therefore establishes the narrower claim that the guarantee is not
+being advertised, which is what the manuscript asserts.
+
+**Retrieval.** arXiv API, four queries combining `"federated learning"` with
+`"intrusion detection"` / IoT / `"network intrusion"` and one of
+`poisoning` / `"malicious clients"` / `Byzantine` / `backdoor`.
+Retrieved 50 distinct records. Records are generated into
+`inventory_r2.yaml` directly from the API response by
+`scripts/build_inventory_r2.py` and are never hand-typed, so no entry can be
+invented and the screen re-runs.
+
+**Screening.** 24 of the 50 match federated learning, intrusion detection and
+client poisoning together. 6 are then excluded under the criteria above, each
+with the deciding phrase recorded: four fail I3 because the matched term names
+the threat being *detected* (a backdoor intrusion, a compromised device) rather
+than a threat to training, and two fail E3 as a survey or SoK. 18 remain; merged
+with round 1 (one overlap, WeiDetect) that is **20 distinct records**.
+
+**Result.** 2 of the 18 abstracts use the language of guarantees at all. In
+`arXiv:2512.23809` it attaches to Byzantine *detection* ("SHAP-weighted
+aggregation providing explainable Byzantine detection ... with theoretical
+guarantees"); in `arXiv:2601.01053` it is differential privacy ("excludes
+Byzantine participants while maintaining differential privacy guarantees").
+**0 assert a property holding for every attack in a stated threat class.**
+
+**Known limits of round 2.**
+- arXiv only. Records that appear solely in publisher-indexed venues
+  (ScienceDirect, Springer, IEEE Xplore) are not covered. One such record,
+  "Federated Learning with Provable Security Against Malicious Clients in IoT
+  Networks" (IEEE Xplore 10474836), was surfaced by web search and is
+  **retrieval-blocked** at every reachable source, as `fedidsdp2025` was in
+  round 1. Its title asserts provable security; the description reachable
+  outside the paywall attributes it to a kernel-density detection-and-threshold
+  method, which would code as detection rather than certified prediction, but
+  that is an inference from a secondary source and is **not counted** either way.
+- Abstract-level only, so a paper proving a certificate but not advertising it
+  would be missed.
+- Inclusion is coded, but from abstracts; a full-text reading could move records
+  either way.

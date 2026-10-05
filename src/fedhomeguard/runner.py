@@ -28,8 +28,13 @@ def prepare(cfg, verbose=True):
     if verbose: print(f"device={dev}  dataset={cfg.data.dataset}")
     bundle = DATA.load_dataset(cfg, verbose=verbose)
     X, y, device = bundle["X"], bundle["y"], bundle["device"]
-    tr, te = DATA.time_split_within_device(y, device, cfg.data.train_frac,
-                                           block=bundle.get("block"))
+    lodo = getattr(cfg.data, "lodo_device", None)
+    if lodo:
+        # W7/E5: hold one device out of training entirely and test only on it.
+        tr, te = DATA.leave_one_device_out(device, lodo)
+    else:
+        tr, te = DATA.time_split_within_device(y, device, cfg.data.train_frac,
+                                               block=bundle.get("block"))
     Xtr, Xte, _, _ = DATA.standardize(X[tr], X[te])
     ytr, yte, dtr = y[tr], y[te], device[tr]
     parts, pmeta = P.build(cfg, ytr, dtr)
@@ -39,6 +44,9 @@ def prepare(cfg, verbose=True):
         parts={i: torch.tensor(v, device=dev) for i, v in parts.items()},
         parts_np=parts, pmeta=pmeta, dev=dev, tau=M.tau_triv(yte),
         bal=M.balanced_index(yte, cfg.partition.seed),
+        fam_te=(bundle["family"][te] if bundle.get("family") is not None else None),
+        n_class=int(getattr(cfg.model, "n_class", 2) or 2),
+        class_names=bundle.get("class_names"),
         device_names=bundle["device_names"], feature_names=bundle["feature_names"])
     if verbose:
         print(f"train={len(ytr)} test={len(yte)} dim={Xtr.shape[1]} tau_triv={t['tau']:.4f}")

@@ -37,7 +37,7 @@ def main() -> None:
         rsAttackedContribs=f"{n_att:,}".replace(",", "{,}"),
         rsMedianDelta=f"{st.median(dl):.4f}", rsMeanDelta=f"{st.mean(dl):.4f}",
         rsMaxDelta=f"{max(dl):.4f}",
-        rsWithinPoint01=f"{sum(1 for d in dl if d <= 0.01)}/{len(dl)}",
+        rsWithinPointOhOne=f"{sum(1 for d in dl if d <= 0.01)}/{len(dl)}",
         rsMsgBytes=str(sorted({r["bytes"] for r in contrib})[0]),
         rsDistinctSizes=str(len(set(r["bytes"] for r in contrib))),
         rsAttackerLOC=str(loc),
@@ -79,7 +79,7 @@ def main() -> None:
         for k, v in sorted(m.items()):
             fh.write(f"\\newcommand{{\\{k}}}{{{v}}}\n")
     print(f"wrote realstack_macros.tex ({len(m)} macros)")
-    for k in ("rsCells", "rsContribs", "rsMedianDelta", "rsWithinPoint01",
+    for k in ("rsCells", "rsContribs", "rsMedianDelta", "rsWithinPointOhOne",
               "rsMsgBytes", "rsDistinctSizes", "rsAttackerLOC", "rsSeparable"):
         print(f"   {k:18s} {m[k]}")
 

@@ -11,11 +11,19 @@ Partition = dict[int, np.ndarray]
 
 
 # ------------------------------------------------------------------ skew instrument
-def _hist(idx: np.ndarray, y: np.ndarray, device: np.ndarray, n_dev: int) -> np.ndarray:
+def _n_cls(y: np.ndarray) -> int:
+    """Width of the label space. 2 for the binary detector, so every published S_JS
+    is unchanged; larger only under the multi-class control (E2), where the stride
+    below has to match or the (device x label) histogram overflows its own bins."""
+    return max(2, int(np.asarray(y).max()) + 1) if len(y) else 2
+
+
+def _hist(idx: np.ndarray, y: np.ndarray, device: np.ndarray, n_dev: int,
+          n_cls: int = 2) -> np.ndarray:
     if len(idx) == 0:
-        return np.ones(n_dev * 2) / (n_dev * 2)
-    key = device[idx].astype(int) * 2 + y[idx].astype(int)
-    h = np.bincount(key, minlength=n_dev * 2).astype(float)
+        return np.ones(n_dev * n_cls) / (n_dev * n_cls)
+    key = device[idx].astype(int) * n_cls + y[idx].astype(int)
+    h = np.bincount(key, minlength=n_dev * n_cls).astype(float)
     return h / h.sum()
 
 
@@ -40,8 +48,9 @@ def skew_js(parts: Partition, y: np.ndarray, device: np.ndarray) -> float:
     partitions rather than silently scoring them.
     """
     n_dev = int(device.max()) + 1
+    n_cls = _n_cls(y)
     live = [i for i in sorted(parts) if len(parts[i]) > 0]
-    H = [_hist(np.asarray(parts[i]), y, device, n_dev) for i in live]
+    H = [_hist(np.asarray(parts[i]), y, device, n_dev, n_cls) for i in live]
     N = len(H)
     if N < 2:
         return 0.0

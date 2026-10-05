@@ -37,13 +37,19 @@ class AutoEncoderClassifier(nn.Module):
 def build_model(cfg, d: int) -> nn.Module:
     arch = cfg.model.arch
     hidden = tuple(cfg.model.hidden)
+    # Defaults to 2, so every binary configuration builds exactly the model it did
+    # before. The multi-class control (E2) sets it from the label space.
+    nc = int(getattr(cfg.model, "n_class", 2) or 2)
     if arch == "mlp":
-        return MLP(d, hidden)
+        return MLP(d, hidden, n_class=nc)
     if arch == "logreg":
-        return MLP(d, ())          # no hidden layer: multinomial logistic regression
+        return MLP(d, (), n_class=nc)   # no hidden layer: multinomial logistic regression
     if arch == "mlp_large":
-        return MLP(d, (128, 64, 32))
+        return MLP(d, (128, 64, 32), n_class=nc)
     if arch == "autoencoder":
+        if nc != 2:
+            raise ValueError("the autoencoder head is a 2-logit reconstruction "
+                             "detector and has no multi-class form")
         return AutoEncoderClassifier(d, hidden)
     raise ValueError(f"unknown arch {arch!r}")
 

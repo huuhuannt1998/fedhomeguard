@@ -11,7 +11,8 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, os.path.dirname(__file__)); sys.path.insert(0, "src")
 import numpy as np
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+OUT = os.environ.get("FHG_GENERATED",
+                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
 BETA_GEO = {1: 0.450, 2: 0.250, 3: 0.150, 5: 0.100, 8: 0.050}
 
 
@@ -37,6 +38,18 @@ def cert_cells(pattern):
     return out
 
 
+def wilson(k_, n_, z=1.96):
+    """Wilson score interval, clamped to [0,1]. Sec. V promises one for every
+    collapse figure; the cross-dataset arm was the one place that omitted it."""
+    if n_ == 0:
+        return (0.0, 1.0)
+    p = k_ / n_
+    d = 1 + z * z / n_
+    c = p + z * z / (2 * n_)
+    m_ = z * ((p * (1 - p) + z * z / (4 * n_)) / n_) ** 0.5
+    return (max(0.0, (c - m_) / d), min(1.0, (c + m_) / d))
+
+
 def agg(cells, part, k):
     v = [c for key, c in cells.items() if key[0] == part and key[1] == k]
     if not v:
@@ -46,7 +59,8 @@ def agg(cells, part, k):
                 S_JS=float(np.mean([x["S_JS"] for x in v])),
                 collapse20=float(np.mean([x["collapse20"] for x in v])),
                 tau=v[0]["tau"],
-                at_ceiling=sum(1 for x in v if abs(x["bstar"] - BETA_GEO[k]) < 1e-9))
+                at_ceiling=sum(1 for x in v if abs(x["bstar"] - BETA_GEO[k]) < 1e-9),
+                coll_ci=wilson(sum(1 for x in v if x["collapse20"] > 0.5), len(v)))
 
 
 def mutual_information():
@@ -138,15 +152,25 @@ def main():
     m["xdBstarRatio"] = f"{d1['bstar'] / d2['bstar']:.0f}" if d2["bstar"] else "--"
 
     # ---- matched-contrast table ----------------------------------------------
-    rows = ["% GENERATED -- do not edit", "\\begin{tabular}{llcccc}", "\\toprule",
-            "Dataset & Partition & $S_{\\mathrm{JS}}$ & margin & $\\beta^{*}$ & "
-            "collapse \\\\", "\\midrule"]
+    # review D1 (F-09): mean share of nearly one-class clients over the same draws, read
+    # from the instrument audit (which rebuilt these partitions; seeds as in the rows).
+    _audit = [json.loads(l) for l in open("results/analysis/instruments.jsonl")]
+    def _fd(ds_, part_):
+        v = [r["frac_degenerate"] for r in _audit if r["dataset"] == ds_
+             and r["family"] == part_ and r["k"] == 1]
+        return float(np.mean(v)) if v else float("nan")
+    rows = ["% GENERATED -- do not edit", "\\begin{tabular}{llcccccc}", "\\toprule",
+            "Dataset & Partition & $n$ & $S_{\\mathrm{JS}}$ & $\\mathrm{fracDegen}$ & margin & "
+            "$\\beta^{*}$ & collapse (95\\% CI) \\\\", "\\midrule"]
     for ds, cells in (("IoT-23", io), ("N-BaIoT", nb)):
         for part, nm in (("iid", "IID"), ("device_derived", "device-derived")):
             a = agg(cells, part, 1)
             if a:
-                rows.append(f"{ds} & {nm} & {a['S_JS']:.4f} & {a['margin']:.4f} & "
-                            f"{a['bstar']:.3f} & {a['collapse20']:.2f} \\\\")
+                lo, hi = a["coll_ci"]
+                rows.append(f"{ds} & {nm} & {a['n']} & {a['S_JS']:.4f} & "
+                            f"{_fd('iot23' if ds == 'IoT-23' else 'nbaiot', part):.3f} & {a['margin']:.4f} & "
+                            f"{a['bstar']:.3f} & {a['collapse20']:.2f} "
+                            f"[{lo:.2f}, {hi:.2f}] \\\\")
         rows.append("\\midrule")
     rows = rows[:-1] + ["\\bottomrule", "\\end{tabular}"]
     open(os.path.join(OUT, "tab_crossdataset.tex"), "w").write("\n".join(rows) + "\n")
@@ -172,7 +196,7 @@ def main():
             ranked.append((abs(rho), rho, rw, s))
         ranked.sort(reverse=True)
         tr = ["% GENERATED -- do not edit", "\\begin{tabular}{lcc}", "\\toprule",
-              "Instrument & pooled $\\rho$ & within-cell $\\rho$ \\\\",
+              "Instrument & pooled $\\rho$ & within-family $\\rho$ \\\\",
               "\\midrule"]
         for _, rho, rw, s in ranked:
             w = "--" if rw != rw else f"{rw:+.3f}"
@@ -185,6 +209,9 @@ def main():
         m["xdSJSrhoW"] = f"{[r for r in ranked if r[3]=='S_JS'][0][2]:+.3f}"
         m["xdMCSrhoW"] = f"{[r for r in ranked if r[3]=='min_class_support'][0][2]:+.3f}"
         m["xdSJSrank"] = str([i for i, r in enumerate(ranked, 1) if r[3] == "S_JS"][0])
+        # the instrument S_JS now sits beside (review r6 item 13), printed so the rank
+        # can be read against it rather than taken on trust
+        m["xdSdevrho"] = f"{[r for r in ranked if r[3]=='S_dev'][0][1]:+.3f}"
         m["xdNinst"] = str(len(ranked))
 
     mac = ["% GENERATED -- do not edit"] + \

@@ -1,4 +1,24 @@
 #!/usr/bin/env python3
+# ---------------------------------------------------------------------------
+# GUARD (added after the working tree was lost on 2026-09-03).
+#
+# This script ASSEMBLES generated/appendix.tex from per-subsection source files.
+# Several of those sources are no longer on disk, and running the script without
+# them silently produced a valid-looking appendix with 7 of 18 subsections missing
+# -- including Proofs and Ethics. A truncation that still compiles is the worst
+# possible failure mode for this file.
+#
+# The assembled appendix is now AUTHORITATIVE and hand-maintained. Its numbers
+# still flow from generated macros and generated table bodies, so it does not need
+# re-assembly when the data changes. Set ALLOW_REASSEMBLE=1 only if you have
+# restored every source and have diffed the result against the current file.
+import os, sys
+if os.environ.get("ALLOW_REASSEMBLE") != "1":
+    print("gen_appendix: refusing to re-assemble -- generated/appendix.tex is "
+          "authoritative and several sources are missing. Set ALLOW_REASSEMBLE=1 "
+          "to override, and diff the output before keeping it.", file=sys.stderr)
+    raise SystemExit(0)
+# ---------------------------------------------------------------------------
 """Appendix: the sensitivity analyses (review sections 17, 18, 20 / E10, E11, E13).
 
 These are recommended rather than load-bearing, so they live in an appendix, which
@@ -186,17 +206,32 @@ $\\beta = 0.20$, by attack magnitude $\\lambda$.}}
     # Reference material moved out of the body, since IEEE S&P excludes appendices
     # from the page limit and the body prose already states every number these
     # tables carry that the argument depends on.
+    # ethics_appendix.tex is deliberately NOT emitted. The S&P 2027 CFP takes
+    # Ethics Considerations as a HotCRP field at submission and adds the section
+    # at camera-ready, "where it will not count toward page limits", so carrying
+    # it in the submitted appendix spends page budget the CFP does not ask for.
+    # The text is kept in generated/ethics_appendix.tex and goes in the field.
     for fname, heading in (("limitations_appendix.tex", None),
                            ("inventory_appendix.tex", None),
                            ("observability_appendix.tex", None),
-                           ("ethics_appendix.tex", None),
+                           (None, "@@SECTION@@Supporting Measurements"),
                            ("floats/tab_cost.tex", "Cost of certifiability"),
                            ("floats/tab_ablation.tex", "Skew-component ablation"),
-                           ("floats/fig_pincer.tex", "The pincer in vote-margin units"),
-                           ("floats/tab_instruments.tex", "Partition-statistic ranking"),
                            ("config_table_appendix.tex", "Complete configuration"),
                            ("floats/tab_ids.tex", "Certified detection, per class"),
-                           ("floats/tab_decomp.tex", "Where certification fails")):
+                           ("floats/tab_decomp.tex", "Where certification fails"),
+                           ("floats/tab_malset.tex",
+                            "Sensitivity to the malicious-set and partition draws"),
+                           ("realstack_appendix.tex",
+                            "Delivering the threat model on a real federated stack"),
+                           ("adaptive_appendix.tex",
+                            "An adaptive attack built for this construction")):
+        # a (None, "@@SECTION@@Title") entry opens a new appendix section rather
+        # than emitting a file; without it the table subsections below inherited
+        # \section{Open Science} as their parent, which is not what they are.
+        if fname is None and heading.startswith("@@SECTION@@"):
+            tex += "\n\\section{" + heading[len("@@SECTION@@"):] + "}\n"
+            continue
         fp = os.path.join(OUT, fname)
         if os.path.exists(fp):
             body = "\n".join(l for l in open(fp).read().split("\n")
@@ -211,6 +246,11 @@ $\\beta = 0.20$, by attack magnitude $\\lambda$.}}
     # method_table_appendix.tex left over from an earlier reorganisation. That
     # duplicated a full float and defined \label{tab:method} twice, so the body's
     # own \ref resolved to the appendix copy. The appendix copy is dropped.
+    osp = os.path.join(OUT, "openscience_appendix.tex")
+    if os.path.exists(osp):
+        tex += "\n" + "\n".join(l for l in open(osp).read().split("\n")
+                                 if not l.startswith("%")) + "\n"
+
     esp = os.path.join(OUT, "ensemble_size_appendix.tex")
     if os.path.exists(esp):
         tex += "\n" + "\n".join(l for l in open(esp).read().split("\n")

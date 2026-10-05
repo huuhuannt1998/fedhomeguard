@@ -26,14 +26,42 @@ def audit():
                         defenses=len({x["defense"] for x in r}),
                         attacks=len({x["attack"] for x in r}))
         else:
-            key = lambda x: (x["partition_seed"], x["k"], x["beta"], x["mal_mode"],
-                             x["mal_seed"], x.get("dirichlet_alpha"), x.get("N"),
-                             x.get("arch"), tuple(x.get("devices_per_household") or ()))
-            axes = dict(seeds=sorted({x["partition_seed"] for x in r}),
-                        k=sorted({x["k"] for x in r}),
-                        betas=sorted({x["beta"] for x in r}),
-                        alphas=sorted({x.get("dirichlet_alpha") for x in r},
-                                      key=lambda v: -(v or 0)))
+            # Not every non-defense lane carries every axis. The smoothing arm
+            # (e18_crfl_*) has no subsample size k and no malicious-set draw at
+            # all: it sweeps (rho, sigma) instead. Assuming k exists on every
+            # non-defense file raised KeyError('k') and took `make numbers` and
+            # `make paper` down with it. Derive the identity fields from what the
+            # rows actually contain, and report coverage only for the axes that
+            # are present, so a lane with a different grid is audited on its own
+            # grid rather than crashing the audit for every other lane.
+            #
+            # partition_type and tag are axes for the same reason: e16_lodo holds
+            # both partitions and all ten held-out devices in one file, so a key
+            # without them collided 342 times and reported a resume bug that was
+            # not there.
+            candidates = ("partition_seed", "partition_type", "tag", "k", "beta",
+                          "mal_mode", "mal_seed", "dirichlet_alpha", "N", "arch",
+                          "devices_per_household", "rho", "sigma", "n_smooth",
+                          "attack", "family")
+            present = [f for f in candidates if any(f in x for x in r)]
+
+            def _h(v):
+                return tuple(v) if isinstance(v, list) else v
+
+            key = lambda x, _p=tuple(present): tuple(_h(x.get(f)) for f in _p)
+
+            axes = {}
+            axes["seeds"] = sorted({x["partition_seed"] for x in r})
+            if "k" in present:
+                axes["k"] = sorted({x.get("k") for x in r}, key=lambda v: (v is None, v))
+            axes["betas"] = sorted({x["beta"] for x in r})
+            if "dirichlet_alpha" in present:
+                axes["alphas"] = sorted({x.get("dirichlet_alpha") for x in r},
+                                        key=lambda v: -(v or 0))
+            for f in ("rho", "sigma"):
+                if f in present:
+                    axes[f] = sorted({x.get(f) for x in r},
+                                     key=lambda v: (v is None, v))
         ks = [key(x) for x in r]
         dup = len(ks) - len(set(ks))
         # A cell measured twice -- once certified-arm-only over a fine beta grid, once
