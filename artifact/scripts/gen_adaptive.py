@@ -10,8 +10,7 @@ import glob, json, os, re, statistics as st, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from aggregate import src   # review r6: alie/gaussian corrected where the NaN path fired
 
-OUT = os.environ.get("FHG_GENERATED",
-                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 PUB = ["label_flip", "sign_flip", "gaussian", "ipm", "alie"]
 
 rows = []

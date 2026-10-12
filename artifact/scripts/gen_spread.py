@@ -7,7 +7,7 @@ threshold the literal gate scans for, so nothing tied them to the table.
 """
 import os, re, sys
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 rows = []
 for ln in open(f"{OUT}/tab_malset.tex"):
     c = [x.strip() for x in ln.split("&")]

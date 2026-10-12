@@ -36,15 +36,15 @@ for g in gen_paper_numbers gen_e3 gen_e7 gen_e7_stats gen_e8 gen_e9 gen_e12 \
          gen_e14_deployable gen_crossdataset gen_teaser gen_appendix gen_inventory_table; do
   [ -f "scripts/$g.py" ] && { python3 scripts/$g.py >> $M 2>&1 || log "  $g FAILED"; }
 done
-python3 manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/charts/make_figures_v2.py >> $M 2>&1 || log "figures FAILED"
+python3 manuscript/charts/make_figures_v2.py >> $M 2>&1 || log "figures FAILED"
 python3 scripts/verify_paper_claims.py >> $M 2>&1 || log "verify_paper_claims FAILED"
 
 log "=== rebuild ==="
 # Same sequence finish_all.sh uses; there is no render.sh in this workspace.
-( cd manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP
+( cd manuscript
   pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1
   bibtex main >/dev/null 2>&1
   pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1
   pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1 ) || log "render FAILED"
-log "pages: $(pdfinfo manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/main.pdf 2>/dev/null | awk '/^Pages/{print $2}')"
+log "pages: $(pdfinfo manuscript/main.pdf 2>/dev/null | awk '/^Pages/{print $2}')"
 log "CHAIN COMPLETE"

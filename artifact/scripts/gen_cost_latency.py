@@ -18,7 +18,7 @@ import torch
 from fedhomeguard import config as CFG, runner as R
 from fedhomeguard.models import build_model
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 BATCH, K1 = 1024, 20
 cfg = CFG.load("configs/stage3_certification.yaml")
 cfg.partition.kind = "device_derived"; cfg.partition.seed = 0

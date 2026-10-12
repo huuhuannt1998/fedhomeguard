@@ -16,8 +16,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FIG = os.environ.get("FHG_FIGURES", os.path.join(ROOT, "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/figures"))
-OUT = os.environ.get("FHG_GENERATED", os.path.join(ROOT, "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"))
+from _manuscript import FIGURES as FIG, GENERATED as OUT  # TMLR figures/ and generated/ (FHG_* override)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bstar import bstar as _bstar  # the one definition of beta* (per-draw, then median over draws)
 BLUE, ORANGE, MUTED, GRID = "#2a78d6", "#eb6834", "#898781", "#e1e0d9"

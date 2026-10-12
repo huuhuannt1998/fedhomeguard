@@ -1,0 +1,81 @@
+source,partition,k,beta,void,n,CTR_mal,CTR_ben,CA,CA_pi0.5,CA_pi0.1,CA_pi0.01,CA_pi0.001
+e5f (30 draws),device_derived,1,0.0,False,30,0.8785,0.9541,0.8933,0.9057,0.9384,0.9537,0.9541
+e5f (30 draws),device_derived,1,0.05,False,30,0.7908,0.943,0.8287,0.8609,0.9186,0.9382,0.9424
+e5f (30 draws),device_derived,1,0.1,False,30,0.0837,0.933,0.3182,0.5179,0.881,0.9283,0.9325
+e5f (30 draws),device_derived,1,0.15,False,30,0.0,0.9264,0.2543,0.4708,0.8451,0.9203,0.9255
+e5f (30 draws),device_derived,1,0.2,False,30,0.0,0.9186,0.2493,0.4612,0.8288,0.9112,0.9176
+e5f (30 draws),device_derived,1,0.25,False,30,0.0,0.9171,0.2478,0.4588,0.8254,0.9079,0.9162
+e5f (30 draws),device_derived,1,0.3,False,30,0.0,0.8863,0.2393,0.4432,0.7977,0.8775,0.8854
+e5f (30 draws),device_derived,1,0.35,False,30,0.0,0.491,0.1326,0.2455,0.4419,0.4861,0.4905
+e5f (30 draws),device_derived,1,0.4,False,30,0.0,0.2076,0.0561,0.1038,0.1869,0.2055,0.2074
+e5f (30 draws),device_derived,1,0.45,False,30,0.0,0.183,0.0494,0.0915,0.1647,0.1812,0.1829
+e5f (30 draws),device_derived,1,0.5,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),device_derived,2,0.0,False,30,0.9839,0.9382,0.9707,0.9607,0.9422,0.9388,0.9383
+e5f (30 draws),device_derived,2,0.05,False,30,0.9546,0.9279,0.948,0.9416,0.927,0.928,0.9279
+e5f (30 draws),device_derived,2,0.1,False,30,0.8837,0.9213,0.8935,0.903,0.9175,0.9209,0.9213
+e5f (30 draws),device_derived,2,0.15,False,30,0.8017,0.9169,0.8257,0.8551,0.8878,0.9153,0.9168
+e5f (30 draws),device_derived,2,0.2,False,30,0.073,0.8753,0.3009,0.4585,0.8198,0.8745,0.8752
+e5f (30 draws),device_derived,2,0.25,False,30,0.0,0.2273,0.0626,0.1159,0.2087,0.2252,0.2271
+e5f (30 draws),device_derived,2,0.3,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),device_derived,2,0.35,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),device_derived,2,0.4,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),device_derived,2,0.45,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),device_derived,2,0.5,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),iid,1,0.0,False,30,0.9958,0.9411,0.9813,0.9688,0.9466,0.9416,0.9411
+e5f (30 draws),iid,1,0.05,False,30,0.9957,0.941,0.9809,0.9683,0.9464,0.9415,0.941
+e5f (30 draws),iid,1,0.1,False,30,0.9956,0.9409,0.9808,0.9682,0.9463,0.9414,0.9409
+e5f (30 draws),iid,1,0.15,False,30,0.9956,0.9402,0.9806,0.9679,0.9458,0.9408,0.9403
+e5f (30 draws),iid,1,0.2,False,30,0.9955,0.9384,0.98,0.9669,0.9441,0.939,0.9385
+e5f (30 draws),iid,1,0.25,False,30,0.9954,0.9362,0.9794,0.9658,0.9421,0.9368,0.9363
+e5f (30 draws),iid,1,0.3,False,30,0.9954,0.9356,0.9791,0.9654,0.9415,0.9362,0.9356
+e5f (30 draws),iid,1,0.35,False,30,0.9942,0.9346,0.9783,0.9648,0.9406,0.9352,0.9347
+e5f (30 draws),iid,1,0.4,False,30,0.994,0.9343,0.9779,0.9642,0.9404,0.9349,0.9344
+e5f (30 draws),iid,1,0.45,False,30,0.9937,0.934,0.9775,0.9638,0.9399,0.9346,0.934
+e5f (30 draws),iid,1,0.5,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),iid,2,0.0,False,30,0.9958,0.9426,0.9814,0.9692,0.948,0.9432,0.9427
+e5f (30 draws),iid,2,0.05,False,30,0.9957,0.9413,0.981,0.9685,0.9467,0.9418,0.9414
+e5f (30 draws),iid,2,0.1,False,30,0.9956,0.941,0.9808,0.9682,0.9464,0.9415,0.941
+e5f (30 draws),iid,2,0.15,False,30,0.9954,0.9392,0.9803,0.9673,0.9449,0.9398,0.9393
+e5f (30 draws),iid,2,0.2,False,30,0.9954,0.9358,0.9793,0.9656,0.9418,0.9364,0.9359
+e5f (30 draws),iid,2,0.25,False,30,0.9949,0.9343,0.9783,0.9645,0.9403,0.9349,0.9344
+e5f (30 draws),iid,2,0.3,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),iid,2,0.35,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),iid,2,0.4,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),iid,2,0.45,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e5f (30 draws),iid,2,0.5,True,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2 corrected (3 draws x 3 sets),device_derived,1,0.0,False,3,0.954,0.9352,0.9483,0.9433,0.9346,0.9354,0.9352
+e2 corrected (3 draws x 3 sets),device_derived,1,0.05,False,9,0.8784,0.9319,0.8929,0.9051,0.9265,0.9313,0.9318
+e2 corrected (3 draws x 3 sets),device_derived,1,0.1,False,9,0.6776,0.9278,0.7452,0.8027,0.9028,0.9253,0.9276
+e2 corrected (3 draws x 3 sets),device_derived,1,0.2,False,9,0.0,0.9167,0.2627,0.4865,0.8425,0.9076,0.9158
+e2 corrected (3 draws x 3 sets),device_derived,1,0.3,False,9,0.0,0.872,0.2355,0.436,0.7848,0.8633,0.8712
+e2 corrected (3 draws x 3 sets),device_derived,1,0.4,False,9,0.0,0.2161,0.0584,0.1081,0.1945,0.214,0.2159
+e2 corrected (3 draws x 3 sets),device_derived,2,0.0,False,3,0.9965,0.9322,0.9782,0.9625,0.9386,0.9328,0.9322
+e2 corrected (3 draws x 3 sets),device_derived,2,0.05,False,9,0.9773,0.9251,0.9632,0.9512,0.9308,0.9256,0.9251
+e2 corrected (3 draws x 3 sets),device_derived,2,0.1,False,9,0.9539,0.9182,0.9331,0.9154,0.9237,0.9187,0.9182
+e2 corrected (3 draws x 3 sets),device_derived,2,0.2,False,9,0.5901,0.871,0.666,0.6897,0.8265,0.8682,0.8708
+e2 corrected (3 draws x 3 sets),device_derived,2,0.3,True,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2 corrected (3 draws x 3 sets),device_derived,2,0.4,True,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2 corrected (3 draws x 3 sets),device_derived,3,0.0,False,3,0.9946,0.9421,0.9785,0.9629,0.9473,0.9426,0.9421
+e2 corrected (3 draws x 3 sets),device_derived,3,0.05,False,9,0.9772,0.9222,0.9615,0.9481,0.9259,0.9229,0.9223
+e2 corrected (3 draws x 3 sets),device_derived,3,0.1,False,9,0.8788,0.9166,0.8772,0.8758,0.8916,0.9168,0.9166
+e2 corrected (3 draws x 3 sets),device_derived,3,0.2,True,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2 corrected (3 draws x 3 sets),device_derived,3,0.3,True,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2 corrected (3 draws x 3 sets),device_derived,3,0.4,True,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2 corrected (3 draws x 3 sets),iid,1,0.0,False,3,0.9967,0.941,0.9817,0.9688,0.9465,0.9415,0.941
+e2 corrected (3 draws x 3 sets),iid,1,0.05,False,9,0.9964,0.941,0.9813,0.9683,0.9464,0.9415,0.941
+e2 corrected (3 draws x 3 sets),iid,1,0.1,False,9,0.9957,0.9407,0.9809,0.9682,0.9462,0.9413,0.9408
+e2 corrected (3 draws x 3 sets),iid,1,0.2,False,9,0.9955,0.9389,0.9802,0.9671,0.9445,0.9394,0.9389
+e2 corrected (3 draws x 3 sets),iid,1,0.3,False,9,0.9951,0.9356,0.9793,0.9656,0.9416,0.9362,0.9357
+e2 corrected (3 draws x 3 sets),iid,1,0.4,False,9,0.9938,0.9345,0.9778,0.9642,0.9404,0.9351,0.9346
+e2 corrected (3 draws x 3 sets),iid,2,0.0,False,3,0.9957,0.9415,0.9811,0.9686,0.9469,0.9421,0.9416
+e2 corrected (3 draws x 3 sets),iid,2,0.05,False,9,0.9956,0.9413,0.981,0.9685,0.9467,0.9418,0.9414
+e2 corrected (3 draws x 3 sets),iid,2,0.1,False,9,0.9956,0.941,0.9808,0.9683,0.9464,0.9415,0.941
+e2 corrected (3 draws x 3 sets),iid,2,0.2,False,9,0.9954,0.9356,0.9793,0.9655,0.9416,0.9362,0.9357
+e2 corrected (3 draws x 3 sets),iid,2,0.3,True,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2 corrected (3 draws x 3 sets),iid,2,0.4,True,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2 corrected (3 draws x 3 sets),iid,3,0.0,False,3,0.9958,0.9427,0.9815,0.9693,0.9481,0.9433,0.9428
+e2 corrected (3 draws x 3 sets),iid,3,0.05,False,9,0.9956,0.9413,0.981,0.9685,0.9467,0.9418,0.9414
+e2 corrected (3 draws x 3 sets),iid,3,0.1,False,9,0.9955,0.9397,0.9804,0.9676,0.9453,0.9403,0.9398
+e2 corrected (3 draws x 3 sets),iid,3,0.2,True,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2 corrected (3 draws x 3 sets),iid,3,0.3,True,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2 corrected (3 draws x 3 sets),iid,3,0.4,True,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0

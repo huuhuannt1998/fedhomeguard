@@ -1,0 +1,2934 @@
+{
+ "summary": {
+  "iot23 IID|k1": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "iot23 device 1-3 (e5f)|k1": {
+   "n": 30,
+   "exact": 0.3333333333333333,
+   "within1": 0.7,
+   "mae_steps": 1.0333333333333334,
+   "mean_signed_steps": 1.0333333333333334,
+   "spearman": 0.7872640469799133,
+   "collapse02_agree": 0.8666666666666667
+  },
+  "iot23 device 1-1 (e11b/e22)|k1": {
+   "n": 30,
+   "exact": 0.8,
+   "within1": 0.9333333333333333,
+   "mae_steps": 0.3333333333333333,
+   "mean_signed_steps": 0.3333333333333333,
+   "spearman": 0.41541739122523014,
+   "collapse02_agree": 0.9666666666666667
+  },
+  "iot23 device 1-3 (e11b/e22)|k1": {
+   "n": 30,
+   "exact": 0.26666666666666666,
+   "within1": 0.7,
+   "mae_steps": 1.1333333333333333,
+   "mean_signed_steps": 1.1333333333333333,
+   "spearman": 0.8699518968634853,
+   "collapse02_agree": 0.7333333333333333
+  },
+  "iot23 device 2-5 (e11b/e22)|k1": {
+   "n": 30,
+   "exact": 0.5666666666666667,
+   "within1": 0.8,
+   "mae_steps": 0.7,
+   "mean_signed_steps": 0.7,
+   "spearman": 0.722933649533021,
+   "collapse02_agree": 1.0
+  },
+  "iot23 device 3-8 (e11b/e22)|k1": {
+   "n": 30,
+   "exact": 0.5333333333333333,
+   "within1": 0.9,
+   "mae_steps": 0.5666666666666667,
+   "mean_signed_steps": 0.5666666666666667,
+   "spearman": 0.6298344871519274,
+   "collapse02_agree": 1.0
+  },
+  "iot23 device 5-10 (e11b/e22)|k1": {
+   "n": 30,
+   "exact": 0.8333333333333334,
+   "within1": 1.0,
+   "mae_steps": 0.16666666666666666,
+   "mean_signed_steps": 0.16666666666666666,
+   "spearman": 0.5527707983925667,
+   "collapse02_agree": 1.0
+  },
+  "iot23 label-Dirichlet fine|k1": {
+   "n": 12,
+   "exact": 0.4166666666666667,
+   "within1": 0.75,
+   "mae_steps": 0.8333333333333334,
+   "mean_signed_steps": 0.5,
+   "spearman": 0.9197875575323671,
+   "collapse02_agree": 1.0
+  },
+  "iot23 device-Dirichlet fine|k1": {
+   "n": 12,
+   "exact": 0.3333333333333333,
+   "within1": 0.5833333333333334,
+   "mae_steps": 1.5833333333333333,
+   "mean_signed_steps": 1.5833333333333333,
+   "spearman": 0.8559537525872911,
+   "collapse02_agree": 0.9166666666666666
+  },
+  "iot23 label-Dirichlet coarse a>=3|k1": {
+   "n": 9,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "iot23 device-Dirichlet coarse a>=3|k1": {
+   "n": 9,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "iot23 volume|k1": {
+   "n": 15,
+   "exact": 0.4666666666666667,
+   "within1": 0.6,
+   "mae_steps": 1.8666666666666667,
+   "mean_signed_steps": 1.8666666666666667,
+   "spearman": 0.4931054376214994,
+   "collapse02_agree": 0.8
+  },
+  "nbaiot IID|k1": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 1-2|k1": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 1-1 (e21/e23)|k1": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 1-3 (e21/e23)|k1": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 2-5 (e21/e23)|k1": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 3-8 (e21/e23)|k1": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 5-9 (e21/e23)|k1": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "iot23 IID|k2": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "iot23 device 1-3 (e5f)|k2": {
+   "n": 30,
+   "exact": 0.36666666666666664,
+   "within1": 0.9,
+   "mae_steps": 0.7333333333333333,
+   "mean_signed_steps": 0.7333333333333333,
+   "spearman": 0.6224017139851115,
+   "collapse02_agree": 0.6666666666666666
+  },
+  "iot23 device 1-1 (e11b/e22)|k2": {
+   "n": 30,
+   "exact": 0.26666666666666666,
+   "within1": 0.9666666666666667,
+   "mae_steps": 0.7666666666666667,
+   "mean_signed_steps": 0.7666666666666667,
+   "spearman": 0.8692328188872398,
+   "collapse02_agree": 1.0
+  },
+  "iot23 device 1-3 (e11b/e22)|k2": {
+   "n": 30,
+   "exact": 0.36666666666666664,
+   "within1": 0.9,
+   "mae_steps": 0.7333333333333333,
+   "mean_signed_steps": 0.7333333333333333,
+   "spearman": 0.6934024891492047,
+   "collapse02_agree": 0.7
+  },
+  "iot23 device 2-5 (e11b/e22)|k2": {
+   "n": 30,
+   "exact": 0.8333333333333334,
+   "within1": 1.0,
+   "mae_steps": 0.16666666666666666,
+   "mean_signed_steps": 0.16666666666666666,
+   "spearman": 0.6359727033932191,
+   "collapse02_agree": 1.0
+  },
+  "iot23 device 3-8 (e11b/e22)|k2": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "iot23 device 5-10 (e11b/e22)|k2": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "iot23 label-Dirichlet fine|k2": {
+   "n": 12,
+   "exact": 0.5833333333333334,
+   "within1": 1.0,
+   "mae_steps": 0.4166666666666667,
+   "mean_signed_steps": 0.08333333333333333,
+   "spearman": 0.9708705974774592,
+   "collapse02_agree": 0.8333333333333334
+  },
+  "iot23 device-Dirichlet fine|k2": {
+   "n": 12,
+   "exact": 0.75,
+   "within1": 1.0,
+   "mae_steps": 0.25,
+   "mean_signed_steps": 0.25,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "iot23 label-Dirichlet coarse a>=3|k2": {
+   "n": 9,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "iot23 device-Dirichlet coarse a>=3|k2": {
+   "n": 9,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "iot23 volume|k2": {
+   "n": 15,
+   "exact": 0.6666666666666666,
+   "within1": 0.9333333333333333,
+   "mae_steps": 0.4,
+   "mean_signed_steps": 0.4,
+   "spearman": 0.2857142857142857,
+   "collapse02_agree": 0.9333333333333333
+  },
+  "nbaiot IID|k2": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 1-2|k2": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 1-1 (e21/e23)|k2": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 1-3 (e21/e23)|k2": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 2-5 (e21/e23)|k2": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 3-8 (e21/e23)|k2": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  },
+  "nbaiot device 5-9 (e21/e23)|k2": {
+   "n": 30,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "mean_signed_steps": 0.0,
+   "spearman": null,
+   "collapse02_agree": 1.0
+  }
+ },
+ "falsifier_iot23_device_k1": {
+  "n": 160,
+  "exact": 0.58125,
+  "within1": 0.84375,
+  "mae_steps": 0.63125,
+  "mean_signed_steps": 0.63125,
+  "spearman": 0.9611951878412694,
+  "collapse02_agree": 0.93125,
+  "fired": false
+ },
+ "problems": [],
+ "counterexamples": {
+  "median_S_JS": 0.211937,
+  "CX1": {
+   "n": 64,
+   "cells": [
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 0,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.853698,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.020628,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 0,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.853698,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.020628,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 1,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.847051,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.011252,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 1,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.847051,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.011252,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 10,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.83292,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.011252,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 10,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.83292,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.011252,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 11,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.842708,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.016878,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 11,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.842708,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.016878,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 12,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.842407,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.011252,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 12,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.842407,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.011252,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 13,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.847293,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.017681,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 13,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.847293,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.017681,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 14,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.856032,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.020628,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 14,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.856032,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.020628,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 15,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.84813,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.017681,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 15,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.84813,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.017681,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 16,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.887302,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.022504,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 16,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.887302,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.022504,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 17,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.84611,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 17,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.84611,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 18,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.818765,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.020628,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 18,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.818765,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.020628,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 19,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.832874,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 19,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.832874,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 2,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.857522,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.020628,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 2,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.857522,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.020628,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 20,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.848782,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 20,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.848782,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 21,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.861887,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.016878,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 21,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.861887,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.016878,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 22,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.879171,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.024754,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 22,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.879171,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.024754,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 23,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.883238,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.009644,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 23,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.883238,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.009644,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 24,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.832196,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.017682,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 24,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.832196,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.017682,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 25,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.84072,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.011252,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 25,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.84072,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.011252,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 26,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.845613,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 26,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.845613,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 27,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.873131,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.009645,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 27,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.873131,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.009645,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 28,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.829305,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 28,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.829305,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 29,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.852582,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.020628,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 29,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.852582,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.020628,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 3,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.866966,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.024754,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 3,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.866966,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.024754,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 4,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.849771,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.022504,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 4,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.849771,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.022504,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 5,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.866521,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.016878,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 5,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.866521,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.016878,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 6,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.857345,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.011252,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 6,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.857345,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.011252,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 7,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.867755,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.022504,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 7,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.867755,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.022504,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 8,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.855225,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 8,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.855225,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013502,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 9,
+     "alpha": null,
+     "k": 1,
+     "S_JS": 0.802556,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013752,
+     "beta_star": 0.45
+    },
+    {
+     "dataset": "nbaiot",
+     "family": "device_derived",
+     "pseed": 9,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.802556,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.013752,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "iot23",
+     "family": "device_derived",
+     "pseed": 18,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.820444,
+     "frac_degenerate": 0.3,
+     "min_class_support": 0.7,
+     "min_size_share": 0.000901,
+     "beta_star": 0.2
+    },
+    {
+     "dataset": "iot23",
+     "family": "device_derived",
+     "pseed": 26,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.805567,
+     "frac_degenerate": 0.3,
+     "min_class_support": 0.75,
+     "min_size_share": 0.002057,
+     "beta_star": 0.2
+    },
+    {
+     "dataset": "iot23",
+     "family": "device_derived",
+     "pseed": 28,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.814614,
+     "frac_degenerate": 0.35,
+     "min_class_support": 0.75,
+     "min_size_share": 0.003288,
+     "beta_star": 0.2
+    },
+    {
+     "dataset": "iot23",
+     "family": "device_derived",
+     "pseed": 36,
+     "alpha": null,
+     "k": 2,
+     "S_JS": 0.807685,
+     "frac_degenerate": 0.4,
+     "min_class_support": 0.65,
+     "min_size_share": 0.001178,
+     "beta_star": 0.2
+    }
+   ]
+  },
+  "CX2": {
+   "n": 3,
+   "cells": [
+    {
+     "dataset": "iot23",
+     "family": "volume",
+     "pseed": 0,
+     "alpha": 0.2,
+     "k": 1,
+     "S_JS": 0.028498,
+     "frac_degenerate": 0.15,
+     "min_class_support": 0.85,
+     "min_size_share": 0.0,
+     "beta_star": 0.15
+    },
+    {
+     "dataset": "iot23",
+     "family": "volume",
+     "pseed": 1,
+     "alpha": 0.5,
+     "k": 1,
+     "S_JS": 0.025332,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 6e-05,
+     "beta_star": 0.15
+    },
+    {
+     "dataset": "iot23",
+     "family": "volume",
+     "pseed": 2,
+     "alpha": 0.5,
+     "k": 1,
+     "S_JS": 0.010803,
+     "frac_degenerate": 0.05,
+     "min_class_support": 0.95,
+     "min_size_share": 0.0,
+     "beta_star": 0.15
+    }
+   ]
+  },
+  "CX3": {
+   "n": 4,
+   "cells": [
+    {
+     "dataset": "iot23",
+     "family": "dirichlet_device",
+     "pseed": 1,
+     "alpha": 0.2,
+     "k": 1,
+     "S_JS": 0.542747,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.002259,
+     "beta_star": 0.3
+    },
+    {
+     "dataset": "iot23",
+     "family": "volume",
+     "pseed": 0,
+     "alpha": 0.5,
+     "k": 1,
+     "S_JS": 0.008064,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.000751,
+     "beta_star": 0.25
+    },
+    {
+     "dataset": "iot23",
+     "family": "volume",
+     "pseed": 0,
+     "alpha": 1.0,
+     "k": 1,
+     "S_JS": 0.00296,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 0.001449,
+     "beta_star": 0.3
+    },
+    {
+     "dataset": "iot23",
+     "family": "volume",
+     "pseed": 1,
+     "alpha": 0.5,
+     "k": 1,
+     "S_JS": 0.025332,
+     "frac_degenerate": 0.0,
+     "min_class_support": 1.0,
+     "min_size_share": 6e-05,
+     "beta_star": 0.15
+    }
+   ]
+  },
+  "CX4": {
+   "n": 189,
+   "n_distinct": 48,
+   "rows": [
+    {
+     "file": "e10_N10_device_derived.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e10_N10_device_derived.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e10_N10_device_derived.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.99979,
+     "CA": 0.269919,
+     "cert_wrong": 0.729871
+    },
+    {
+     "file": "e10b_N10_device_derived.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e10b_N10_device_derived.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e10b_N10_device_derived.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.99979,
+     "CA": 0.269919,
+     "cert_wrong": 0.729871
+    },
+    {
+     "file": "e11_dph1_1.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.269919,
+     "cert_wrong": 0.730081
+    },
+    {
+     "file": "e11_dph1_1.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99976,
+     "CA": 0.269799,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11_dph1_1.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.99985,
+     "CA": 0.269739,
+     "cert_wrong": 0.730111
+    },
+    {
+     "file": "e11_dph1_1.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99982,
+     "CA": 0.269739,
+     "cert_wrong": 0.730081
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.269919,
+     "cert_wrong": 0.730081
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99976,
+     "CA": 0.269799,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.99985,
+     "CA": 0.269739,
+     "cert_wrong": 0.730111
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99982,
+     "CA": 0.269739,
+     "cert_wrong": 0.730081
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 3,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 3,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99988,
+     "CA": 0.269919,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 3,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.99976,
+     "CA": 0.269799,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 3,
+     "k": 1,
+     "beta": 0.15,
+     "coverage": 0.99952,
+     "CA": 0.269679,
+     "cert_wrong": 0.729841
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 5,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 5,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99988,
+     "CA": 0.269919,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 6,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 7,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.269919,
+     "cert_wrong": 0.730081
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 7,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99973,
+     "CA": 0.269829,
+     "cert_wrong": 0.729901
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 7,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.99949,
+     "CA": 0.269679,
+     "cert_wrong": 0.729811
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 8,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 8,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 8,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 8,
+     "k": 1,
+     "beta": 0.15,
+     "coverage": 0.99976,
+     "CA": 0.269919,
+     "cert_wrong": 0.729841
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 10,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.269919,
+     "cert_wrong": 0.730081
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 10,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99973,
+     "CA": 0.269799,
+     "cert_wrong": 0.729931
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 11,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 11,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 12,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.99997,
+     "CA": 0.269889,
+     "cert_wrong": 0.730081
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 13,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.99967,
+     "CA": 0.269739,
+     "cert_wrong": 0.729931
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 13,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99946,
+     "CA": 0.269559,
+     "cert_wrong": 0.729901
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 14,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 14,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 14,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.99991,
+     "CA": 0.269979,
+     "cert_wrong": 0.729931
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 14,
+     "k": 1,
+     "beta": 0.15,
+     "coverage": 0.99964,
+     "CA": 0.269829,
+     "cert_wrong": 0.729811
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 16,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.99988,
+     "CA": 0.269949,
+     "cert_wrong": 0.729931
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 16,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99982,
+     "CA": 0.269919,
+     "cert_wrong": 0.729901
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 16,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.99973,
+     "CA": 0.269829,
+     "cert_wrong": 0.729901
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 16,
+     "k": 1,
+     "beta": 0.15,
+     "coverage": 0.99955,
+     "CA": 0.269739,
+     "cert_wrong": 0.729811
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 16,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.99931,
+     "CA": 0.269559,
+     "cert_wrong": 0.729751
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 17,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 17,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 17,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 17,
+     "k": 1,
+     "beta": 0.15,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 17,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.99976,
+     "CA": 0.269919,
+     "cert_wrong": 0.729841
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 18,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.269919,
+     "cert_wrong": 0.730081
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 19,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 19,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 19,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.99976,
+     "CA": 0.269919,
+     "cert_wrong": 0.729841
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 22,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 22,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99988,
+     "CA": 0.269919,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 22,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.9997,
+     "CA": 0.269769,
+     "cert_wrong": 0.729931
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 24,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.99988,
+     "CA": 0.269979,
+     "cert_wrong": 0.729901
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 24,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99961,
+     "CA": 0.269709,
+     "cert_wrong": 0.729901
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 26,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.99985,
+     "CA": 0.269919,
+     "cert_wrong": 0.729931
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 26,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.99973,
+     "CA": 0.269829,
+     "cert_wrong": 0.729901
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 27,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 28,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.269919,
+     "cert_wrong": 0.730081
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 28,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.9997,
+     "CA": 0.269799,
+     "cert_wrong": 0.729901
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 28,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.99946,
+     "CA": 0.269649,
+     "cert_wrong": 0.729811
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 28,
+     "k": 1,
+     "beta": 0.15,
+     "coverage": 0.9994,
+     "CA": 0.269649,
+     "cert_wrong": 0.729751
+    },
+    {
+     "file": "e11b_dph1_1.jsonl",
+     "seed": 28,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.99931,
+     "CA": 0.269559,
+     "cert_wrong": 0.729751
+    },
+    {
+     "file": "e11b_dph1_3.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e11b_dph1_3.jsonl",
+     "seed": 12,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.935875,
+     "CA": 0.719093,
+     "cert_wrong": 0.216782
+    },
+    {
+     "file": "e15_voteshape_dev.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.997788,
+     "CA": 0.767699,
+     "cert_wrong": 0.230088
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.997788,
+     "CA": 0.767699,
+     "cert_wrong": 0.230088
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.995575,
+     "CA": 0.765487,
+     "cert_wrong": 0.230088
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.993363,
+     "CA": 0.763274,
+     "cert_wrong": 0.230088
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.997788,
+     "CA": 0.754425,
+     "cert_wrong": 0.243363
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.997788,
+     "CA": 0.754425,
+     "cert_wrong": 0.243363
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.993363,
+     "CA": 0.754425,
+     "cert_wrong": 0.238938
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.997788,
+     "CA": 0.767699,
+     "cert_wrong": 0.230088
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.988938,
+     "CA": 0.75885,
+     "cert_wrong": 0.230088
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.938053,
+     "CA": 0.707965,
+     "cert_wrong": 0.230088
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.787611,
+     "cert_wrong": 0.212389
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.995575,
+     "CA": 0.803097,
+     "cert_wrong": 0.192478
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.988938,
+     "CA": 0.776549,
+     "cert_wrong": 0.212389
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.609898,
+     "cert_wrong": 0.390102
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.998544,
+     "CA": 0.609898,
+     "cert_wrong": 0.388646
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.983988,
+     "CA": 0.597525,
+     "cert_wrong": 0.386463
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.998544,
+     "CA": 0.608443,
+     "cert_wrong": 0.390102
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.985444,
+     "CA": 0.597525,
+     "cert_wrong": 0.387918
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.984716,
+     "CA": 0.597525,
+     "cert_wrong": 0.387191
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.983988,
+     "CA": 0.597525,
+     "cert_wrong": 0.386463
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.609898,
+     "cert_wrong": 0.390102
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.987627,
+     "CA": 0.597525,
+     "cert_wrong": 0.390102
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.985444,
+     "CA": 0.597525,
+     "cert_wrong": 0.387918
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.954876,
+     "CA": 0.805677,
+     "cert_wrong": 0.149199
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.933042,
+     "CA": 0.724891,
+     "cert_wrong": 0.208151
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.994702,
+     "CA": 0.994702,
+     "cert_wrong": 0.0
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.994702,
+     "CA": 0.994702,
+     "cert_wrong": 0.0
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.994702,
+     "CA": 0.994702,
+     "cert_wrong": 0.0
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.994702,
+     "CA": 0.994702,
+     "cert_wrong": 0.0
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.99574,
+     "CA": 0.995435,
+     "cert_wrong": 0.000304
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.995435,
+     "CA": 0.995131,
+     "cert_wrong": 0.000304
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.996044,
+     "CA": 0.995435,
+     "cert_wrong": 0.000609
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.99574,
+     "CA": 0.995435,
+     "cert_wrong": 0.000304
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.993914,
+     "CA": 0.993914,
+     "cert_wrong": 0.0
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.999983,
+     "CA": 0.79845,
+     "cert_wrong": 0.201533
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.999933,
+     "CA": 0.798433,
+     "cert_wrong": 0.2015
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.999833,
+     "CA": 0.798417,
+     "cert_wrong": 0.201417
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.999483,
+     "CA": 0.7981,
+     "cert_wrong": 0.201383
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.99935,
+     "CA": 0.798083,
+     "cert_wrong": 0.201267
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.4,
+     "coverage": 0.923817,
+     "CA": 0.797967,
+     "cert_wrong": 0.12585
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.999933,
+     "CA": 0.79845,
+     "cert_wrong": 0.201483
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.9999,
+     "CA": 0.798433,
+     "cert_wrong": 0.201467
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.999517,
+     "CA": 0.7981,
+     "cert_wrong": 0.201417
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.999483,
+     "CA": 0.7981,
+     "cert_wrong": 0.201383
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.9994,
+     "CA": 0.798067,
+     "cert_wrong": 0.201333
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.4,
+     "coverage": 0.923217,
+     "CA": 0.7973,
+     "cert_wrong": 0.125917
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.798433,
+     "cert_wrong": 0.201567
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.999633,
+     "CA": 0.798117,
+     "cert_wrong": 0.201517
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.999583,
+     "CA": 0.7981,
+     "cert_wrong": 0.201483
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.99945,
+     "CA": 0.7981,
+     "cert_wrong": 0.20135
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.9993,
+     "CA": 0.798083,
+     "cert_wrong": 0.201217
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.4,
+     "coverage": 0.99905,
+     "CA": 0.797917,
+     "cert_wrong": 0.201133
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.9602,
+     "CA": 0.797,
+     "cert_wrong": 0.1632
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.985483,
+     "CA": 0.014383,
+     "cert_wrong": 0.9711
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.999917,
+     "CA": 0.79725,
+     "cert_wrong": 0.202667
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.308188,
+     "cert_wrong": 0.691812
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 1.0,
+     "CA": 0.308188,
+     "cert_wrong": 0.691812
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.999957,
+     "CA": 0.308188,
+     "cert_wrong": 0.691769
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.999482,
+     "CA": 0.308188,
+     "cert_wrong": 0.691294
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.999352,
+     "CA": 0.308188,
+     "cert_wrong": 0.691164
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.4,
+     "coverage": 0.928624,
+     "CA": 0.308188,
+     "cert_wrong": 0.620436
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.308188,
+     "cert_wrong": 0.691812
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 1.0,
+     "CA": 0.308188,
+     "cert_wrong": 0.691812
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 1.0,
+     "CA": 0.308188,
+     "cert_wrong": 0.691812
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.999957,
+     "CA": 0.308188,
+     "cert_wrong": 0.691769
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.999352,
+     "CA": 0.308188,
+     "cert_wrong": 0.691164
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.4,
+     "coverage": 0.928624,
+     "CA": 0.308188,
+     "cert_wrong": 0.620436
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.308188,
+     "cert_wrong": 0.691812
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 1.0,
+     "CA": 0.308188,
+     "cert_wrong": 0.691812
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.999957,
+     "CA": 0.308188,
+     "cert_wrong": 0.691769
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.999957,
+     "CA": 0.308188,
+     "cert_wrong": 0.691769
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.999352,
+     "CA": 0.308188,
+     "cert_wrong": 0.691164
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.4,
+     "coverage": 0.928624,
+     "CA": 0.308188,
+     "cert_wrong": 0.620436
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.999222,
+     "CA": 0.303176,
+     "cert_wrong": 0.696047
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.992996,
+     "CA": 0.580208,
+     "cert_wrong": 0.412788
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.990737,
+     "CA": 0.5784,
+     "cert_wrong": 0.412336
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.965883,
+     "CA": 0.554225,
+     "cert_wrong": 0.411658
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.962268,
+     "CA": 0.551288,
+     "cert_wrong": 0.410981
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.959105,
+     "CA": 0.548125,
+     "cert_wrong": 0.410981
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.4,
+     "coverage": 0.959105,
+     "CA": 0.548125,
+     "cert_wrong": 0.410981
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.587212,
+     "cert_wrong": 0.412788
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.999774,
+     "CA": 0.587212,
+     "cert_wrong": 0.412562
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.967013,
+     "CA": 0.554451,
+     "cert_wrong": 0.412562
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.965206,
+     "CA": 0.553773,
+     "cert_wrong": 0.411432
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.963172,
+     "CA": 0.552192,
+     "cert_wrong": 0.410981
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.4,
+     "coverage": 0.959105,
+     "CA": 0.548125,
+     "cert_wrong": 0.410981
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.999096,
+     "CA": 0.587438,
+     "cert_wrong": 0.411658
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.999096,
+     "CA": 0.587438,
+     "cert_wrong": 0.411658
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.1,
+     "coverage": 0.999096,
+     "CA": 0.587438,
+     "cert_wrong": 0.411658
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.96272,
+     "CA": 0.55174,
+     "cert_wrong": 0.410981
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.960687,
+     "CA": 0.549706,
+     "cert_wrong": 0.410981
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.4,
+     "coverage": 0.959105,
+     "CA": 0.548125,
+     "cert_wrong": 0.410981
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.998644,
+     "CA": 0.58789,
+     "cert_wrong": 0.410755
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 0,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.951649,
+     "CA": 0.581338,
+     "cert_wrong": 0.370312
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.58789,
+     "cert_wrong": 0.41211
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.999548,
+     "CA": 0.587664,
+     "cert_wrong": 0.411884
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.999548,
+     "CA": 0.784907,
+     "cert_wrong": 0.214641
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.92827,
+     "CA": 0.881857,
+     "cert_wrong": 0.046414
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.3,
+     "coverage": 0.924051,
+     "CA": 0.881857,
+     "cert_wrong": 0.042194
+    },
+    {
+     "file": "e16_lodo.jsonl",
+     "seed": 2,
+     "k": 1,
+     "beta": 0.2,
+     "coverage": 0.92827,
+     "CA": 0.881857,
+     "cert_wrong": 0.046414
+    },
+    {
+     "file": "e17_ctrfamily_device_derived.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e18_crfl_rho.jsonl",
+     "seed": 0,
+     "k": null,
+     "beta": 0.0,
+     "coverage": 0.99973,
+     "CA": 0.729811,
+     "cert_wrong": null
+    },
+    {
+     "file": "e18_crfl_rho.jsonl",
+     "seed": 0,
+     "k": null,
+     "beta": 0.0,
+     "coverage": 0.99991,
+     "CA": 0.729901,
+     "cert_wrong": null
+    },
+    {
+     "file": "e19_large_device_derived.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e22_k2rich_1_1.jsonl",
+     "seed": 3,
+     "k": 2,
+     "beta": 0.0,
+     "coverage": 0.99994,
+     "CA": 0.41393,
+     "cert_wrong": 0.58601
+    },
+    {
+     "file": "e22_k2rich_1_1.jsonl",
+     "seed": 7,
+     "k": 2,
+     "beta": 0.0,
+     "coverage": 0.99991,
+     "CA": 0.489553,
+     "cert_wrong": 0.510357
+    },
+    {
+     "file": "e22_k2rich_1_1.jsonl",
+     "seed": 8,
+     "k": 2,
+     "beta": 0.0,
+     "coverage": 0.99994,
+     "CA": 0.41399,
+     "cert_wrong": 0.58595
+    },
+    {
+     "file": "e22_k2rich_1_1.jsonl",
+     "seed": 14,
+     "k": 2,
+     "beta": 0.0,
+     "coverage": 0.99997,
+     "CA": 0.4139,
+     "cert_wrong": 0.58607
+    },
+    {
+     "file": "e22_k2rich_1_1.jsonl",
+     "seed": 16,
+     "k": 2,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e22_k2rich_1_1.jsonl",
+     "seed": 17,
+     "k": 2,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e22_k2rich_1_1.jsonl",
+     "seed": 22,
+     "k": 2,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.489733,
+     "cert_wrong": 0.510267
+    },
+    {
+     "file": "e22_k2rich_1_1.jsonl",
+     "seed": 28,
+     "k": 2,
+     "beta": 0.0,
+     "coverage": 0.99988,
+     "CA": 0.269919,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e2_device_derived_s1.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e2f_device_derived.jsonl",
+     "seed": 1,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e5_device_derived.jsonl",
+     "seed": 12,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.935875,
+     "CA": 0.719093,
+     "cert_wrong": 0.216782
+    },
+    {
+     "file": "e5_device_derived.jsonl",
+     "seed": 35,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e5_device_derived.jsonl",
+     "seed": 35,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.9997,
+     "CA": 0.269919,
+     "cert_wrong": 0.729781
+    },
+    {
+     "file": "e5f_device_derived.jsonl",
+     "seed": 12,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 0.935875,
+     "CA": 0.719093,
+     "cert_wrong": 0.216782
+    },
+    {
+     "file": "e5f_device_derived.jsonl",
+     "seed": 35,
+     "k": 1,
+     "beta": 0.0,
+     "coverage": 1.0,
+     "CA": 0.270039,
+     "cert_wrong": 0.729961
+    },
+    {
+     "file": "e5f_device_derived.jsonl",
+     "seed": 35,
+     "k": 1,
+     "beta": 0.05,
+     "coverage": 0.9997,
+     "CA": 0.269919,
+     "cert_wrong": 0.729781
+    }
+   ]
+  }
+ }
+}

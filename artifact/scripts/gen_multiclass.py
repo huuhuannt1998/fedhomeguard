@@ -29,8 +29,7 @@ import json, os, statistics as st, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from aggregate import src                                    # noqa: E402
 
-OUT = os.environ.get("FHG_GENERATED",
-                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 BETAS = [0.0, 0.05, 0.10, 0.20, 0.30, 0.40]
 KS = [1, 2]
 

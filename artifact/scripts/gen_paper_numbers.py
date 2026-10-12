@@ -16,8 +16,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
 from aggregate import load, gap_table, collapse_stats, assertions, med_iqr, src
 
-MAN = ("manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP")
-OUT = os.environ.get("FHG_GENERATED", os.path.join(MAN, "generated"))
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 BETAS = [0.0, 0.05, 0.10, 0.20, 0.30, 0.40]
 
 
@@ -349,12 +348,16 @@ def main():
     # Overall accuracy is a weak instrument when a constant predictor attains 0.73,
     # so this is the class-conditional view the review asks for (sec 11, sec 46).
     kk2 = 2 if 2 in ks else ks[0]
+    # round tmlr2 (2026-10-10): the table reads the 30-draw certified grid (e5f, the draws of the
+    # collapse rates), not the 3 same-ensemble draws, whose device-derived beta = 0.20 row (coverage
+    # 0.667) sat far from the 30-draw median. Certified quantities do not depend on the malicious set.
+    gt30 = gap_table(load(os.path.join("results", "canonical", "e5f_*.jsonl")))
     ids = ["% GENERATED -- do not edit", "\\begin{tabular}{llcccc}", "\\toprule",
            "Partition & $\\beta$ & coverage & $\\mathrm{CTR}_{\\mathrm{mal}}$ & "
            "$\\mathrm{CTR}_{\\mathrm{ben}}$ & cert.\\ wrong \\\\", "\\midrule"]
     for p_, lab in (("iid", "IID"), ("device_derived", "Device")):
         for b in BETAS:
-            e = gt.get((p_, kk2, round(b, 4)))
+            e = gt30.get((p_, kk2, round(b, 4)))
             if e is None:
                 continue
             ids.append(f"{lab} & {b:.2f} & {e['coverage']['median']:.3f} & "
@@ -387,44 +390,32 @@ def main():
         f.write(cap)
 
     # ------------------------------------------------------- E14 certification cost
-    import math as _m, re as _re, glob as _glob
+    # round tmlr3 (2026-10-10): the training-time column is the PB09 re-measurement (results/tmlr_rev/
+    # pb09_timing.json: one core, medians of 5 repeats of the predeclared protocol, the median per-member time over
+    # 10 members times K; "$\\approx$" where the range of the repeats exceeds 10% of the median). One FedAvg run is
+    # the reference row, and the sampled k=5 and k=8 arms are priced as well. The clean-pass times of the original
+    # logs (7 s, 95 s, 350 s) are no longer printed: they were 5-8 times the re-measured training and certification
+    # time, for a reason not identified, and client-rounds are the comparable unit.
+    import math as _m
     T = 15
-    wall = {}
-    # Only the six same-predictor runs (stage C, 2026-10-02): "logs/e2_*.log" also pooled
-    # logs/e2_classbal.log, whose k=2 passes were served from the member cache (16-17 s) and
-    # pulled the k=2 median to 88 s; the six clean logs give 95 s, as Core E14 records.
-    for f_ in sorted(_glob.glob("logs/e2_iid_s*.log") + _glob.glob("logs/e2_device_derived_s*.log")):
-        for line in open(f_):
-            mm = _re.search(r"k=(\d+) K=(\d+)/(\d+) full_enum=(\w+).*\[(\d+)s\]", line)
-            if mm:
-                wall.setdefault(int(mm.group(1)), []).append(int(mm.group(5)))
-    o = ["% GENERATED -- do not edit", "\\begin{tabular}{lrrrrr}", "\\toprule",
-         "$k$ & $\\binom{N}{k}$ & $K$ & client-rounds & vs.\\ FedAvg & clean pass \\\\",
-         "\\midrule"]
     grp = lambda v: f"{v:,}".replace(",", "{,}")
-    for k in ks:
-        K = [r["K"] for r in rows if r["k"] == k][0]
+    _pb = json.load(open(os.path.join("results", "tmlr_rev", "pb09_timing.json")))["summary"]
+
+    def _tsec(key):
+        e = _pb[key]
+        v = e["median"]
+        s_ = f"{v:.1f}" if v < 10 else f"{v:.0f}"
+        return ("$\\approx$" if e["approximate"] else "") + s_ + "\\,s"
+    o = ["% GENERATED -- do not edit", "\\begin{tabular}{lrrrrr}", "\\toprule",
+         "$k$ & $\\binom{N}{k}$ & $K$ & client-rounds & vs.\\ FedAvg & training \\\\",
+         "\\midrule",
+         f"FedAvg & -- & 1 & {grp(N * T)} & 1$\\times$ & {_tsec('fedavg_secs')} \\\\"]
+    for k, K in ((1, 20), (2, 190), (3, 500), (3, 1140), (5, 200), (8, 200)):
         cr = K * k * T
-        w = wall.get(k)
-        ws = f"{int(np.median(w))}\\,s" if w else "---"
-        # The k=3 same-predictor arm is a sample of the 1,140 subsets; say so in
-        # the row rather than leaving the reader to compare K against C(N,k).
-        Klab = f"{grp(K)} (sampled arm)" if K < _m.comb(N, k) else grp(K)
+        full = K == _m.comb(N, k)
+        Klab = grp(K) + (" (full)" if (full and k == 3) else "" if full else " (sampled)")
         o.append(f"{k} & {grp(_m.comb(N, k))} & {Klab} & {grp(cr)} & "
-                 f"{cr / (N * T):.0f}$\\times$ & {ws} \\\\")
-    # The configuration the certified k=3 arm (Table 1) actually ran is the full
-    # enumeration, so the cost curve must price it too. Wall-clock comes from the
-    # enumeration's own log; every other column is arithmetic on K.
-    _full3 = load("results/canonical/e2k3full_*.jsonl")
-    if _full3 and 3 in ks:
-        K3 = max(r["K"] for r in _full3 if r["k"] == 3)
-        cr3 = K3 * 3 * T
-        # No wall-clock for this row: the enumeration run served its members from
-        # the member cache, so its logged time is not a clean pass and would read
-        # as faster than the 500-member sample. Client-rounds are the honest cost.
-        ws3 = "---"
-        o.append(f"3 & {grp(_m.comb(N, 3))} & {grp(K3)} (full) & {grp(cr3)} & "
-                 f"{cr3 / (N * T):.0f}$\\times$ & {ws3} \\\\")
+                 f"{cr / (N * T):.0f}$\\times$ & {_tsec(f'k{k}_K{K}.ensemble_secs_est')} \\\\")
     o += ["\\bottomrule", "\\end{tabular}"]
     with open(os.path.join(OUT, "tab_cost.tex"), "w") as f:
         f.write("\n".join(o) + "\n")

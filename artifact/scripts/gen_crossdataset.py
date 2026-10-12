@@ -11,8 +11,7 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, os.path.dirname(__file__)); sys.path.insert(0, "src")
 import numpy as np
 
-OUT = os.environ.get("FHG_GENERATED",
-                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 BETA_GEO = {1: 0.450, 2: 0.250, 3: 0.150, 5: 0.100, 8: 0.050}
 
 

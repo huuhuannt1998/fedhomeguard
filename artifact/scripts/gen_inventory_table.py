@@ -3,7 +3,7 @@
 counts the prose quotes. Keeps the systematization claims tied to the audit."""
 import json, os, sys, yaml
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 CITE = {"fedmade2024": "fedmade2024", "nguyen2020poison": "nguyen2020poison",
         "weidetect2025": "weidetect2025", "li2022iotpoison": "li2022iotpoison"}
 

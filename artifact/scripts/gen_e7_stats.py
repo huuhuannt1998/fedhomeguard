@@ -16,8 +16,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
 from aggregate import load
 
-OUT = os.environ.get("FHG_GENERATED",
-                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 TOL = 0.10
 BOOT = 20_000
 

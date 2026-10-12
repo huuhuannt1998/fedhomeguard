@@ -1,0 +1,62 @@
+{
+ "PB01": {
+  "path": "predeclarations/tmlr_PB01_matched_pairs.md",
+  "sha256": "9411e2ecab391cc8e054294e6dac2342b3b80520403012d8f47ef4426632df5a",
+  "title": "Matched device-skew vs label-skew pairs: dependence, uncertainty, matching sensitivity"
+ },
+ "PB02": {
+  "path": "predeclarations/tmlr_PB02_oos_association.md",
+  "sha256": "df2264d0815c539b13f41c7e0bddf1836736b083621e850fcdb35dd09159dea7",
+  "title": "Out-of-sample association of beta* with coverage, volume, margin and divergence"
+ },
+ "PB03": {
+  "path": "predeclarations/tmlr_PB03_coverage_vote_model.md",
+  "sha256": "00f2d5c040df001f920d5334145abfd521e55c707557ef26b4b3bcf81dcf7153",
+  "title": "Coverage-vote model (CVM): an a-priori predictor of beta* from per-client label composition"
+ },
+ "PB04": {
+  "path": "predeclarations/tmlr_PB04_one_factor_partitions.md",
+  "sha256": "46043294c554719f47f8d68d91f6747ec08edd2cf93e502a2c25716cb043f249",
+  "title": "One-factor-at-a-time controlled partitions (new training runs)"
+ },
+ "PB05": {
+  "path": "predeclarations/tmlr_PB05_coverage_falsifier.md",
+  "sha256": "6166078a866a728671bdbdc5decdf95b0651b68cb6fed9da5dde9538b98111ad",
+  "title": "Falsifier for \"class coverage per member explains the small-k decline\""
+ },
+ "PB06": {
+  "path": "predeclarations/tmlr_PB06_class_conditional_prior.md",
+  "sha256": "4be709c5fbc16fc735069d0adf00a5d96c1b439b47032f9e8dddfcac8d8ddd4f",
+  "title": "Class-conditional certified detection, certified benign rate, prior re-weighting (post hoc)"
+ },
+ "PB07": {
+  "path": "predeclarations/tmlr_PB07_leakage_shortcut.md",
+  "sha256": "9283c860671275d3838c324c6d6475def5539d044a9e2bcbc9e8c03057b936d7",
+  "title": "Leakage, capture-identity shortcut, train/test capture overlap"
+ },
+ "PB08": {
+  "path": "predeclarations/tmlr_PB08_screen_baselines.md",
+  "sha256": "03a36de2f551d1bb6dbdabd174160e31db19362ae7348769ae921b6ef592f051",
+  "title": "Coverage screen against simple alternatives, with draw-level splits"
+ },
+ "PB09": {
+  "path": "predeclarations/tmlr_PB09_compute_cost.md",
+  "sha256": "2d1b2a8b9407eb37896ebe3aa89f12314171188c9f31f49c8df2070301b0d0ac",
+  "title": "Compute cost"
+ },
+ "PB10": {
+  "path": "predeclarations/tmlr_PB10_worst_case_attack.md",
+  "sha256": "de18ca9abf98d339d8f161423767d68a4fafeab26c0e78d171db9d7a87695037",
+  "title": "Member-level worst-case attack (limited adaptive attack)"
+ },
+ "PB11": {
+  "path": "predeclarations/tmlr_PB11_second_dataset.md",
+  "sha256": "022bb967fa0efa42716ebe8ee3f87e92a4c964a2a60f589f8596e3171db8dd0a",
+  "title": "Second dataset with device identity and device-label coupling (desk audit)"
+ },
+ "PB12": {
+  "path": "predeclarations/tmlr_PB12_system_figure.md",
+  "sha256": "afa68dd3da2b3fee06fccf3acdeb55e3d5b674fffa8ab9afddae918062dd062a",
+  "title": "System figure labels"
+ }
+}

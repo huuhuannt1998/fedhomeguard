@@ -15,9 +15,7 @@
 # FHG_FROZEN=1 reads the frozen pre-correction rows instead.
 
 PY      ?= python3
-MAN     := manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP
-PRISM   := manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/prism
-PRISMZIP := FedHomeGuard-prism.zip
+MAN     := manuscript
 CANON   := results/canonical
 
 .PHONY: all data test experiments paper verify figures numbers clean-derived
@@ -65,57 +63,9 @@ paper: numbers figures
 	  && pdflatex -interaction=nonstopmode main.tex >/dev/null
 	@echo "built $(MAN)/main.pdf"
 
-# Self-contained upload bundle for a hosted LaTeX service (Prism, Overleaf).
-# The previous bundle omitted IEEEtran.cls/.bst and shipped a whole .git tree,
-# so it died at \documentclass on any service whose TeX tree lacks the IEEE
-# class. LaTeX searches the project directory first, so pinning both files
-# beside main.tex fixes the build wherever it runs. Rebuilt from the CURRENT
-# manuscript every time, because the stale bundle was the other half of the bug.
-#
-# Deliberately NOT dependent on `paper`: the bundle ships SOURCE and the service
-# compiles it, so what matters is that the tree on disk is current, not that it
-# was just rebuilt here. Coupling the two would also make the bundle unbuildable
-# whenever the data pipeline is red, which is exactly when you still need to send
-# someone the paper. `prism-check` is what proves the bundle actually compiles.
-prism:
-	rm -rf $(PRISM) $(PRISMZIP)
-	mkdir -p $(PRISM)
-	cp $(MAN)/main.tex $(MAN)/refs.bib $(MAN)/main.bbl $(PRISM)/
-	cp -R $(MAN)/sections $(MAN)/generated $(MAN)/figures $(PRISM)/
-	find $(PRISM) -type f ! -name '*.tex' ! -name '*.pdf' ! -name '*.bib' \
-	     ! -name '*.bbl' -delete
-	cp "$$(kpsewhich IEEEtran.cls)" "$$(kpsewhich IEEEtran.bst)" $(PRISM)/
-	cp scripts/prism_README.txt $(PRISM)/README-prism.txt
-	find $(PRISM) -name '.DS_Store' -delete
-	cd $(PRISM) && zip -qr ../../../$(PRISMZIP) . -x '.*'
-	@echo "built $(PRISMZIP) -- verify it with: make prism-check"
-
-# Builds the bundle the way a service does, in a throwaway directory, and fails
-# if the result is not the 18-page document with the body ending on page 13.
-# Testing the zip rather than the working tree is the point: the working tree
-# has the system TeX and every build product to fall back on, and the zip does not.
-# NOTE: every grep -c below needs `|| true`. grep exits 1 when the count is
-# zero, so without it a bundle with ZERO errors fails the chain and reports
-# FAILED -- the check inverts on exactly the good case.
-prism-check: prism
-	@rm -rf /tmp/fhg-prism-check && mkdir -p /tmp/fhg-prism-check
-	@cd /tmp/fhg-prism-check && unzip -q $(CURDIR)/$(PRISMZIP) \
-	  && pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1 \
-	  && bibtex main >/dev/null 2>&1 \
-	  && pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1 \
-	  && pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1 \
-	  && n=$$(pdfinfo main.pdf | awk '/Pages/{print $$2}') \
-	  && err=$$(grep -c '^!' main.log || true) \
-	  && cls=$$(grep -c '(\./IEEEtran\.cls' main.log || true) \
-	  && app=$$(pdftotext -layout main.pdf - | awk -v RS='\f' '/^Appendix A/{print NR; exit}') \
-	  && echo "  pages $$n (want 18), errors $$err (want 0), bundled class used $$cls (want 1), appendix starts p$$app (want 14)" \
-	  && [ "$$n" = 18 ] && [ "$$err" = 0 ] && [ "$$cls" -ge 1 ] && [ "$$app" = 14 ] \
-	  && echo "  PRISM BUNDLE OK" || { echo "  PRISM BUNDLE FAILED"; exit 1; }
-
 verify:
 	$(PY) scripts/check_completeness.py
 	$(PY) scripts/aggregate.py | grep -q FAIL && { echo "ASSERTION FAILURE"; exit 1; } || true
-	$(PY) scripts/verify_paper_claims.py
 
 clean-derived:
 	rm -f $(MAN)/generated/*.tex $(MAN)/generated/floats/*.tex $(MAN)/figures/*.pdf

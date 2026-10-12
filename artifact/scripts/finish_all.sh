@@ -23,16 +23,16 @@ for g in gen_paper_numbers gen_inventory_table gen_e3 gen_e7 gen_e7_stats \
          gen_e9 gen_e12 gen_e14_deployable gen_e8 gen_appendix; do
   python3 scripts/$g.py >> $M 2>&1 || log "generator FAILED: $g"
 done
-python3 manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/charts/make_figures_v2.py >> $M 2>&1
+python3 manuscript/charts/make_figures_v2.py >> $M 2>&1
 python3 scripts/annotate_provenance.py >> $M 2>&1
 
 log "=== 4/4 rebuild ==="
-cd manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP
+cd manuscript
 pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1
 bibtex main >/dev/null 2>&1
 pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1
 pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1
 cd ../../..
-log "pages: $(pdfinfo manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/main.pdf | awk '/^Pages/{print $2}')"
+log "pages: $(pdfinfo manuscript/main.pdf | awk '/^Pages/{print $2}')"
 log "FINISH_ALL COMPLETE"
 

@@ -15,7 +15,7 @@ import glob, json, os, statistics as st, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bstar import bstar
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 ARMS = [(10, "results/canonical/e10b_N10_%s.jsonl"),
         (20, "results/canonical/e5f_*.jsonl"),
         (50, "results/canonical/e10b_N50_%s.jsonl")]

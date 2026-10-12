@@ -16,7 +16,7 @@ import glob, json, os, statistics as st, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bstar import bstar
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 P1_SPAN, P2_COLLAPSE = 0.05, 0.50
 NB = [("1", "e21_nbrich_1_1"), ("1--3", "e21_nbrich_1_3"), ("2--5", "e21_nbrich_2_5"),
       ("3--8", "e21_nbrich_3_8"), ("5--9", "e21_nbrich_5_9")]

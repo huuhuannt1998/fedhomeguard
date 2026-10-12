@@ -1,0 +1,176 @@
+{
+ "id": "iot-23_iid_dph1-3_na_s18_k2_K190",
+ "kind": "iid",
+ "seed": 18,
+ "k": 2,
+ "K": 190,
+ "n_patterns": 83,
+ "rows": [
+  {
+   "beta": 0.0,
+   "m": 0,
+   "CA": 0.981717,
+   "certifiable": true,
+   "M1_paperB": [
+    0.981717202041429,
+    0.981717202041429,
+    0.981717202041429
+   ],
+   "M1_best": 0.981717202041429,
+   "M1_mode": "exhaustive",
+   "soundness_violation": false,
+   "slack_exact_M1": 2.0204142903157418e-07
+  },
+  {
+   "beta": 0.05,
+   "m": 1,
+   "CA": 0.980907,
+   "certifiable": true,
+   "M1_paperB": [
+    0.9815670969678775,
+    0.9815971179825879,
+    0.9810567397178025
+   ],
+   "M1_best": 0.980906634644251,
+   "M1_mode": "exhaustive",
+   "soundness_violation": true,
+   "slack_exact_M1": -3.653557489879944e-07
+  },
+  {
+   "beta": 0.1,
+   "m": 2,
+   "CA": 0.980036,
+   "certifiable": true,
+   "M1_paperB": [
+    0.980606424497148,
+    0.9808766136295407,
+    0.980906634644251
+   ],
+   "M1_best": 0.9801260882617833,
+   "M1_mode": "exhaustive",
+   "soundness_violation": false,
+   "slack_exact_M1": 9.008826178324991e-05
+  },
+  {
+   "beta": 0.15,
+   "m": 3,
+   "CA": 0.979616,
+   "certifiable": true,
+   "M1_paperB": [
+    0.9799159411588112,
+    0.980606424497148,
+    0.9803662563794656
+   ],
+   "M1_best": 0.97979585709997,
+   "M1_mode": "exhaustive",
+   "soundness_violation": false,
+   "slack_exact_M1": 0.00017985709996992671
+  },
+  {
+   "beta": 0.2,
+   "m": 4,
+   "CA": 0.979285,
+   "certifiable": true,
+   "M1_paperB": [
+    0.9795857099969979,
+    0.9798859201441009,
+    0.9797057940558391
+   ],
+   "M1_best": 0.9793155208646053,
+   "M1_mode": "exhaustive",
+   "soundness_violation": false,
+   "slack_exact_M1": 3.0520864605310116e-05
+  },
+  {
+   "beta": 0.25,
+   "m": 5,
+   "CA": 0.978565,
+   "certifiable": true,
+   "M1_paperB": [
+    0.9790153107175023,
+    0.9789552686880817,
+    0.9790453317322125
+   ],
+   "M1_best": 0.9786250375262684,
+   "M1_mode": "exhaustive",
+   "soundness_violation": false,
+   "slack_exact_M1": 6.0037526268375e-05
+  },
+  {
+   "beta": 0.3,
+   "m": 6,
+   "CA": 0.0,
+   "certifiable": false,
+   "M1_paperB": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "M1_best": 0.0,
+   "M1_mode": "exhaustive",
+   "soundness_violation": false,
+   "slack_exact_M1": 0.0
+  },
+  {
+   "beta": 0.35,
+   "m": 7,
+   "CA": 0.0,
+   "certifiable": false,
+   "M1_paperB": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "M1_best": 0.0,
+   "M1_mode": "exhaustive",
+   "soundness_violation": false,
+   "slack_exact_M1": 0.0
+  },
+  {
+   "beta": 0.4,
+   "m": 8,
+   "CA": 0.0,
+   "certifiable": false,
+   "M1_paperB": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "M1_best": 0.0,
+   "M1_mode": "exhaustive",
+   "soundness_violation": false,
+   "slack_exact_M1": 0.0
+  },
+  {
+   "beta": 0.45,
+   "m": 9,
+   "CA": 0.0,
+   "certifiable": false,
+   "M1_paperB": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "M1_best": 0.0,
+   "M1_mode": "exhaustive",
+   "soundness_violation": false,
+   "slack_exact_M1": 0.0
+  },
+  {
+   "beta": 0.5,
+   "m": 10,
+   "CA": 0.0,
+   "certifiable": false,
+   "M1_paperB": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "M1_best": 0.0,
+   "M1_mode": "exhaustive",
+   "soundness_violation": false,
+   "slack_exact_M1": 0.0
+  }
+ ],
+ "secs": 1.5
+}

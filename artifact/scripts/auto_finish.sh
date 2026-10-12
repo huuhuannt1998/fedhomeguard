@@ -18,15 +18,15 @@ for g in gen_paper_numbers gen_inventory_table gen_e3 gen_e7 gen_e7_stats \
   log "generator: $g"
   python3 scripts/$g.py >> logs/autofinish.log 2>&1 || log "  FAILED: $g"
 done
-python3 manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/charts/make_figures_v2.py \
+python3 manuscript/charts/make_figures_v2.py \
   >> logs/autofinish.log 2>&1
 python3 scripts/annotate_provenance.py           >> logs/autofinish.log 2>&1
 
-cd manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP
+cd manuscript
 pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1
 bibtex main >/dev/null 2>&1
 pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1
 pdflatex -interaction=nonstopmode main.tex >/dev/null 2>&1
 cd ../../..
-log "rebuilt: $(pdfinfo manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/main.pdf | awk '/^Pages/{print $2}') pages"
+log "rebuilt: $(pdfinfo manuscript/main.pdf | awk '/^Pages/{print $2}') pages"
 log "AUTO-FINISH COMPLETE"

@@ -1,0 +1,3667 @@
+{
+ "root": "data/raw/cic-iot-idad-2024",
+ "files": 28,
+ "types": [
+  "Backdoor_Malware",
+  "BenignTraffic",
+  "BrowserHijacking",
+  "CommandInjection",
+  "DDoS-ACK_Fragmentation",
+  "DDoS-HTTP_Flood",
+  "DDoS-ICMP_Fragmentation",
+  "DDoS-SlowLoris",
+  "DDoS-SynonymousIP_Flood",
+  "DDoS-TCP_Flood",
+  "DDoS-UDP_Flood",
+  "DDoS-UDP_Fragmentation",
+  "DNS_Spoofing",
+  "DictionaryBruteForce",
+  "DoS-HTTP_Flood",
+  "DoS-SYN_Flood",
+  "DoS-TCP_Flood",
+  "DoS-UDP_Flood",
+  "MITM-ArpSpoofing",
+  "Mirai-greip_flood",
+  "Recon-HostDiscovery",
+  "Recon-OSScan",
+  "Recon-PingSweep",
+  "Recon-PortScan",
+  "SqlInjection",
+  "Uploading_Attack",
+  "VulnerabilityScan",
+  "XSS"
+ ],
+ "rows": {
+  "Backdoor_Malware": 33349,
+  "BenignTraffic": 297063,
+  "BrowserHijacking": 59268,
+  "CommandInjection": 55632,
+  "DDoS-ACK_Fragmentation": 291481,
+  "DDoS-HTTP_Flood": 290346,
+  "DDoS-ICMP_Fragmentation": 275532,
+  "DDoS-SlowLoris": 288591,
+  "DDoS-SynonymousIP_Flood": 211945,
+  "DDoS-TCP_Flood": 85423,
+  "DDoS-UDP_Flood": 86615,
+  "DDoS-UDP_Fragmentation": 277953,
+  "DNS_Spoofing": 296025,
+  "DictionaryBruteForce": 131477,
+  "DoS-HTTP_Flood": 156328,
+  "DoS-SYN_Flood": 83359,
+  "DoS-TCP_Flood": 89711,
+  "DoS-UDP_Flood": 87900,
+  "MITM-ArpSpoofing": 290437,
+  "Mirai-greip_flood": 213030,
+  "Recon-HostDiscovery": 288374,
+  "Recon-OSScan": 291903,
+  "Recon-PingSweep": 22619,
+  "Recon-PortScan": 286634,
+  "SqlInjection": 52628,
+  "Uploading_Attack": 12924,
+  "VulnerabilityScan": 258929,
+  "XSS": 40101
+ },
+ "total_rows": 4855577,
+ "q1": {
+  "device_mac_equals": {
+   "dst": 1024557,
+   "src": 3828109,
+   "srcdst": 2823,
+   "": 88
+  },
+  "rows": 4855577,
+  "named_share": 0.36337349814450476,
+  "distinct_device_mac": 112,
+  "distinct_named": 60,
+  "distinct_raw_mac": 52,
+  "raw_mac_vendors": [
+   [
+    "VMware, Inc.",
+    14
+   ],
+   [
+    "none",
+    12
+   ],
+   [
+    "Raspberry Pi Trading Ltd",
+    9
+   ],
+   [
+    "Cisco Systems, Inc",
+    4
+   ],
+   [
+    "Ring Solutions",
+    2
+   ],
+   [
+    "Sercomm Corporation.",
+    2
+   ],
+   [
+    "Dell Inc.",
+    2
+   ],
+   [
+    "Luxshare Precision Industry Company Limited",
+    1
+   ],
+   [
+    "Google, Inc.",
+    1
+   ],
+   [
+    "Plugable Technologies",
+    1
+   ],
+   [
+    "Fibar Group sp. z o.o.",
+    1
+   ],
+   [
+    "Hon Hai Precision Ind. Co.,Ltd.",
+    1
+   ],
+   [
+    "Philips Lighting BV",
+    1
+   ],
+   [
+    "Intel Corporate",
+    1
+   ]
+  ],
+  "top_device_mac": [
+   [
+    "dc:a6:32:dc:27:d5",
+    1081171,
+    "Raspberry Pi Trading Ltd"
+   ],
+   [
+    "Amazon Echo Studio",
+    321152,
+    "Amazon Technologies Inc."
+   ],
+   [
+    "dc:a6:32:c9:e4:ab",
+    306846,
+    "Raspberry Pi Trading Ltd"
+   ],
+   [
+    "e4:5f:01:55:90:c4",
+    267753,
+    "Raspberry Pi Trading Ltd"
+   ],
+   [
+    "dc:a6:32:c9:e4:90",
+    266268,
+    "Raspberry Pi Trading Ltd"
+   ],
+   [
+    "dc:a6:32:c9:e4:d5",
+    242544,
+    "Raspberry Pi Trading Ltd"
+   ],
+   [
+    "ac:17:02:05:34:27",
+    227430,
+    "Fibar Group sp. z o.o."
+   ],
+   [
+    "dc:a6:32:c9:e5:ef",
+    214297,
+    "Raspberry Pi Trading Ltd"
+   ],
+   [
+    "Arlo Q Indoor Camera",
+    174322,
+    "Netgear"
+   ],
+   [
+    "dc:a6:32:c9:e5:a4",
+    153558,
+    "Raspberry Pi Trading Ltd"
+   ],
+   [
+    "Nest Indoor Camera",
+    136406,
+    "Google, Inc."
+   ],
+   [
+    "3c:18:a0:41:c3:a0",
+    126257,
+    "Luxshare Precision Industry Company Limited"
+   ],
+   [
+    "Amazon Echo Dot 1",
+    99797,
+    "Amazon Technologies Inc."
+   ],
+   [
+    "Amazon Echo Show",
+    97708,
+    "Amazon Technologies Inc."
+   ],
+   [
+    "56:4f:8a:e1:f3:2d",
+    92790,
+    "none"
+   ],
+   [
+    "Amazon Echo Spot",
+    76839,
+    "Amazon Technologies Inc."
+   ],
+   [
+    "Netatmo Camera",
+    58491,
+    "Netatmo"
+   ],
+   [
+    "Wyze Camera",
+    50192,
+    "Wyze Labs Inc"
+   ],
+   [
+    "Google Nest Mini Speaker",
+    48515,
+    "Google, Inc."
+   ],
+   [
+    "SmartThings Hub",
+    43940,
+    "SAMJIN Co., Ltd."
+   ],
+   [
+    "Amazon Echo Dot 2",
+    40580,
+    "Amazon Technologies Inc."
+   ],
+   [
+    "Home Eye Camera",
+    36000,
+    "Shenzhen Rf-Link Technology Co.,Ltd."
+   ],
+   [
+    "Arlo Base Station",
+    29953,
+    "Netgear"
+   ],
+   [
+    "AeoTec Smart Home Hub",
+    27447,
+    "SAMJIN Co., Ltd."
+   ],
+   [
+    "Philips Hue Bridge",
+    26641,
+    "Philips Lighting BV"
+   ],
+   [
+    "Borun/Sichuan-AI Camera",
+    25508,
+    "Sichuan AI-Link Technology Co., Ltd."
+   ],
+   [
+    "Raspberry Pi 4-2 GB",
+    24672,
+    "Raspberry Pi Trading Ltd"
+   ],
+   [
+    "harman kardon (Ampak Technology)",
+    23133,
+    "AMPAK Technology, Inc."
+   ],
+   [
+    "Yi Indoor 2 Camera",
+    21391,
+    "AltoBeam (China) Inc."
+   ],
+   [
+    "HeimVision Smart WiFi Camera",
+    19717,
+    "Shenzhen Bilian Electronic Co.\u00a3\u00acLtd"
+   ],
+   [
+    "00:a3:d1:07:6f:03",
+    19241,
+    "Cisco Systems, Inc"
+   ],
+   [
+    "00:0c:29:1c:55:4a",
+    19144,
+    "VMware, Inc."
+   ],
+   [
+    "Wemo smart plug 2 (Wemo id: Wemo.Mini.4A3)",
+    19120,
+    "Belkin International Inc."
+   ],
+   [
+    "24:05:88:30:6f:89",
+    17729,
+    "Google, Inc."
+   ],
+   [
+    "AMCREST WiFi Camera",
+    17537,
+    "Amcrest Technologies"
+   ],
+   [
+    "Eufy HomeBase 2",
+    16862,
+    "Smart Innovation LLC"
+   ],
+   [
+    "TP-Link Tapo Camera",
+    16278,
+    "TP-Link Corporation Limited"
+   ],
+   [
+    "Rbcior Camera",
+    15052,
+    "Tuya Smart Inc."
+   ],
+   [
+    "Gosund Power strip (1)",
+    13959,
+    "Espressif Inc."
+   ],
+   [
+    "GoSund Smart plug WP2 (1)",
+    13888,
+    "Espressif Inc."
+   ]
+  ]
+ },
+ "q2": {
+  "Backdoor_Malware": {
+   "rows": 33349,
+   "top_src": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.338,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Amazon Echo Show",
+     0.0476,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Netatmo Camera",
+     0.0465,
+     "Netatmo"
+    ],
+    [
+     "Wyze Camera",
+     0.0397,
+     "Wyze Labs Inc"
+    ],
+    [
+     "Google Nest Mini Speaker",
+     0.0376,
+     "Google, Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.389,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.1224,
+     "Broadcast"
+    ],
+    [
+     "Amazon Echo Show",
+     0.0652,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Netatmo Camera",
+     0.0412,
+     "Netatmo"
+    ],
+    [
+     "Google Nest Mini Speaker",
+     0.0312,
+     "Google, Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.338
+    ],
+    [
+     "Espressif Inc.",
+     0.0791
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0763
+    ],
+    [
+     "Google, Inc.",
+     0.0678
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     0.066
+    ]
+   ],
+   "touches_rpi": 0.0907,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.0859
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Luxshare Precision Industry Company Limited",
+     0.0707
+    ],
+    [
+     "Espressif Inc.",
+     "Broadcast",
+     0.0652
+    ]
+   ]
+  },
+  "BrowserHijacking": {
+   "rows": 59268,
+   "top_src": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3089,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1395,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Raspberry Pi 4-2 GB",
+     0.0647,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Amazon Echo Show",
+     0.0517,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "b0:09:da:3e:82:6c",
+     0.0503,
+     "Ring Solutions"
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3523,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Raspberry Pi 4-2 GB",
+     0.1126,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0819,
+     "Broadcast"
+    ],
+    [
+     "dc:a6:32:c9:e4:c6",
+     0.0788,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.0782,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "src_oui": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.3089
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     0.2485
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0765
+    ],
+    [
+     "Espressif Inc.",
+     0.054
+    ],
+    [
+     "Ring Solutions",
+     0.0503
+    ]
+   ],
+   "touches_rpi": 0.315,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Raspberry Pi Trading Ltd",
+     0.2031
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Luxshare Precision Industry Company Limited",
+     0.0754
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.0661
+    ]
+   ]
+  },
+  "CommandInjection": {
+   "rows": 55632,
+   "top_src": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.4468,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Raspberry Pi 4-2 GB",
+     0.0525,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Netatmo Camera",
+     0.0437,
+     "Netatmo"
+    ],
+    [
+     "Wyze Camera",
+     0.0309,
+     "Wyze Labs Inc"
+    ],
+    [
+     "Google Nest Mini Speaker",
+     0.0227,
+     "Google, Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3524,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Raspberry Pi 4-2 GB",
+     0.186,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0933,
+     "Broadcast"
+    ],
+    [
+     "Netatmo Camera",
+     0.0371,
+     "Netatmo"
+    ],
+    [
+     "56:4f:8a:e1:f3:2d",
+     0.0361,
+     "none"
+    ]
+   ],
+   "src_oui": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.4468
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     0.0936
+    ],
+    [
+     "Espressif Inc.",
+     0.061
+    ],
+    [
+     "Google, Inc.",
+     0.0479
+    ],
+    [
+     "Netatmo",
+     0.0437
+    ]
+   ],
+   "touches_rpi": 0.2954,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Raspberry Pi Trading Ltd",
+     0.1834
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     "Luxshare Precision Industry Company Limited",
+     0.0516
+    ],
+    [
+     "Espressif Inc.",
+     "Broadcast",
+     0.0495
+    ]
+   ]
+  },
+  "DDoS-ACK_Fragmentation": {
+   "rows": 291481,
+   "top_src": [
+    [
+     "dc:a6:32:c9:e4:ab",
+     0.2593,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:90",
+     0.1674,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1331,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e5:ef",
+     0.1197,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "e4:5f:01:55:90:c4",
+     0.1183,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "top_dst": [
+    [
+     "AMCREST WiFi Camera",
+     0.949,
+     "Amcrest Technologies"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0117,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.011,
+     "Broadcast"
+    ],
+    [
+     "dc:a6:32:c9:e5:ef",
+     0.0016,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:90",
+     0.0015,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.9496
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0167
+    ],
+    [
+     "Amcrest Technologies",
+     0.01
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0058
+    ],
+    [
+     "Espressif Inc.",
+     0.0039
+    ]
+   ],
+   "touches_rpi": 0.9576,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amcrest Technologies",
+     0.9487
+    ],
+    [
+     "Amcrest Technologies",
+     "Raspberry Pi Trading Ltd",
+     0.0081
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.0026
+    ]
+   ]
+  },
+  "DDoS-HTTP_Flood": {
+   "rows": 290346,
+   "top_src": [
+    [
+     "AMCREST WiFi Camera",
+     0.2783,
+     "Amcrest Technologies"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.2621,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "e4:5f:01:55:90:c4",
+     0.0944,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:90",
+     0.0815,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:ab",
+     0.0615,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "top_dst": [
+    [
+     "AMCREST WiFi Camera",
+     0.6505,
+     "Amcrest Technologies"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1271,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "e4:5f:01:55:90:c4",
+     0.0418,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:90",
+     0.0336,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.026,
+     "Luxshare Precision Industry Company Limited"
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.6506
+    ],
+    [
+     "Amcrest Technologies",
+     0.2783
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0257
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0088
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.0083
+    ]
+   ],
+   "touches_rpi": 0.9281,
+   "touches_vmware": 0.0049,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amcrest Technologies",
+     0.6496
+    ],
+    [
+     "Amcrest Technologies",
+     "Raspberry Pi Trading Ltd",
+     0.277
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.0083
+    ]
+   ]
+  },
+  "DDoS-ICMP_Fragmentation": {
+   "rows": 275532,
+   "top_src": [
+    [
+     "e4:5f:01:55:90:c4",
+     0.1767,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:ab",
+     0.1689,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e5:ef",
+     0.1499,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e5:a4",
+     0.138,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1213,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "top_dst": [
+    [
+     "Amazon Echo Dot 1",
+     0.935,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0269,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0107,
+     "Broadcast"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.006,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "56:4f:8a:e1:f3:2d",
+     0.0041,
+     "none"
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.9345
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0257
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0077
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.0066
+    ],
+    [
+     "none",
+     0.0055
+    ]
+   ],
+   "touches_rpi": 0.935,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amazon Technologies Inc.",
+     0.9331
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.0066
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Fibar Group sp. z o.o.",
+     0.006
+    ]
+   ]
+  },
+  "DDoS-SlowLoris": {
+   "rows": 288591,
+   "top_src": [
+    [
+     "Philips Hue Bridge",
+     0.2096,
+     "Philips Lighting BV"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.1614,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Arlo Q Indoor Camera",
+     0.0999,
+     "Netgear"
+    ],
+    [
+     "AMCREST WiFi Camera",
+     0.0964,
+     "Amcrest Technologies"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.054,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "top_dst": [
+    [
+     "Philips Hue Bridge",
+     0.2031,
+     "Philips Lighting BV"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.1944,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "AMCREST WiFi Camera",
+     0.0831,
+     "Amcrest Technologies"
+    ],
+    [
+     "Arlo Q Indoor Camera",
+     0.0802,
+     "Netgear"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.0557,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.2891
+    ],
+    [
+     "Philips Lighting BV",
+     0.2096
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.1614
+    ],
+    [
+     "Netgear",
+     0.1007
+    ],
+    [
+     "Amcrest Technologies",
+     0.0964
+    ]
+   ],
+   "touches_rpi": 0.5916,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Philips Lighting BV",
+     "Raspberry Pi Trading Ltd",
+     0.2056
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     "Philips Lighting BV",
+     0.203
+    ],
+    [
+     "Netgear",
+     "Luxshare Precision Industry Company Limited",
+     0.1006
+    ]
+   ]
+  },
+  "DDoS-SynonymousIP_Flood": {
+   "rows": 211945,
+   "top_src": [
+    [
+     "dc:a6:32:c9:e4:ab",
+     0.3763,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "e4:5f:01:55:90:c4",
+     0.1312,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:90",
+     0.1261,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e5:ef",
+     0.1204,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e5:a4",
+     0.108,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "top_dst": [
+    [
+     "Amazon Echo Show",
+     0.9858,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.007,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0015,
+     "Broadcast"
+    ],
+    [
+     "Amazon Echo Spot",
+     0.0007,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Amazon Echo Dot 2",
+     0.0006,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.9824
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.007
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0052
+    ],
+    [
+     "Espressif Inc.",
+     0.0009
+    ],
+    [
+     "SAMJIN Co., Ltd.",
+     0.0006
+    ]
+   ],
+   "touches_rpi": 0.9826,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amazon Technologies Inc.",
+     0.9821
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.004
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Luxshare Precision Industry Company Limited",
+     0.0038
+    ]
+   ]
+  },
+  "DDoS-TCP_Flood": {
+   "rows": 85423,
+   "top_src": [
+    [
+     "dc:a6:32:dc:27:d5",
+     0.2792,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:90",
+     0.2738,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "e4:5f:01:55:90:c4",
+     0.2012,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e5:ef",
+     0.1536,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:d5",
+     0.0644,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "top_dst": [
+    [
+     "Amazon Echo Dot 1",
+     0.992,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0033,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0015,
+     "Broadcast"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0009,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "Google Nest Mini Speaker",
+     0.0002,
+     "Google, Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.9919
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0037
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.0013
+    ],
+    [
+     "Espressif Inc.",
+     0.0006
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0004
+    ]
+   ],
+   "touches_rpi": 0.992,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amazon Technologies Inc.",
+     0.9913
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.0013
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.0009
+    ]
+   ]
+  },
+  "DDoS-UDP_Flood": {
+   "rows": 86615,
+   "top_src": [
+    [
+     "e4:5f:01:55:90:c4",
+     0.2484,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e5:a4",
+     0.1458,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1409,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e5:ef",
+     0.1285,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:90",
+     0.1107,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "top_dst": [
+    [
+     "Amazon Echo Dot 1",
+     0.9723,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0112,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0035,
+     "Broadcast"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0032,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "Amazon Echo Show",
+     0.001,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.9687
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0127
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0045
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.0041
+    ],
+    [
+     "Espressif Inc.",
+     0.0019
+    ]
+   ],
+   "touches_rpi": 0.9698,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amazon Technologies Inc.",
+     0.9678
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.0049
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.0041
+    ]
+   ]
+  },
+  "DDoS-UDP_Fragmentation": {
+   "rows": 277953,
+   "top_src": [
+    [
+     "dc:a6:32:c9:e4:90",
+     0.2513,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:d5",
+     0.242,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e5:ef",
+     0.1405,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "e4:5f:01:55:90:c4",
+     0.1225,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:ab",
+     0.1215,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "top_dst": [
+    [
+     "AeoTec Smart Home Hub",
+     0.9673,
+     "SAMJIN Co., Ltd."
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0087,
+     "Broadcast"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0075,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Amazon Echo Show",
+     0.001,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Amazon Echo Studio",
+     0.001,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.9682
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0099
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0052
+    ],
+    [
+     "SAMJIN Co., Ltd.",
+     0.0039
+    ],
+    [
+     "Espressif Inc.",
+     0.0027
+    ]
+   ],
+   "touches_rpi": 0.9711,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "SAMJIN Co., Ltd.",
+     0.967
+    ],
+    [
+     "SAMJIN Co., Ltd.",
+     "Raspberry Pi Trading Ltd",
+     0.0026
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Amazon Technologies Inc.",
+     0.0022
+    ]
+   ]
+  },
+  "DNS_Spoofing": {
+   "rows": 296025,
+   "top_src": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3727,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "56:4f:8a:e1:f3:2d",
+     0.0989,
+     "none"
+    ],
+    [
+     "Amazon Echo Spot",
+     0.0542,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Amazon Echo Dot 2",
+     0.0449,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0348,
+     "Google, Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3396,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "56:4f:8a:e1:f3:2d",
+     0.1123,
+     "none"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0783,
+     "Broadcast"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.0672,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Amazon Echo Spot",
+     0.0522,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.3727
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.1609
+    ],
+    [
+     "none",
+     0.0989
+    ],
+    [
+     "Google, Inc.",
+     0.0601
+    ],
+    [
+     "Espressif Inc.",
+     0.0483
+    ]
+   ],
+   "touches_rpi": 0.093,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     "none",
+     0.1123
+    ],
+    [
+     "none",
+     "Luxshare Precision Industry Company Limited",
+     0.0982
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Amazon Technologies Inc.",
+     0.0906
+    ]
+   ]
+  },
+  "DictionaryBruteForce": {
+   "rows": 131477,
+   "top_src": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.2633,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1029,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:c6",
+     0.0925,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Netatmo Camera",
+     0.0499,
+     "Netatmo"
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0373,
+     "Google, Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3305,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1197,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.079,
+     "Broadcast"
+    ],
+    [
+     "dc:a6:32:c9:e4:c6",
+     0.0691,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0369,
+     "Google, Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.2633
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     0.198
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.1019
+    ],
+    [
+     "Google, Inc.",
+     0.0548
+    ],
+    [
+     "Netatmo",
+     0.0545
+    ]
+   ],
+   "touches_rpi": 0.2229,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Raspberry Pi Trading Ltd",
+     0.1662
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Amazon Technologies Inc.",
+     0.0696
+    ],
+    [
+     "Netatmo",
+     "Luxshare Precision Industry Company Limited",
+     0.0499
+    ]
+   ]
+  },
+  "DoS-HTTP_Flood": {
+   "rows": 156328,
+   "top_src": [
+    [
+     "dc:a6:32:dc:27:d5",
+     0.6474,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Raspberry Pi 4-2 GB",
+     0.2562,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0331,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0112,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "Amazon Echo Dot 2",
+     0.0071,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "Raspberry Pi 4-2 GB",
+     0.6473,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.2566,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0372,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0091,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0082,
+     "Broadcast"
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.9038
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0331
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0159
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.0112
+    ],
+    [
+     "Espressif Inc.",
+     0.0052
+    ]
+   ],
+   "touches_rpi": 0.9043,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Raspberry Pi Trading Ltd",
+     0.9034
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Amazon Technologies Inc.",
+     0.0124
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.0112
+    ]
+   ]
+  },
+  "DoS-SYN_Flood": {
+   "rows": 83359,
+   "top_src": [
+    [
+     "dc:a6:32:dc:27:d5",
+     0.8805,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Amazon Echo Dot 1",
+     0.1008,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0078,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0023,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "SIMCAM 1S (AMPAKTec)",
+     0.0008,
+     "AMPAK Technology, Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "Amazon Echo Dot 1",
+     0.8807,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1007,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0082,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0017,
+     "Broadcast"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0017,
+     "Fibar Group sp. z o.o."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.8807
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.1016
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0078
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.0023
+    ],
+    [
+     "Espressif Inc.",
+     0.0012
+    ]
+   ],
+   "touches_rpi": 0.9813,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amazon Technologies Inc.",
+     0.8805
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Raspberry Pi Trading Ltd",
+     0.1007
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.0023
+    ]
+   ]
+  },
+  "DoS-TCP_Flood": {
+   "rows": 89711,
+   "top_src": [
+    [
+     "dc:a6:32:dc:27:d5",
+     0.7947,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Amazon Echo Spot",
+     0.1466,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0236,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "e8:1b:69:f8:d4:e3",
+     0.0028,
+     "Sercomm Corporation."
+    ],
+    [
+     "Amazon Echo Studio",
+     0.0027,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "Amazon Echo Spot",
+     0.7967,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.145,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0162,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0085,
+     "Broadcast"
+    ],
+    [
+     "Google Nest Mini Speaker",
+     0.0044,
+     "Google, Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.7954
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.1529
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0236
+    ],
+    [
+     "Espressif Inc.",
+     0.0038
+    ],
+    [
+     "Google, Inc.",
+     0.0036
+    ]
+   ],
+   "touches_rpi": 0.9406,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amazon Technologies Inc.",
+     0.794
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Raspberry Pi Trading Ltd",
+     0.145
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.0063
+    ]
+   ]
+  },
+  "DoS-UDP_Flood": {
+   "rows": 87900,
+   "top_src": [
+    [
+     "dc:a6:32:dc:27:d5",
+     0.9676,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0118,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0038,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "e8:1b:69:f8:d6:e6",
+     0.0021,
+     "Sercomm Corporation."
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0019,
+     "Google, Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "AMCREST WiFi Camera",
+     0.9676,
+     "Amcrest Technologies"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.014,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0028,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0027,
+     "Broadcast"
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0017,
+     "Google, Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.9676
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0118
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.0038
+    ],
+    [
+     "Google, Inc.",
+     0.0032
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0022
+    ]
+   ],
+   "touches_rpi": 0.9684,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amcrest Technologies",
+     0.9674
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.0038
+    ],
+    [
+     "Google, Inc.",
+     "Luxshare Precision Industry Company Limited",
+     0.0029
+    ]
+   ]
+  },
+  "MITM-ArpSpoofing": {
+   "rows": 290437,
+   "top_src": [
+    [
+     "Amazon Echo Studio",
+     0.5186,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.4475,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Amazon Echo Dot 1",
+     0.0061,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "56:4f:8a:e1:f3:2d",
+     0.0036,
+     "none"
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0023,
+     "Google, Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.5384,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Amazon Echo Studio",
+     0.4258,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Amazon Echo Dot 1",
+     0.0063,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.0058,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0037,
+     "Broadcast"
+    ]
+   ],
+   "src_oui": [
+    [
+     "Amazon Technologies Inc.",
+     0.5279
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.4475
+    ],
+    [
+     "none",
+     0.0036
+    ],
+    [
+     "Google, Inc.",
+     0.0031
+    ],
+    [
+     "Espressif Inc.",
+     0.0026
+    ]
+   ],
+   "touches_rpi": 0.0063,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Amazon Technologies Inc.",
+     "Luxshare Precision Industry Company Limited",
+     0.5198
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.4324
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Raspberry Pi Trading Ltd",
+     0.0055
+    ]
+   ]
+  },
+  "Mirai-greip_flood": {
+   "rows": 213030,
+   "top_src": [
+    [
+     "dc:a6:32:c9:e4:d5",
+     0.2077,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "e4:5f:01:55:90:c4",
+     0.1902,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e4:90",
+     0.1467,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:c9:e5:a4",
+     0.1442,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1355,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "top_dst": [
+    [
+     "Amazon Echo Dot 1",
+     0.9485,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0194,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0071,
+     "Broadcast"
+    ],
+    [
+     "Amazon Echo Show",
+     0.0031,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Google Nest Mini Speaker",
+     0.0025,
+     "Google, Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.9456
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0214
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0124
+    ],
+    [
+     "Google, Inc.",
+     0.0042
+    ],
+    [
+     "Espressif Inc.",
+     0.0033
+    ]
+   ],
+   "touches_rpi": 0.9462,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amazon Technologies Inc.",
+     0.9441
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.0085
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Luxshare Precision Industry Company Limited",
+     0.0068
+    ]
+   ]
+  },
+  "Recon-HostDiscovery": {
+   "rows": 288374,
+   "top_src": [
+    [
+     "dc:a6:32:dc:27:d5",
+     0.417,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.0881,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Amazon Echo Show",
+     0.0193,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "SmartThings Hub",
+     0.0171,
+     "SAMJIN Co., Ltd."
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0159,
+     "Google, Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "dc:a6:32:dc:27:d5",
+     0.3445,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.1064,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0327,
+     "Broadcast"
+    ],
+    [
+     "Amazon Echo Dot 1",
+     0.0226,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Amazon Echo Studio",
+     0.0211,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.4388
+    ],
+    [
+     "Espressif Inc.",
+     0.0922
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.0881
+    ],
+    [
+     "Tuya Smart Inc.",
+     0.0718
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0479
+    ]
+   ],
+   "touches_rpi": 0.7646,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amazon Technologies Inc.",
+     0.0746
+    ],
+    [
+     "Espressif Inc.",
+     "Raspberry Pi Trading Ltd",
+     0.0725
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     "Espressif Inc.",
+     0.0665
+    ]
+   ]
+  },
+  "Recon-OSScan": {
+   "rows": 291903,
+   "top_src": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3023,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Arlo Q Indoor Camera",
+     0.1402,
+     "Netgear"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1215,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0607,
+     "Google, Inc."
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.057,
+     "Fibar Group sp. z o.o."
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3503,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Arlo Q Indoor Camera",
+     0.1141,
+     "Netgear"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.0847,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0596,
+     "Google, Inc."
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0565,
+     "Fibar Group sp. z o.o."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.3023
+    ],
+    [
+     "Netgear",
+     0.1473
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     0.1254
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0749
+    ],
+    [
+     "Google, Inc.",
+     0.0726
+    ]
+   ],
+   "touches_rpi": 0.2141,
+   "touches_vmware": 0.051,
+   "top_pair": [
+    [
+     "Netgear",
+     "Luxshare Precision Industry Company Limited",
+     0.1347
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Netgear",
+     0.1076
+    ],
+    [
+     "Google, Inc.",
+     "Luxshare Precision Industry Company Limited",
+     0.0621
+    ]
+   ]
+  },
+  "Recon-PingSweep": {
+   "rows": 22619,
+   "top_src": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.33,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.098,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0873,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "Netatmo Camera",
+     0.0709,
+     "Netatmo"
+    ],
+    [
+     "Nest Indoor Camera",
+     0.044,
+     "Google, Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.381,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.1397,
+     "Broadcast"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0864,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "Netatmo Camera",
+     0.0541,
+     "Netatmo"
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0432,
+     "Google, Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.33
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     0.1048
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.0873
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0769
+    ],
+    [
+     "Netatmo",
+     0.0746
+    ]
+   ],
+   "touches_rpi": 0.1291,
+   "touches_vmware": 0.0386,
+   "top_pair": [
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.0871
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Fibar Group sp. z o.o.",
+     0.0863
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     "Broadcast",
+     0.0797
+    ]
+   ]
+  },
+  "Recon-PortScan": {
+   "rows": 286634,
+   "top_src": [
+    [
+     "dc:a6:32:dc:27:d5",
+     0.2351,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.2033,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0779,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "00:0c:29:1c:55:4a",
+     0.0347,
+     "VMware, Inc."
+    ],
+    [
+     "Wemo smart plug 2 (Wemo id: Wemo.Mini.4A3)",
+     0.029,
+     "Belkin International Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.2249,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.1591,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0769,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.05,
+     "Broadcast"
+    ],
+    [
+     "Amazon Echo Studio",
+     0.0324,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.2401
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.2033
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0954
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.0779
+    ],
+    [
+     "Espressif Inc.",
+     0.0711
+    ]
+   ],
+   "touches_rpi": 0.4047,
+   "touches_vmware": 0.0633,
+   "top_pair": [
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.0779
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Fibar Group sp. z o.o.",
+     0.0769
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     "Amazon Technologies Inc.",
+     0.0523
+    ]
+   ]
+  },
+  "SqlInjection": {
+   "rows": 52628,
+   "top_src": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3115,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.1406,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.0471,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Amazon Echo Spot",
+     0.0409,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Amazon Echo Dot 2",
+     0.039,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3854,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.1288,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.095,
+     "Broadcast"
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.0427,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Amazon Echo Dot 2",
+     0.0423,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.3115
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.1406
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.1282
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     0.0819
+    ],
+    [
+     "Espressif Inc.",
+     0.0639
+    ]
+   ],
+   "touches_rpi": 0.0902,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.1406
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Fibar Group sp. z o.o.",
+     0.1288
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Amazon Technologies Inc.",
+     0.0795
+    ]
+   ]
+  },
+  "Uploading_Attack": {
+   "rows": 12924,
+   "top_src": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3432,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Raspberry Pi 4-2 GB",
+     0.0469,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Wyze Camera",
+     0.0388,
+     "Wyze Labs Inc"
+    ],
+    [
+     "Google Nest Mini Speaker",
+     0.0323,
+     "Google, Inc."
+    ],
+    [
+     "dc:a6:32:dc:27:d5",
+     0.03,
+     "Raspberry Pi Trading Ltd"
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3956,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.1253,
+     "Broadcast"
+    ],
+    [
+     "Raspberry Pi 4-2 GB",
+     0.0482,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "Google Nest Mini Speaker",
+     0.0274,
+     "Google, Inc."
+    ],
+    [
+     "Wyze Camera",
+     0.0265,
+     "Wyze Labs Inc"
+    ]
+   ],
+   "src_oui": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.3432
+    ],
+    [
+     "Raspberry Pi Trading Ltd",
+     0.0949
+    ],
+    [
+     "Espressif Inc.",
+     0.0785
+    ],
+    [
+     "Google, Inc.",
+     0.0676
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0559
+    ]
+   ],
+   "touches_rpi": 0.1568,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Espressif Inc.",
+     "Broadcast",
+     0.0673
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Luxshare Precision Industry Company Limited",
+     0.0526
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.046
+    ]
+   ]
+  },
+  "VulnerabilityScan": {
+   "rows": 258929,
+   "top_src": [
+    [
+     "dc:a6:32:dc:27:d5",
+     0.2477,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.1786,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0785,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "Amazon Echo Spot",
+     0.0286,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Arlo Q Indoor Camera",
+     0.0247,
+     "Netgear"
+    ]
+   ],
+   "top_dst": [
+    [
+     "dc:a6:32:dc:27:d5",
+     0.2341,
+     "Raspberry Pi Trading Ltd"
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     0.2309,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ac:17:02:05:34:27",
+     0.0619,
+     "Fibar Group sp. z o.o."
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.0494,
+     "Broadcast"
+    ],
+    [
+     "Amazon Echo Spot",
+     0.0245,
+     "Amazon Technologies Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Raspberry Pi Trading Ltd",
+     0.2718
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.1786
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0869
+    ],
+    [
+     "Fibar Group sp. z o.o.",
+     0.0785
+    ],
+    [
+     "Espressif Inc.",
+     0.0774
+    ]
+   ],
+   "touches_rpi": 0.482,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Fibar Group sp. z o.o.",
+     "Luxshare Precision Industry Company Limited",
+     0.0738
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Fibar Group sp. z o.o.",
+     0.058
+    ],
+    [
+     "Espressif Inc.",
+     "Raspberry Pi Trading Ltd",
+     0.0456
+    ]
+   ]
+  },
+  "XSS": {
+   "rows": 40101,
+   "top_src": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.342,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "Netatmo Camera",
+     0.0497,
+     "Netatmo"
+    ],
+    [
+     "Wyze Camera",
+     0.0383,
+     "Wyze Labs Inc"
+    ],
+    [
+     "Amazon Echo Show",
+     0.0316,
+     "Amazon Technologies Inc."
+    ],
+    [
+     "Google Nest Mini Speaker",
+     0.0312,
+     "Google, Inc."
+    ]
+   ],
+   "top_dst": [
+    [
+     "3c:18:a0:41:c3:a0",
+     0.3951,
+     "Luxshare Precision Industry Company Limited"
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     0.1227,
+     "Broadcast"
+    ],
+    [
+     "Netatmo Camera",
+     0.0412,
+     "Netatmo"
+    ],
+    [
+     "56:4f:8a:e1:f3:2d",
+     0.0377,
+     "none"
+    ],
+    [
+     "Nest Indoor Camera",
+     0.0277,
+     "Google, Inc."
+    ]
+   ],
+   "src_oui": [
+    [
+     "Luxshare Precision Industry Company Limited",
+     0.342
+    ],
+    [
+     "Espressif Inc.",
+     0.0831
+    ],
+    [
+     "Google, Inc.",
+     0.0674
+    ],
+    [
+     "Amazon Technologies Inc.",
+     0.0652
+    ],
+    [
+     "Tuya Smart Inc.",
+     0.0513
+    ]
+   ],
+   "touches_rpi": 0.0705,
+   "touches_vmware": 0.0,
+   "top_pair": [
+    [
+     "Espressif Inc.",
+     "Broadcast",
+     0.0651
+    ],
+    [
+     "Amazon Technologies Inc.",
+     "Luxshare Precision Industry Company Limited",
+     0.0591
+    ],
+    [
+     "Luxshare Precision Industry Company Limited",
+     "Amazon Technologies Inc.",
+     0.0493
+    ]
+   ]
+  }
+ },
+ "q2_summary": {
+  "main_sources": [
+   [
+    "3c:18:a0:41:c3:a0",
+    "Luxshare Precision Industry Company Limited",
+    15
+   ],
+   [
+    "dc:a6:32:dc:27:d5",
+    "Raspberry Pi Trading Ltd",
+    15
+   ],
+   [
+    "e4:5f:01:55:90:c4",
+    "Raspberry Pi Trading Ltd",
+    6
+   ],
+   [
+    "dc:a6:32:c9:e4:90",
+    "Raspberry Pi Trading Ltd",
+    5
+   ],
+   [
+    "ac:17:02:05:34:27",
+    "Fibar Group sp. z o.o.",
+    4
+   ],
+   [
+    "Raspberry Pi 4-2 GB",
+    "Raspberry Pi Trading Ltd",
+    3
+   ],
+   [
+    "dc:a6:32:c9:e4:ab",
+    "Raspberry Pi Trading Ltd",
+    3
+   ],
+   [
+    "dc:a6:32:c9:e5:ef",
+    "Raspberry Pi Trading Ltd",
+    2
+   ],
+   [
+    "Arlo Q Indoor Camera",
+    "Netgear",
+    2
+   ],
+   [
+    "dc:a6:32:c9:e4:d5",
+    "Raspberry Pi Trading Ltd",
+    2
+   ],
+   [
+    "Amazon Echo Spot",
+    "Amazon Technologies Inc.",
+    2
+   ],
+   [
+    "AMCREST WiFi Camera",
+    "Amcrest Technologies",
+    1
+   ],
+   [
+    "Philips Hue Bridge",
+    "Philips Lighting BV",
+    1
+   ],
+   [
+    "dc:a6:32:c9:e5:a4",
+    "Raspberry Pi Trading Ltd",
+    1
+   ],
+   [
+    "56:4f:8a:e1:f3:2d",
+    "none",
+    1
+   ],
+   [
+    "dc:a6:32:c9:e4:c6",
+    "Raspberry Pi Trading Ltd",
+    1
+   ],
+   [
+    "Amazon Echo Dot 1",
+    "Amazon Technologies Inc.",
+    1
+   ],
+   [
+    "Amazon Echo Studio",
+    "Amazon Technologies Inc.",
+    1
+   ]
+  ],
+  "main_destinations": [
+   [
+    "3c:18:a0:41:c3:a0",
+    "Luxshare Precision Industry Company Limited",
+    15
+   ],
+   [
+    "ff:ff:ff:ff:ff:ff",
+    "Broadcast",
+    9
+   ],
+   [
+    "dc:a6:32:dc:27:d5",
+    "Raspberry Pi Trading Ltd",
+    9
+   ],
+   [
+    "Amazon Echo Dot 1",
+    "Amazon Technologies Inc.",
+    5
+   ],
+   [
+    "AMCREST WiFi Camera",
+    "Amcrest Technologies",
+    4
+   ],
+   [
+    "ac:17:02:05:34:27",
+    "Fibar Group sp. z o.o.",
+    4
+   ],
+   [
+    "Raspberry Pi 4-2 GB",
+    "Raspberry Pi Trading Ltd",
+    3
+   ],
+   [
+    "Amazon Echo Show",
+    "Amazon Technologies Inc.",
+    2
+   ],
+   [
+    "Philips Hue Bridge",
+    "Philips Lighting BV",
+    1
+   ],
+   [
+    "AeoTec Smart Home Hub",
+    "SAMJIN Co., Ltd.",
+    1
+   ],
+   [
+    "56:4f:8a:e1:f3:2d",
+    "none",
+    1
+   ],
+   [
+    "Amazon Echo Spot",
+    "Amazon Technologies Inc.",
+    1
+   ],
+   [
+    "Amazon Echo Studio",
+    "Amazon Technologies Inc.",
+    1
+   ],
+   [
+    "Arlo Q Indoor Camera",
+    "Netgear",
+    1
+   ]
+  ]
+ },
+ "q3": {
+  "per_type": {
+   "I": 1.3907891694927725,
+   "H": 4.489005728103348,
+   "ratio": 0.3098212062385573
+  },
+  "binary": {
+   "I": 0.11082827203191503,
+   "H": 0.3321104035342968,
+   "ratio": 0.33370912459377344
+  },
+  "named_only_per_type": {
+   "I": 1.0305083949437588,
+   "H": 3.8852569896510185,
+   "ratio": 0.2652355809895399
+  },
+  "named_only_binary": {
+   "I": 0.07043545096065085,
+   "H": 0.4577331538867323,
+   "ratio": 0.15387884919972467
+  },
+  "attack_share": 0.9388202473156125,
+  "note": "sample: the first CSV of each type, not the release's proportions"
+ },
+ "q4": {
+  "devices_with_benign_ge16": 63,
+  "devices_with_attack_ge16": 90,
+  "devices_with_both_ge16": 63,
+  "real_devices_with_both_ge16": 61,
+  "named_with_both_ge16": 51,
+  "per_device": [
+   [
+    "dc:a6:32:dc:27:d5",
+    "Raspberry Pi Trading Ltd",
+    2840,
+    1078331,
+    0.9974,
+    27
+   ],
+   [
+    "Amazon Echo Studio",
+    "Amazon Technologies Inc.",
+    7635,
+    313517,
+    0.9762,
+    27
+   ],
+   [
+    "dc:a6:32:c9:e4:ab",
+    "Raspberry Pi Trading Ltd",
+    5,
+    306841,
+    1.0,
+    21
+   ],
+   [
+    "e4:5f:01:55:90:c4",
+    "Raspberry Pi Trading Ltd",
+    3,
+    267750,
+    1.0,
+    16
+   ],
+   [
+    "dc:a6:32:c9:e4:90",
+    "Raspberry Pi Trading Ltd",
+    5,
+    266263,
+    1.0,
+    16
+   ],
+   [
+    "dc:a6:32:c9:e4:d5",
+    "Raspberry Pi Trading Ltd",
+    7,
+    242537,
+    1.0,
+    13
+   ],
+   [
+    "ac:17:02:05:34:27",
+    "Fibar Group sp. z o.o.",
+    83581,
+    143849,
+    0.6325,
+    12
+   ],
+   [
+    "dc:a6:32:c9:e5:ef",
+    "Raspberry Pi Trading Ltd",
+    5,
+    214292,
+    1.0,
+    17
+   ],
+   [
+    "Arlo Q Indoor Camera",
+    "Netgear",
+    10862,
+    163460,
+    0.9377,
+    27
+   ],
+   [
+    "dc:a6:32:c9:e5:a4",
+    "Raspberry Pi Trading Ltd",
+    6,
+    153552,
+    1.0,
+    19
+   ],
+   [
+    "Nest Indoor Camera",
+    "Google, Inc.",
+    9355,
+    127051,
+    0.9314,
+    27
+   ],
+   [
+    "3c:18:a0:41:c3:a0",
+    "Luxshare Precision Industry Company Limited",
+    23469,
+    102788,
+    0.8141,
+    26
+   ],
+   [
+    "Amazon Echo Dot 1",
+    "Amazon Technologies Inc.",
+    4129,
+    95668,
+    0.9586,
+    27
+   ],
+   [
+    "Amazon Echo Show",
+    "Amazon Technologies Inc.",
+    23778,
+    73930,
+    0.7566,
+    27
+   ],
+   [
+    "56:4f:8a:e1:f3:2d",
+    "none",
+    1368,
+    91422,
+    0.9853,
+    18
+   ],
+   [
+    "Amazon Echo Spot",
+    "Amazon Technologies Inc.",
+    0,
+    76839,
+    1.0,
+    21
+   ],
+   [
+    "Netatmo Camera",
+    "Netatmo",
+    1404,
+    57087,
+    0.976,
+    27
+   ],
+   [
+    "Wyze Camera",
+    "Wyze Labs Inc",
+    6242,
+    43950,
+    0.8756,
+    27
+   ],
+   [
+    "Google Nest Mini Speaker",
+    "Google, Inc.",
+    7181,
+    41334,
+    0.852,
+    27
+   ],
+   [
+    "SmartThings Hub",
+    "SAMJIN Co., Ltd.",
+    5017,
+    38923,
+    0.8858,
+    27
+   ],
+   [
+    "Amazon Echo Dot 2",
+    "Amazon Technologies Inc.",
+    11708,
+    28872,
+    0.7115,
+    11
+   ],
+   [
+    "Home Eye Camera",
+    "Shenzhen Rf-Link Technology Co.,Ltd.",
+    5269,
+    30731,
+    0.8536,
+    26
+   ],
+   [
+    "Arlo Base Station",
+    "Netgear",
+    1796,
+    28157,
+    0.94,
+    27
+   ],
+   [
+    "AeoTec Smart Home Hub",
+    "SAMJIN Co., Ltd.",
+    4734,
+    22713,
+    0.8275,
+    26
+   ],
+   [
+    "Philips Hue Bridge",
+    "Philips Lighting BV",
+    5081,
+    21560,
+    0.8093,
+    26
+   ],
+   [
+    "Borun/Sichuan-AI Camera",
+    "Sichuan AI-Link Technology Co., Ltd.",
+    0,
+    25508,
+    1.0,
+    23
+   ],
+   [
+    "Raspberry Pi 4-2 GB",
+    "Raspberry Pi Trading Ltd",
+    20,
+    24652,
+    0.9992,
+    20
+   ],
+   [
+    "harman kardon (Ampak Technology)",
+    "AMPAK Technology, Inc.",
+    5475,
+    17658,
+    0.7633,
+    16
+   ],
+   [
+    "Yi Indoor 2 Camera",
+    "AltoBeam (China) Inc.",
+    15572,
+    5819,
+    0.272,
+    12
+   ],
+   [
+    "HeimVision Smart WiFi Camera",
+    "Shenzhen Bilian Electronic Co.\u00a3\u00acLtd",
+    2495,
+    17222,
+    0.8735,
+    26
+   ],
+   [
+    "00:a3:d1:07:6f:03",
+    "Cisco Systems, Inc",
+    3565,
+    15676,
+    0.8147,
+    25
+   ],
+   [
+    "00:0c:29:1c:55:4a",
+    "VMware, Inc.",
+    0,
+    19144,
+    1.0,
+    4
+   ],
+   [
+    "Wemo smart plug 2 (Wemo id: Wemo.Mini.4A3)",
+    "Belkin International Inc.",
+    265,
+    18855,
+    0.9861,
+    14
+   ],
+   [
+    "24:05:88:30:6f:89",
+    "Google, Inc.",
+    7616,
+    10113,
+    0.5704,
+    25
+   ],
+   [
+    "AMCREST WiFi Camera",
+    "Amcrest Technologies",
+    1440,
+    16097,
+    0.9179,
+    27
+   ],
+   [
+    "Eufy HomeBase 2",
+    "Smart Innovation LLC",
+    2017,
+    14845,
+    0.8804,
+    25
+   ],
+   [
+    "TP-Link Tapo Camera",
+    "TP-Link Corporation Limited",
+    1564,
+    14714,
+    0.9039,
+    26
+   ],
+   [
+    "Rbcior Camera",
+    "Tuya Smart Inc.",
+    3403,
+    11649,
+    0.7739,
+    25
+   ],
+   [
+    "Gosund Power strip (1)",
+    "Espressif Inc.",
+    1736,
+    12223,
+    0.8756,
+    27
+   ],
+   [
+    "GoSund Smart plug WP2 (1)",
+    "Espressif Inc.",
+    1736,
+    12152,
+    0.875,
+    27
+   ],
+   [
+    "GoSund Power strip (2)",
+    "Espressif Inc.",
+    1736,
+    12141,
+    0.8749,
+    27
+   ],
+   [
+    "b0:09:da:3e:82:6c",
+    "Ring Solutions",
+    1289,
+    12097,
+    0.9037,
+    16
+   ],
+   [
+    "Atomi Coffee Maker",
+    "Tuya Smart Inc.",
+    1282,
+    11961,
+    0.9032,
+    26
+   ],
+   [
+    "GoSund Smart plug WP2 (3)",
+    "Espressif Inc.",
+    1733,
+    11235,
+    0.8664,
+    27
+   ],
+   [
+    "GoSund Smart Plug WP3 (1)",
+    "Espressif Inc.",
+    1737,
+    11081,
+    0.8645,
+    25
+   ],
+   [
+    "GoSund Smart Plug WP2 (2)",
+    "Espressif Inc.",
+    1735,
+    10480,
+    0.858,
+    27
+   ],
+   [
+    "Gosund Smart Plug WP3 (2)",
+    "Espressif Inc.",
+    1736,
+    10414,
+    0.8571,
+    27
+   ],
+   [
+    "Sonos One Speaker",
+    "Sonos, Inc.",
+    1311,
+    10383,
+    0.8879,
+    26
+   ],
+   [
+    "LampUX RGB",
+    "Espressif Inc.",
+    1735,
+    9059,
+    0.8393,
+    23
+   ],
+   [
+    "Globe Lamp ESP_B1680C",
+    "Espressif Inc.",
+    0,
+    10677,
+    1.0,
+    23
+   ],
+   [
+    "Amazon Plug",
+    "Amazon Technologies Inc.",
+    508,
+    9941,
+    0.9514,
+    26
+   ],
+   [
+    "Lumiman bulb",
+    "Tuya Smart Inc.",
+    1335,
+    8706,
+    0.867,
+    26
+   ],
+   [
+    "dc:a6:32:c9:e4:c6",
+    "Raspberry Pi Trading Ltd",
+    13,
+    9765,
+    0.9987,
+    17
+   ],
+   [
+    "HeimVision SmartLife Radio/Lamp",
+    "Tuya Smart Inc.",
+    1489,
+    8269,
+    0.8474,
+    14
+   ],
+   [
+    "Smart Board",
+    "SMART Technologies, Inc.",
+    77,
+    9410,
+    0.9919,
+    20
+   ],
+   [
+    "Teckin Light Strip",
+    "Tuya Smart Inc.",
+    1281,
+    8165,
+    0.8644,
+    26
+   ],
+   [
+    "Yutron Plug 1",
+    "Tuya Smart Inc.",
+    1247,
+    8034,
+    0.8656,
+    27
+   ],
+   [
+    "Teckin Plug 2",
+    "Tuya Smart Inc.",
+    1214,
+    7974,
+    0.8679,
+    27
+   ],
+   [
+    "Yutron Plug 2",
+    "Tuya Smart Inc.",
+    1235,
+    7898,
+    0.8648,
+    27
+   ],
+   [
+    "Teckin Plug 1",
+    "Tuya Smart Inc.",
+    1173,
+    6994,
+    0.8564,
+    27
+   ]
+  ],
+  "benign_devices_in_attack_files": 63,
+  "attack_rows_by_named_device_share": 0.3497108926286066
+ }
+}

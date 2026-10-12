@@ -1,0 +1,38 @@
+{
+ "random": {
+  "n": 30,
+  "K": [
+   20
+  ],
+  "median_bstar": 0.1,
+  "mean_bstar": 0.11666666666666667,
+  "collapse_b02": "28/30",
+  "pm": {
+   "K": 20,
+   "mean_span": 3.45,
+   "frac_span_ge2": 1.0,
+   "min_span": 2,
+   "max_span": 5,
+   "degree_min": 2,
+   "degree_max": 2
+  }
+ },
+ "anticluster": {
+  "n": 30,
+  "K": [
+   20
+  ],
+  "median_bstar": 0.1,
+  "mean_bstar": 0.12166666666666667,
+  "collapse_b02": "28/30",
+  "pm": {
+   "K": 20,
+   "mean_span": 3.9,
+   "frac_span_ge2": 1.0,
+   "min_span": 2,
+   "max_span": 6,
+   "degree_min": 2,
+   "degree_max": 2
+  }
+ }
+}

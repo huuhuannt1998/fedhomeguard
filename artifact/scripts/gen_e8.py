@@ -16,8 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 from aggregate import load                                             # noqa: E402
 
-MAN = os.path.join(ROOT, "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP")
-FIG, OUT = os.path.join(MAN, "figures"), os.path.join(MAN, "generated")
+from _manuscript import FIGURES as FIG, GENERATED as OUT  # TMLR figures/ and generated/ (FHG_* override)
 BLUE, ORANGE, MUTED, GRID = "#2a78d6", "#eb6834", "#898781", "#e1e0d9"
 
 plt.rcParams.update({

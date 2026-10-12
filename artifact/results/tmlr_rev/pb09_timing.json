@@ -1,0 +1,841 @@
+{
+ "protocol": "predeclarations/tmlr_PB09_compute_cost.md; repeated per coordinator 2026-10-10",
+ "threads": 1,
+ "before": {
+  "time": "2026-10-10T14:33:37-0400",
+  "loadavg": [
+   3.54638671875,
+   4.083984375,
+   4.2578125
+  ],
+  "top_processes_pcpu": [
+   [
+    72.9,
+    "Code Helper (Plugin)"
+   ],
+   [
+    60.7,
+    "syspolicyd"
+   ],
+   [
+    44.3,
+    "python3"
+   ],
+   [
+    10.9,
+    "com.apple.Virtualization.VirtualMachine"
+   ],
+   [
+    1.9,
+    "Docker Desktop Helper (Renderer)"
+   ],
+   [
+    1.1,
+    "bluetoothd"
+   ],
+   [
+    0.9,
+    "WindowServer"
+   ],
+   [
+    0.9,
+    "Google Chrome"
+   ]
+  ],
+  "docker": [
+   "ds-readpath-ha 0.00% 342.7MiB / 7.751GiB",
+   "delaysteer-e2-mosquitto 0.02% 1.336MiB / 7.751GiB",
+   "delaysteer-ha 0.02% 273.2MiB / 7.751GiB",
+   "hpr-broker 0.04% 2.164MiB / 7.751GiB",
+   "rka-server 0.12% 254.1MiB / 2GiB",
+   "rka-worker 0.14% 18.32MiB / 4GiB",
+   "hpr-monitor 0.00% 126.2MiB / 7.751GiB",
+   "hpr-hass 0.72% 1.111GiB / 7.751GiB",
+   "hpr-devices 0.06% 11.95MiB / 7.751GiB",
+   "hpr-anchord 0.01% 27.79MiB / 7.751GiB"
+  ]
+ },
+ "repeats": [
+  {
+   "loadavg": [
+    3.46826171875,
+    4.04833984375,
+    4.24267578125
+   ],
+   "fedavg_secs": 1.5135070411488414,
+   "k1_K20": {
+    "member_secs_median": 0.04427531245164573,
+    "ensemble_secs_est": 0.8855062490329146,
+    "vote_secs_all_flows": 0.03866387531161308,
+    "vote_us_per_flow": 1.1607287694870334
+   },
+   "k2_K190": {
+    "member_secs_median": 0.08674093754962087,
+    "ensemble_secs_est": 16.480778134427965,
+    "vote_secs_all_flows": 0.35444420808926225,
+    "vote_us_per_flow": 10.640774785027386
+   },
+   "k3_K500": {
+    "member_secs_median": 0.1303346047643572,
+    "ensemble_secs_est": 65.1673023821786,
+    "vote_secs_all_flows": 0.9303609160706401,
+    "vote_us_per_flow": 27.930378747242273
+   },
+   "k3_K1140": {
+    "member_secs_median": 0.13235260383225977,
+    "ensemble_secs_est": 150.88196836877614,
+    "vote_secs_all_flows": 2.261073791887611,
+    "vote_us_per_flow": 67.87972956732547
+   },
+   "k5_K200": {
+    "member_secs_median": 0.2310245002154261,
+    "ensemble_secs_est": 46.20490004308522,
+    "vote_secs_all_flows": 0.40826766612008214,
+    "vote_us_per_flow": 12.256609610329695
+   },
+   "k8_K200": {
+    "member_secs_median": 0.35296035441569984,
+    "ensemble_secs_est": 70.59207088313997,
+    "vote_secs_all_flows": 0.37221766728907824,
+    "vote_us_per_flow": 11.17435206511793
+   },
+   "loadavg_after": [
+    3.57861328125,
+    4.02490234375,
+    4.2275390625
+   ],
+   "repeat": 1,
+   "wall_secs": 37.9,
+   "background_after": {
+    "time": "2026-10-10T14:34:17-0400",
+    "loadavg": [
+     3.57861328125,
+     4.02490234375,
+     4.2275390625
+    ],
+    "top_processes_pcpu": [
+     [
+      99.0,
+      "python3"
+     ],
+     [
+      82.5,
+      "Code Helper (Plugin)"
+     ],
+     [
+      10.8,
+      "sysmond"
+     ],
+     [
+      6.2,
+      "fileproviderd"
+     ],
+     [
+      4.3,
+      "bird"
+     ],
+     [
+      3.1,
+      "cloudd"
+     ],
+     [
+      2.6,
+      "Activity Monitor"
+     ],
+     [
+      2.2,
+      "WindowServer"
+     ]
+    ],
+    "docker": [
+     "ds-readpath-ha 0.00% 342.5MiB / 7.751GiB",
+     "delaysteer-e2-mosquitto 0.02% 1.336MiB / 7.751GiB",
+     "delaysteer-ha 0.00% 272.7MiB / 7.751GiB",
+     "hpr-broker 0.02% 2.164MiB / 7.751GiB",
+     "rka-server 0.11% 254.1MiB / 2GiB",
+     "rka-worker 0.05% 18.32MiB / 4GiB",
+     "hpr-monitor 19.31% 126.2MiB / 7.751GiB",
+     "hpr-hass 0.13% 1.154GiB / 7.751GiB",
+     "hpr-devices 0.00% 11.95MiB / 7.751GiB",
+     "hpr-anchord 4.80% 27.79MiB / 7.751GiB"
+    ]
+   }
+  },
+  {
+   "loadavg": [
+    3.4521484375,
+    3.9912109375,
+    4.21435546875
+   ],
+   "fedavg_secs": 0.913936042226851,
+   "k1_K20": {
+    "member_secs_median": 0.06624556262977421,
+    "ensemble_secs_est": 1.3249112525954843,
+    "vote_secs_all_flows": 0.036327959038317204,
+    "vote_us_per_flow": 1.0906021926843952
+   },
+   "k2_K190": {
+    "member_secs_median": 0.08546406263485551,
+    "ensemble_secs_est": 16.238171900622547,
+    "vote_secs_all_flows": 0.44192170770838857,
+    "vote_us_per_flow": 13.266938087913196
+   },
+   "k3_K500": {
+    "member_secs_median": 0.1370841038879007,
+    "ensemble_secs_est": 68.54205194395036,
+    "vote_secs_all_flows": 0.9884082498028874,
+    "vote_us_per_flow": 29.6730186071116
+   },
+   "k3_K1140": {
+    "member_secs_median": 0.12948485440574586,
+    "ensemble_secs_est": 147.61273402255028,
+    "vote_secs_all_flows": 2.195221582893282,
+    "vote_us_per_flow": 65.90277943240115
+   },
+   "k5_K200": {
+    "member_secs_median": 0.21505275066010654,
+    "ensemble_secs_est": 43.01055013202131,
+    "vote_secs_all_flows": 0.356263707857579,
+    "vote_us_per_flow": 10.695398014337405
+   },
+   "k8_K200": {
+    "member_secs_median": 0.35078956256620586,
+    "ensemble_secs_est": 70.15791251324117,
+    "vote_secs_all_flows": 0.3945654174312949,
+    "vote_us_per_flow": 11.845254200879463
+   },
+   "loadavg_after": [
+    3.60546875,
+    3.9736328125,
+    4.1982421875
+   ],
+   "repeat": 2,
+   "wall_secs": 33.4,
+   "background_after": {
+    "time": "2026-10-10T14:34:53-0400",
+    "loadavg": [
+     3.60546875,
+     3.9736328125,
+     4.1982421875
+    ],
+    "top_processes_pcpu": [
+     [
+      99.9,
+      "com.apple.Virtualization.VirtualMachine"
+     ],
+     [
+      99.0,
+      "python3"
+     ],
+     [
+      85.8,
+      "Code Helper (Plugin)"
+     ],
+     [
+      1.7,
+      "claude"
+     ],
+     [
+      1.6,
+      "WindowServer"
+     ],
+     [
+      1.2,
+      "launchservicesd"
+     ],
+     [
+      1.1,
+      "backgroundtaskmanagementd"
+     ],
+     [
+      0.8,
+      "trustd"
+     ]
+    ],
+    "docker": [
+     "ds-readpath-ha 0.01% 342.2MiB / 7.751GiB",
+     "delaysteer-e2-mosquitto 0.01% 1.336MiB / 7.751GiB",
+     "delaysteer-ha 0.01% 272.7MiB / 7.751GiB",
+     "hpr-broker 0.01% 2.164MiB / 7.751GiB",
+     "rka-server 0.08% 254.1MiB / 2GiB",
+     "rka-worker 0.05% 18.32MiB / 4GiB",
+     "hpr-monitor 0.00% 126.2MiB / 7.751GiB",
+     "hpr-hass 100.21% 1.185GiB / 7.751GiB",
+     "hpr-devices 0.00% 11.95MiB / 7.751GiB",
+     "hpr-anchord 4.01% 27.85MiB / 7.751GiB"
+    ]
+   }
+  },
+  {
+   "loadavg": [
+    3.60546875,
+    3.9736328125,
+    4.1982421875
+   ],
+   "fedavg_secs": 0.97909937473014,
+   "k1_K20": {
+    "member_secs_median": 0.04481397941708565,
+    "ensemble_secs_est": 0.896279588341713,
+    "vote_secs_all_flows": 0.03436024999246001,
+    "vote_us_per_flow": 1.0315295704731315
+   },
+   "k2_K190": {
+    "member_secs_median": 0.08552839583717287,
+    "ensemble_secs_est": 16.250395209062845,
+    "vote_secs_all_flows": 0.33421595906838775,
+    "vote_us_per_flow": 10.033502223608158
+   },
+   "k3_K500": {
+    "member_secs_median": 0.130685729207471,
+    "ensemble_secs_est": 65.3428646037355,
+    "vote_secs_all_flows": 0.9766967920586467,
+    "vote_us_per_flow": 29.321428761892726
+   },
+   "k3_K1140": {
+    "member_secs_median": 0.12597154127433896,
+    "ensemble_secs_est": 143.60755705274642,
+    "vote_secs_all_flows": 2.143072582781315,
+    "vote_us_per_flow": 64.33721353291249
+   },
+   "k5_K200": {
+    "member_secs_median": 0.23586550005711615,
+    "ensemble_secs_est": 47.17310001142323,
+    "vote_secs_all_flows": 0.37006195820868015,
+    "vote_us_per_flow": 11.109635491104177
+   },
+   "k8_K200": {
+    "member_secs_median": 0.37409045873209834,
+    "ensemble_secs_est": 74.81809174641967,
+    "vote_secs_all_flows": 0.34580629179254174,
+    "vote_us_per_flow": 10.381455772817224
+   },
+   "loadavg_after": [
+    3.3154296875,
+    3.8642578125,
+    4.1494140625
+   ],
+   "repeat": 3,
+   "wall_secs": 32.3,
+   "background_after": {
+    "time": "2026-10-10T14:35:27-0400",
+    "loadavg": [
+     3.3154296875,
+     3.8642578125,
+     4.1494140625
+    ],
+    "top_processes_pcpu": [
+     [
+      100.0,
+      "python3"
+     ],
+     [
+      85.0,
+      "Code Helper (Plugin)"
+     ],
+     [
+      2.2,
+      "WindowServer"
+     ],
+     [
+      1.9,
+      "Docker Desktop Helper (Renderer)"
+     ],
+     [
+      1.7,
+      "com.apple.Virtualization.VirtualMachine"
+     ],
+     [
+      1.6,
+      "fileproviderd"
+     ],
+     [
+      1.6,
+      "com.docker.backend"
+     ],
+     [
+      1.2,
+      "Google Chrome"
+     ]
+    ],
+    "docker": [
+     "ds-readpath-ha 0.01% 342.4MiB / 7.751GiB",
+     "delaysteer-e2-mosquitto 0.02% 1.336MiB / 7.751GiB",
+     "delaysteer-ha 0.04% 272.4MiB / 7.751GiB",
+     "hpr-broker 0.03% 2.164MiB / 7.751GiB",
+     "rka-server 0.14% 254.1MiB / 2GiB",
+     "rka-worker 0.05% 18.32MiB / 4GiB",
+     "hpr-monitor 0.00% 126.2MiB / 7.751GiB",
+     "hpr-hass 0.07% 1.131GiB / 7.751GiB",
+     "hpr-devices 0.01% 11.95MiB / 7.751GiB",
+     "hpr-anchord 4.87% 27.79MiB / 7.751GiB"
+    ]
+   }
+  },
+  {
+   "loadavg": [
+    3.1298828125,
+    3.81640625,
+    4.130859375
+   ],
+   "fedavg_secs": 0.9004754172638059,
+   "k1_K20": {
+    "member_secs_median": 0.04701281199231744,
+    "ensemble_secs_est": 0.9402562398463488,
+    "vote_secs_all_flows": 0.0426018750295043,
+    "vote_us_per_flow": 1.2789515169469918
+   },
+   "k2_K190": {
+    "member_secs_median": 0.09687891718931496,
+    "ensemble_secs_est": 18.406994265969843,
+    "vote_secs_all_flows": 0.3819765839725733,
+    "vote_us_per_flow": 11.467324646429699
+   },
+   "k3_K500": {
+    "member_secs_median": 0.1458539788145572,
+    "ensemble_secs_est": 72.9269894072786,
+    "vote_secs_all_flows": 0.916275667026639,
+    "vote_us_per_flow": 27.507525278494114
+   },
+   "k3_K1140": {
+    "member_secs_median": 0.14050068776123226,
+    "ensemble_secs_est": 160.17078404780477,
+    "vote_secs_all_flows": 2.2563297087326646,
+    "vote_us_per_flow": 67.73730737714394
+   },
+   "k5_K200": {
+    "member_secs_median": 0.22160349995829165,
+    "ensemble_secs_est": 44.32069999165833,
+    "vote_secs_all_flows": 0.4233240410685539,
+    "vote_us_per_flow": 12.708617264141516
+   },
+   "k8_K200": {
+    "member_secs_median": 0.3670263334643096,
+    "ensemble_secs_est": 73.40526669286191,
+    "vote_secs_all_flows": 0.4264375832863152,
+    "vote_us_per_flow": 12.80208896086206
+   },
+   "loadavg_after": [
+    3.73681640625,
+    3.896484375,
+    4.1474609375
+   ],
+   "repeat": 4,
+   "wall_secs": 33.9,
+   "background_after": {
+    "time": "2026-10-10T14:36:03-0400",
+    "loadavg": [
+     3.73681640625,
+     3.896484375,
+     4.1474609375
+    ],
+    "top_processes_pcpu": [
+     [
+      100.1,
+      "com.apple.Virtualization.VirtualMachine"
+     ],
+     [
+      98.6,
+      "python3"
+     ],
+     [
+      87.5,
+      "Code Helper (Plugin)"
+     ],
+     [
+      2.7,
+      "WindowServer"
+     ],
+     [
+      1.4,
+      "fileproviderd"
+     ],
+     [
+      1.0,
+      "Activity Monitor"
+     ],
+     [
+      0.9,
+      "relay_mac_arm64"
+     ],
+     [
+      0.9,
+      "relay_mac_arm64"
+     ]
+    ],
+    "docker": [
+     "ds-readpath-ha 0.00% 342.9MiB / 7.751GiB",
+     "delaysteer-e2-mosquitto 0.02% 1.336MiB / 7.751GiB",
+     "delaysteer-ha 0.01% 272.9MiB / 7.751GiB",
+     "hpr-broker 0.03% 2.164MiB / 7.751GiB",
+     "rka-server 0.09% 254.1MiB / 2GiB",
+     "rka-worker 0.04% 18.32MiB / 4GiB",
+     "hpr-monitor 13.11% 126.3MiB / 7.751GiB",
+     "hpr-hass 44.77% 1.145GiB / 7.751GiB",
+     "hpr-devices 0.03% 11.95MiB / 7.751GiB",
+     "hpr-anchord 0.01% 27.79MiB / 7.751GiB"
+    ]
+   }
+  },
+  {
+   "loadavg": [
+    3.73681640625,
+    3.896484375,
+    4.1474609375
+   ],
+   "fedavg_secs": 0.9182182503864169,
+   "k1_K20": {
+    "member_secs_median": 0.043580312514677644,
+    "ensemble_secs_est": 0.8716062502935529,
+    "vote_secs_all_flows": 0.04614362493157387,
+    "vote_us_per_flow": 1.385278442857216
+   },
+   "k2_K190": {
+    "member_secs_median": 0.07963604154065251,
+    "ensemble_secs_est": 15.130847892723978,
+    "vote_secs_all_flows": 0.34212962491437793,
+    "vote_us_per_flow": 10.271078502383006
+   },
+   "k3_K500": {
+    "member_secs_median": 0.13185554137453437,
+    "ensemble_secs_est": 65.92777068726718,
+    "vote_secs_all_flows": 0.9473475418053567,
+    "vote_us_per_flow": 28.44033448830251
+   },
+   "k3_K1140": {
+    "member_secs_median": 0.12775877048261464,
+    "ensemble_secs_est": 145.64499835018069,
+    "vote_secs_all_flows": 2.3914852919988334,
+    "vote_us_per_flow": 71.79481513055639
+   },
+   "k5_K200": {
+    "member_secs_median": 0.2244872918818146,
+    "ensemble_secs_est": 44.89745837636292,
+    "vote_secs_all_flows": 0.3667260413058102,
+    "vote_us_per_flow": 11.00948788069079
+   },
+   "k8_K200": {
+    "member_secs_median": 0.3628453752025962,
+    "ensemble_secs_est": 72.56907504051924,
+    "vote_secs_all_flows": 0.46388145815581083,
+    "vote_us_per_flow": 13.926192079129715
+   },
+   "loadavg_after": [
+    3.71240234375,
+    3.861328125,
+    4.123046875
+   ],
+   "repeat": 5,
+   "wall_secs": 33.7,
+   "background_after": {
+    "time": "2026-10-10T14:36:39-0400",
+    "loadavg": [
+     3.71240234375,
+     3.861328125,
+     4.123046875
+    ],
+    "top_processes_pcpu": [
+     [
+      98.9,
+      "python3"
+     ],
+     [
+      84.6,
+      "Code Helper (Plugin)"
+     ],
+     [
+      41.7,
+      "com.apple.Virtualization.VirtualMachine"
+     ],
+     [
+      29.6,
+      "com.docker.backend"
+     ],
+     [
+      3.1,
+      "sysmond"
+     ],
+     [
+      2.8,
+      "claude"
+     ],
+     [
+      1.8,
+      "fileproviderd"
+     ],
+     [
+      1.6,
+      "WindowServer"
+     ]
+    ],
+    "docker": [
+     "ds-readpath-ha 0.32% 342.9MiB / 7.751GiB",
+     "delaysteer-e2-mosquitto 0.03% 1.336MiB / 7.751GiB",
+     "delaysteer-ha 0.32% 272.9MiB / 7.751GiB",
+     "hpr-broker 0.03% 2.176MiB / 7.751GiB",
+     "rka-server 0.12% 254.1MiB / 2GiB",
+     "rka-worker 0.07% 18.32MiB / 4GiB",
+     "hpr-monitor 0.00% 126.2MiB / 7.751GiB",
+     "hpr-hass 72.88% 1.205GiB / 7.751GiB",
+     "hpr-devices 0.01% 11.95MiB / 7.751GiB",
+     "hpr-anchord 0.01% 27.79MiB / 7.751GiB"
+    ]
+   }
+  }
+ ],
+ "after": {
+  "time": "2026-10-10T14:36:41-0400",
+  "loadavg": [
+   3.71240234375,
+   3.861328125,
+   4.123046875
+  ],
+  "top_processes_pcpu": [
+   [
+    224.8,
+    "Code Helper (Plugin)"
+   ],
+   [
+    95.4,
+    "com.apple.Virtualization.VirtualMachine"
+   ],
+   [
+    10.6,
+    "fileproviderd"
+   ],
+   [
+    4.1,
+    "backgroundtaskmanagementd"
+   ],
+   [
+    3.2,
+    "mdworker_shared"
+   ],
+   [
+    2.9,
+    "WindowServer"
+   ],
+   [
+    2.4,
+    "trustd"
+   ],
+   [
+    1.8,
+    "smd"
+   ]
+  ],
+  "docker": [
+   "ds-readpath-ha 0.01% 342.9MiB / 7.751GiB",
+   "delaysteer-e2-mosquitto 0.02% 1.336MiB / 7.751GiB",
+   "delaysteer-ha 0.00% 272.9MiB / 7.751GiB",
+   "hpr-broker 0.02% 2.176MiB / 7.751GiB",
+   "rka-server 0.09% 254.1MiB / 2GiB",
+   "rka-worker 0.09% 18.32MiB / 4GiB",
+   "hpr-monitor 0.00% 126.2MiB / 7.751GiB",
+   "hpr-hass 100.10% 1.225GiB / 7.751GiB",
+   "hpr-devices 0.00% 11.95MiB / 7.751GiB",
+   "hpr-anchord 0.01% 27.79MiB / 7.751GiB"
+  ]
+ },
+ "summary": {
+  "fedavg_secs": {
+   "median": 0.9182182503864169,
+   "min": 0.9004754172638059,
+   "max": 1.5135070411488414,
+   "rel_range": 0.6676317135137004,
+   "approximate": true,
+   "n": 5
+  },
+  "k1_K20.member_secs_median": {
+   "median": 0.04481397941708565,
+   "min": 0.043580312514677644,
+   "max": 0.06624556262977421,
+   "rel_range": 0.5057629429457737,
+   "approximate": true,
+   "n": 5
+  },
+  "k1_K20.ensemble_secs_est": {
+   "median": 0.896279588341713,
+   "min": 0.8716062502935529,
+   "max": 1.3249112525954843,
+   "rel_range": 0.5057629429457737,
+   "approximate": true,
+   "n": 5
+  },
+  "k1_K20.vote_secs_all_flows": {
+   "median": 0.03866387531161308,
+   "min": 0.03436024999246001,
+   "max": 0.04614362493157387,
+   "rel_range": 0.30476445633411714,
+   "approximate": true,
+   "n": 5
+  },
+  "k1_K20.vote_us_per_flow": {
+   "median": 1.1607287694870334,
+   "min": 1.0315295704731315,
+   "max": 1.385278442857216,
+   "rel_range": 0.3047644563341171,
+   "approximate": true,
+   "n": 5
+  },
+  "k2_K190.member_secs_median": {
+   "median": 0.08552839583717287,
+   "min": 0.07963604154065251,
+   "max": 0.09687891718931496,
+   "rel_range": 0.20160410446010313,
+   "approximate": true,
+   "n": 5
+  },
+  "k2_K190.ensemble_secs_est": {
+   "median": 16.250395209062845,
+   "min": 15.130847892723978,
+   "max": 18.406994265969843,
+   "rel_range": 0.20160410446010313,
+   "approximate": true,
+   "n": 5
+  },
+  "k2_K190.vote_secs_all_flows": {
+   "median": 0.35444420808926225,
+   "min": 0.33421595906838775,
+   "max": 0.44192170770838857,
+   "rel_range": 0.3038722207385499,
+   "approximate": true,
+   "n": 5
+  },
+  "k2_K190.vote_us_per_flow": {
+   "median": 10.640774785027386,
+   "min": 10.033502223608158,
+   "max": 13.266938087913196,
+   "rel_range": 0.30387222073854997,
+   "approximate": true,
+   "n": 5
+  },
+  "k3_K500.member_secs_median": {
+   "median": 0.13185554137453437,
+   "min": 0.1303346047643572,
+   "max": 0.1458539788145572,
+   "rel_range": 0.1176998242805538,
+   "approximate": true,
+   "n": 5
+  },
+  "k3_K500.ensemble_secs_est": {
+   "median": 65.92777068726718,
+   "min": 65.1673023821786,
+   "max": 72.9269894072786,
+   "rel_range": 0.1176998242805538,
+   "approximate": true,
+   "n": 5
+  },
+  "k3_K500.vote_secs_all_flows": {
+   "median": 0.9473475418053567,
+   "min": 0.916275667026639,
+   "max": 0.9884082498028874,
+   "rel_range": 0.0761416265869922,
+   "approximate": false,
+   "n": 5
+  },
+  "k3_K500.vote_us_per_flow": {
+   "median": 28.44033448830251,
+   "min": 27.507525278494114,
+   "max": 29.6730186071116,
+   "rel_range": 0.07614162658699224,
+   "approximate": false,
+   "n": 5
+  },
+  "k3_K1140.member_secs_median": {
+   "median": 0.12948485440574586,
+   "min": 0.12597154127433896,
+   "max": 0.14050068776123226,
+   "rel_range": 0.11220730450347224,
+   "approximate": true,
+   "n": 5
+  },
+  "k3_K1140.ensemble_secs_est": {
+   "median": 147.61273402255028,
+   "min": 143.60755705274642,
+   "max": 160.17078404780477,
+   "rel_range": 0.11220730450347224,
+   "approximate": true,
+   "n": 5
+  },
+  "k3_K1140.vote_secs_all_flows": {
+   "median": 2.2563297087326646,
+   "min": 2.143072582781315,
+   "max": 2.3914852919988334,
+   "rel_range": 0.11009592625407881,
+   "approximate": true,
+   "n": 5
+  },
+  "k3_K1140.vote_us_per_flow": {
+   "median": 67.73730737714394,
+   "min": 64.33721353291249,
+   "max": 71.79481513055639,
+   "rel_range": 0.11009592625407871,
+   "approximate": true,
+   "n": 5
+  },
+  "k5_K200.member_secs_median": {
+   "median": 0.2244872918818146,
+   "min": 0.21505275066010654,
+   "max": 0.23586550005711615,
+   "rel_range": 0.09271237236879698,
+   "approximate": false,
+   "n": 5
+  },
+  "k5_K200.ensemble_secs_est": {
+   "median": 44.89745837636292,
+   "min": 43.01055013202131,
+   "max": 47.17310001142323,
+   "rel_range": 0.09271237236879698,
+   "approximate": false,
+   "n": 5
+  },
+  "k5_K200.vote_secs_all_flows": {
+   "median": 0.37006195820868015,
+   "min": 0.356263707857579,
+   "max": 0.4233240410685539,
+   "rel_range": 0.1812137987259939,
+   "approximate": true,
+   "n": 5
+  },
+  "k5_K200.vote_us_per_flow": {
+   "median": 11.109635491104177,
+   "min": 10.695398014337405,
+   "max": 12.708617264141516,
+   "rel_range": 0.18121379872599394,
+   "approximate": true,
+   "n": 5
+  },
+  "k8_K200.member_secs_median": {
+   "median": 0.3628453752025962,
+   "min": 0.35078956256620586,
+   "max": 0.37409045873209834,
+   "rel_range": 0.06421715077085476,
+   "approximate": false,
+   "n": 5
+  },
+  "k8_K200.ensemble_secs_est": {
+   "median": 72.56907504051924,
+   "min": 70.15791251324117,
+   "max": 74.81809174641967,
+   "rel_range": 0.06421715077085476,
+   "approximate": false,
+   "n": 5
+  },
+  "k8_K200.vote_secs_all_flows": {
+   "median": 0.3945654174312949,
+   "min": 0.34580629179254174,
+   "max": 0.46388145815581083,
+   "rel_range": 0.2992537134449431,
+   "approximate": true,
+   "n": 5
+  },
+  "k8_K200.vote_us_per_flow": {
+   "median": 11.845254200879463,
+   "min": 10.381455772817224,
+   "max": 13.926192079129715,
+   "rel_range": 0.299253713444943,
+   "approximate": true,
+   "n": 5
+  }
+ }
+}

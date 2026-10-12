@@ -28,8 +28,7 @@ RES = "results/r4_normscaled"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from aggregate import src as _src
 CANON = _src("e2_*.jsonl")   # review r6: the corrected rows the paper prints
-OUT = os.environ.get("FHG_GENERATED",
-                     "[READY] (S&P 2027) FedHomeGuard - P10/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 NEW = ("replace_invert", "sign_flip")
 
 

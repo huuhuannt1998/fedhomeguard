@@ -13,6 +13,35 @@ record can be invented. Anything not determinable at abstract level is null.
 """
 import glob, html, json, os, re, sys
 
+
+def macros_from_yaml():
+    """--macros-from-yaml (added 2026-10-07): rebuild generated/inventory_r2_counts.tex from the
+    committed literature/inventory_r2.yaml (this script's own output) and literature/inventory.yaml,
+    with exactly the arithmetic of the full run below. The arXiv XML responses the full run parses
+    (/tmp/a.xml, /tmp/b*.xml) are no longer on disk, so this is the path the manuscript's gate re-runs."""
+    import yaml
+    from _manuscript import GENERATED as gen
+    y = yaml.safe_load(open("literature/inventory_r2.yaml"))
+    inc, exc = y["included"], y["excluded"]
+    assert y["n_included"] == len(inc) and y["n_excluded_after_screen"] == len(exc), "inventory_r2.yaml counts disagree"
+    ids1 = set(re.findall(r'arXiv:(\d{4}\.\d{4,5})', open("literature/inventory.yaml").read()))
+    ids2 = {str(e["arxiv_id"]).split("v")[0] for e in inc}
+    overlap = len(ids1 & ids2)
+    with open(os.path.join(gen, "inventory_r2_counts.tex"), "w") as fh:
+        fh.write("% GENERATED from literature/inventory_r2.yaml -- do not edit\n")
+        for name, val in (("nScreenPool", y["n_screened"]), ("nScreenHits", len(inc) + len(exc)),
+                          ("nScreenExcluded", len(exc)), ("nScreenIncluded", len(inc)),
+                          ("nScreenOverlap", overlap), ("nInventoryUnion", 3 + len(inc) - overlap),
+                          ("nGuaranteeWords", y["n_guarantee_words"]),
+                          ("nThreatClassGuarantee", y["n_asserts_threat_class_guarantee"])):
+            fh.write("\\newcommand{\\%s}{%d}\n" % (name, val))
+    print(f"  -> {os.path.join(gen, 'inventory_r2_counts.tex')} (from literature/inventory_r2.yaml)")
+
+
+if sys.argv[1:] == ["--macros-from-yaml"]:
+    macros_from_yaml()
+    raise SystemExit(0)
+
 XML = sys.argv[1:] or sorted(glob.glob("/tmp/a.xml") + glob.glob("/tmp/b*.xml"))
 FED = re.compile(r'federated', re.I)
 IDS = re.compile(r'intrusion detect|anomaly detect|\bIDS\b|malware|botnet|attack detect|traffic classif', re.I)
@@ -136,13 +165,13 @@ import re as _re
 _r1 = open("literature/inventory.yaml").read()
 _ids1 = set(_re.findall(r'arXiv:(\d{4}\.\d{4,5})', _r1))
 _n_r1 = int(_re.search(r'nInventory', open(
-    "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated/inventory_counts.tex"
+    "generated/inventory_counts.tex"   # dead branch (if False)
     ).read()) and 0) if False else 3          # round 1 included-count, fixed by that file
 _ids2 = {e["arxiv_id"].split("v")[0] for e in out}
 _overlap = len(_ids1 & _ids2)
 _union = _n_r1 + len(out) - _overlap
-_MAC = ("manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated/"
-        "inventory_r2_counts.tex")
+from _manuscript import GENERATED as _GEN  # TMLR generated/ (FHG_GENERATED overrides)
+_MAC = os.path.join(_GEN, "inventory_r2_counts.tex")
 with open(_MAC, "w") as fh:
     fh.write("% GENERATED from literature/inventory_r2.yaml -- do not edit\n")
     for name, val in (("nScreenPool", len(recs)), ("nScreenHits", n_inc + len(excluded)),

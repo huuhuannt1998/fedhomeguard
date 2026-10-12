@@ -10,7 +10,7 @@ whether targeting buys anything, not whether corrupting labels does.
 import glob, json, os, statistics as st
 from collections import defaultdict
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 rows = []
 for f in glob.glob("results/canonical/e15_voteshape_*.jsonl"):
     rows += [json.loads(l) for l in open(f) if l.startswith("{")]

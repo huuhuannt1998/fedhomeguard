@@ -28,7 +28,7 @@ Writes: generated/tab_gapspread.tex   (bare tabular; the float wrapper lives in
 """
 import json, os, statistics as st, sys
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 CANON = "results/canonical"
 # Table 2's beta grid, so the two tables are read against each other row for row.
 BETAS = [0.0, 0.05, 0.10, 0.20, 0.30, 0.40]

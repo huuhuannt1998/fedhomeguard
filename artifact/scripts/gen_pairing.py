@@ -25,8 +25,7 @@ Writes: generated/tab_pairing.tex, generated/pairing_macros.tex
 """
 import json, math, os, statistics as st, sys
 
-OUT = os.environ.get("FHG_GENERATED",
-                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 CANON = "results/canonical"
 BETA_OP = 0.20          # the operating point the body reports for device-derived skew
 

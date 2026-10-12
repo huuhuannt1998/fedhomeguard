@@ -1,0 +1,3729 @@
+{
+ "note": "POST HOC, not preregistered",
+ "bank": {
+  "device_derived|[1, 1]|None": {
+   "n": 30,
+   "exact": 0.9666666666666667,
+   "within1": 1.0,
+   "mae_steps": 0.03333333333333333,
+   "spearman": 0.6948083337796512
+  },
+  "device_derived|[1, 3]|None": {
+   "n": 40,
+   "exact": 0.525,
+   "within1": 0.85,
+   "mae_steps": 0.675,
+   "spearman": 0.8719988389158974
+  },
+  "device_derived|[2, 5]|None": {
+   "n": 30,
+   "exact": 0.5666666666666667,
+   "within1": 0.7666666666666667,
+   "mae_steps": 0.7666666666666667,
+   "spearman": 0.6923621770104393
+  },
+  "device_derived|[3, 8]|None": {
+   "n": 30,
+   "exact": 0.5,
+   "within1": 0.9666666666666667,
+   "mae_steps": 0.5333333333333333,
+   "spearman": 0.7714100983568097
+  },
+  "device_derived|[5, 10]|None": {
+   "n": 30,
+   "exact": 0.8333333333333334,
+   "within1": 1.0,
+   "mae_steps": 0.16666666666666666,
+   "spearman": 0.5527707983925667
+  },
+  "dirichlet_device|[1, 3]|0.1": {
+   "n": 3,
+   "exact": 0.0,
+   "within1": 0.0,
+   "mae_steps": 2.6666666666666665,
+   "spearman": null
+  },
+  "dirichlet_device|[1, 3]|0.2": {
+   "n": 3,
+   "exact": 0.0,
+   "within1": 0.3333333333333333,
+   "mae_steps": 2.3333333333333335,
+   "spearman": -0.5000000000000001
+  },
+  "dirichlet_device|[1, 3]|0.5": {
+   "n": 3,
+   "exact": 0.3333333333333333,
+   "within1": 1.0,
+   "mae_steps": 0.6666666666666666,
+   "spearman": null
+  },
+  "dirichlet_device|[1, 3]|1.0": {
+   "n": 3,
+   "exact": 0.0,
+   "within1": 1.0,
+   "mae_steps": 1.0,
+   "spearman": null
+  },
+  "dirichlet_device|[1, 3]|10.0": {
+   "n": 3,
+   "exact": 0.0,
+   "within1": 1.0,
+   "mae_steps": 1.0,
+   "spearman": null
+  },
+  "dirichlet_device|[1, 3]|100.0": {
+   "n": 3,
+   "exact": 0.0,
+   "within1": 1.0,
+   "mae_steps": 1.0,
+   "spearman": null
+  },
+  "dirichlet|[1, 3]|0.1": {
+   "n": 3,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null
+  },
+  "dirichlet|[1, 3]|0.2": {
+   "n": 3,
+   "exact": 0.6666666666666666,
+   "within1": 0.6666666666666666,
+   "mae_steps": 0.6666666666666666,
+   "spearman": 1.0
+  },
+  "dirichlet|[1, 3]|0.5": {
+   "n": 3,
+   "exact": 0.3333333333333333,
+   "within1": 1.0,
+   "mae_steps": 0.6666666666666666,
+   "spearman": null
+  },
+  "dirichlet|[1, 3]|1.0": {
+   "n": 3,
+   "exact": 0.3333333333333333,
+   "within1": 1.0,
+   "mae_steps": 0.6666666666666666,
+   "spearman": 1.0
+  },
+  "dirichlet|[1, 3]|10.0": {
+   "n": 3,
+   "exact": 0.0,
+   "within1": 1.0,
+   "mae_steps": 1.0,
+   "spearman": null
+  },
+  "dirichlet|[1, 3]|100.0": {
+   "n": 3,
+   "exact": 0.0,
+   "within1": 1.0,
+   "mae_steps": 1.0,
+   "spearman": null
+  },
+  "iid": {
+   "n": 33,
+   "exact": 0.9090909090909091,
+   "within1": 1.0,
+   "mae_steps": 0.09090909090909091,
+   "spearman": null
+  },
+  "volume|[1, 3]|0.2": {
+   "n": 3,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": 1.0
+  },
+  "volume|[1, 3]|0.5": {
+   "n": 3,
+   "exact": 0.6666666666666666,
+   "within1": 1.0,
+   "mae_steps": 0.3333333333333333,
+   "spearman": 1.0
+  },
+  "volume|[1, 3]|1.0": {
+   "n": 3,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": 1.0
+  },
+  "volume|[1, 3]|10.0": {
+   "n": 3,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null
+  },
+  "volume|[1, 3]|100.0": {
+   "n": 3,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null
+  },
+  "ALL iot23 device-derived k=1 (unique draws)": {
+   "n": 160,
+   "exact": 0.66875,
+   "within1": 0.9125,
+   "mae_steps": 0.45,
+   "spearman": 0.9711656521743017
+  }
+ },
+ "pb04": {
+  "a|coverage_repaired|1-3": {
+   "n": 30,
+   "exact": 0.0,
+   "within1": 0.23333333333333334,
+   "mae_steps": 2.2333333333333334,
+   "spearman": 0.640192378766521,
+   "cvm_exact": 0.0
+  },
+  "b|mal_only|2": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  },
+  "b|mal_only|4": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  },
+  "b|mal_only|6": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  },
+  "b|mal_only|8": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  },
+  "b|symmetric|0": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  },
+  "b|symmetric|2": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  },
+  "b|symmetric|4": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  },
+  "b|symmetric|6": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  },
+  "b|symmetric|8": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  },
+  "c|volume_dial|10": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  },
+  "c|volume_dial|100": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": 1.0,
+   "cvm_exact": 0.0
+  },
+  "c|volume_dial|1000": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 0.0
+  },
+  "c|volume_dial|20": {
+   "n": 10,
+   "exact": 0.9,
+   "within1": 1.0,
+   "mae_steps": 0.1,
+   "spearman": 1.0,
+   "cvm_exact": 0.0
+  },
+  "c|volume_dial|300": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 0.0
+  },
+  "c|volume_dial|50": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": 1.0,
+   "cvm_exact": 0.0
+  },
+  "c|volume_dial|equal": {
+   "n": 10,
+   "exact": 1.0,
+   "within1": 1.0,
+   "mae_steps": 0.0,
+   "spearman": null,
+   "cvm_exact": 1.0
+  }
+ },
+ "rows": [
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s0_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 0,
+   "observed": 0.05,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s10_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 10,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 12
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s11_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 11,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 12
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s12_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 12,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 11
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s13_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 13,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 12
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s14_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 14,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 14
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s15_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 15,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 10
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s16_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 16,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 15
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s17_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 17,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 15
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s18_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 18,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 11
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s19_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 19,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 13
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s1_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 1,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 12
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s20_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 20,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 10
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s21_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 21,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 10
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s22_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 22,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 13
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s23_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 23,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 10
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s24_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 24,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 12
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s25_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 25,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 9
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s26_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 26,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 12
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s27_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 27,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 11
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s28_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 28,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 15
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s29_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 29,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 9
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s2_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 2,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 12
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s3_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 3,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 14
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s4_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 4,
+   "observed": 0.0,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s5_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 5,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 12
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s6_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 6,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 11
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s7_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 7,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 13
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s8_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 8,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 14
+  },
+  {
+   "id": "iot-23_device_derived_dph1-1_na_s9_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    1
+   ],
+   "alpha": null,
+   "seed": 9,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 10
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s0_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 0,
+   "observed": 0.1,
+   "functional_pred": 0.15,
+   "nM_f": 0,
+   "nB_f": 6
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s10_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 10,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 9
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s11_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 11,
+   "observed": 0.1,
+   "functional_pred": 0.15,
+   "nM_f": 0,
+   "nB_f": 6
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s12_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 12,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 9
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s13_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 13,
+   "observed": 0.2,
+   "functional_pred": 0.25,
+   "nM_f": 0,
+   "nB_f": 4
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s14_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 14,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 9
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s15_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 15,
+   "observed": 0.1,
+   "functional_pred": 0.2,
+   "nM_f": 1,
+   "nB_f": 5
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s16_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 16,
+   "observed": 0.05,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s17_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 17,
+   "observed": 0.2,
+   "functional_pred": 0.25,
+   "nM_f": 0,
+   "nB_f": 4
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s18_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 18,
+   "observed": 0.15,
+   "functional_pred": 0.15,
+   "nM_f": 0,
+   "nB_f": 6
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s19_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 19,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 10
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s1_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 1,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 11
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s20_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 20,
+   "observed": 0.05,
+   "functional_pred": 0.1,
+   "nM_f": 0,
+   "nB_f": 7
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s21_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 21,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 9
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s22_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 22,
+   "observed": 0.1,
+   "functional_pred": 0.1,
+   "nM_f": 0,
+   "nB_f": 7
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s23_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 23,
+   "observed": 0.05,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s24_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 24,
+   "observed": 0.05,
+   "functional_pred": 0.15,
+   "nM_f": 0,
+   "nB_f": 6
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s25_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 25,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 9
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s26_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 26,
+   "observed": 0.15,
+   "functional_pred": 0.2,
+   "nM_f": 0,
+   "nB_f": 5
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s27_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 27,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 9
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s28_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 28,
+   "observed": 0.2,
+   "functional_pred": 0.2,
+   "nM_f": 0,
+   "nB_f": 5
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s29_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 29,
+   "observed": 0.05,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s2_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 2,
+   "observed": 0.1,
+   "functional_pred": 0.2,
+   "nM_f": 0,
+   "nB_f": 5
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s30_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 30,
+   "observed": 0.0,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s31_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 31,
+   "observed": 0.15,
+   "functional_pred": 0.15,
+   "nM_f": 0,
+   "nB_f": 6
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s32_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 32,
+   "observed": 0.0,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s33_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 33,
+   "observed": 0.05,
+   "functional_pred": 0.1,
+   "nM_f": 0,
+   "nB_f": 7
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s34_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 34,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 9
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s35_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 35,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 0,
+   "nB_f": 12
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s36_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 36,
+   "observed": 0.1,
+   "functional_pred": 0.1,
+   "nM_f": 0,
+   "nB_f": 7
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s37_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 37,
+   "observed": 0.0,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s38_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 38,
+   "observed": 0.15,
+   "functional_pred": 0.15,
+   "nM_f": 0,
+   "nB_f": 6
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s39_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 39,
+   "observed": 0.0,
+   "functional_pred": 0.1,
+   "nM_f": 0,
+   "nB_f": 7
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s3_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 3,
+   "observed": 0.2,
+   "functional_pred": 0.2,
+   "nM_f": 0,
+   "nB_f": 5
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s4_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 4,
+   "observed": 0.0,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s5_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 5,
+   "observed": 0.0,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s6_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 6,
+   "observed": 0.1,
+   "functional_pred": 0.25,
+   "nM_f": 0,
+   "nB_f": 4
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s7_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 7,
+   "observed": 0.15,
+   "functional_pred": 0.2,
+   "nM_f": 0,
+   "nB_f": 5
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s8_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 8,
+   "observed": 0.05,
+   "functional_pred": 0.2,
+   "nM_f": 1,
+   "nB_f": 5
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s9_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 9,
+   "observed": 0.15,
+   "functional_pred": 0.15,
+   "nM_f": 3,
+   "nB_f": 6
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s0_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 0,
+   "observed": 0.3,
+   "functional_pred": 0.35,
+   "nM_f": 0,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s10_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 10,
+   "observed": 0.2,
+   "functional_pred": 0.3,
+   "nM_f": 0,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s11_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 11,
+   "observed": 0.25,
+   "functional_pred": 0.25,
+   "nM_f": 0,
+   "nB_f": 4
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s12_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 12,
+   "observed": 0.05,
+   "functional_pred": 0.05,
+   "nM_f": 0,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s13_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 13,
+   "observed": 0.25,
+   "functional_pred": 0.25,
+   "nM_f": 0,
+   "nB_f": 4
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s14_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 14,
+   "observed": 0.2,
+   "functional_pred": 0.2,
+   "nM_f": 0,
+   "nB_f": 5
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s15_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 15,
+   "observed": 0.25,
+   "functional_pred": 0.3,
+   "nM_f": 1,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s16_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 16,
+   "observed": 0.3,
+   "functional_pred": 0.3,
+   "nM_f": 0,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s17_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 17,
+   "observed": 0.3,
+   "functional_pred": 0.3,
+   "nM_f": 0,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s18_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 18,
+   "observed": 0.3,
+   "functional_pred": 0.3,
+   "nM_f": 0,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s19_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 19,
+   "observed": 0.3,
+   "functional_pred": 0.3,
+   "nM_f": 0,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s1_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 1,
+   "observed": 0.3,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s20_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 20,
+   "observed": 0.2,
+   "functional_pred": 0.3,
+   "nM_f": 0,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s21_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 21,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s22_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 22,
+   "observed": 0.3,
+   "functional_pred": 0.3,
+   "nM_f": 0,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s23_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 23,
+   "observed": 0.3,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s24_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 24,
+   "observed": 0.35,
+   "functional_pred": 0.35,
+   "nM_f": 0,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s25_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 25,
+   "observed": 0.3,
+   "functional_pred": 0.3,
+   "nM_f": 0,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s26_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 26,
+   "observed": 0.3,
+   "functional_pred": 0.35,
+   "nM_f": 0,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s27_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 27,
+   "observed": 0.25,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s28_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 28,
+   "observed": 0.35,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s29_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 29,
+   "observed": 0.25,
+   "functional_pred": 0.25,
+   "nM_f": 0,
+   "nB_f": 4
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s2_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 2,
+   "observed": 0.3,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s3_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 3,
+   "observed": 0.35,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s4_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 4,
+   "observed": 0.2,
+   "functional_pred": 0.35,
+   "nM_f": 1,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s5_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 5,
+   "observed": 0.3,
+   "functional_pred": 0.3,
+   "nM_f": 0,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s6_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 6,
+   "observed": 0.2,
+   "functional_pred": 0.2,
+   "nM_f": 0,
+   "nB_f": 5
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s7_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 7,
+   "observed": 0.3,
+   "functional_pred": 0.35,
+   "nM_f": 0,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s8_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 8,
+   "observed": 0.25,
+   "functional_pred": 0.25,
+   "nM_f": 0,
+   "nB_f": 4
+  },
+  {
+   "id": "iot-23_device_derived_dph2-5_na_s9_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    2,
+    5
+   ],
+   "alpha": null,
+   "seed": 9,
+   "observed": 0.1,
+   "functional_pred": 0.1,
+   "nM_f": 0,
+   "nB_f": 7
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s0_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 0,
+   "observed": 0.35,
+   "functional_pred": 0.4,
+   "nM_f": 1,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s10_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 10,
+   "observed": 0.35,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s11_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 11,
+   "observed": 0.25,
+   "functional_pred": 0.25,
+   "nM_f": 0,
+   "nB_f": 4
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s12_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 12,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s13_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 13,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s14_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 14,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s15_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 15,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s16_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 16,
+   "observed": 0.35,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s17_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 17,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s18_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 18,
+   "observed": 0.35,
+   "functional_pred": 0.35,
+   "nM_f": 0,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s19_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 19,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s1_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 1,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s20_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 20,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s21_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 21,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s22_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 22,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s23_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 23,
+   "observed": 0.35,
+   "functional_pred": 0.35,
+   "nM_f": 0,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s24_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 24,
+   "observed": 0.35,
+   "functional_pred": 0.35,
+   "nM_f": 0,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s25_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 25,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s26_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 26,
+   "observed": 0.3,
+   "functional_pred": 0.4,
+   "nM_f": 1,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s27_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 27,
+   "observed": 0.35,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s28_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 28,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s29_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 29,
+   "observed": 0.35,
+   "functional_pred": 0.35,
+   "nM_f": 0,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s2_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 2,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s3_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 3,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s4_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 4,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s5_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 5,
+   "observed": 0.35,
+   "functional_pred": 0.4,
+   "nM_f": 1,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s6_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 6,
+   "observed": 0.35,
+   "functional_pred": 0.35,
+   "nM_f": 0,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s7_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 7,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s8_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 8,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph3-8_na_s9_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    3,
+    8
+   ],
+   "alpha": null,
+   "seed": 9,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s0_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 0,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s10_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 10,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s11_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 11,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s12_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 12,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s13_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 13,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s14_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 14,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s15_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 15,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s16_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 16,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s17_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 17,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s18_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 18,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s19_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 19,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s1_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 1,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s20_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 20,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s21_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 21,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s22_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 22,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s23_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 23,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s24_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 24,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s25_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 25,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s26_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 26,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s27_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 27,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s28_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 28,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s29_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 29,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s2_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 2,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s3_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 3,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s4_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 4,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s5_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 5,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s6_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 6,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s7_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 7,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s8_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 8,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_device_derived_dph5-10_na_s9_k1_K20",
+   "kind": "device_derived",
+   "dph": [
+    5,
+    10
+   ],
+   "alpha": null,
+   "seed": 9,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a0.1_s0_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.1,
+   "seed": 0,
+   "observed": 0.2,
+   "functional_pred": 0.3,
+   "nM_f": 1,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a0.1_s1_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.1,
+   "seed": 1,
+   "observed": 0.1,
+   "functional_pred": 0.3,
+   "nM_f": 3,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a0.1_s2_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.1,
+   "seed": 2,
+   "observed": 0.2,
+   "functional_pred": 0.3,
+   "nM_f": 1,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a0.2_s0_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.2,
+   "seed": 0,
+   "observed": 0.2,
+   "functional_pred": 0.4,
+   "nM_f": 1,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a0.2_s1_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.2,
+   "seed": 1,
+   "observed": 0.3,
+   "functional_pred": 0.35,
+   "nM_f": 1,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a0.2_s2_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.2,
+   "seed": 2,
+   "observed": 0.3,
+   "functional_pred": 0.4,
+   "nM_f": 1,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a0.5_s0_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.5,
+   "seed": 0,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a0.5_s1_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.5,
+   "seed": 1,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a0.5_s2_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.5,
+   "seed": 2,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 0,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a100_s0_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 100.0,
+   "seed": 0,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a100_s1_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 100.0,
+   "seed": 1,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a100_s2_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 100.0,
+   "seed": 2,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a10_s0_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 10.0,
+   "seed": 0,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a10_s1_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 10.0,
+   "seed": 1,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a10_s2_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 10.0,
+   "seed": 2,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a1_s0_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 1.0,
+   "seed": 0,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a1_s1_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 1.0,
+   "seed": 1,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_device_dph1-3_a1_s2_k1_K20",
+   "kind": "dirichlet_device",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 1.0,
+   "seed": 2,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a0.1_s0_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.1,
+   "seed": 0,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 6,
+   "nB_f": 7
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a0.1_s1_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.1,
+   "seed": 1,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 6,
+   "nB_f": 7
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a0.1_s2_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.1,
+   "seed": 2,
+   "observed": 0.0,
+   "functional_pred": 0.0,
+   "nM_f": 5,
+   "nB_f": 7
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a0.2_s0_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.2,
+   "seed": 0,
+   "observed": 0.1,
+   "functional_pred": 0.2,
+   "nM_f": 4,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a0.2_s1_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.2,
+   "seed": 1,
+   "observed": 0.05,
+   "functional_pred": 0.05,
+   "nM_f": 6,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a0.2_s2_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.2,
+   "seed": 2,
+   "observed": 0.05,
+   "functional_pred": 0.05,
+   "nM_f": 6,
+   "nB_f": 8
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a0.5_s0_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.5,
+   "seed": 0,
+   "observed": 0.2,
+   "functional_pred": 0.25,
+   "nM_f": 4,
+   "nB_f": 3
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a0.5_s1_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.5,
+   "seed": 1,
+   "observed": 0.2,
+   "functional_pred": 0.2,
+   "nM_f": 5,
+   "nB_f": 4
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a0.5_s2_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.5,
+   "seed": 2,
+   "observed": 0.2,
+   "functional_pred": 0.25,
+   "nM_f": 4,
+   "nB_f": 4
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a100_s0_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 100.0,
+   "seed": 0,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a100_s1_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 100.0,
+   "seed": 1,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a100_s2_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 100.0,
+   "seed": 2,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a10_s0_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 10.0,
+   "seed": 0,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a10_s1_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 10.0,
+   "seed": 1,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a10_s2_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 10.0,
+   "seed": 2,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a1_s0_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 1.0,
+   "seed": 0,
+   "observed": 0.3,
+   "functional_pred": 0.35,
+   "nM_f": 2,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a1_s1_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 1.0,
+   "seed": 1,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 1,
+   "nB_f": 1
+  },
+  {
+   "id": "iot-23_dirichlet_dph1-3_a1_s2_k1_K20",
+   "kind": "dirichlet",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 1.0,
+   "seed": 2,
+   "observed": 0.3,
+   "functional_pred": 0.35,
+   "nM_f": 1,
+   "nB_f": 2
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s0_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 0,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s10_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 10,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s11_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 11,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s12_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 12,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s13_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 13,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s14_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 14,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s15_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 15,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s16_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 16,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s17_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 17,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s18_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 18,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s19_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 19,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s1_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 1,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s20_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 20,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s21_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 21,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s22_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 22,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s23_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 23,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s24_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 24,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s25_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 25,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s26_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 26,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s27_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 27,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s28_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 28,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s29_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 29,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s2_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 2,
+   "observed": 0.4,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s30_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 30,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s31_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 31,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s32_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 32,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s33_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 33,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s34_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 34,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s35_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 35,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s36_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 36,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s37_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 37,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s38_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 38,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s39_k1_K20",
+   "kind": "iid",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": null,
+   "seed": 39,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a0.2_s0_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.2,
+   "seed": 0,
+   "observed": 0.15,
+   "functional_pred": 0.15,
+   "nM_f": 5,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a0.2_s1_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.2,
+   "seed": 1,
+   "observed": 0.25,
+   "functional_pred": 0.25,
+   "nM_f": 1,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a0.2_s2_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.2,
+   "seed": 2,
+   "observed": 0.2,
+   "functional_pred": 0.2,
+   "nM_f": 2,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a0.5_s0_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.5,
+   "seed": 0,
+   "observed": 0.25,
+   "functional_pred": 0.2,
+   "nM_f": 5,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a0.5_s1_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.5,
+   "seed": 1,
+   "observed": 0.15,
+   "functional_pred": 0.15,
+   "nM_f": 6,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a0.5_s2_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 0.5,
+   "seed": 2,
+   "observed": 0.15,
+   "functional_pred": 0.15,
+   "nM_f": 6,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a100_s0_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 100.0,
+   "seed": 0,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a100_s1_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 100.0,
+   "seed": 1,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a100_s2_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 100.0,
+   "seed": 2,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a10_s0_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 10.0,
+   "seed": 0,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a10_s1_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 10.0,
+   "seed": 1,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a10_s2_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 10.0,
+   "seed": 2,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a1_s0_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 1.0,
+   "seed": 0,
+   "observed": 0.3,
+   "functional_pred": 0.3,
+   "nM_f": 3,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a1_s1_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 1.0,
+   "seed": 1,
+   "observed": 0.45,
+   "functional_pred": 0.45,
+   "nM_f": 0,
+   "nB_f": 0
+  },
+  {
+   "id": "iot-23_volume_dph1-3_a1_s2_k1_K20",
+   "kind": "volume",
+   "dph": [
+    1,
+    3
+   ],
+   "alpha": 1.0,
+   "seed": 2,
+   "observed": 0.4,
+   "functional_pred": 0.4,
+   "nM_f": 1,
+   "nB_f": 0
+  }
+ ]
+}

@@ -30,7 +30,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIXED = ("alie", "gaussian")
 GENS = ["scripts/gen_paper_numbers.py", "scripts/gen_e3.py", "scripts/gen_gapspread.py",
         "scripts/gen_e9.py"]
-MANGEN = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED_REL as MANGEN  # mirror-relative TMLR generated/
 
 
 def key(r):

@@ -11,7 +11,7 @@ import glob, json, os, sys, statistics as st
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bstar import bstar_per_draw
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 GEO = {1: 0.450, 2: 0.250}          # beta_geo(20,k), the exact finite-N ceiling
 
 rows = []

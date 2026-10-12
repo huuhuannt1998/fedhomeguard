@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import contextlib, io
 from fedhomeguard import config as CFG, data as DATA, partition as P
 
-OUT = os.environ.get("FHG_GENERATED", "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 # Every partition seed an IID or device-derived arm of the paper uses: the main grid
 # (0-2), the thirty-draw arm behind Tables 1 and 3 (10-39) and the thirty-draw IID slack
 # arm (0-29). The earlier range(30) missed seeds 30-39 of the thirty-draw arm, so the

@@ -11,7 +11,7 @@ import json, os, sys, statistics as st
 sys.path.insert(0, os.path.dirname(__file__))
 from bstar import bstar_per_draw
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 CEIL = 0.250
 NB = [("1", "e23_nbk2rich_1_1"), ("1--3", "e23_nbk2rich_1_3"), ("2--5", "e23_nbk2rich_2_5"),
       ("3--8", "e23_nbk2rich_3_8"), ("5--9", "e23_nbk2rich_5_9")]

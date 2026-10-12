@@ -1,0 +1,21 @@
+{
+ "200": {
+  "mean": 0.538375,
+  "min": 0.505,
+  "max": 0.59,
+  "frac_above_population": 1.0
+ },
+ "500": {
+  "mean": 0.50665,
+  "min": 0.496,
+  "max": 0.528,
+  "frac_above_population": 1.0
+ },
+ "1000": {
+  "mean": 0.48637499999999995,
+  "min": 0.473,
+  "max": 0.503,
+  "frac_above_population": 1.0
+ },
+ "population": 0.4473684210526315
+}

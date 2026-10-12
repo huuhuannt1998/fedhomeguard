@@ -14,7 +14,7 @@ devices dominates the shift between partitions.
 import json, os, statistics as st
 from collections import defaultdict
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 rows = [json.loads(l) for l in open("results/canonical/e16_lodo.jsonl") if l.startswith("{")]
 by = defaultdict(lambda: defaultdict(list))
 for r in rows:

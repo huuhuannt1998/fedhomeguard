@@ -8,8 +8,7 @@ floor -- the quantity the paper anchors everything else to.
 """
 import glob, json, os, statistics as st
 
-OUT = os.environ.get("FHG_GENERATED",
-                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 FLCERT_CA, FLCERT_TAU = 0.81, 0.10        # published: MNIST-0.5, 1000 clients, 100 malicious
 
 

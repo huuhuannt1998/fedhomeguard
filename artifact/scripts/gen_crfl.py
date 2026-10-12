@@ -15,7 +15,7 @@ constant. Both directions are measured here rather than argued.
 """
 import glob, json, os, statistics as st
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 peak = [json.loads(l) for l in open("results/canonical/e18_crfl_peak_dev.jsonl")
         if l.startswith("{")]
 rho_rows = [json.loads(l) for l in open("results/canonical/e18_crfl_rho.jsonl")

@@ -8,7 +8,7 @@ the paper's own measurements show high-beta cells are unstable across draws.
 import collections, glob, json, os, sys
 import numpy as np
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 BET = [0.10, 0.20, 0.30, 0.40]
 LEVEL_ORDER = ["fedavg", "krum", "multikrum", "trimmed_mean", "median", "norm_clip",
                "fltrust", "oracle_trimmed"]

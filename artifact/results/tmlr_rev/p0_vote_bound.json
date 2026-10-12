@@ -1,0 +1,1045 @@
+{
+ "total_certified_flow_budget_pairs": 3503326,
+ "total_violations": 0,
+ "ensembles": [
+  {
+   "id": "iot-23_iid_dph1-3_na_s0_k1_K20",
+   "K": 20,
+   "k": 1,
+   "certified_points_tested": 298661,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 1,
+     "n_cert": 33270,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 2,
+     "n_cert": 33265,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 3,
+     "n_cert": 33258,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 4,
+     "n_cert": 33219,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 5,
+     "n_cert": 33209,
+     "violations": 0
+    },
+    "6": {
+     "c_max": 6,
+     "n_cert": 33186,
+     "violations": 0
+    },
+    "7": {
+     "c_max": 7,
+     "n_cert": 33143,
+     "violations": 0
+    },
+    "8": {
+     "c_max": 8,
+     "n_cert": 33127,
+     "violations": 0
+    },
+    "9": {
+     "c_max": 9,
+     "n_cert": 32984,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s0_k2_K190",
+   "K": 190,
+   "k": 2,
+   "certified_points_tested": 165948,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 19,
+     "n_cert": 33271,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 37,
+     "n_cert": 33232,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 54,
+     "n_cert": 33203,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 70,
+     "n_cert": 33184,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 85,
+     "n_cert": 33058,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s0_k3_K500",
+   "K": 500,
+   "k": 3,
+   "certified_points_tested": 99633,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 90,
+     "n_cert": 33257,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 163,
+     "n_cert": 33226,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 226,
+     "n_cert": 33150,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s0_k3_K1140",
+   "K": 1140,
+   "k": 3,
+   "certified_points_tested": 99683,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 171,
+     "n_cert": 33257,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 324,
+     "n_cert": 33236,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 460,
+     "n_cert": 33190,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s0_k5_K200",
+   "K": 200,
+   "k": 5,
+   "certified_points_tested": 33225,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 60,
+     "n_cert": 33225,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s0_k8_K200",
+   "K": 200,
+   "k": 8,
+   "certified_points_tested": 33202,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 89,
+     "n_cert": 33202,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s1_k1_K20",
+   "K": 20,
+   "k": 1,
+   "certified_points_tested": 298606,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 1,
+     "n_cert": 33272,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 2,
+     "n_cert": 33243,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 3,
+     "n_cert": 33230,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 4,
+     "n_cert": 33217,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 5,
+     "n_cert": 33209,
+     "violations": 0
+    },
+    "6": {
+     "c_max": 6,
+     "n_cert": 33171,
+     "violations": 0
+    },
+    "7": {
+     "c_max": 7,
+     "n_cert": 33148,
+     "violations": 0
+    },
+    "8": {
+     "c_max": 8,
+     "n_cert": 33078,
+     "violations": 0
+    },
+    "9": {
+     "c_max": 9,
+     "n_cert": 33038,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s1_k2_K190",
+   "K": 190,
+   "k": 2,
+   "certified_points_tested": 166088,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 19,
+     "n_cert": 33275,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 37,
+     "n_cert": 33239,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 54,
+     "n_cert": 33234,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 70,
+     "n_cert": 33183,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 85,
+     "n_cert": 33157,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s1_k3_K500",
+   "K": 500,
+   "k": 3,
+   "certified_points_tested": 99599,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 90,
+     "n_cert": 33255,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 166,
+     "n_cert": 33196,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 231,
+     "n_cert": 33148,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s1_k3_K1140",
+   "K": 1140,
+   "k": 3,
+   "certified_points_tested": 99646,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 171,
+     "n_cert": 33255,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 324,
+     "n_cert": 33208,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 460,
+     "n_cert": 33183,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s1_k5_K200",
+   "K": 200,
+   "k": 5,
+   "certified_points_tested": 33241,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 61,
+     "n_cert": 33241,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s1_k8_K200",
+   "K": 200,
+   "k": 8,
+   "certified_points_tested": 33187,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 99,
+     "n_cert": 33187,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s2_k1_K20",
+   "K": 20,
+   "k": 1,
+   "certified_points_tested": 298793,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 1,
+     "n_cert": 33290,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 2,
+     "n_cert": 33263,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 3,
+     "n_cert": 33256,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 4,
+     "n_cert": 33229,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 5,
+     "n_cert": 33215,
+     "violations": 0
+    },
+    "6": {
+     "c_max": 6,
+     "n_cert": 33187,
+     "violations": 0
+    },
+    "7": {
+     "c_max": 7,
+     "n_cert": 33144,
+     "violations": 0
+    },
+    "8": {
+     "c_max": 8,
+     "n_cert": 33141,
+     "violations": 0
+    },
+    "9": {
+     "c_max": 9,
+     "n_cert": 33068,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s2_k2_K190",
+   "K": 190,
+   "k": 2,
+   "certified_points_tested": 166095,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 19,
+     "n_cert": 33257,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 37,
+     "n_cert": 33242,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 54,
+     "n_cert": 33233,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 70,
+     "n_cert": 33194,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 85,
+     "n_cert": 33169,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s2_k3_K500",
+   "K": 500,
+   "k": 3,
+   "certified_points_tested": 99658,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 87,
+     "n_cert": 33257,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 163,
+     "n_cert": 33228,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 225,
+     "n_cert": 33173,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s2_k3_K1140",
+   "K": 1140,
+   "k": 3,
+   "certified_points_tested": 99691,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 171,
+     "n_cert": 33258,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 324,
+     "n_cert": 33241,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 460,
+     "n_cert": 33192,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s2_k5_K200",
+   "K": 200,
+   "k": 5,
+   "certified_points_tested": 33242,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 61,
+     "n_cert": 33242,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_iid_dph1-3_na_s2_k8_K200",
+   "K": 200,
+   "k": 8,
+   "certified_points_tested": 33194,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 96,
+     "n_cert": 33194,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s0_k1_K20",
+   "K": 20,
+   "k": 1,
+   "certified_points_tested": 109131,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 1,
+     "n_cert": 30407,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 2,
+     "n_cert": 24941,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 3,
+     "n_cert": 22726,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 4,
+     "n_cert": 8250,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 5,
+     "n_cert": 7854,
+     "violations": 0
+    },
+    "6": {
+     "c_max": 6,
+     "n_cert": 7846,
+     "violations": 0
+    },
+    "7": {
+     "c_max": 7,
+     "n_cert": 3754,
+     "violations": 0
+    },
+    "8": {
+     "c_max": 8,
+     "n_cert": 1681,
+     "violations": 0
+    },
+    "9": {
+     "c_max": 9,
+     "n_cert": 1672,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s0_k2_K190",
+   "K": 190,
+   "k": 2,
+   "certified_points_tested": 118830,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 19,
+     "n_cert": 32737,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 37,
+     "n_cert": 32431,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 54,
+     "n_cert": 29766,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 70,
+     "n_cert": 22208,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 85,
+     "n_cert": 1688,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s0_k3_K500",
+   "K": 500,
+   "k": 3,
+   "certified_points_tested": 82920,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 90,
+     "n_cert": 32596,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 163,
+     "n_cert": 31396,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 226,
+     "n_cert": 18928,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s0_k3_K1140",
+   "K": 1140,
+   "k": 3,
+   "certified_points_tested": 94752,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 171,
+     "n_cert": 32932,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 324,
+     "n_cert": 32489,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 460,
+     "n_cert": 29331,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s0_k5_K200",
+   "K": 200,
+   "k": 5,
+   "certified_points_tested": 32611,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 60,
+     "n_cert": 32611,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s0_k8_K200",
+   "K": 200,
+   "k": 8,
+   "certified_points_tested": 32507,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 89,
+     "n_cert": 32507,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s1_k1_K20",
+   "K": 20,
+   "k": 1,
+   "certified_points_tested": 93939,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 1,
+     "n_cert": 18245,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 2,
+     "n_cert": 11258,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 3,
+     "n_cert": 11236,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 4,
+     "n_cert": 11077,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 5,
+     "n_cert": 10679,
+     "violations": 0
+    },
+    "6": {
+     "c_max": 6,
+     "n_cert": 10425,
+     "violations": 0
+    },
+    "7": {
+     "c_max": 7,
+     "n_cert": 8266,
+     "violations": 0
+    },
+    "8": {
+     "c_max": 8,
+     "n_cert": 8254,
+     "violations": 0
+    },
+    "9": {
+     "c_max": 9,
+     "n_cert": 4499,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s1_k2_K190",
+   "K": 190,
+   "k": 2,
+   "certified_points_tested": 80727,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 19,
+     "n_cert": 33068,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 37,
+     "n_cert": 25952,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 54,
+     "n_cert": 8338,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 70,
+     "n_cert": 8263,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 85,
+     "n_cert": 5106,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s1_k3_K500",
+   "K": 500,
+   "k": 3,
+   "certified_points_tested": 58844,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 90,
+     "n_cert": 30412,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 166,
+     "n_cert": 23358,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 231,
+     "n_cert": 5074,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s1_k3_K1140",
+   "K": 1140,
+   "k": 3,
+   "certified_points_tested": 65986,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 171,
+     "n_cert": 30848,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 324,
+     "n_cert": 26879,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 460,
+     "n_cert": 8259,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s1_k5_K200",
+   "K": 200,
+   "k": 5,
+   "certified_points_tested": 30312,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 61,
+     "n_cert": 30312,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s1_k8_K200",
+   "K": 200,
+   "k": 8,
+   "certified_points_tested": 25926,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 99,
+     "n_cert": 25926,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s2_k1_K20",
+   "K": 20,
+   "k": 1,
+   "certified_points_tested": 123784,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 1,
+     "n_cert": 32570,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 2,
+     "n_cert": 31816,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 3,
+     "n_cert": 21488,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 4,
+     "n_cert": 21030,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 5,
+     "n_cert": 5414,
+     "violations": 0
+    },
+    "6": {
+     "c_max": 6,
+     "n_cert": 4609,
+     "violations": 0
+    },
+    "7": {
+     "c_max": 7,
+     "n_cert": 3282,
+     "violations": 0
+    },
+    "8": {
+     "c_max": 8,
+     "n_cert": 1944,
+     "violations": 0
+    },
+    "9": {
+     "c_max": 9,
+     "n_cert": 1631,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s2_k2_K190",
+   "K": 190,
+   "k": 2,
+   "certified_points_tested": 120890,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 19,
+     "n_cert": 32983,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 37,
+     "n_cert": 31573,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 54,
+     "n_cert": 29610,
+     "violations": 0
+    },
+    "4": {
+     "c_max": 70,
+     "n_cert": 24637,
+     "violations": 0
+    },
+    "5": {
+     "c_max": 85,
+     "n_cert": 2087,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s2_k3_K500",
+   "K": 500,
+   "k": 3,
+   "certified_points_tested": 87487,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 87,
+     "n_cert": 32972,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 163,
+     "n_cert": 29603,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 225,
+     "n_cert": 24912,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s2_k3_K1140",
+   "K": 1140,
+   "k": 3,
+   "certified_points_tested": 91985,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 171,
+     "n_cert": 32982,
+     "violations": 0
+    },
+    "2": {
+     "c_max": 324,
+     "n_cert": 29680,
+     "violations": 0
+    },
+    "3": {
+     "c_max": 460,
+     "n_cert": 29323,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s2_k5_K200",
+   "K": 200,
+   "k": 5,
+   "certified_points_tested": 31024,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 61,
+     "n_cert": 31024,
+     "violations": 0
+    }
+   }
+  },
+  {
+   "id": "iot-23_device_derived_dph1-3_na_s2_k8_K200",
+   "K": 200,
+   "k": 8,
+   "certified_points_tested": 30279,
+   "violations": 0,
+   "per_m": {
+    "1": {
+     "c_max": 96,
+     "n_cert": 30279,
+     "violations": 0
+    }
+   }
+  }
+ ],
+ "worked_example_iid_s0_k1_m8": [
+  {
+   "test_index": 1,
+   "uid": "CuncTO1ylIliUPMzPk",
+   "capture": "CTU-Honeypot-Capture-4-1",
+   "label": "benign",
+   "detailed": "-",
+   "votes": "20-0",
+   "top": "benign",
+   "margin": 1.0,
+   "threshold_m8": 0.8,
+   "certified_m8": true,
+   "n_flows_with_this_split": 32984
+  },
+  {
+   "test_index": 267,
+   "uid": "Ci3dil3eMw0gJJlMv6",
+   "capture": "CTU-Honeypot-Capture-5-1",
+   "label": "benign",
+   "detailed": "-",
+   "votes": "19-1",
+   "top": "benign",
+   "margin": 0.9,
+   "threshold_m8": 0.8,
+   "certified_m8": true,
+   "n_flows_with_this_split": 143
+  },
+  {
+   "test_index": 149,
+   "uid": "Cyg81T1Aix1TewiQ45",
+   "capture": "CTU-Honeypot-Capture-5-1",
+   "label": "benign",
+   "detailed": "-",
+   "votes": "18-2",
+   "top": "malicious",
+   "margin": 0.8,
+   "threshold_m8": 0.8,
+   "certified_m8": false,
+   "n_flows_with_this_split": 16
+  },
+  {
+   "test_index": 8,
+   "uid": "Ck8vbL32XMddHO9yye",
+   "capture": "CTU-Honeypot-Capture-4-1",
+   "label": "benign",
+   "detailed": "-",
+   "votes": "17-3",
+   "top": "benign",
+   "margin": 0.7,
+   "threshold_m8": 0.8,
+   "certified_m8": false,
+   "n_flows_with_this_split": 43
+  }
+ ],
+ "secs": 326.4
+}

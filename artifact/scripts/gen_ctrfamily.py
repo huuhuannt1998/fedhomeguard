@@ -13,7 +13,7 @@ Families below MIN_N test flows are reported but never used in a claim.
 import glob, json, os, statistics as st
 from collections import defaultdict
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 MIN_N = 100          # fixed before looking: C&C-Torii has 3 flows and cannot support a rate
 
 rows = []

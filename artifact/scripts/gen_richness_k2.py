@@ -13,7 +13,7 @@ import glob, json, os, statistics as st, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bstar import bstar
 
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 GEO = {1: 0.450, 2: 0.250}
 LEV = [("1", "e11b_dph1_1", "e22_k2rich_1_1"),
        ("1--3", "e11b_dph1_3", "e22_k2rich_1_3"),

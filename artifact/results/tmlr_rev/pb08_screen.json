@@ -1,0 +1,5935 @@
+{
+ "tau": 0.729961,
+ "n_cells": 660,
+ "dev_seeds": [
+  10,
+  12,
+  14,
+  16,
+  18,
+  20,
+  22,
+  24,
+  26,
+  28,
+  30,
+  32,
+  34,
+  36,
+  38
+ ],
+ "heldout_seeds": [
+  11,
+  13,
+  15,
+  17,
+  19,
+  21,
+  23,
+  25,
+  27,
+  29,
+  31,
+  33,
+  35,
+  37,
+  39
+ ],
+ "screens": {
+  "cov_paper_1.05": {
+   "rule": "cov",
+   "threshold": 1.05,
+   "label_free": true,
+   "heldout": {
+    "cells": 330,
+    "commitments": 205,
+    "unsafe": 1,
+    "correct_refusals": 125,
+    "missed_opportunities": 0,
+    "agree": 329,
+    "max_regret": 0.012998999999999983,
+    "mean_regret": 0.00029034313725490415,
+    "draws": 30,
+    "draws_with_unsafe": 1,
+    "unsafe_rate_cp95": [
+     0.0001234938763657907,
+     0.02687762377666878
+    ],
+    "draw_unsafe_cp95": [
+     0.0008435709266304788,
+     0.17216945563341265
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.05,
+      "k": 1,
+      "CA": 0.269919,
+      "coverage": 0.9997
+     }
+    ]
+   },
+   "development": {
+    "cells": 330,
+    "commitments": 209,
+    "unsafe": 0,
+    "correct_refusals": 121,
+    "missed_opportunities": 0,
+    "agree": 330,
+    "max_regret": 0.012699000000000016,
+    "mean_regret": 0.00032119138755980594,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.017495289579186512
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "all": {
+    "cells": 660,
+    "commitments": 414,
+    "unsafe": 1,
+    "correct_refusals": 246,
+    "missed_opportunities": 0,
+    "agree": 659,
+    "max_regret": 0.012998999999999983,
+    "mean_regret": 0.0003059539951573847,
+    "draws": 60,
+    "draws_with_unsafe": 1,
+    "unsafe_rate_cp95": [
+     6.115225569049776e-05,
+     0.013384004277650699
+    ],
+    "draw_unsafe_cp95": [
+     0.00042187445234200883,
+     0.08939905005748702
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.05,
+      "k": 1,
+      "CA": 0.269919,
+      "coverage": 0.9997
+     }
+    ]
+   },
+   "by_partition": {
+    "iid": {
+     "cells": 330,
+     "commitments": 300,
+     "unsafe": 0,
+     "correct_refusals": 30,
+     "missed_opportunities": 0,
+     "agree": 330,
+     "max_regret": 0.0024920000000000497,
+     "mean_regret": 0.00028949999999999956,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": [
+      0.0,
+      0.01222097469429355
+     ],
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    },
+    "device_derived": {
+     "cells": 330,
+     "commitments": 114,
+     "unsafe": 1,
+     "correct_refusals": 216,
+     "missed_opportunities": 0,
+     "agree": 329,
+     "max_regret": 0.012998999999999983,
+     "mean_regret": 0.00034963716814159307,
+     "draws": 30,
+     "draws_with_unsafe": 1,
+     "unsafe_rate_cp95": [
+      0.00022206137567197884,
+      0.04790525785236257
+     ],
+     "draw_unsafe_cp95": [
+      0.0008435709266304788,
+      0.17216945563341265
+     ],
+     "unsafe_cells": [
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.05,
+       "k": 1,
+       "CA": 0.269919,
+       "coverage": 0.9997
+      }
+     ]
+    }
+   }
+  },
+  "cov_1.00": {
+   "rule": "cov",
+   "threshold": 1.0,
+   "label_free": true,
+   "heldout": {
+    "cells": 330,
+    "commitments": 205,
+    "unsafe": 1,
+    "correct_refusals": 125,
+    "missed_opportunities": 0,
+    "agree": 329,
+    "max_regret": 0.012998999999999983,
+    "mean_regret": 0.00029034313725490415,
+    "draws": 30,
+    "draws_with_unsafe": 1,
+    "unsafe_rate_cp95": [
+     0.0001234938763657907,
+     0.02687762377666878
+    ],
+    "draw_unsafe_cp95": [
+     0.0008435709266304788,
+     0.17216945563341265
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.05,
+      "k": 1,
+      "CA": 0.269919,
+      "coverage": 0.9997
+     }
+    ]
+   },
+   "development": {
+    "cells": 330,
+    "commitments": 210,
+    "unsafe": 1,
+    "correct_refusals": 120,
+    "missed_opportunities": 0,
+    "agree": 329,
+    "max_regret": 0.012699000000000016,
+    "mean_regret": 0.00032119138755980594,
+    "draws": 30,
+    "draws_with_unsafe": 1,
+    "unsafe_rate_cp95": [
+     0.00012055372321722632,
+     0.026244635730290452
+    ],
+    "draw_unsafe_cp95": [
+     0.0008435709266304788,
+     0.17216945563341265
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.729811,
+      "coverage": 0.730711
+     }
+    ]
+   },
+   "all": {
+    "cells": 660,
+    "commitments": 415,
+    "unsafe": 2,
+    "correct_refusals": 245,
+    "missed_opportunities": 0,
+    "agree": 658,
+    "max_regret": 0.012998999999999983,
+    "mean_regret": 0.0003059539951573847,
+    "draws": 60,
+    "draws_with_unsafe": 2,
+    "unsafe_rate_cp95": [
+     0.0005841706062096884,
+     0.017299644282705483
+    ],
+    "draw_unsafe_cp95": [
+     0.004062624642093496,
+     0.1152810444192517
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.05,
+      "k": 1,
+      "CA": 0.269919,
+      "coverage": 0.9997
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.729811,
+      "coverage": 0.730711
+     }
+    ]
+   },
+   "by_partition": {
+    "iid": {
+     "cells": 330,
+     "commitments": 300,
+     "unsafe": 0,
+     "correct_refusals": 30,
+     "missed_opportunities": 0,
+     "agree": 330,
+     "max_regret": 0.0024920000000000497,
+     "mean_regret": 0.00028949999999999956,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": [
+      0.0,
+      0.01222097469429355
+     ],
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    },
+    "device_derived": {
+     "cells": 330,
+     "commitments": 115,
+     "unsafe": 2,
+     "correct_refusals": 215,
+     "missed_opportunities": 0,
+     "agree": 328,
+     "max_regret": 0.012998999999999983,
+     "mean_regret": 0.00034963716814159307,
+     "draws": 30,
+     "draws_with_unsafe": 2,
+     "unsafe_rate_cp95": [
+      0.0021131508222615373,
+      0.061412332558722825
+     ],
+     "draw_unsafe_cp95": [
+      0.008178134460656307,
+      0.22073540152296187
+     ],
+     "unsafe_cells": [
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.05,
+       "k": 1,
+       "CA": 0.269919,
+       "coverage": 0.9997
+      },
+      {
+       "partition": "device_derived",
+       "seed": 38,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.729811,
+       "coverage": 0.730711
+      }
+     ]
+    }
+   }
+  },
+  "geo": {
+   "rule": "geo",
+   "threshold": null,
+   "label_free": true,
+   "heldout": {
+    "cells": 330,
+    "commitments": 300,
+    "unsafe": 97,
+    "correct_refusals": 30,
+    "missed_opportunities": 0,
+    "agree": 233,
+    "max_regret": 0.012998999999999983,
+    "mean_regret": 0.0002917733990147805,
+    "draws": 30,
+    "draws_with_unsafe": 15,
+    "unsafe_rate_cp95": [
+     0.2707154135701024,
+     0.3794827327786202
+    ],
+    "draw_unsafe_cp95": [
+     0.3129702858680275,
+     0.6870297141319726
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.706665,
+      "coverage": 0.710507
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.050675,
+      "coverage": 0.050675
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.050826,
+      "coverage": 0.050856
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.050675,
+      "coverage": 0.050675
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049024,
+      "coverage": 0.049024
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.034734,
+      "coverage": 0.034734
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.704923,
+      "coverage": 0.708316
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.690483,
+      "coverage": 0.693545
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.064245,
+      "coverage": 0.064245
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.058481,
+      "coverage": 0.058481
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049174,
+      "coverage": 0.049174
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049084,
+      "coverage": 0.049084
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.717082,
+      "coverage": 0.721045
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.693906,
+      "coverage": 0.697418
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.049204,
+      "coverage": 0.049204
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.052447,
+      "coverage": 0.052447
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.035335,
+      "coverage": 0.035335
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.033323,
+      "coverage": 0.033323
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.000991,
+      "coverage": 0.000991
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.515611,
+      "coverage": 0.518703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.095347,
+      "coverage": 0.095377
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.059562,
+      "coverage": 0.059562
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.023176,
+      "coverage": 0.023176
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.01462,
+      "coverage": 0.01462
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.247974,
+      "coverage": 0.248094
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247553,
+      "coverage": 0.247643
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.247433,
+      "coverage": 0.247493
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247853,
+      "coverage": 0.247944
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247643,
+      "coverage": 0.247703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.247463,
+      "coverage": 0.247523
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.246893,
+      "coverage": 0.246953
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.678595,
+      "coverage": 0.679946
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247613,
+      "coverage": 0.247673
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.144551,
+      "coverage": 0.144611
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.248424,
+      "coverage": 0.248514
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247703,
+      "coverage": 0.247763
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.162894,
+      "coverage": 0.162954
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.063344,
+      "coverage": 0.063344
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.673551,
+      "coverage": 0.676884
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.093365,
+      "coverage": 0.093365
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.049024,
+      "coverage": 0.049024
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.060763,
+      "coverage": 0.060763
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.060252,
+      "coverage": 0.060252
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.048994,
+      "coverage": 0.048994
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.048994,
+      "coverage": 0.048994
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.367667,
+      "coverage": 0.370009
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247643,
+      "coverage": 0.247703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.225338,
+      "coverage": 0.225398
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247763,
+      "coverage": 0.247823
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247643,
+      "coverage": 0.247703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.241519,
+      "coverage": 0.241579
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.118013,
+      "coverage": 0.118073
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.246022,
+      "coverage": 0.246082
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.234794,
+      "coverage": 0.234854
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247944,
+      "coverage": 0.248094
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.244551,
+      "coverage": 0.244671
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.235455,
+      "coverage": 0.235515
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.178775,
+      "coverage": 0.178805
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.235725,
+      "coverage": 0.235785
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.063374,
+      "coverage": 0.063374
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.235695,
+      "coverage": 0.235755
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.235695,
+      "coverage": 0.235755
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.059382,
+      "coverage": 0.059382
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.051396,
+      "coverage": 0.051396
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.716752,
+      "coverage": 0.720895
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.050675,
+      "coverage": 0.050675
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.064305,
+      "coverage": 0.065896
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.049625,
+      "coverage": 0.050495
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.036085,
+      "coverage": 0.036085
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.034404,
+      "coverage": 0.034404
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.354068,
+      "coverage": 0.356139
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.060462,
+      "coverage": 0.060462
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247553,
+      "coverage": 0.247613
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.168748,
+      "coverage": 0.168808
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.052026,
+      "coverage": 0.052026
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049084,
+      "coverage": 0.049084
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.05,
+      "k": 2,
+      "CA": 0.678565,
+      "coverage": 0.711768
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.1,
+      "k": 2,
+      "CA": 0.249775,
+      "coverage": 0.267457
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.236415,
+      "coverage": 0.239237
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.235395,
+      "coverage": 0.235455
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.201921,
+      "coverage": 0.201951
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.249144,
+      "coverage": 0.266887
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.235935,
+      "coverage": 0.238967
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.235245,
+      "coverage": 0.235305
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.050015,
+      "coverage": 0.050015
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.245932,
+      "coverage": 0.245992
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.236956,
+      "coverage": 0.237016
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247403,
+      "coverage": 0.247463
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.241219,
+      "coverage": 0.241279
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.240859,
+      "coverage": 0.240919
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.050886,
+      "coverage": 0.050886
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.678535,
+      "coverage": 0.681147
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.061333,
+      "coverage": 0.061333
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247553,
+      "coverage": 0.247643
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.075233,
+      "coverage": 0.075233
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.054158,
+      "coverage": 0.054158
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049595,
+      "coverage": 0.049595
+     }
+    ]
+   },
+   "development": {
+    "cells": 330,
+    "commitments": 300,
+    "unsafe": 91,
+    "correct_refusals": 30,
+    "missed_opportunities": 0,
+    "agree": 239,
+    "max_regret": 0.012699000000000016,
+    "mean_regret": 0.00032119138755980594,
+    "draws": 30,
+    "draws_with_unsafe": 15,
+    "unsafe_rate_cp95": [
+     0.25181975307716814,
+     0.35878082732142924
+    ],
+    "draw_unsafe_cp95": [
+     0.3129702858680275,
+     0.6870297141319726
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.396217,
+      "coverage": 0.39943
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.063795,
+      "coverage": 0.063795
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.050766,
+      "coverage": 0.050766
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.244521,
+      "coverage": 0.244581
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.050886,
+      "coverage": 0.050886
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049595,
+      "coverage": 0.049595
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049355,
+      "coverage": 0.049355
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.7,
+      "coverage": 0.700901
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247613,
+      "coverage": 0.247673
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.124137,
+      "coverage": 0.124197
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.248874,
+      "coverage": 0.248964
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247613,
+      "coverage": 0.247703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.1287,
+      "coverage": 0.12876
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049625,
+      "coverage": 0.049625
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247523,
+      "coverage": 0.247583
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.063585,
+      "coverage": 0.063585
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.249144,
+      "coverage": 0.250105
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247553,
+      "coverage": 0.247613
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.247223,
+      "coverage": 0.247253
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.050405,
+      "coverage": 0.050405
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.689102,
+      "coverage": 0.692705
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.059231,
+      "coverage": 0.059231
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.049895,
+      "coverage": 0.049895
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.050675,
+      "coverage": 0.050675
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.050225,
+      "coverage": 0.050225
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049955,
+      "coverage": 0.049955
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049745,
+      "coverage": 0.049745
+     },
+     {
+      "partition": "device_derived",
+      "seed": 18,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.063314,
+      "coverage": 0.063314
+     },
+     {
+      "partition": "device_derived",
+      "seed": 18,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.235845,
+      "coverage": 0.235905
+     },
+     {
+      "partition": "device_derived",
+      "seed": 18,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.063434,
+      "coverage": 0.063434
+     },
+     {
+      "partition": "device_derived",
+      "seed": 18,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.058031,
+      "coverage": 0.058031
+     },
+     {
+      "partition": "device_derived",
+      "seed": 18,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.035605,
+      "coverage": 0.035605
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.721525,
+      "coverage": 0.724977
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.544971,
+      "coverage": 0.546172
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.059442,
+      "coverage": 0.059442
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.117742,
+      "coverage": 0.117802
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.104413,
+      "coverage": 0.104413
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.057971,
+      "coverage": 0.057971
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.048334,
+      "coverage": 0.048334
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.493636,
+      "coverage": 0.493996
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.049084,
+      "coverage": 0.049084
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.051096,
+      "coverage": 0.051096
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.049925,
+      "coverage": 0.049925
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049054,
+      "coverage": 0.049054
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.048994,
+      "coverage": 0.048994
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.406455,
+      "coverage": 0.409246
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.244251,
+      "coverage": 0.244311
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247793,
+      "coverage": 0.247944
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.245602,
+      "coverage": 0.245662
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.22906,
+      "coverage": 0.22909
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049415,
+      "coverage": 0.049415
+     },
+     {
+      "partition": "device_derived",
+      "seed": 26,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.062504,
+      "coverage": 0.062504
+     },
+     {
+      "partition": "device_derived",
+      "seed": 26,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.237046,
+      "coverage": 0.237136
+     },
+     {
+      "partition": "device_derived",
+      "seed": 26,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.063164,
+      "coverage": 0.063164
+     },
+     {
+      "partition": "device_derived",
+      "seed": 26,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049775,
+      "coverage": 0.049775
+     },
+     {
+      "partition": "device_derived",
+      "seed": 26,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049445,
+      "coverage": 0.049445
+     },
+     {
+      "partition": "device_derived",
+      "seed": 28,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.054818,
+      "coverage": 0.054818
+     },
+     {
+      "partition": "device_derived",
+      "seed": 28,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.236986,
+      "coverage": 0.237046
+     },
+     {
+      "partition": "device_derived",
+      "seed": 28,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.051006,
+      "coverage": 0.051006
+     },
+     {
+      "partition": "device_derived",
+      "seed": 28,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049775,
+      "coverage": 0.049775
+     },
+     {
+      "partition": "device_derived",
+      "seed": 28,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049084,
+      "coverage": 0.049084
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.653738,
+      "coverage": 0.65662
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.245122,
+      "coverage": 0.245182
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.060132,
+      "coverage": 0.060132
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.241639,
+      "coverage": 0.241699
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.160763,
+      "coverage": 0.160823
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.060943,
+      "coverage": 0.060943
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049505,
+      "coverage": 0.049505
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.123987,
+      "coverage": 0.124047
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.049475,
+      "coverage": 0.049475
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.236265,
+      "coverage": 0.236325
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.097989,
+      "coverage": 0.098019
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049835,
+      "coverage": 0.049835
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049355,
+      "coverage": 0.049355
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247523,
+      "coverage": 0.247583
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.062714,
+      "coverage": 0.062714
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247583,
+      "coverage": 0.247643
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247433,
+      "coverage": 0.247493
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.060342,
+      "coverage": 0.060342
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.050585,
+      "coverage": 0.050585
+     },
+     {
+      "partition": "device_derived",
+      "seed": 36,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.165656,
+      "coverage": 0.165656
+     },
+     {
+      "partition": "device_derived",
+      "seed": 36,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247643,
+      "coverage": 0.247733
+     },
+     {
+      "partition": "device_derived",
+      "seed": 36,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.245152,
+      "coverage": 0.245242
+     },
+     {
+      "partition": "device_derived",
+      "seed": 36,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.173311,
+      "coverage": 0.173311
+     },
+     {
+      "partition": "device_derived",
+      "seed": 36,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049355,
+      "coverage": 0.049355
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.729811,
+      "coverage": 0.730711
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.061423,
+      "coverage": 0.061423
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.235305,
+      "coverage": 0.235365
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.235155,
+      "coverage": 0.235215
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.051516,
+      "coverage": 0.051516
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049835,
+      "coverage": 0.049835
+     }
+    ]
+   },
+   "all": {
+    "cells": 660,
+    "commitments": 600,
+    "unsafe": 188,
+    "correct_refusals": 60,
+    "missed_opportunities": 0,
+    "agree": 472,
+    "max_regret": 0.012998999999999983,
+    "mean_regret": 0.0003066966019417473,
+    "draws": 60,
+    "draws_with_unsafe": 30,
+    "unsafe_rate_cp95": [
+     0.2763820707363629,
+     0.3521339979714527
+    ],
+    "draw_unsafe_cp95": [
+     0.3680620319424369,
+     0.631937968057563
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.396217,
+      "coverage": 0.39943
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.063795,
+      "coverage": 0.063795
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.050766,
+      "coverage": 0.050766
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.244521,
+      "coverage": 0.244581
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.050886,
+      "coverage": 0.050886
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049595,
+      "coverage": 0.049595
+     },
+     {
+      "partition": "device_derived",
+      "seed": 10,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049355,
+      "coverage": 0.049355
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.706665,
+      "coverage": 0.710507
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.050675,
+      "coverage": 0.050675
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.050826,
+      "coverage": 0.050856
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.050675,
+      "coverage": 0.050675
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049024,
+      "coverage": 0.049024
+     },
+     {
+      "partition": "device_derived",
+      "seed": 11,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.034734,
+      "coverage": 0.034734
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.7,
+      "coverage": 0.700901
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247613,
+      "coverage": 0.247673
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.124137,
+      "coverage": 0.124197
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.248874,
+      "coverage": 0.248964
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247613,
+      "coverage": 0.247703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.1287,
+      "coverage": 0.12876
+     },
+     {
+      "partition": "device_derived",
+      "seed": 12,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049625,
+      "coverage": 0.049625
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.704923,
+      "coverage": 0.708316
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.690483,
+      "coverage": 0.693545
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.064245,
+      "coverage": 0.064245
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.058481,
+      "coverage": 0.058481
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049174,
+      "coverage": 0.049174
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049084,
+      "coverage": 0.049084
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247523,
+      "coverage": 0.247583
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.063585,
+      "coverage": 0.063585
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.249144,
+      "coverage": 0.250105
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247553,
+      "coverage": 0.247613
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.247223,
+      "coverage": 0.247253
+     },
+     {
+      "partition": "device_derived",
+      "seed": 14,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.050405,
+      "coverage": 0.050405
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.717082,
+      "coverage": 0.721045
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.693906,
+      "coverage": 0.697418
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.049204,
+      "coverage": 0.049204
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.052447,
+      "coverage": 0.052447
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.035335,
+      "coverage": 0.035335
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.033323,
+      "coverage": 0.033323
+     },
+     {
+      "partition": "device_derived",
+      "seed": 15,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.000991,
+      "coverage": 0.000991
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.689102,
+      "coverage": 0.692705
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.059231,
+      "coverage": 0.059231
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.049895,
+      "coverage": 0.049895
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.050675,
+      "coverage": 0.050675
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.050225,
+      "coverage": 0.050225
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049955,
+      "coverage": 0.049955
+     },
+     {
+      "partition": "device_derived",
+      "seed": 16,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049745,
+      "coverage": 0.049745
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.515611,
+      "coverage": 0.518703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.095347,
+      "coverage": 0.095377
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.059562,
+      "coverage": 0.059562
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.023176,
+      "coverage": 0.023176
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.01462,
+      "coverage": 0.01462
+     },
+     {
+      "partition": "device_derived",
+      "seed": 18,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.063314,
+      "coverage": 0.063314
+     },
+     {
+      "partition": "device_derived",
+      "seed": 18,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.235845,
+      "coverage": 0.235905
+     },
+     {
+      "partition": "device_derived",
+      "seed": 18,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.063434,
+      "coverage": 0.063434
+     },
+     {
+      "partition": "device_derived",
+      "seed": 18,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.058031,
+      "coverage": 0.058031
+     },
+     {
+      "partition": "device_derived",
+      "seed": 18,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.035605,
+      "coverage": 0.035605
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.247974,
+      "coverage": 0.248094
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247553,
+      "coverage": 0.247643
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.247433,
+      "coverage": 0.247493
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247853,
+      "coverage": 0.247944
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247643,
+      "coverage": 0.247703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.247463,
+      "coverage": 0.247523
+     },
+     {
+      "partition": "device_derived",
+      "seed": 19,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.246893,
+      "coverage": 0.246953
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.721525,
+      "coverage": 0.724977
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.544971,
+      "coverage": 0.546172
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.059442,
+      "coverage": 0.059442
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.117742,
+      "coverage": 0.117802
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.104413,
+      "coverage": 0.104413
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.057971,
+      "coverage": 0.057971
+     },
+     {
+      "partition": "device_derived",
+      "seed": 20,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.048334,
+      "coverage": 0.048334
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.678595,
+      "coverage": 0.679946
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247613,
+      "coverage": 0.247673
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.144551,
+      "coverage": 0.144611
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.248424,
+      "coverage": 0.248514
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247703,
+      "coverage": 0.247763
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.162894,
+      "coverage": 0.162954
+     },
+     {
+      "partition": "device_derived",
+      "seed": 21,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.063344,
+      "coverage": 0.063344
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.493636,
+      "coverage": 0.493996
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.049084,
+      "coverage": 0.049084
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.051096,
+      "coverage": 0.051096
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.049925,
+      "coverage": 0.049925
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049054,
+      "coverage": 0.049054
+     },
+     {
+      "partition": "device_derived",
+      "seed": 22,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.048994,
+      "coverage": 0.048994
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.673551,
+      "coverage": 0.676884
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.093365,
+      "coverage": 0.093365
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.049024,
+      "coverage": 0.049024
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.060763,
+      "coverage": 0.060763
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.060252,
+      "coverage": 0.060252
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.048994,
+      "coverage": 0.048994
+     },
+     {
+      "partition": "device_derived",
+      "seed": 23,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.048994,
+      "coverage": 0.048994
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.406455,
+      "coverage": 0.409246
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.244251,
+      "coverage": 0.244311
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247793,
+      "coverage": 0.247944
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.245602,
+      "coverage": 0.245662
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.22906,
+      "coverage": 0.22909
+     },
+     {
+      "partition": "device_derived",
+      "seed": 24,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049415,
+      "coverage": 0.049415
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.367667,
+      "coverage": 0.370009
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247643,
+      "coverage": 0.247703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.225338,
+      "coverage": 0.225398
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247763,
+      "coverage": 0.247823
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247643,
+      "coverage": 0.247703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.241519,
+      "coverage": 0.241579
+     },
+     {
+      "partition": "device_derived",
+      "seed": 25,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.118013,
+      "coverage": 0.118073
+     },
+     {
+      "partition": "device_derived",
+      "seed": 26,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.062504,
+      "coverage": 0.062504
+     },
+     {
+      "partition": "device_derived",
+      "seed": 26,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.237046,
+      "coverage": 0.237136
+     },
+     {
+      "partition": "device_derived",
+      "seed": 26,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.063164,
+      "coverage": 0.063164
+     },
+     {
+      "partition": "device_derived",
+      "seed": 26,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049775,
+      "coverage": 0.049775
+     },
+     {
+      "partition": "device_derived",
+      "seed": 26,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049445,
+      "coverage": 0.049445
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.246022,
+      "coverage": 0.246082
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.234794,
+      "coverage": 0.234854
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247944,
+      "coverage": 0.248094
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.244551,
+      "coverage": 0.244671
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.235455,
+      "coverage": 0.235515
+     },
+     {
+      "partition": "device_derived",
+      "seed": 27,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.178775,
+      "coverage": 0.178805
+     },
+     {
+      "partition": "device_derived",
+      "seed": 28,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.054818,
+      "coverage": 0.054818
+     },
+     {
+      "partition": "device_derived",
+      "seed": 28,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.236986,
+      "coverage": 0.237046
+     },
+     {
+      "partition": "device_derived",
+      "seed": 28,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.051006,
+      "coverage": 0.051006
+     },
+     {
+      "partition": "device_derived",
+      "seed": 28,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049775,
+      "coverage": 0.049775
+     },
+     {
+      "partition": "device_derived",
+      "seed": 28,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049084,
+      "coverage": 0.049084
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.235725,
+      "coverage": 0.235785
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.063374,
+      "coverage": 0.063374
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.235695,
+      "coverage": 0.235755
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.235695,
+      "coverage": 0.235755
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.059382,
+      "coverage": 0.059382
+     },
+     {
+      "partition": "device_derived",
+      "seed": 29,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.051396,
+      "coverage": 0.051396
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.653738,
+      "coverage": 0.65662
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.245122,
+      "coverage": 0.245182
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.060132,
+      "coverage": 0.060132
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.241639,
+      "coverage": 0.241699
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.160763,
+      "coverage": 0.160823
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.060943,
+      "coverage": 0.060943
+     },
+     {
+      "partition": "device_derived",
+      "seed": 30,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049505,
+      "coverage": 0.049505
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.716752,
+      "coverage": 0.720895
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.050675,
+      "coverage": 0.050675
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.064305,
+      "coverage": 0.065896
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.049625,
+      "coverage": 0.050495
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.036085,
+      "coverage": 0.036085
+     },
+     {
+      "partition": "device_derived",
+      "seed": 31,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.034404,
+      "coverage": 0.034404
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.123987,
+      "coverage": 0.124047
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.049475,
+      "coverage": 0.049475
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.236265,
+      "coverage": 0.236325
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.097989,
+      "coverage": 0.098019
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049835,
+      "coverage": 0.049835
+     },
+     {
+      "partition": "device_derived",
+      "seed": 32,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049355,
+      "coverage": 0.049355
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.354068,
+      "coverage": 0.356139
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.060462,
+      "coverage": 0.060462
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247553,
+      "coverage": 0.247613
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.168748,
+      "coverage": 0.168808
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.052026,
+      "coverage": 0.052026
+     },
+     {
+      "partition": "device_derived",
+      "seed": 33,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049084,
+      "coverage": 0.049084
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.247523,
+      "coverage": 0.247583
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.062714,
+      "coverage": 0.062714
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247583,
+      "coverage": 0.247643
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.247433,
+      "coverage": 0.247493
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.060342,
+      "coverage": 0.060342
+     },
+     {
+      "partition": "device_derived",
+      "seed": 34,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.050585,
+      "coverage": 0.050585
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.05,
+      "k": 2,
+      "CA": 0.678565,
+      "coverage": 0.711768
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.1,
+      "k": 2,
+      "CA": 0.249775,
+      "coverage": 0.267457
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.15,
+      "k": 2,
+      "CA": 0.236415,
+      "coverage": 0.239237
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.235395,
+      "coverage": 0.235455
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.201921,
+      "coverage": 0.201951
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.249144,
+      "coverage": 0.266887
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.235935,
+      "coverage": 0.238967
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.235245,
+      "coverage": 0.235305
+     },
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.050015,
+      "coverage": 0.050015
+     },
+     {
+      "partition": "device_derived",
+      "seed": 36,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.165656,
+      "coverage": 0.165656
+     },
+     {
+      "partition": "device_derived",
+      "seed": 36,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247643,
+      "coverage": 0.247733
+     },
+     {
+      "partition": "device_derived",
+      "seed": 36,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.245152,
+      "coverage": 0.245242
+     },
+     {
+      "partition": "device_derived",
+      "seed": 36,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.173311,
+      "coverage": 0.173311
+     },
+     {
+      "partition": "device_derived",
+      "seed": 36,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049355,
+      "coverage": 0.049355
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.245932,
+      "coverage": 0.245992
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.236956,
+      "coverage": 0.237016
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247403,
+      "coverage": 0.247463
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.241219,
+      "coverage": 0.241279
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.240859,
+      "coverage": 0.240919
+     },
+     {
+      "partition": "device_derived",
+      "seed": 37,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.050886,
+      "coverage": 0.050886
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.729811,
+      "coverage": 0.730711
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.061423,
+      "coverage": 0.061423
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.235305,
+      "coverage": 0.235365
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.235155,
+      "coverage": 0.235215
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.051516,
+      "coverage": 0.051516
+     },
+     {
+      "partition": "device_derived",
+      "seed": 38,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049835,
+      "coverage": 0.049835
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.678535,
+      "coverage": 0.681147
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.061333,
+      "coverage": 0.061333
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.247553,
+      "coverage": 0.247643
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.075233,
+      "coverage": 0.075233
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.054158,
+      "coverage": 0.054158
+     },
+     {
+      "partition": "device_derived",
+      "seed": 39,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049595,
+      "coverage": 0.049595
+     }
+    ]
+   },
+   "by_partition": {
+    "iid": {
+     "cells": 330,
+     "commitments": 300,
+     "unsafe": 0,
+     "correct_refusals": 30,
+     "missed_opportunities": 0,
+     "agree": 330,
+     "max_regret": 0.0024920000000000497,
+     "mean_regret": 0.00028949999999999956,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": [
+      0.0,
+      0.01222097469429355
+     ],
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    },
+    "device_derived": {
+     "cells": 330,
+     "commitments": 300,
+     "unsafe": 188,
+     "correct_refusals": 30,
+     "missed_opportunities": 0,
+     "agree": 142,
+     "max_regret": 0.012998999999999983,
+     "mean_regret": 0.00035275892857142873,
+     "draws": 30,
+     "draws_with_unsafe": 30,
+     "unsafe_rate_cp95": [
+      0.5692301781780079,
+      0.6815743594271961
+     ],
+     "draw_unsafe_cp95": [
+      0.8842966917779722,
+      1.0
+     ],
+     "unsafe_cells": [
+      {
+       "partition": "device_derived",
+       "seed": 10,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.396217,
+       "coverage": 0.39943
+      },
+      {
+       "partition": "device_derived",
+       "seed": 10,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.063795,
+       "coverage": 0.063795
+      },
+      {
+       "partition": "device_derived",
+       "seed": 10,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.050766,
+       "coverage": 0.050766
+      },
+      {
+       "partition": "device_derived",
+       "seed": 10,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.244521,
+       "coverage": 0.244581
+      },
+      {
+       "partition": "device_derived",
+       "seed": 10,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.050886,
+       "coverage": 0.050886
+      },
+      {
+       "partition": "device_derived",
+       "seed": 10,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.049595,
+       "coverage": 0.049595
+      },
+      {
+       "partition": "device_derived",
+       "seed": 10,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049355,
+       "coverage": 0.049355
+      },
+      {
+       "partition": "device_derived",
+       "seed": 11,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.706665,
+       "coverage": 0.710507
+      },
+      {
+       "partition": "device_derived",
+       "seed": 11,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.050675,
+       "coverage": 0.050675
+      },
+      {
+       "partition": "device_derived",
+       "seed": 11,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.050826,
+       "coverage": 0.050856
+      },
+      {
+       "partition": "device_derived",
+       "seed": 11,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.050675,
+       "coverage": 0.050675
+      },
+      {
+       "partition": "device_derived",
+       "seed": 11,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.049024,
+       "coverage": 0.049024
+      },
+      {
+       "partition": "device_derived",
+       "seed": 11,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.034734,
+       "coverage": 0.034734
+      },
+      {
+       "partition": "device_derived",
+       "seed": 12,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.7,
+       "coverage": 0.700901
+      },
+      {
+       "partition": "device_derived",
+       "seed": 12,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.247613,
+       "coverage": 0.247673
+      },
+      {
+       "partition": "device_derived",
+       "seed": 12,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.124137,
+       "coverage": 0.124197
+      },
+      {
+       "partition": "device_derived",
+       "seed": 12,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.248874,
+       "coverage": 0.248964
+      },
+      {
+       "partition": "device_derived",
+       "seed": 12,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.247613,
+       "coverage": 0.247703
+      },
+      {
+       "partition": "device_derived",
+       "seed": 12,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.1287,
+       "coverage": 0.12876
+      },
+      {
+       "partition": "device_derived",
+       "seed": 12,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049625,
+       "coverage": 0.049625
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.704923,
+       "coverage": 0.708316
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.690483,
+       "coverage": 0.693545
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.064245,
+       "coverage": 0.064245
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.058481,
+       "coverage": 0.058481
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.049174,
+       "coverage": 0.049174
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049084,
+       "coverage": 0.049084
+      },
+      {
+       "partition": "device_derived",
+       "seed": 14,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.247523,
+       "coverage": 0.247583
+      },
+      {
+       "partition": "device_derived",
+       "seed": 14,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.063585,
+       "coverage": 0.063585
+      },
+      {
+       "partition": "device_derived",
+       "seed": 14,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.249144,
+       "coverage": 0.250105
+      },
+      {
+       "partition": "device_derived",
+       "seed": 14,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.247553,
+       "coverage": 0.247613
+      },
+      {
+       "partition": "device_derived",
+       "seed": 14,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.247223,
+       "coverage": 0.247253
+      },
+      {
+       "partition": "device_derived",
+       "seed": 14,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.050405,
+       "coverage": 0.050405
+      },
+      {
+       "partition": "device_derived",
+       "seed": 15,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.717082,
+       "coverage": 0.721045
+      },
+      {
+       "partition": "device_derived",
+       "seed": 15,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.693906,
+       "coverage": 0.697418
+      },
+      {
+       "partition": "device_derived",
+       "seed": 15,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.049204,
+       "coverage": 0.049204
+      },
+      {
+       "partition": "device_derived",
+       "seed": 15,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.052447,
+       "coverage": 0.052447
+      },
+      {
+       "partition": "device_derived",
+       "seed": 15,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.035335,
+       "coverage": 0.035335
+      },
+      {
+       "partition": "device_derived",
+       "seed": 15,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.033323,
+       "coverage": 0.033323
+      },
+      {
+       "partition": "device_derived",
+       "seed": 15,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.000991,
+       "coverage": 0.000991
+      },
+      {
+       "partition": "device_derived",
+       "seed": 16,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.689102,
+       "coverage": 0.692705
+      },
+      {
+       "partition": "device_derived",
+       "seed": 16,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.059231,
+       "coverage": 0.059231
+      },
+      {
+       "partition": "device_derived",
+       "seed": 16,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.049895,
+       "coverage": 0.049895
+      },
+      {
+       "partition": "device_derived",
+       "seed": 16,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.050675,
+       "coverage": 0.050675
+      },
+      {
+       "partition": "device_derived",
+       "seed": 16,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.050225,
+       "coverage": 0.050225
+      },
+      {
+       "partition": "device_derived",
+       "seed": 16,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.049955,
+       "coverage": 0.049955
+      },
+      {
+       "partition": "device_derived",
+       "seed": 16,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049745,
+       "coverage": 0.049745
+      },
+      {
+       "partition": "device_derived",
+       "seed": 17,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.515611,
+       "coverage": 0.518703
+      },
+      {
+       "partition": "device_derived",
+       "seed": 17,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.095347,
+       "coverage": 0.095377
+      },
+      {
+       "partition": "device_derived",
+       "seed": 17,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.059562,
+       "coverage": 0.059562
+      },
+      {
+       "partition": "device_derived",
+       "seed": 17,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.023176,
+       "coverage": 0.023176
+      },
+      {
+       "partition": "device_derived",
+       "seed": 17,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.01462,
+       "coverage": 0.01462
+      },
+      {
+       "partition": "device_derived",
+       "seed": 18,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.063314,
+       "coverage": 0.063314
+      },
+      {
+       "partition": "device_derived",
+       "seed": 18,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.235845,
+       "coverage": 0.235905
+      },
+      {
+       "partition": "device_derived",
+       "seed": 18,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.063434,
+       "coverage": 0.063434
+      },
+      {
+       "partition": "device_derived",
+       "seed": 18,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.058031,
+       "coverage": 0.058031
+      },
+      {
+       "partition": "device_derived",
+       "seed": 18,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.035605,
+       "coverage": 0.035605
+      },
+      {
+       "partition": "device_derived",
+       "seed": 19,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.247974,
+       "coverage": 0.248094
+      },
+      {
+       "partition": "device_derived",
+       "seed": 19,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.247553,
+       "coverage": 0.247643
+      },
+      {
+       "partition": "device_derived",
+       "seed": 19,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.247433,
+       "coverage": 0.247493
+      },
+      {
+       "partition": "device_derived",
+       "seed": 19,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.247853,
+       "coverage": 0.247944
+      },
+      {
+       "partition": "device_derived",
+       "seed": 19,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.247643,
+       "coverage": 0.247703
+      },
+      {
+       "partition": "device_derived",
+       "seed": 19,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.247463,
+       "coverage": 0.247523
+      },
+      {
+       "partition": "device_derived",
+       "seed": 19,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.246893,
+       "coverage": 0.246953
+      },
+      {
+       "partition": "device_derived",
+       "seed": 20,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.721525,
+       "coverage": 0.724977
+      },
+      {
+       "partition": "device_derived",
+       "seed": 20,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.544971,
+       "coverage": 0.546172
+      },
+      {
+       "partition": "device_derived",
+       "seed": 20,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.059442,
+       "coverage": 0.059442
+      },
+      {
+       "partition": "device_derived",
+       "seed": 20,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.117742,
+       "coverage": 0.117802
+      },
+      {
+       "partition": "device_derived",
+       "seed": 20,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.104413,
+       "coverage": 0.104413
+      },
+      {
+       "partition": "device_derived",
+       "seed": 20,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.057971,
+       "coverage": 0.057971
+      },
+      {
+       "partition": "device_derived",
+       "seed": 20,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.048334,
+       "coverage": 0.048334
+      },
+      {
+       "partition": "device_derived",
+       "seed": 21,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.678595,
+       "coverage": 0.679946
+      },
+      {
+       "partition": "device_derived",
+       "seed": 21,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.247613,
+       "coverage": 0.247673
+      },
+      {
+       "partition": "device_derived",
+       "seed": 21,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.144551,
+       "coverage": 0.144611
+      },
+      {
+       "partition": "device_derived",
+       "seed": 21,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.248424,
+       "coverage": 0.248514
+      },
+      {
+       "partition": "device_derived",
+       "seed": 21,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.247703,
+       "coverage": 0.247763
+      },
+      {
+       "partition": "device_derived",
+       "seed": 21,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.162894,
+       "coverage": 0.162954
+      },
+      {
+       "partition": "device_derived",
+       "seed": 21,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.063344,
+       "coverage": 0.063344
+      },
+      {
+       "partition": "device_derived",
+       "seed": 22,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.493636,
+       "coverage": 0.493996
+      },
+      {
+       "partition": "device_derived",
+       "seed": 22,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.049084,
+       "coverage": 0.049084
+      },
+      {
+       "partition": "device_derived",
+       "seed": 22,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.051096,
+       "coverage": 0.051096
+      },
+      {
+       "partition": "device_derived",
+       "seed": 22,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.049925,
+       "coverage": 0.049925
+      },
+      {
+       "partition": "device_derived",
+       "seed": 22,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.049054,
+       "coverage": 0.049054
+      },
+      {
+       "partition": "device_derived",
+       "seed": 22,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.048994,
+       "coverage": 0.048994
+      },
+      {
+       "partition": "device_derived",
+       "seed": 23,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.673551,
+       "coverage": 0.676884
+      },
+      {
+       "partition": "device_derived",
+       "seed": 23,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.093365,
+       "coverage": 0.093365
+      },
+      {
+       "partition": "device_derived",
+       "seed": 23,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.049024,
+       "coverage": 0.049024
+      },
+      {
+       "partition": "device_derived",
+       "seed": 23,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.060763,
+       "coverage": 0.060763
+      },
+      {
+       "partition": "device_derived",
+       "seed": 23,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.060252,
+       "coverage": 0.060252
+      },
+      {
+       "partition": "device_derived",
+       "seed": 23,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.048994,
+       "coverage": 0.048994
+      },
+      {
+       "partition": "device_derived",
+       "seed": 23,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.048994,
+       "coverage": 0.048994
+      },
+      {
+       "partition": "device_derived",
+       "seed": 24,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.406455,
+       "coverage": 0.409246
+      },
+      {
+       "partition": "device_derived",
+       "seed": 24,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.244251,
+       "coverage": 0.244311
+      },
+      {
+       "partition": "device_derived",
+       "seed": 24,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.247793,
+       "coverage": 0.247944
+      },
+      {
+       "partition": "device_derived",
+       "seed": 24,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.245602,
+       "coverage": 0.245662
+      },
+      {
+       "partition": "device_derived",
+       "seed": 24,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.22906,
+       "coverage": 0.22909
+      },
+      {
+       "partition": "device_derived",
+       "seed": 24,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049415,
+       "coverage": 0.049415
+      },
+      {
+       "partition": "device_derived",
+       "seed": 25,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.367667,
+       "coverage": 0.370009
+      },
+      {
+       "partition": "device_derived",
+       "seed": 25,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.247643,
+       "coverage": 0.247703
+      },
+      {
+       "partition": "device_derived",
+       "seed": 25,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.225338,
+       "coverage": 0.225398
+      },
+      {
+       "partition": "device_derived",
+       "seed": 25,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.247763,
+       "coverage": 0.247823
+      },
+      {
+       "partition": "device_derived",
+       "seed": 25,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.247643,
+       "coverage": 0.247703
+      },
+      {
+       "partition": "device_derived",
+       "seed": 25,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.241519,
+       "coverage": 0.241579
+      },
+      {
+       "partition": "device_derived",
+       "seed": 25,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.118013,
+       "coverage": 0.118073
+      },
+      {
+       "partition": "device_derived",
+       "seed": 26,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.062504,
+       "coverage": 0.062504
+      },
+      {
+       "partition": "device_derived",
+       "seed": 26,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.237046,
+       "coverage": 0.237136
+      },
+      {
+       "partition": "device_derived",
+       "seed": 26,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.063164,
+       "coverage": 0.063164
+      },
+      {
+       "partition": "device_derived",
+       "seed": 26,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.049775,
+       "coverage": 0.049775
+      },
+      {
+       "partition": "device_derived",
+       "seed": 26,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049445,
+       "coverage": 0.049445
+      },
+      {
+       "partition": "device_derived",
+       "seed": 27,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.246022,
+       "coverage": 0.246082
+      },
+      {
+       "partition": "device_derived",
+       "seed": 27,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.234794,
+       "coverage": 0.234854
+      },
+      {
+       "partition": "device_derived",
+       "seed": 27,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.247944,
+       "coverage": 0.248094
+      },
+      {
+       "partition": "device_derived",
+       "seed": 27,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.244551,
+       "coverage": 0.244671
+      },
+      {
+       "partition": "device_derived",
+       "seed": 27,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.235455,
+       "coverage": 0.235515
+      },
+      {
+       "partition": "device_derived",
+       "seed": 27,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.178775,
+       "coverage": 0.178805
+      },
+      {
+       "partition": "device_derived",
+       "seed": 28,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.054818,
+       "coverage": 0.054818
+      },
+      {
+       "partition": "device_derived",
+       "seed": 28,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.236986,
+       "coverage": 0.237046
+      },
+      {
+       "partition": "device_derived",
+       "seed": 28,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.051006,
+       "coverage": 0.051006
+      },
+      {
+       "partition": "device_derived",
+       "seed": 28,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.049775,
+       "coverage": 0.049775
+      },
+      {
+       "partition": "device_derived",
+       "seed": 28,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049084,
+       "coverage": 0.049084
+      },
+      {
+       "partition": "device_derived",
+       "seed": 29,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.235725,
+       "coverage": 0.235785
+      },
+      {
+       "partition": "device_derived",
+       "seed": 29,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.063374,
+       "coverage": 0.063374
+      },
+      {
+       "partition": "device_derived",
+       "seed": 29,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.235695,
+       "coverage": 0.235755
+      },
+      {
+       "partition": "device_derived",
+       "seed": 29,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.235695,
+       "coverage": 0.235755
+      },
+      {
+       "partition": "device_derived",
+       "seed": 29,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.059382,
+       "coverage": 0.059382
+      },
+      {
+       "partition": "device_derived",
+       "seed": 29,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.051396,
+       "coverage": 0.051396
+      },
+      {
+       "partition": "device_derived",
+       "seed": 30,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.653738,
+       "coverage": 0.65662
+      },
+      {
+       "partition": "device_derived",
+       "seed": 30,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.245122,
+       "coverage": 0.245182
+      },
+      {
+       "partition": "device_derived",
+       "seed": 30,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.060132,
+       "coverage": 0.060132
+      },
+      {
+       "partition": "device_derived",
+       "seed": 30,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.241639,
+       "coverage": 0.241699
+      },
+      {
+       "partition": "device_derived",
+       "seed": 30,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.160763,
+       "coverage": 0.160823
+      },
+      {
+       "partition": "device_derived",
+       "seed": 30,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.060943,
+       "coverage": 0.060943
+      },
+      {
+       "partition": "device_derived",
+       "seed": 30,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049505,
+       "coverage": 0.049505
+      },
+      {
+       "partition": "device_derived",
+       "seed": 31,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.716752,
+       "coverage": 0.720895
+      },
+      {
+       "partition": "device_derived",
+       "seed": 31,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.050675,
+       "coverage": 0.050675
+      },
+      {
+       "partition": "device_derived",
+       "seed": 31,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.064305,
+       "coverage": 0.065896
+      },
+      {
+       "partition": "device_derived",
+       "seed": 31,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.049625,
+       "coverage": 0.050495
+      },
+      {
+       "partition": "device_derived",
+       "seed": 31,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.036085,
+       "coverage": 0.036085
+      },
+      {
+       "partition": "device_derived",
+       "seed": 31,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.034404,
+       "coverage": 0.034404
+      },
+      {
+       "partition": "device_derived",
+       "seed": 32,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.123987,
+       "coverage": 0.124047
+      },
+      {
+       "partition": "device_derived",
+       "seed": 32,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.049475,
+       "coverage": 0.049475
+      },
+      {
+       "partition": "device_derived",
+       "seed": 32,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.236265,
+       "coverage": 0.236325
+      },
+      {
+       "partition": "device_derived",
+       "seed": 32,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.097989,
+       "coverage": 0.098019
+      },
+      {
+       "partition": "device_derived",
+       "seed": 32,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.049835,
+       "coverage": 0.049835
+      },
+      {
+       "partition": "device_derived",
+       "seed": 32,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049355,
+       "coverage": 0.049355
+      },
+      {
+       "partition": "device_derived",
+       "seed": 33,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.354068,
+       "coverage": 0.356139
+      },
+      {
+       "partition": "device_derived",
+       "seed": 33,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.060462,
+       "coverage": 0.060462
+      },
+      {
+       "partition": "device_derived",
+       "seed": 33,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.247553,
+       "coverage": 0.247613
+      },
+      {
+       "partition": "device_derived",
+       "seed": 33,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.168748,
+       "coverage": 0.168808
+      },
+      {
+       "partition": "device_derived",
+       "seed": 33,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.052026,
+       "coverage": 0.052026
+      },
+      {
+       "partition": "device_derived",
+       "seed": 33,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049084,
+       "coverage": 0.049084
+      },
+      {
+       "partition": "device_derived",
+       "seed": 34,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.247523,
+       "coverage": 0.247583
+      },
+      {
+       "partition": "device_derived",
+       "seed": 34,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.062714,
+       "coverage": 0.062714
+      },
+      {
+       "partition": "device_derived",
+       "seed": 34,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.247583,
+       "coverage": 0.247643
+      },
+      {
+       "partition": "device_derived",
+       "seed": 34,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.247433,
+       "coverage": 0.247493
+      },
+      {
+       "partition": "device_derived",
+       "seed": 34,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.060342,
+       "coverage": 0.060342
+      },
+      {
+       "partition": "device_derived",
+       "seed": 34,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.050585,
+       "coverage": 0.050585
+      },
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.05,
+       "k": 2,
+       "CA": 0.678565,
+       "coverage": 0.711768
+      },
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.1,
+       "k": 2,
+       "CA": 0.249775,
+       "coverage": 0.267457
+      },
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.15,
+       "k": 2,
+       "CA": 0.236415,
+       "coverage": 0.239237
+      },
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.235395,
+       "coverage": 0.235455
+      },
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.201921,
+       "coverage": 0.201951
+      },
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.249144,
+       "coverage": 0.266887
+      },
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.235935,
+       "coverage": 0.238967
+      },
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.235245,
+       "coverage": 0.235305
+      },
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.050015,
+       "coverage": 0.050015
+      },
+      {
+       "partition": "device_derived",
+       "seed": 36,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.165656,
+       "coverage": 0.165656
+      },
+      {
+       "partition": "device_derived",
+       "seed": 36,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.247643,
+       "coverage": 0.247733
+      },
+      {
+       "partition": "device_derived",
+       "seed": 36,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.245152,
+       "coverage": 0.245242
+      },
+      {
+       "partition": "device_derived",
+       "seed": 36,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.173311,
+       "coverage": 0.173311
+      },
+      {
+       "partition": "device_derived",
+       "seed": 36,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049355,
+       "coverage": 0.049355
+      },
+      {
+       "partition": "device_derived",
+       "seed": 37,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.245932,
+       "coverage": 0.245992
+      },
+      {
+       "partition": "device_derived",
+       "seed": 37,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.236956,
+       "coverage": 0.237016
+      },
+      {
+       "partition": "device_derived",
+       "seed": 37,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.247403,
+       "coverage": 0.247463
+      },
+      {
+       "partition": "device_derived",
+       "seed": 37,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.241219,
+       "coverage": 0.241279
+      },
+      {
+       "partition": "device_derived",
+       "seed": 37,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.240859,
+       "coverage": 0.240919
+      },
+      {
+       "partition": "device_derived",
+       "seed": 37,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.050886,
+       "coverage": 0.050886
+      },
+      {
+       "partition": "device_derived",
+       "seed": 38,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.729811,
+       "coverage": 0.730711
+      },
+      {
+       "partition": "device_derived",
+       "seed": 38,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.061423,
+       "coverage": 0.061423
+      },
+      {
+       "partition": "device_derived",
+       "seed": 38,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.235305,
+       "coverage": 0.235365
+      },
+      {
+       "partition": "device_derived",
+       "seed": 38,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.235155,
+       "coverage": 0.235215
+      },
+      {
+       "partition": "device_derived",
+       "seed": 38,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.051516,
+       "coverage": 0.051516
+      },
+      {
+       "partition": "device_derived",
+       "seed": 38,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049835,
+       "coverage": 0.049835
+      },
+      {
+       "partition": "device_derived",
+       "seed": 39,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.678535,
+       "coverage": 0.681147
+      },
+      {
+       "partition": "device_derived",
+       "seed": 39,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.061333,
+       "coverage": 0.061333
+      },
+      {
+       "partition": "device_derived",
+       "seed": 39,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.247553,
+       "coverage": 0.247643
+      },
+      {
+       "partition": "device_derived",
+       "seed": 39,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.075233,
+       "coverage": 0.075233
+      },
+      {
+       "partition": "device_derived",
+       "seed": 39,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.054158,
+       "coverage": 0.054158
+      },
+      {
+       "partition": "device_derived",
+       "seed": 39,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049595,
+       "coverage": 0.049595
+      }
+     ]
+    }
+   }
+  },
+  "refuse": {
+   "rule": "refuse",
+   "threshold": null,
+   "label_free": true,
+   "heldout": {
+    "cells": 330,
+    "commitments": 0,
+    "unsafe": 0,
+    "correct_refusals": 126,
+    "missed_opportunities": 204,
+    "agree": 126,
+    "max_regret": 0.982107,
+    "mean_regret": 0.9646842892156863,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": null,
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "development": {
+    "cells": 330,
+    "commitments": 0,
+    "unsafe": 0,
+    "correct_refusals": 121,
+    "missed_opportunities": 209,
+    "agree": 121,
+    "max_regret": 0.982047,
+    "mean_regret": 0.9602982966507176,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": null,
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "all": {
+    "cells": 660,
+    "commitments": 0,
+    "unsafe": 0,
+    "correct_refusals": 247,
+    "missed_opportunities": 413,
+    "agree": 247,
+    "max_regret": 0.982107,
+    "mean_regret": 0.9624647433414043,
+    "draws": 60,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": null,
+    "draw_unsafe_cp95": [
+     0.0,
+     0.05962949228616691
+    ],
+    "unsafe_cells": []
+   },
+   "by_partition": {
+    "iid": {
+     "cells": 330,
+     "commitments": 0,
+     "unsafe": 0,
+     "correct_refusals": 30,
+     "missed_opportunities": 300,
+     "agree": 30,
+     "max_regret": 0.982107,
+     "mean_regret": 0.9796306566666667,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": null,
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    },
+    "device_derived": {
+     "cells": 330,
+     "commitments": 0,
+     "unsafe": 0,
+     "correct_refusals": 217,
+     "missed_opportunities": 113,
+     "agree": 217,
+     "max_regret": 0.981627,
+     "mean_regret": 0.9168915221238939,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": null,
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    }
+   }
+  },
+  "cov_fitted": {
+   "rule": "cov",
+   "threshold": 1.02,
+   "label_free": true,
+   "heldout": {
+    "cells": 330,
+    "commitments": 205,
+    "unsafe": 1,
+    "correct_refusals": 125,
+    "missed_opportunities": 0,
+    "agree": 329,
+    "max_regret": 0.012998999999999983,
+    "mean_regret": 0.00029034313725490415,
+    "draws": 30,
+    "draws_with_unsafe": 1,
+    "unsafe_rate_cp95": [
+     0.0001234938763657907,
+     0.02687762377666878
+    ],
+    "draw_unsafe_cp95": [
+     0.0008435709266304788,
+     0.17216945563341265
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.05,
+      "k": 1,
+      "CA": 0.269919,
+      "coverage": 0.9997
+     }
+    ]
+   },
+   "development": {
+    "cells": 330,
+    "commitments": 209,
+    "unsafe": 0,
+    "correct_refusals": 121,
+    "missed_opportunities": 0,
+    "agree": 330,
+    "max_regret": 0.012699000000000016,
+    "mean_regret": 0.00032119138755980594,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.017495289579186512
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "all": {
+    "cells": 660,
+    "commitments": 414,
+    "unsafe": 1,
+    "correct_refusals": 246,
+    "missed_opportunities": 0,
+    "agree": 659,
+    "max_regret": 0.012998999999999983,
+    "mean_regret": 0.0003059539951573847,
+    "draws": 60,
+    "draws_with_unsafe": 1,
+    "unsafe_rate_cp95": [
+     6.115225569049776e-05,
+     0.013384004277650699
+    ],
+    "draw_unsafe_cp95": [
+     0.00042187445234200883,
+     0.08939905005748702
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 35,
+      "beta": 0.05,
+      "k": 1,
+      "CA": 0.269919,
+      "coverage": 0.9997
+     }
+    ]
+   },
+   "by_partition": {
+    "iid": {
+     "cells": 330,
+     "commitments": 300,
+     "unsafe": 0,
+     "correct_refusals": 30,
+     "missed_opportunities": 0,
+     "agree": 330,
+     "max_regret": 0.0024920000000000497,
+     "mean_regret": 0.00028949999999999956,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": [
+      0.0,
+      0.01222097469429355
+     ],
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    },
+    "device_derived": {
+     "cells": 330,
+     "commitments": 114,
+     "unsafe": 1,
+     "correct_refusals": 216,
+     "missed_opportunities": 0,
+     "agree": 329,
+     "max_regret": 0.012998999999999983,
+     "mean_regret": 0.00034963716814159307,
+     "draws": 30,
+     "draws_with_unsafe": 1,
+     "unsafe_rate_cp95": [
+      0.00022206137567197884,
+      0.04790525785236257
+     ],
+     "draw_unsafe_cp95": [
+      0.0008435709266304788,
+      0.17216945563341265
+     ],
+     "unsafe_cells": [
+      {
+       "partition": "device_derived",
+       "seed": 35,
+       "beta": 0.05,
+       "k": 1,
+       "CA": 0.269919,
+       "coverage": 0.9997
+      }
+     ]
+    }
+   }
+  },
+  "div_fitted": {
+   "rule": "div",
+   "threshold": 0.000966,
+   "label_free": true,
+   "heldout": {
+    "cells": 330,
+    "commitments": 140,
+    "unsafe": 0,
+    "correct_refusals": 126,
+    "missed_opportunities": 64,
+    "agree": 266,
+    "max_regret": 0.982107,
+    "mean_regret": 0.2925962990196078,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.026005029351292668
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "development": {
+    "cells": 330,
+    "commitments": 150,
+    "unsafe": 0,
+    "correct_refusals": 121,
+    "missed_opportunities": 59,
+    "agree": 271,
+    "max_regret": 0.981387,
+    "mean_regret": 0.2574022057416268,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.02429259716610854
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "all": {
+    "cells": 660,
+    "commitments": 290,
+    "unsafe": 0,
+    "correct_refusals": 247,
+    "missed_opportunities": 123,
+    "agree": 537,
+    "max_regret": 0.982107,
+    "mean_regret": 0.2747862130750605,
+    "draws": 60,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.01263971324131238
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.05962949228616691
+    ],
+    "unsafe_cells": []
+   },
+   "by_partition": {
+    "iid": {
+     "cells": 330,
+     "commitments": 290,
+     "unsafe": 0,
+     "correct_refusals": 30,
+     "missed_opportunities": 10,
+     "agree": 320,
+     "max_regret": 0.982107,
+     "mean_regret": 0.03292654666666667,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": [
+      0.0,
+      0.01263971324131238
+     ],
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    },
+    "device_derived": {
+     "cells": 330,
+     "commitments": 0,
+     "unsafe": 0,
+     "correct_refusals": 217,
+     "missed_opportunities": 113,
+     "agree": 217,
+     "max_regret": 0.981627,
+     "mean_regret": 0.9168915221238939,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": null,
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    }
+   }
+  },
+  "vol_fitted": {
+   "rule": "vol",
+   "threshold": 0.049999,
+   "label_free": true,
+   "heldout": {
+    "cells": 330,
+    "commitments": 150,
+    "unsafe": 0,
+    "correct_refusals": 126,
+    "missed_opportunities": 54,
+    "agree": 276,
+    "max_regret": 0.981627,
+    "mean_regret": 0.24460064215686278,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.02429259716610854
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "development": {
+    "cells": 330,
+    "commitments": 150,
+    "unsafe": 0,
+    "correct_refusals": 121,
+    "missed_opportunities": 59,
+    "agree": 271,
+    "max_regret": 0.981387,
+    "mean_regret": 0.2574022057416268,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.02429259716610854
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "all": {
+    "cells": 660,
+    "commitments": 300,
+    "unsafe": 0,
+    "correct_refusals": 247,
+    "missed_opportunities": 113,
+    "agree": 547,
+    "max_regret": 0.981627,
+    "mean_regret": 0.25107891525423726,
+    "draws": 60,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.01222097469429355
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.05962949228616691
+    ],
+    "unsafe_cells": []
+   },
+   "by_partition": {
+    "iid": {
+     "cells": 330,
+     "commitments": 300,
+     "unsafe": 0,
+     "correct_refusals": 30,
+     "missed_opportunities": 0,
+     "agree": 330,
+     "max_regret": 0.0024920000000000497,
+     "mean_regret": 0.00028949999999999956,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": [
+      0.0,
+      0.01222097469429355
+     ],
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    },
+    "device_derived": {
+     "cells": 330,
+     "commitments": 0,
+     "unsafe": 0,
+     "correct_refusals": 217,
+     "missed_opportunities": 113,
+     "agree": 217,
+     "max_regret": 0.981627,
+     "mean_regret": 0.9168915221238939,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": null,
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    }
+   }
+  },
+  "labsup_fitted": {
+   "rule": "labsup",
+   "threshold": 0.8,
+   "label_free": false,
+   "heldout": {
+    "cells": 330,
+    "commitments": 170,
+    "unsafe": 11,
+    "correct_refusals": 116,
+    "missed_opportunities": 44,
+    "agree": 275,
+    "max_regret": 0.980907,
+    "mean_regret": 0.20026279802955665,
+    "draws": 30,
+    "draws_with_unsafe": 2,
+    "unsafe_rate_cp95": [
+     0.032740702588671323,
+     0.1128258164266473
+    ],
+    "draw_unsafe_cp95": [
+     0.008178134460656307,
+     0.22073540152296187
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.704923,
+      "coverage": 0.708316
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.690483,
+      "coverage": 0.693545
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.064245,
+      "coverage": 0.064245
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.058481,
+      "coverage": 0.058481
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049174,
+      "coverage": 0.049174
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049084,
+      "coverage": 0.049084
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.515611,
+      "coverage": 0.518703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.095347,
+      "coverage": 0.095377
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.059562,
+      "coverage": 0.059562
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.023176,
+      "coverage": 0.023176
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.01462,
+      "coverage": 0.01462
+     }
+    ]
+   },
+   "development": {
+    "cells": 330,
+    "commitments": 150,
+    "unsafe": 0,
+    "correct_refusals": 121,
+    "missed_opportunities": 59,
+    "agree": 271,
+    "max_regret": 0.981387,
+    "mean_regret": 0.2574022057416268,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.02429259716610854
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "all": {
+    "cells": 660,
+    "commitments": 320,
+    "unsafe": 11,
+    "correct_refusals": 237,
+    "missed_opportunities": 103,
+    "agree": 546,
+    "max_regret": 0.981387,
+    "mean_regret": 0.22924856553398057,
+    "draws": 60,
+    "draws_with_unsafe": 2,
+    "unsafe_rate_cp95": [
+     0.01728245087071294,
+     0.0606728692793305
+    ],
+    "draw_unsafe_cp95": [
+     0.004062624642093496,
+     0.1152810444192517
+    ],
+    "unsafe_cells": [
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.2,
+      "k": 2,
+      "CA": 0.704923,
+      "coverage": 0.708316
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.690483,
+      "coverage": 0.693545
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.064245,
+      "coverage": 0.064245
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.058481,
+      "coverage": 0.058481
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.049174,
+      "coverage": 0.049174
+     },
+     {
+      "partition": "device_derived",
+      "seed": 13,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.049084,
+      "coverage": 0.049084
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.25,
+      "k": 2,
+      "CA": 0.515611,
+      "coverage": 0.518703
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.3,
+      "k": 1,
+      "CA": 0.095347,
+      "coverage": 0.095377
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.35,
+      "k": 1,
+      "CA": 0.059562,
+      "coverage": 0.059562
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.4,
+      "k": 1,
+      "CA": 0.023176,
+      "coverage": 0.023176
+     },
+     {
+      "partition": "device_derived",
+      "seed": 17,
+      "beta": 0.45,
+      "k": 1,
+      "CA": 0.01462,
+      "coverage": 0.01462
+     }
+    ]
+   },
+   "by_partition": {
+    "iid": {
+     "cells": 330,
+     "commitments": 300,
+     "unsafe": 0,
+     "correct_refusals": 30,
+     "missed_opportunities": 0,
+     "agree": 330,
+     "max_regret": 0.0024920000000000497,
+     "mean_regret": 0.00028949999999999956,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": [
+      0.0,
+      0.01222097469429355
+     ],
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    },
+    "device_derived": {
+     "cells": 330,
+     "commitments": 20,
+     "unsafe": 11,
+     "correct_refusals": 207,
+     "missed_opportunities": 103,
+     "agree": 216,
+     "max_regret": 0.981387,
+     "mean_regret": 0.8425317767857142,
+     "draws": 30,
+     "draws_with_unsafe": 2,
+     "unsafe_rate_cp95": [
+      0.31527813304054847,
+      0.7694221032240758
+     ],
+     "draw_unsafe_cp95": [
+      0.008178134460656307,
+      0.22073540152296187
+     ],
+     "unsafe_cells": [
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.2,
+       "k": 2,
+       "CA": 0.704923,
+       "coverage": 0.708316
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.690483,
+       "coverage": 0.693545
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.064245,
+       "coverage": 0.064245
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.058481,
+       "coverage": 0.058481
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.049174,
+       "coverage": 0.049174
+      },
+      {
+       "partition": "device_derived",
+       "seed": 13,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.049084,
+       "coverage": 0.049084
+      },
+      {
+       "partition": "device_derived",
+       "seed": 17,
+       "beta": 0.25,
+       "k": 2,
+       "CA": 0.515611,
+       "coverage": 0.518703
+      },
+      {
+       "partition": "device_derived",
+       "seed": 17,
+       "beta": 0.3,
+       "k": 1,
+       "CA": 0.095347,
+       "coverage": 0.095377
+      },
+      {
+       "partition": "device_derived",
+       "seed": 17,
+       "beta": 0.35,
+       "k": 1,
+       "CA": 0.059562,
+       "coverage": 0.059562
+      },
+      {
+       "partition": "device_derived",
+       "seed": 17,
+       "beta": 0.4,
+       "k": 1,
+       "CA": 0.023176,
+       "coverage": 0.023176
+      },
+      {
+       "partition": "device_derived",
+       "seed": 17,
+       "beta": 0.45,
+       "k": 1,
+       "CA": 0.01462,
+       "coverage": 0.01462
+      }
+     ]
+    }
+   }
+  },
+  "labdeg_fitted": {
+   "rule": "labdeg",
+   "threshold": 0.0,
+   "label_free": false,
+   "heldout": {
+    "cells": 330,
+    "commitments": 150,
+    "unsafe": 0,
+    "correct_refusals": 126,
+    "missed_opportunities": 54,
+    "agree": 276,
+    "max_regret": 0.981627,
+    "mean_regret": 0.24460064215686278,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.02429259716610854
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "development": {
+    "cells": 330,
+    "commitments": 150,
+    "unsafe": 0,
+    "correct_refusals": 121,
+    "missed_opportunities": 59,
+    "agree": 271,
+    "max_regret": 0.981387,
+    "mean_regret": 0.2574022057416268,
+    "draws": 30,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.02429259716610854
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.11570330822202778
+    ],
+    "unsafe_cells": []
+   },
+   "all": {
+    "cells": 660,
+    "commitments": 300,
+    "unsafe": 0,
+    "correct_refusals": 247,
+    "missed_opportunities": 113,
+    "agree": 547,
+    "max_regret": 0.981627,
+    "mean_regret": 0.25107891525423726,
+    "draws": 60,
+    "draws_with_unsafe": 0,
+    "unsafe_rate_cp95": [
+     0.0,
+     0.01222097469429355
+    ],
+    "draw_unsafe_cp95": [
+     0.0,
+     0.05962949228616691
+    ],
+    "unsafe_cells": []
+   },
+   "by_partition": {
+    "iid": {
+     "cells": 330,
+     "commitments": 300,
+     "unsafe": 0,
+     "correct_refusals": 30,
+     "missed_opportunities": 0,
+     "agree": 330,
+     "max_regret": 0.0024920000000000497,
+     "mean_regret": 0.00028949999999999956,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": [
+      0.0,
+      0.01222097469429355
+     ],
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    },
+    "device_derived": {
+     "cells": 330,
+     "commitments": 0,
+     "unsafe": 0,
+     "correct_refusals": 217,
+     "missed_opportunities": 113,
+     "agree": 217,
+     "max_regret": 0.981627,
+     "mean_regret": 0.9168915221238939,
+     "draws": 30,
+     "draws_with_unsafe": 0,
+     "unsafe_rate_cp95": null,
+     "draw_unsafe_cp95": [
+      0.0,
+      0.11570330822202778
+     ],
+     "unsafe_cells": []
+    }
+   }
+  }
+ },
+ "prior_1pct": {
+  "cells": 660,
+  "commitments": 0,
+  "unsafe": 0,
+  "correct_refusals": 660,
+  "missed_opportunities": 0,
+  "agree": 660,
+  "max_regret": 0.0,
+  "mean_regret": 0.0,
+  "draws": 60,
+  "draws_with_unsafe": 0,
+  "unsafe_rate_cp95": null,
+  "draw_unsafe_cp95": [
+   0.0,
+   0.05962949228616691
+  ],
+  "unsafe_cells": []
+ },
+ "falsifier": {
+  "fired": false,
+  "by": []
+ }
+}

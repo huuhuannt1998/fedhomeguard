@@ -19,8 +19,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
 from aggregate import load, src
 
-OUT = os.environ.get("FHG_GENERATED",
-                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 SAFETY = 1.05          # coverage must clear the trivial floor by 5%, fixed in advance
 
 

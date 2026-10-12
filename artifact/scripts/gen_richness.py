@@ -11,8 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bstar import bstar as _bstar
 from aggregate import src as _src   # review r6: corrected same-predictor rows
 
-OUT = os.environ.get("FHG_GENERATED",
-                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 ARMS = [("1", "1", "results/canonical/e11b_dph1_1.jsonl"),
         ("13", "1--3", "results/canonical/e11b_dph1_3.jsonl"),
         ("25", "2--5", "results/canonical/e11b_dph2_5.jsonl"),

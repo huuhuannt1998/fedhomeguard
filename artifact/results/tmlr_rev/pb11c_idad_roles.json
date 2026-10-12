@@ -1,0 +1,1236 @@
+{
+ "files": 28,
+ "total_rows": 4855577,
+ "q1_extra": {
+  "rows_both_endpoints_named": 112689,
+  "share_both_named": 0.023208158371291403,
+  "src_vendor_when_device_mac_is_dst": [
+   [
+    "Luxshare Precision Industry Company Limited",
+    658343
+   ],
+   [
+    "Raspberry Pi Trading Ltd",
+    122020
+   ],
+   [
+    "Amcrest Technologies",
+    111123
+   ],
+   [
+    "Philips Lighting BV",
+    60080
+   ],
+   [
+    "Amazon Technologies Inc.",
+    32632
+   ],
+   [
+    "Espressif Inc.",
+    6942
+   ],
+   [
+    "Tuya Smart Inc.",
+    4816
+   ],
+   [
+    "Shenzhen Bilian Electronic Co.\u00a3\u00acLtd",
+    4070
+   ]
+  ]
+ },
+ "attack_rows": 4558514,
+ "attack_rows_device_mac_rpi": 0.5635762004898965,
+ "attack_rows_device_mac_vmware": 0.00422922908649617,
+ "benign_rows_touching_rpi": 0.01759896048986242,
+ "per_attack_type": {
+  "Backdoor_Malware": {
+   "rows": 33349,
+   "touches_rpi": 0.0907,
+   "rpi_is_source": 0.066,
+   "rpi_hosts": 2,
+   "top_counterparts": [
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     1083,
+     0.6157
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     516,
+     0.2933
+    ],
+    [
+     "Amazon Echo Show",
+     "Amazon Technologies Inc.",
+     83,
+     0.0472
+    ]
+   ]
+  },
+  "BrowserHijacking": {
+   "rows": 59268,
+   "touches_rpi": 0.315,
+   "rpi_is_source": 0.2485,
+   "rpi_hosts": 3,
+   "top_counterparts": [
+    [
+     "3c:18:a0:41:c3:a0",
+     "Luxshare Precision Industry Company Limited",
+     5717,
+     0.8623
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     546,
+     0.0824
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     251,
+     0.0379
+    ]
+   ]
+  },
+  "CommandInjection": {
+   "rows": 55632,
+   "touches_rpi": 0.2954,
+   "rpi_is_source": 0.0936,
+   "rpi_hosts": 4,
+   "top_counterparts": [
+    [
+     "3c:18:a0:41:c3:a0",
+     "Luxshare Precision Industry Company Limited",
+     13074,
+     0.8544
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     1374,
+     0.0898
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     653,
+     0.0427
+    ]
+   ]
+  },
+  "DDoS-ACK_Fragmentation": {
+   "rows": 291481,
+   "touches_rpi": 0.9576,
+   "rpi_is_source": 0.9496,
+   "rpi_hosts": 7,
+   "top_counterparts": [
+    [
+     "AMCREST WiFi Camera",
+     "Amcrest Technologies",
+     278889,
+     0.9991
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     "Broadcast",
+     244,
+     0.0009
+    ],
+    [
+     "01:00:5e:00:00:fb",
+     "IPv4 Multicast",
+     1,
+     0.0
+    ]
+   ]
+  },
+  "DDoS-HTTP_Flood": {
+   "rows": 290346,
+   "touches_rpi": 0.9281,
+   "rpi_is_source": 0.6506,
+   "rpi_hosts": 7,
+   "top_counterparts": [
+    [
+     "AMCREST WiFi Camera",
+     "Amcrest Technologies",
+     269021,
+     0.9983
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     139,
+     0.0005
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     "Broadcast",
+     138,
+     0.0005
+    ]
+   ]
+  },
+  "DDoS-ICMP_Fragmentation": {
+   "rows": 275532,
+   "touches_rpi": 0.935,
+   "rpi_is_source": 0.9345,
+   "rpi_hosts": 8,
+   "top_counterparts": [
+    [
+     "Amazon Echo Dot 1",
+     "Amazon Technologies Inc.",
+     257121,
+     0.998
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     "Broadcast",
+     282,
+     0.0011
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     94,
+     0.0004
+    ]
+   ]
+  },
+  "DDoS-SlowLoris": {
+   "rows": 288591,
+   "touches_rpi": 0.5916,
+   "rpi_is_source": 0.2891,
+   "rpi_hosts": 8,
+   "top_counterparts": [
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     117932,
+     0.6908
+    ],
+    [
+     "AMCREST WiFi Camera",
+     "Amcrest Technologies",
+     50639,
+     0.2966
+    ],
+    [
+     "Smart Board",
+     "SMART Technologies, Inc.",
+     958,
+     0.0056
+    ]
+   ]
+  },
+  "DDoS-SynonymousIP_Flood": {
+   "rows": 211945,
+   "touches_rpi": 0.9826,
+   "rpi_is_source": 0.9824,
+   "rpi_hosts": 7,
+   "top_counterparts": [
+    [
+     "Amazon Echo Show",
+     "Amazon Technologies Inc.",
+     208166,
+     0.9996
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     37,
+     0.0002
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     31,
+     0.0001
+    ]
+   ]
+  },
+  "DDoS-TCP_Flood": {
+   "rows": 85423,
+   "touches_rpi": 0.992,
+   "rpi_is_source": 0.9919,
+   "rpi_hosts": 6,
+   "top_counterparts": [
+    [
+     "Amazon Echo Dot 1",
+     "Amazon Technologies Inc.",
+     84687,
+     0.9994
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     "Broadcast",
+     45,
+     0.0005
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     4,
+     0.0
+    ]
+   ]
+  },
+  "DDoS-UDP_Flood": {
+   "rows": 86615,
+   "touches_rpi": 0.9698,
+   "rpi_is_source": 0.9687,
+   "rpi_hosts": 7,
+   "top_counterparts": [
+    [
+     "Amazon Echo Dot 1",
+     "Amazon Technologies Inc.",
+     83877,
+     0.9986
+    ],
+    [
+     "Smart Board",
+     "SMART Technologies, Inc.",
+     48,
+     0.0006
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     29,
+     0.0003
+    ]
+   ]
+  },
+  "DDoS-UDP_Fragmentation": {
+   "rows": 277953,
+   "touches_rpi": 0.9711,
+   "rpi_is_source": 0.9682,
+   "rpi_hosts": 7,
+   "top_counterparts": [
+    [
+     "AeoTec Smart Home Hub",
+     "SAMJIN Co., Ltd.",
+     269521,
+     0.9985
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     "Broadcast",
+     237,
+     0.0009
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     104,
+     0.0004
+    ]
+   ]
+  },
+  "DNS_Spoofing": {
+   "rows": 296025,
+   "touches_rpi": 0.093,
+   "rpi_is_source": 0.0239,
+   "rpi_hosts": 3,
+   "top_counterparts": [
+    [
+     "Arlo Base Station",
+     "Netgear",
+     5477,
+     0.1991
+    ],
+    [
+     "Nest Indoor Camera",
+     "Google, Inc.",
+     4506,
+     0.1638
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     3765,
+     0.1369
+    ]
+   ]
+  },
+  "DictionaryBruteForce": {
+   "rows": 131477,
+   "touches_rpi": 0.2229,
+   "rpi_is_source": 0.198,
+   "rpi_hosts": 2,
+   "top_counterparts": [
+    [
+     "HeimVision Smart WiFi Camera",
+     "Shenzhen Bilian Electronic Co.\u00a3\u00acLtd",
+     3454,
+     0.4636
+    ],
+    [
+     "Luohe Cam Dog",
+     "Shenzhen Bilian Electronic Co.\u00a3\u00acLtd",
+     1926,
+     0.2585
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     1241,
+     0.1666
+    ]
+   ]
+  },
+  "DoS-HTTP_Flood": {
+   "rows": 156328,
+   "touches_rpi": 0.9043,
+   "rpi_is_source": 0.9038,
+   "rpi_hosts": 2,
+   "top_counterparts": [
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     66,
+     0.4889
+    ],
+    [
+     "LG Smart TV",
+     "LG Innotek",
+     15,
+     0.1111
+    ],
+    [
+     "01:00:5e:00:00:fb",
+     "IPv4 Multicast",
+     14,
+     0.1037
+    ]
+   ]
+  },
+  "DoS-SYN_Flood": {
+   "rows": 83359,
+   "touches_rpi": 0.9813,
+   "rpi_is_source": 0.8807,
+   "rpi_hosts": 1,
+   "top_counterparts": [
+    [
+     "Amazon Echo Dot 1",
+     "Amazon Technologies Inc.",
+     81785,
+     0.9998
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     "Broadcast",
+     7,
+     0.0001
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     4,
+     0.0
+    ]
+   ]
+  },
+  "DoS-TCP_Flood": {
+   "rows": 89711,
+   "touches_rpi": 0.9406,
+   "rpi_is_source": 0.7954,
+   "rpi_hosts": 3,
+   "top_counterparts": [
+    [
+     "Amazon Echo Spot",
+     "Amazon Technologies Inc.",
+     84235,
+     0.9983
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     "Broadcast",
+     80,
+     0.0009
+    ],
+    [
+     "01:00:5e:00:00:fb",
+     "IPv4 Multicast",
+     21,
+     0.0002
+    ]
+   ]
+  },
+  "DoS-UDP_Flood": {
+   "rows": 87900,
+   "touches_rpi": 0.9684,
+   "rpi_is_source": 0.9676,
+   "rpi_hosts": 1,
+   "top_counterparts": [
+    [
+     "AMCREST WiFi Camera",
+     "Amcrest Technologies",
+     85068,
+     0.9994
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     32,
+     0.0004
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     16,
+     0.0002
+    ]
+   ]
+  },
+  "MITM-ArpSpoofing": {
+   "rows": 290437,
+   "touches_rpi": 0.0063,
+   "rpi_is_source": 0.0005,
+   "rpi_hosts": 1,
+   "top_counterparts": [
+    [
+     "Amazon Echo Dot 1",
+     "Amazon Technologies Inc.",
+     1604,
+     0.8784
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     125,
+     0.0685
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     72,
+     0.0394
+    ]
+   ]
+  },
+  "Mirai-greip_flood": {
+   "rows": 213030,
+   "touches_rpi": 0.9462,
+   "rpi_is_source": 0.9456,
+   "rpi_hosts": 7,
+   "top_counterparts": [
+    [
+     "Amazon Echo Dot 1",
+     "Amazon Technologies Inc.",
+     201171,
+     0.998
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     207,
+     0.001
+    ],
+    [
+     "ff:ff:ff:ff:ff:ff",
+     "Broadcast",
+     187,
+     0.0009
+    ]
+   ]
+  },
+  "Recon-HostDiscovery": {
+   "rows": 288374,
+   "touches_rpi": 0.7646,
+   "rpi_is_source": 0.4388,
+   "rpi_hosts": 2,
+   "top_counterparts": [
+    [
+     "Amazon Echo Dot 1",
+     "Amazon Technologies Inc.",
+     6544,
+     0.0312
+    ],
+    [
+     "Amazon Echo Studio",
+     "Amazon Technologies Inc.",
+     5866,
+     0.028
+    ],
+    [
+     "Amazon Echo Dot 2",
+     "Amazon Technologies Inc.",
+     4954,
+     0.0237
+    ]
+   ]
+  },
+  "Recon-OSScan": {
+   "rows": 291903,
+   "touches_rpi": 0.2141,
+   "rpi_is_source": 0.1254,
+   "rpi_hosts": 3,
+   "top_counterparts": [
+    [
+     "HeimVision Smart WiFi Camera",
+     "Shenzhen Bilian Electronic Co.\u00a3\u00acLtd",
+     6066,
+     0.0971
+    ],
+    [
+     "Amazon Echo Spot",
+     "Amazon Technologies Inc.",
+     5326,
+     0.0852
+    ],
+    [
+     "Atomi Coffee Maker",
+     "Tuya Smart Inc.",
+     4824,
+     0.0772
+    ]
+   ]
+  },
+  "Recon-PingSweep": {
+   "rows": 22619,
+   "touches_rpi": 0.1291,
+   "rpi_is_source": 0.1048,
+   "rpi_hosts": 2,
+   "top_counterparts": [
+    [
+     "ff:ff:ff:ff:ff:ff",
+     "Broadcast",
+     1803,
+     0.625
+    ],
+    [
+     "3c:18:a0:41:c3:a0",
+     "Luxshare Precision Industry Company Limited",
+     263,
+     0.0912
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     149,
+     0.0516
+    ]
+   ]
+  },
+  "Recon-PortScan": {
+   "rows": 286634,
+   "touches_rpi": 0.4047,
+   "rpi_is_source": 0.2401,
+   "rpi_hosts": 3,
+   "top_counterparts": [
+    [
+     "Home Eye Camera",
+     "Shenzhen Rf-Link Technology Co.,Ltd.",
+     8388,
+     0.0723
+    ],
+    [
+     "Nest Indoor Camera",
+     "Google, Inc.",
+     8092,
+     0.0698
+    ],
+    [
+     "Amazon Plug",
+     "Amazon Technologies Inc.",
+     7981,
+     0.0688
+    ]
+   ]
+  },
+  "SqlInjection": {
+   "rows": 52628,
+   "touches_rpi": 0.0902,
+   "rpi_is_source": 0.0819,
+   "rpi_hosts": 1,
+   "top_counterparts": [
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     549,
+     0.5596
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     347,
+     0.3537
+    ],
+    [
+     "Amazon Echo Show",
+     "Amazon Technologies Inc.",
+     36,
+     0.0367
+    ]
+   ]
+  },
+  "Uploading_Attack": {
+   "rows": 12924,
+   "touches_rpi": 0.1568,
+   "rpi_is_source": 0.0949,
+   "rpi_hosts": 3,
+   "top_counterparts": [
+    [
+     "3c:18:a0:41:c3:a0",
+     "Luxshare Precision Industry Company Limited",
+     969,
+     0.5837
+    ],
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     429,
+     0.2584
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     210,
+     0.1265
+    ]
+   ]
+  },
+  "VulnerabilityScan": {
+   "rows": 258929,
+   "touches_rpi": 0.482,
+   "rpi_is_source": 0.2718,
+   "rpi_hosts": 2,
+   "top_counterparts": [
+    [
+     "Home Eye Camera",
+     "Shenzhen Rf-Link Technology Co.,Ltd.",
+     5729,
+     0.0499
+    ],
+    [
+     "Amazon Echo Studio",
+     "Amazon Technologies Inc.",
+     3810,
+     0.0332
+    ],
+    [
+     "Amazon Echo Dot 1",
+     "Amazon Technologies Inc.",
+     3561,
+     0.031
+    ]
+   ]
+  },
+  "XSS": {
+   "rows": 40101,
+   "touches_rpi": 0.0705,
+   "rpi_is_source": 0.0462,
+   "rpi_hosts": 3,
+   "top_counterparts": [
+    [
+     "Google Nest Mini Speaker",
+     "Google, Inc.",
+     1300,
+     0.61
+    ],
+    [
+     "Philips Hue Bridge",
+     "Philips Lighting BV",
+     646,
+     0.3031
+    ],
+    [
+     "Amazon Echo Show",
+     "Amazon Technologies Inc.",
+     84,
+     0.0394
+    ]
+   ]
+  }
+ },
+ "rpi_dominated_types": [
+  "DDoS-ACK_Fragmentation",
+  "DDoS-HTTP_Flood",
+  "DDoS-ICMP_Fragmentation",
+  "DDoS-SlowLoris",
+  "DDoS-SynonymousIP_Flood",
+  "DDoS-TCP_Flood",
+  "DDoS-UDP_Flood",
+  "DDoS-UDP_Fragmentation",
+  "DoS-HTTP_Flood",
+  "DoS-SYN_Flood",
+  "DoS-TCP_Flood",
+  "DoS-UDP_Flood",
+  "Mirai-greip_flood",
+  "Recon-HostDiscovery"
+ ],
+ "rpi_dominated_types_ge90": [
+  "DDoS-ACK_Fragmentation",
+  "DDoS-HTTP_Flood",
+  "DDoS-ICMP_Fragmentation",
+  "DDoS-SynonymousIP_Flood",
+  "DDoS-TCP_Flood",
+  "DDoS-UDP_Flood",
+  "DDoS-UDP_Fragmentation",
+  "DoS-HTTP_Flood",
+  "DoS-SYN_Flood",
+  "DoS-TCP_Flood",
+  "DoS-UDP_Flood",
+  "Mirai-greip_flood"
+ ],
+ "main_victims_of_rpi_dominated_types": [
+  [
+   "AMCREST WiFi Camera",
+   "Amcrest Technologies"
+  ],
+  [
+   "AeoTec Smart Home Hub",
+   "SAMJIN Co., Ltd."
+  ],
+  [
+   "Amazon Echo Dot 1",
+   "Amazon Technologies Inc."
+  ],
+  [
+   "Amazon Echo Show",
+   "Amazon Technologies Inc."
+  ],
+  [
+   "Amazon Echo Spot",
+   "Amazon Technologies Inc."
+  ],
+  [
+   "Philips Hue Bridge",
+   "Philips Lighting BV"
+  ]
+ ],
+ "rpi_hosts_ge16": [
+  "Raspberry Pi 4-2 GB",
+  "dc:a6:32:c9:e4:90",
+  "dc:a6:32:c9:e4:ab",
+  "dc:a6:32:c9:e4:c6",
+  "dc:a6:32:c9:e4:d5",
+  "dc:a6:32:c9:e5:a4",
+  "dc:a6:32:c9:e5:ef",
+  "dc:a6:32:dc:27:d5",
+  "dc:a6:32:dc:28:48",
+  "e4:5f:01:55:90:c4"
+ ],
+ "real_counterparts_ge16": 64,
+ "real_counterparts_ge1pct_of_some_type": [
+  "24:05:88:30:6f:89",
+  "3c:18:a0:41:c3:a0",
+  "AMCREST WiFi Camera",
+  "AeoTec Smart Home Hub",
+  "Amazon Echo Dot 1",
+  "Amazon Echo Dot 2",
+  "Amazon Echo Show",
+  "Amazon Echo Spot",
+  "Amazon Echo Studio",
+  "Amazon Plug",
+  "Arlo Base Station",
+  "Arlo Q Indoor Camera",
+  "Atomi Coffee Maker",
+  "Borun/Sichuan-AI Camera",
+  "Cocoon Smart HVAC Fan",
+  "DCS8000LHA1 D-Link Mini Camera",
+  "Eufy HomeBase 2",
+  "Globe Lamp ESP_B1680C",
+  "GoSund Bulb",
+  "GoSund Power strip (2)",
+  "GoSund Smart Plug WP2 (2)",
+  "GoSund Smart Plug WP3 (1)",
+  "GoSund Smart plug WP2 (1)",
+  "GoSund Smart plug WP2 (3)",
+  "Google Nest Mini Speaker",
+  "Gosund Power strip (1)",
+  "Gosund Smart Plug WP3 (2)",
+  "Govee Smart Humidifer",
+  "HeimVision Smart WiFi Camera",
+  "HeimVision SmartLife Radio/Lamp",
+  "Home Eye Camera",
+  "LG Smart TV",
+  "LIFX Lightbulb",
+  "LampUX RGB",
+  "Levoit Air Purifier",
+  "Lumiman bulb",
+  "Luohe Cam Dog",
+  "Nest Indoor Camera",
+  "Netatmo Camera",
+  "Netatmo Weather Station",
+  "Philips Hue Bridge",
+  "Rbcior Camera",
+  "SIMCAM 1S (AMPAKTec)",
+  "Smart Board",
+  "SmartThings Hub",
+  "Sonos One Speaker",
+  "TP-Link Tapo Camera",
+  "Teckin Light Strip",
+  "Teckin Plug 1",
+  "Teckin Plug 2",
+  "Wemo smart plug 1 (Wemo id: Wemo.Mini.AD3)",
+  "Wemo smart plug 2 (Wemo id: Wemo.Mini.4A3)",
+  "Wyze Camera",
+  "Yi Indoor 2 Camera",
+  "Yi Indoor Camera",
+  "Yi Outdoor Camera",
+  "Yutron Plug 1",
+  "Yutron Plug 2",
+  "ac:17:02:05:34:27",
+  "b0:09:da:3e:82:6c",
+  "e8:1b:69:f8:d6:e6",
+  "harman kardon (Ampak Technology)",
+  "iRobot Roomba"
+ ],
+ "q3_real_devices_only": {
+  "per_type": {
+   "I": 0.9897387204345454,
+   "H": 3.899063832153887,
+   "ratio": 0.2538400916324067
+  },
+  "binary": {
+   "I": 0.09390441615895595,
+   "H": 0.5708292481225308,
+   "ratio": 0.16450526399586132
+  },
+  "rows": 2169804
+ },
+ "q4_real_devices_benign_and_rpi_counterpart_ge16": 57,
+ "q4_real_devices_benign_and_rpi_counterpart_ge1000": [
+  [
+   "24:05:88:30:6f:89",
+   "Google, Inc.",
+   7616,
+   3560
+  ],
+  [
+   "3c:18:a0:41:c3:a0",
+   "Luxshare Precision Industry Company Limited",
+   23469,
+   27074
+  ],
+  [
+   "AMCREST WiFi Camera",
+   "Amcrest Technologies",
+   1440,
+   700892
+  ],
+  [
+   "AeoTec Smart Home Hub",
+   "SAMJIN Co., Ltd.",
+   4734,
+   271322
+  ],
+  [
+   "Amazon Echo Dot 1",
+   "Amazon Technologies Inc.",
+   4129,
+   726775
+  ],
+  [
+   "Amazon Echo Dot 2",
+   "Amazon Technologies Inc.",
+   11708,
+   4954
+  ],
+  [
+   "Amazon Echo Show",
+   "Amazon Technologies Inc.",
+   23778,
+   214703
+  ],
+  [
+   "Amazon Echo Studio",
+   "Amazon Technologies Inc.",
+   7635,
+   18262
+  ],
+  [
+   "Amazon Plug",
+   "Amazon Technologies Inc.",
+   508,
+   17428
+  ],
+  [
+   "Arlo Base Station",
+   "Netgear",
+   1796,
+   19952
+  ],
+  [
+   "Arlo Q Indoor Camera",
+   "Netgear",
+   10862,
+   16101
+  ],
+  [
+   "Atomi Coffee Maker",
+   "Tuya Smart Inc.",
+   1282,
+   15476
+  ],
+  [
+   "Cocoon Smart HVAC Fan",
+   "Espressif Inc.",
+   1071,
+   5484
+  ],
+  [
+   "DCS8000LHA1 D-Link Mini Camera",
+   "D-Link International",
+   290,
+   10495
+  ],
+  [
+   "Eufy HomeBase 2",
+   "Smart Innovation LLC",
+   2017,
+   15778
+  ],
+  [
+   "GoSund Bulb",
+   "Espressif Inc.",
+   1733,
+   1872
+  ],
+  [
+   "GoSund Power strip (2)",
+   "Espressif Inc.",
+   1736,
+   9757
+  ],
+  [
+   "GoSund Smart Plug WP2 (2)",
+   "Espressif Inc.",
+   1735,
+   5470
+  ],
+  [
+   "GoSund Smart Plug WP3 (1)",
+   "Espressif Inc.",
+   1737,
+   9414
+  ],
+  [
+   "GoSund Smart plug WP2 (1)",
+   "Espressif Inc.",
+   1736,
+   9740
+  ],
+  [
+   "GoSund Smart plug WP2 (3)",
+   "Espressif Inc.",
+   1733,
+   7966
+  ],
+  [
+   "Google Nest Mini Speaker",
+   "Google, Inc.",
+   7181,
+   27775
+  ],
+  [
+   "Gosund Power strip (1)",
+   "Espressif Inc.",
+   1736,
+   9892
+  ],
+  [
+   "Gosund Smart Plug WP3 (2)",
+   "Espressif Inc.",
+   1736,
+   5612
+  ],
+  [
+   "Govee Smart Humidifer",
+   "Shenzhen Intellirocks Tech co.,ltd",
+   185,
+   5308
+  ],
+  [
+   "HeimVision Smart WiFi Camera",
+   "Shenzhen Bilian Electronic Co.\u00a3\u00acLtd",
+   2495,
+   21499
+  ],
+  [
+   "HeimVision SmartLife Radio/Lamp",
+   "Tuya Smart Inc.",
+   1489,
+   5820
+  ],
+  [
+   "Home Eye Camera",
+   "Shenzhen Rf-Link Technology Co.,Ltd.",
+   5269,
+   20482
+  ],
+  [
+   "LIFX Lightbulb",
+   "Lifi Labs Management Pty Ltd",
+   213,
+   5620
+  ],
+  [
+   "LampUX RGB",
+   "Espressif Inc.",
+   1735,
+   5628
+  ],
+  [
+   "Levoit Air Purifier",
+   "Espressif Inc.",
+   865,
+   5321
+  ],
+  [
+   "Lumiman bulb",
+   "Tuya Smart Inc.",
+   1335,
+   5668
+  ],
+  [
+   "Nest Indoor Camera",
+   "Google, Inc.",
+   9355,
+   20292
+  ],
+  [
+   "Netatmo Camera",
+   "Netatmo",
+   1404,
+   13709
+  ],
+  [
+   "Netatmo Weather Station",
+   "Netatmo",
+   1442,
+   5631
+  ],
+  [
+   "Philips Hue Bridge",
+   "Philips Lighting BV",
+   5081,
+   129635
+  ],
+  [
+   "Rbcior Camera",
+   "Tuya Smart Inc.",
+   3403,
+   3964
+  ],
+  [
+   "Smart Board",
+   "SMART Technologies, Inc.",
+   77,
+   6663
+  ],
+  [
+   "SmartThings Hub",
+   "SAMJIN Co., Ltd.",
+   5017,
+   5542
+  ],
+  [
+   "Sonos One Speaker",
+   "Sonos, Inc.",
+   1311,
+   12130
+  ],
+  [
+   "TP-Link Tapo Camera",
+   "TP-Link Corporation Limited",
+   1564,
+   5875
+  ],
+  [
+   "Teckin Light Strip",
+   "Tuya Smart Inc.",
+   1281,
+   5739
+  ],
+  [
+   "Teckin Plug 1",
+   "Tuya Smart Inc.",
+   1173,
+   3708
+  ],
+  [
+   "Teckin Plug 2",
+   "Tuya Smart Inc.",
+   1214,
+   5900
+  ],
+  [
+   "Wemo smart plug 2 (Wemo id: Wemo.Mini.4A3)",
+   "Belkin International Inc.",
+   265,
+   5377
+  ],
+  [
+   "Wyze Camera",
+   "Wyze Labs Inc",
+   6242,
+   5551
+  ],
+  [
+   "Yi Indoor 2 Camera",
+   "AltoBeam (China) Inc.",
+   15572,
+   3788
+  ],
+  [
+   "Yi Indoor Camera",
+   "AltoBeam (China) Inc.",
+   844,
+   5579
+  ],
+  [
+   "Yi Outdoor Camera",
+   "Fn-Link Technology Limited",
+   852,
+   5726
+  ],
+  [
+   "Yutron Plug 1",
+   "Tuya Smart Inc.",
+   1247,
+   5949
+  ],
+  [
+   "Yutron Plug 2",
+   "Tuya Smart Inc.",
+   1235,
+   5773
+  ],
+  [
+   "ac:17:02:05:34:27",
+   "Fibar Group sp. z o.o.",
+   83581,
+   2229
+  ],
+  [
+   "b0:09:da:3e:82:6c",
+   "Ring Solutions",
+   1289,
+   5323
+  ],
+  [
+   "e8:1b:69:f8:d6:e6",
+   "Sercomm Corporation.",
+   758,
+   5660
+  ],
+  [
+   "harman kardon (Ampak Technology)",
+   "AMPAK Technology, Inc.",
+   5475,
+   6124
+  ],
+  [
+   "iRobot Roomba",
+   "iRobot Corporation",
+   253,
+   3067
+  ]
+ ]
+}

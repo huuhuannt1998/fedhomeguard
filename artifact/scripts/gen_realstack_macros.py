@@ -5,7 +5,7 @@ from __future__ import annotations
 import glob, json, os, re, statistics as st
 
 RS = "results/realstack"
-OUT = "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated"
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 
 
 def main() -> None:

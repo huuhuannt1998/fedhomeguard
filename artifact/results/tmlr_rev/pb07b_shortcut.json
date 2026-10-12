@@ -1,0 +1,23 @@
+{
+ "n_captures": 10,
+ "tau": 0.7299609726808766,
+ "capture_prior_label_accuracy": 0.8077154007805464,
+ "capture_majority_labels": {
+  "CTU-Honeypot-Capture-4-1": 0,
+  "CTU-Honeypot-Capture-5-1": 0,
+  "CTU-IoT-Malware-Capture-1-1": 1,
+  "CTU-IoT-Malware-Capture-20-1": 0,
+  "CTU-IoT-Malware-Capture-21-1": 0,
+  "CTU-IoT-Malware-Capture-3-1": 1,
+  "CTU-IoT-Malware-Capture-34-1": 1,
+  "CTU-IoT-Malware-Capture-42-1": 0,
+  "CTU-IoT-Malware-Capture-44-1": 0,
+  "CTU-IoT-Malware-Capture-8-1": 1
+ },
+ "logreg_capture_accuracy": 0.6422395676973882,
+ "logreg_capture_then_prior_label_accuracy": 0.7953467427199039,
+ "mlp_capture_accuracy": 0.9266286400480336,
+ "mlp_capture_then_prior_label_accuracy": 0.7966076253377364,
+ "test_captures_all_in_train": true,
+ "note": "descriptive; a high capture-prior accuracy means the binary label is largely predictable from capture identity"
+}

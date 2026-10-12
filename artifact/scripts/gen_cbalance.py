@@ -16,8 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bstar import bstar
 from aggregate import src as _src   # review r6: corrected same-predictor rows
 
-OUT = os.environ.get("FHG_GENERATED",
-                     "manuscripts/prj-01m0ee73rtcak0jngd4sy4a1y2/IEEE-SP/generated")
+from _manuscript import GENERATED as OUT  # TMLR generated/ (FHG_GENERATED overrides)
 
 
 def load(pat, k=1, part="device_derived"):
