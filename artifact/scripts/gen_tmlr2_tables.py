@@ -303,9 +303,10 @@ RUNS = [  # (draw set, draws, k, where the paper uses it, status of its test); r
     ("Dirichlet and volume-skew audit", "3 per $\\alpha$: 12 label, 12 device, 18 at $\\alpha \\ge 3$, 15 volume",
      "1, 2", "Tables~\\ref{tab:instruments}, \\ref{tab:cvm}", "design"),
     ("Dirichlet families, 30 draws", "30 per $\\alpha$, 4 $\\alpha$ per family (seeds 100--129)", "1",
-     T % "ablation" + "; " + S % "S6", "predeclared; closest pair and clustered errors post hoc"),
+     T % "ablation" + "; " + S % "S6", "predeclared; closest pair, clustered errors and $K=20$ restriction post hoc"),
     ("Coverage dial", "90 IoT-23 (45 at $k=2$), 30 N-BaIoT", "1, 2", S % "S6" + "; " + T % "cvm", "predeclared"),
-    ("Coverage repair", "30 (seeds 10--39; 10 at $k=2$)", "1, 2", S % "S6" + "; " + T % "cvm", "predeclared"),
+    ("Coverage repair", "30 (seeds 10--39; 10 at $k=2$)", "1, 2", S % "S6" + "; " + T % "cvm",
+     "predeclared; paired test post hoc"),
     ("Volume dial, fixed and scaled step budget", "70 each (7 sizes, seeds 0--9)", "1", S % "S6", "predeclared"),
     ("Standardization rerun", "10 per cell", "1, 2", S % "S3" + "; Appendix~\\ref{sec:D}",
      "predeclared; floored sample post hoc"),
@@ -320,6 +321,20 @@ RUNS = [  # (draw set, draws, k, where the paper uses it, status of its test); r
     ("Brute-force check", "1,181 synthetic points; 36 trained ensembles", "1 to 8",
      S % "S3" + "; Appendix~\\ref{sec:A}", "design"),
     ("Leave one capture out", "10 folds", "1", S % "S10" + "; Appendix~\\ref{sec:C}", "design"),
+    # JISA re-scoring of stored rows (rounds jisa2 and jisa4; AutoResearchClaw f1: keep the inventory level with the text)
+    ("Re-scorings: sizes, count per level, priors, prior-free $\\beta^{*}$", "the draw sets above", "1, 2",
+     S % "S5" + ", " + S % "S6", "post hoc"),
+    # JISA training round (round jisa5, 2026-11-01): predeclared runs of 2026-10-20
+    ("Member seeds 1--4: main grid and coverage repair", "30 per seed each (seeds 10--39)", "1, 2 (repair 1)",
+     S % "S6" + ", " + S % "S10", "predeclared; all predictions held"),
+    ("Equal step budget: main grid and coverage repair", "30 each (seeds 10--39)", "1", S % "S6", "predeclared; all predictions held"),
+    ("8-class control, device-derived; per-family re-run", "30, one malicious set each", "1, 2 (re-run 1)",
+     "Appendix~\\ref{sec:C}", "predeclared; one prediction failed"),
+    ("Federation size $N=10$ and $N=50$", "30 each (seeds 10--39)", "1 (IID 2 at $N=10$)", S % "S10",
+     "predeclared; one prediction failed"),
+    ("Member with 9.1 times the parameters", "30 each (seeds 10--39)", "1", S % "S10", "predeclared; two predictions failed"),
+    ("CIC IoT-IDAD 2024, victim side", "30 IID, 60 device-derived (seeds 10--39)", "1, 2",
+     S % "S6" + "; Appendix~\\ref{sec:D}", "predeclared; the count's prediction failed"),
 ]
 
 

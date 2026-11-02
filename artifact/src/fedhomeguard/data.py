@@ -191,10 +191,13 @@ def ciciot_device_ids(_df: pd.DataFrame):
 
 
 # ------------------------------------------------------------------------- dispatch
+from .cic_victim import load_cic_victim, featurize_cic_victim  # noqa: E402  (JISA JS01)
+
 LOADERS = {"iot-23": (load_iot23, featurize_iot23),
            "n-baiot": (load_nbaiot, featurize_nbaiot),
-           "ciciot2023": (load_ciciot, None)}
-SUPPORTS_DEVICE_PARTITION = {"iot-23": True, "n-baiot": True, "ciciot2023": False}
+           "ciciot2023": (load_ciciot, None),
+           "cic-idad-victim": (load_cic_victim, featurize_cic_victim)}
+SUPPORTS_DEVICE_PARTITION = {"iot-23": True, "n-baiot": True, "ciciot2023": False, "cic-idad-victim": True}
 
 
 def load_dataset(cfg, verbose: bool = True) -> dict:
@@ -203,7 +206,8 @@ def load_dataset(cfg, verbose: bool = True) -> dict:
         raise ValueError(f"unknown dataset {name!r}; choose from {sorted(LOADERS)}")
     loader, feat = LOADERS[name]
     root = os.path.join(cfg.data.root, {"iot-23": "iot23", "n-baiot": "nbaiot",
-                                        "ciciot2023": "ciciot2023"}[name])
+                                        "ciciot2023": "ciciot2023",
+                                        "cic-idad-victim": "cic-iot-idad-2024"}[name])
     if name == "ciciot2023":
         if cfg.partition.kind == "device_derived":
             ciciot_device_ids(None)

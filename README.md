@@ -28,6 +28,21 @@ the authors; absolute paths were replaced by `<artifact-root>` or repository-rel
 - `literature/`: the screen protocol and inventories behind Appendix D.
 - `configs/`, `tests/`, `docker/`, `environment.yml`, `pyproject.toml`, `Makefile`.
 
+## JISA training round (added 2026-11-01)
+- `predeclarations/jisa_*.md`: the three predeclarations of the runs added in the JISA revision, and
+  `PREDECLARATION_HASHES.md`, their SHA-256 hashes as recorded before any run, with how to recompute them.
+- `results/jisa/`: member seeds 1-4 (`x1_*`), the equal-step-budget and repair runs (`x_runs.jsonl`), the 8-class
+  re-run at k = 1 (`x4_*`), federation size (`js02_*`), member capacity (`js03_*`), the CIC IoT-IDAD 2024
+  victim-side runs (`js01_*`), and the scorings against the predeclarations (`score.json`, `score.md`,
+  `js01_cvm.json`, `js01_summary.md`); re-scorings of stored rows (`rescore*.json`). Their hashes are in
+  `results/MANIFEST.json`.
+- `scripts/`: `exp_e2.py --member-seed`, `jisa_x_runs.py`, `run_jisa_train.sh`, `run_jisa_js01.sh`,
+  `jisa_score.py`, `jisa_js01_describe.py`, `jisa_js01_cvm.py`, `jisa_rescore*.py`, and the table generators
+  (`gen_jisa_tables.py` with its YAML files, `gen_tmlr2_tables.py`).
+- `src/fedhomeguard/cic_victim.py` and `configs/jisa_cic_victim.yaml`: the victim-side reading of CIC IoT-IDAD 2024
+  (needs the corpus's packet-feature CSVs under `data/raw/cic-iot-idad-2024/`). `exactcert.py` carries the
+  per-family detection fix of Appendix C.
+
 ## Reproducing the numbers
 ```
 conda env create -f environment.yml && conda activate fedhomeguard

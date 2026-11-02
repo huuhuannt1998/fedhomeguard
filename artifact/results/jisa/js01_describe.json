@@ -1,0 +1,416 @@
+{
+ "rows": 721878,
+ "devices": 65,
+ "features": 74,
+ "feature_names": [
+  "inter_arrival_time",
+  "time_since_previously_displayed_frame",
+  "port_class_dst",
+  "l4_tcp",
+  "l4_udp",
+  "ttl",
+  "eth_size",
+  "tcp_window_size",
+  "payload_entropy",
+  "handshake_version",
+  "handshake_cipher_suites_length",
+  "handshake_ciphersuites",
+  "handshake_extensions_length",
+  "handshake_sig_hash_alg_len",
+  "http_response_code",
+  "dns_len_qry",
+  "dns_interval",
+  "dns_len_ans",
+  "payload_length",
+  "http_content_len",
+  "icmp_type",
+  "icmp_checksum_status",
+  "icmp_data_size",
+  "stream_1_count",
+  "stream_1_mean",
+  "src_ip_mac_1_count",
+  "src_ip_mac_1_mean",
+  "channel_1_count",
+  "channel_1_mean",
+  "stream_5_count",
+  "stream_5_mean",
+  "src_ip_mac_5_count",
+  "src_ip_mac_5_mean",
+  "channel_5_count",
+  "channel_5_mean",
+  "stream_10_count",
+  "stream_10_mean",
+  "src_ip_mac_10_count",
+  "src_ip_mac_10_mean",
+  "channel_10_count",
+  "channel_10_mean",
+  "stream_30_count",
+  "stream_30_mean",
+  "src_ip_mac_30_count",
+  "src_ip_mac_30_mean",
+  "src_ip_mac_30_var",
+  "channel_30_count",
+  "channel_30_mean",
+  "channel_30_var",
+  "stream_60_count",
+  "stream_60_mean",
+  "src_ip_mac_60_count",
+  "src_ip_mac_60_mean",
+  "src_ip_mac_60_var",
+  "channel_60_count",
+  "channel_60_mean",
+  "channel_60_var",
+  "ntp_interval",
+  "most_freq_spot",
+  "min_et",
+  "q1",
+  "min_e",
+  "var_e",
+  "q1_e",
+  "sum_p",
+  "min_p",
+  "max_p",
+  "med_p",
+  "average_p",
+  "var_p",
+  "q3_p",
+  "q1_p",
+  "iqr_p",
+  "l3_ip_dst_count"
+ ],
+ "train_rows": 577332,
+ "test_rows": 144546,
+ "tau_triv": 0.7702599864403027,
+ "test_malicious_share": 0.7702599864403027,
+ "coupling_bits": 0.24387047396824135,
+ "label_entropy_bits": 0.7777336378074093,
+ "coupling_share": 0.3135655475257085,
+ "one_class_devices_95": 20,
+ "device_table": [
+  {
+   "device": "ac:17:02:05:34:27",
+   "rows": 19998,
+   "malicious_share": 0.0259025902590259
+  },
+  {
+   "device": "AeoTec Smart Home Hub",
+   "rows": 19997,
+   "malicious_share": 0.9828974346151923
+  },
+  {
+   "device": "Amazon Echo Spot",
+   "rows": 19997,
+   "malicious_share": 1.0
+  },
+  {
+   "device": "Amazon Echo Studio",
+   "rows": 19997,
+   "malicious_share": 0.7051557733660049
+  },
+  {
+   "device": "HeimVision Smart WiFi Camera",
+   "rows": 19997,
+   "malicious_share": 0.8960344051607742
+  },
+  {
+   "device": "Arlo Base Station",
+   "rows": 19996,
+   "malicious_share": 0.9174334866973395
+  },
+  {
+   "device": "Home Eye Camera",
+   "rows": 19996,
+   "malicious_share": 0.7953590718143628
+  },
+  {
+   "device": "Arlo Q Indoor Camera",
+   "rows": 19995,
+   "malicious_share": 0.5970992748187047
+  },
+  {
+   "device": "Nest Indoor Camera",
+   "rows": 19995,
+   "malicious_share": 0.684421105276319
+  },
+  {
+   "device": "AMCREST WiFi Camera",
+   "rows": 19994,
+   "malicious_share": 0.9979493848154446
+  },
+  {
+   "device": "Amazon Echo Dot 1",
+   "rows": 19993,
+   "malicious_share": 0.9943980393137598
+  },
+  {
+   "device": "Amazon Echo Show",
+   "rows": 19992,
+   "malicious_share": 0.9002601040416166
+  },
+  {
+   "device": "Google Nest Mini Speaker",
+   "rows": 19991,
+   "malicious_share": 0.7945075283877745
+  },
+  {
+   "device": "3c:18:a0:41:c3:a0",
+   "rows": 19990,
+   "malicious_share": 0.5354677338669335
+  },
+  {
+   "device": "Philips Hue Bridge",
+   "rows": 19988,
+   "malicious_share": 0.962277366419852
+  },
+  {
+   "device": "Yi Indoor 2 Camera",
+   "rows": 19360,
+   "malicious_share": 0.1956611570247934
+  },
+  {
+   "device": "Amazon Plug",
+   "rows": 17936,
+   "malicious_share": 0.9716770740410348
+  },
+  {
+   "device": "Eufy HomeBase 2",
+   "rows": 17795,
+   "malicious_share": 0.8866535543692048
+  },
+  {
+   "device": "Atomi Coffee Maker",
+   "rows": 16758,
+   "malicious_share": 0.923499224251104
+  },
+  {
+   "device": "Amazon Echo Dot 2",
+   "rows": 16662,
+   "malicious_share": 0.29732325051014286
+  },
+  {
+   "device": "Netatmo Camera",
+   "rows": 15113,
+   "malicious_share": 0.907099847813141
+  },
+  {
+   "device": "Sonos One Speaker",
+   "rows": 13441,
+   "malicious_share": 0.9024626143888104
+  },
+  {
+   "device": "Borun/Sichuan-AI Camera",
+   "rows": 12049,
+   "malicious_share": 1.0
+  },
+  {
+   "device": "Wyze Camera",
+   "rows": 11793,
+   "malicious_share": 0.47070295938268464
+  },
+  {
+   "device": "Gosund Power strip (1)",
+   "rows": 11628,
+   "malicious_share": 0.8507051943584452
+  },
+  {
+   "device": "harman kardon (Ampak Technology)",
+   "rows": 11599,
+   "malicious_share": 0.5279765497025606
+  },
+  {
+   "device": "GoSund Power strip (2)",
+   "rows": 11493,
+   "malicious_share": 0.8489515357173932
+  },
+  {
+   "device": "GoSund Smart plug WP2 (1)",
+   "rows": 11476,
+   "malicious_share": 0.8487277797141861
+  },
+  {
+   "device": "24:05:88:30:6f:89",
+   "rows": 11176,
+   "malicious_share": 0.3185397279885469
+  },
+  {
+   "device": "GoSund Smart Plug WP3 (1)",
+   "rows": 11151,
+   "malicious_share": 0.8442292171105731
+  },
+  {
+   "device": "DCS8000LHA1 D-Link Mini Camera",
+   "rows": 10785,
+   "malicious_share": 0.9731108020398702
+  },
+  {
+   "device": "SmartThings Hub",
+   "rows": 10559,
+   "malicious_share": 0.524860308741358
+  },
+  {
+   "device": "GoSund Smart plug WP2 (3)",
+   "rows": 9699,
+   "malicious_share": 0.8213217857511084
+  },
+  {
+   "device": "Globe Lamp ESP_B1680C",
+   "rows": 9565,
+   "malicious_share": 1.0
+  },
+  {
+   "device": "TP-Link Tapo Camera",
+   "rows": 7439,
+   "malicious_share": 0.789756687726845
+  },
+  {
+   "device": "Rbcior Camera",
+   "rows": 7367,
+   "malicious_share": 0.5380752002171847
+  },
+  {
+   "device": "LampUX RGB",
+   "rows": 7363,
+   "malicious_share": 0.7643623523020507
+  },
+  {
+   "device": "Gosund Smart Plug WP3 (2)",
+   "rows": 7348,
+   "malicious_share": 0.763745236799129
+  },
+  {
+   "device": "HeimVision SmartLife Radio/Lamp",
+   "rows": 7309,
+   "malicious_share": 0.7962785606786154
+  },
+  {
+   "device": "GoSund Smart Plug WP2 (2)",
+   "rows": 7205,
+   "malicious_share": 0.7591950034698126
+  },
+  {
+   "device": "Yutron Plug 1",
+   "rows": 7196,
+   "malicious_share": 0.8267092829349638
+  },
+  {
+   "device": "Teckin Plug 2",
+   "rows": 7114,
+   "malicious_share": 0.8293505763283666
+  },
+  {
+   "device": "Netatmo Weather Station",
+   "rows": 7073,
+   "malicious_share": 0.7961261133889439
+  },
+  {
+   "device": "Teckin Light Strip",
+   "rows": 7020,
+   "malicious_share": 0.8175213675213675
+  },
+  {
+   "device": "Yutron Plug 2",
+   "rows": 7008,
+   "malicious_share": 0.8237728310502284
+  },
+  {
+   "device": "Lumiman bulb",
+   "rows": 7003,
+   "malicious_share": 0.8093674139654434
+  },
+  {
+   "device": "Smart Board",
+   "rows": 6740,
+   "malicious_share": 0.9885756676557863
+  },
+  {
+   "device": "b0:09:da:3e:82:6c",
+   "rows": 6612,
+   "malicious_share": 0.8050514216575922
+  },
+  {
+   "device": "Yi Outdoor Camera",
+   "rows": 6578,
+   "malicious_share": 0.8704773487382182
+  },
+  {
+   "device": "Cocoon Smart HVAC Fan",
+   "rows": 6555,
+   "malicious_share": 0.8366132723112129
+  },
+  {
+   "device": "Yi Indoor Camera",
+   "rows": 6423,
+   "malicious_share": 0.8685972287093259
+  },
+  {
+   "device": "e8:1b:69:f8:d6:e6",
+   "rows": 6418,
+   "malicious_share": 0.8818946712371455
+  },
+  {
+   "device": "Levoit Air Purifier",
+   "rows": 6186,
+   "malicious_share": 0.8601681215648238
+  },
+  {
+   "device": "LIFX Lightbulb",
+   "rows": 5833,
+   "malicious_share": 0.9634836276358649
+  },
+  {
+   "device": "Wemo smart plug 2 (Wemo id: Wemo.Mini.4A3)",
+   "rows": 5642,
+   "malicious_share": 0.9530308401276143
+  },
+  {
+   "device": "Govee Smart Humidifer",
+   "rows": 5493,
+   "malicious_share": 0.9663207718914982
+  },
+  {
+   "device": "Teckin Plug 1",
+   "rows": 4881,
+   "malicious_share": 0.759680393362016
+  },
+  {
+   "device": "GoSund Bulb",
+   "rows": 3605,
+   "malicious_share": 0.5192787794729542
+  },
+  {
+   "device": "00:a3:d1:07:6f:03",
+   "rows": 3565,
+   "malicious_share": 0.0
+  },
+  {
+   "device": "iRobot Roomba",
+   "rows": 3320,
+   "malicious_share": 0.9237951807228916
+  },
+  {
+   "device": "SIMCAM 1S (AMPAKTec)",
+   "rows": 1928,
+   "malicious_share": 1.0
+  },
+  {
+   "device": "Luohe Cam Dog",
+   "rows": 1926,
+   "malicious_share": 1.0
+  },
+  {
+   "device": "Wemo smart plug 1 (Wemo id: Wemo.Mini.AD3)",
+   "rows": 1737,
+   "malicious_share": 1.0
+  },
+  {
+   "device": "d4:81:d7:97:d0:29",
+   "rows": 1019,
+   "malicious_share": 0.0
+  },
+  {
+   "device": "5c:26:0a:28:80:77",
+   "rows": 1018,
+   "malicious_share": 0.0
+  }
+ ]
+}

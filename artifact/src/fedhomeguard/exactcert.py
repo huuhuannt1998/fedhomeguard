@@ -267,7 +267,9 @@ def _ids_panel(top: np.ndarray, y: np.ndarray, cert: np.ndarray, mal: int,
         # beacons but not port scans is a different security statement, and the
         # aggregate hides which one holds.
         CTR_mal_by_family=(None if family is None else {
-            str(f): round(float(((top == mal) & P & cert & (family == f)).sum())
+            # JISA X4 (2026-10-20): detection is pred_mal in both branches; in the multi-class branch the
+            # earlier (top == mal) counted only predictions of class index mal (1), not every attack class.
+            str(f): round(float((pred_mal & P & cert & (family == f)).sum())
                           / max(int((P & (family == f)).sum()), 1), 6)
             for f in sorted({str(x) for x in family[P]})}),
         n_mal_by_family=(None if family is None else {

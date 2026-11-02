@@ -1,0 +1,186 @@
+{
+ "X1": {
+  "per_seed": {
+   "0": {
+    "main_collapse": 27,
+    "repair_collapse": 1,
+    "mcnemar_main_only": 26,
+    "mcnemar_repair_only": 0,
+    "mcnemar_p": 2.9802322387695312e-08,
+    "iid_at_ceiling_k1": 30,
+    "iid_at_ceiling_k2": 30,
+    "dd_median_bstar_k1": 0.05,
+    "dd_median_bstar_k2": 0.15,
+    "dd_median_margin_k1": 0.345746
+   },
+   "1": {
+    "main_collapse": 27,
+    "repair_collapse": 0,
+    "mcnemar_main_only": 27,
+    "mcnemar_repair_only": 0,
+    "mcnemar_p": 1.4901161193847656e-08,
+    "iid_at_ceiling_k1": 30,
+    "iid_at_ceiling_k2": 30,
+    "dd_median_bstar_k1": 0.05,
+    "dd_median_bstar_k2": 0.15,
+    "dd_median_margin_k1": 0.36499550000000003
+   },
+   "2": {
+    "main_collapse": 27,
+    "repair_collapse": 0,
+    "mcnemar_main_only": 27,
+    "mcnemar_repair_only": 0,
+    "mcnemar_p": 1.4901161193847656e-08,
+    "iid_at_ceiling_k1": 30,
+    "iid_at_ceiling_k2": 30,
+    "dd_median_bstar_k1": 0.05,
+    "dd_median_bstar_k2": 0.15,
+    "dd_median_margin_k1": 0.3735365
+   },
+   "3": {
+    "main_collapse": 27,
+    "repair_collapse": 1,
+    "mcnemar_main_only": 26,
+    "mcnemar_repair_only": 0,
+    "mcnemar_p": 2.9802322387695312e-08,
+    "iid_at_ceiling_k1": 30,
+    "iid_at_ceiling_k2": 30,
+    "dd_median_bstar_k1": 0.0,
+    "dd_median_bstar_k2": 0.15,
+    "dd_median_margin_k1": 0.341513
+   },
+   "4": {
+    "main_collapse": 27,
+    "repair_collapse": 4,
+    "mcnemar_main_only": 24,
+    "mcnemar_repair_only": 1,
+    "mcnemar_p": 1.5497207641601562e-06,
+    "iid_at_ceiling_k1": 30,
+    "iid_at_ceiling_k2": 30,
+    "dd_median_bstar_k1": 0.0,
+    "dd_median_bstar_k2": 0.15,
+    "dd_median_margin_k1": 0.338125
+   }
+  },
+  "predictions": {
+   "X1a": true,
+   "X1b": true,
+   "X1c": true,
+   "X1d": true
+  },
+  "stable_collapse_status_all_5_seeds": 30,
+  "main_collapse_range": [
+   27,
+   27
+  ],
+  "repair_collapse_range": [
+   0,
+   4
+  ]
+ },
+ "X2": {
+  "main_budget_collapse": 30,
+  "repair_budget_collapse": 2,
+  "mcnemar_main_only": 28,
+  "mcnemar_repair_only": 0,
+  "mcnemar_p": 7.450580596923828e-09,
+  "main_budget_median_bstar": 0.0,
+  "repair_budget_median_bstar": 0.25,
+  "main_budget_median_margin": 0.3705975,
+  "repair_budget_median_margin": 0.731309,
+  "main_share_households_under_1000_rows": [
+   0.2833333333333333,
+   600
+  ],
+  "repair_share_households_under_1000_rows": [
+   0.06666666666666667,
+   600
+  ],
+  "main_max_epochs": 14,
+  "repair_max_epochs": 14,
+  "predictions": {
+   "X2a": true,
+   "X2a_falsifier_fired": false,
+   "X2b": true,
+   "X2c": true
+  }
+ },
+ "X4": {
+  "stored": {
+   "iid": {
+    "median_bstar_k1": 0.4,
+    "collapse20_k1": 0
+   },
+   "device_derived": {
+    "median_bstar_k1": 0.0,
+    "collapse20_k1": 30
+   }
+  },
+  "rerun_control_max_abs_CA_diff": 0.0,
+  "per_family_detection_k1_beta0": {
+   "iid": {
+    "Attack": 0.995595,
+    "C&C": 0.999219,
+    "C&C-Torii": 0.0,
+    "DDoS": 1.0,
+    "PartOfAHorizontalPortScan": 0.994311
+   },
+   "device_derived": {
+    "Attack": 0.0,
+    "C&C": 0.0,
+    "C&C-Torii": 0.0,
+    "DDoS": 0.0,
+    "PartOfAHorizontalPortScan": 0.0
+   }
+  },
+  "predictions": {
+   "X4a": true,
+   "X4b": true,
+   "X4c": false
+  }
+ },
+ "JS02": {
+  "per_N": {
+   "10": {
+    "ceiling_on_grid": 0.45,
+    "iid_at_ceiling": 30,
+    "dd_median_bstar": 0.0,
+    "dd_median_margin": 0.4003605,
+    "dd_collapse20": 28
+   },
+   "50": {
+    "ceiling_on_grid": 0.45,
+    "iid_at_ceiling": 30,
+    "dd_median_bstar": 0.1,
+    "dd_median_margin": 0.331776,
+    "dd_collapse20": 29
+   },
+   "20": {
+    "dd_median_bstar": 0.05,
+    "dd_median_margin": 0.345746,
+    "dd_collapse20": 27
+   }
+  },
+  "wilson_27_of_30": [
+   0.7437891742081593,
+   0.9654001112526658
+  ],
+  "predictions": {
+   "J2a": true,
+   "J2b": true,
+   "J2c": false
+  }
+ },
+ "JS03": {
+  "dd_bstar_unchanged": 22,
+  "median_paired_acc_gain": 0.0,
+  "median_paired_margin_gain": 0.006176999999999988,
+  "iid_at_ceiling": 29,
+  "dd_median_bstar_large": 0.0,
+  "predictions": {
+   "J3a": false,
+   "J3b": false,
+   "J3c": true
+  }
+ }
+}

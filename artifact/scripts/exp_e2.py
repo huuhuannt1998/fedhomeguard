@@ -139,6 +139,9 @@ def main():
                          "give K=N pairs with every household in exactly two, so "
                          "the degree sequence c_max reads is fixed and only WHICH "
                          "households are paired differs.")
+    ap.add_argument("--member-seed", type=int, default=0,
+                    help="JISA X1: training seed of every member (cfg.fl.seed); 0, the default, is the "
+                         "seed of every result in the paper")
     ap.add_argument("--clean-only", action="store_true",
                     help="certified arm only (E5/E7/E8): skip the attacked ensembles")
     ap.add_argument("--out", default="results/canonical/e2.jsonl")
@@ -164,7 +167,7 @@ def main():
         if a.lodo:
             cfg.data.lodo_device = a.lodo   # W7/E5 fold
 
-        cfg.fl.seed = 0
+        cfg.fl.seed = a.member_seed
         if a.alpha is not None:
             cfg.partition.dirichlet_alpha = a.alpha
         if a.N is not None:
@@ -258,7 +261,7 @@ def main():
                             partition_type=a.partition, partition_seed=pseed,
                             dirichlet_alpha=a.alpha, arch=cfg.model.arch,
                             devices_per_household=list(cfg.partition.devices_per_household),
-                            tag=a.tag,
+                            tag=a.tag, member_seed=a.member_seed,
                             S_JS=t["pmeta"]["S_JS"], S_dev=t["pmeta"].get("S_dev"),
                             # The label space is part of the identity of a result:
                             # a CA of 0.90 means one thing against tau_triv 0.72 and
