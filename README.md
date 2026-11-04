@@ -1,6 +1,6 @@
 # Supplementary material: code, result rows and generators
 
-Anonymized artifact for the submission "When Client-Count Certification Informs Federated IoT Intrusion Detection: A Case Study on IoT-23". It is built locally from the code and the result rows after both corrections
+Anonymized artifact for the submission "How Much Can an Ensemble Certify? Competence Ceilings and a Max-Flow Certified Decoder for Federated IoT Intrusion Detection" (the ISJ-GP round, added 2026-11-04, is described first below; the earlier rounds of the same project follow). It is built locally from the code and the result rows after both corrections
 described in Appendix B (the determinism re-run and the NaN correction). Nothing here identifies
 the authors; absolute paths were replaced by `<artifact-root>` or repository-relative paths.
 
@@ -27,6 +27,33 @@ the authors; absolute paths were replaced by `<artifact-root>` or repository-rel
   internal: no external registry dated any of them.
 - `literature/`: the screen protocol and inventories behind Appendix D.
 - `configs/`, `tests/`, `docker/`, `environment.yml`, `pyproject.toml`, `Makefile`.
+
+## ISJ-GP round: competence ceiling and max-flow certified decoder (added 2026-11-04)
+Everything new in this version of the paper; nothing listed under the earlier rounds was changed.
+- `predeclarations/*_2026-11-03.md`: the six predeclarations of the paper's new runs (competence ceiling, max-flow
+  certified decoder, decoder follow-up runs, abstention, anomaly votes, certified anomaly-based ensemble with its
+  dated deviation), byte-identical to the files as hashed; `PREDECLARATION_HASHES_ISJGP.md` lists the full SHA-256
+  digests whose first 16 hex digits the paper prints.
+- `scripts/novelty/`: `competence_ceiling.py` (the exact aggregator-agnostic ceiling by max-flow),
+  `maxflow_decoder.py` (decoder learning on the labelled server set and exact certification),
+  `abstain_feasibility.py`, `anomaly_vote.py`, `certified_anomaly.py` (the failed alternatives of Appendix B).
+- `results/novelty/`: their result rows, one JSON line per partition draw (hashes in `results/MANIFEST.json`):
+  `competence_ceiling_*`, `maxflow_decoder_*` (IoT-23 primary; server-set fractions 0.5%, 1%, 2%; per-class rates in
+  `_r3`; N-BaIoT; CIC IoT-IDAD 2024), `abstain_feasibility.json`, `anomaly_vote_*`, `certified_anomaly_*`.
+- Generators: `scripts/gen_isj_decoder_table.py`, `gen_isj_alternatives_table.py`, `gen_isj_ceiling_fig.py` (read
+  only `results/novelty/`; write `out/generated/` and `out/figures/`, or `$FHG_OUT`) and `gen_isj_fig_system.py`
+  (the setting schematic; needs pdflatex and TikZ; writes to `FHG_FIGURES`, default `out/figures`).
+
+```
+python3 scripts/gen_isj_decoder_table.py         # decoder table and its numbers (out/generated/)
+python3 scripts/gen_isj_alternatives_table.py    # the failed alternatives table
+python3 scripts/gen_isj_ceiling_fig.py           # ceiling figure and its numbers
+shasum -a 256 predeclarations/*_2026-11-03.md    # compare with PREDECLARATION_HASHES_ISJGP.md
+# re-running the experiments needs the raw corpora (scripts/fetch_data.py) and the member bank:
+python3 scripts/novelty/maxflow_decoder.py --set iot23 [--frac 0.10]
+```
+Run from `artifact/` with `PYTHONPATH="$PWD/src"`. The table generators reproduce the paper's tables byte for byte
+from the rows above.
 
 ## JISA training round (added 2026-11-01)
 - `predeclarations/jisa_*.md`: the three predeclarations of the runs added in the JISA revision, and

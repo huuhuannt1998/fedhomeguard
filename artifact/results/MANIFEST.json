@@ -852,6 +852,78 @@
   "results/jisa/x_runs.jsonl": {
    "sha256": "474a5f34584fa33bde8db3d4146b57ae1edf4bdad47719885267048cbd8586f7",
    "bytes": 391382
+  },
+  "results/novelty/abstain_feasibility.json": {
+   "sha256": "5cbfaa869ecdfe1a93f77caedd3b870174af5ba103b55e0fbf0a3ef735f6e69a",
+   "bytes": 123659
+  },
+  "results/novelty/anomaly_vote_cic.jsonl": {
+   "sha256": "1f3ef1ef78a64cc12077d5da544c8f3ab17618a4f635458c21517fddddaa7706",
+   "bytes": 122174
+  },
+  "results/novelty/anomaly_vote_iot1.jsonl": {
+   "sha256": "53d97e6b3d977f61ea68b1b88d288658c2f9fcedbf3e46c3d75757cbc2e6d3d1",
+   "bytes": 129808
+  },
+  "results/novelty/anomaly_vote_nbaiot.jsonl": {
+   "sha256": "d4f4fd40264d7388ac451d50f82aa66fb70963902c5c4a2c80c40fede41841e9",
+   "bytes": 119093
+  },
+  "results/novelty/anomaly_vote_primary.jsonl": {
+   "sha256": "f985f2ceb1009d00e59dc0ecec83987f2d743e35a4faf7ae57b93e1ea67b1393",
+   "bytes": 126509
+  },
+  "results/novelty/certified_anomaly_cic.jsonl": {
+   "sha256": "9a53f00528257bd6b2a714ef7d37096041c4cde3344e00c00f3bfce0663fd0f6",
+   "bytes": 358348
+  },
+  "results/novelty/certified_anomaly_iot23.jsonl": {
+   "sha256": "a09c3abbfdffd8592ec9a538969378e1cc21e06b9ba961dd3cfb4ae58e621062",
+   "bytes": 376271
+  },
+  "results/novelty/certified_anomaly_nbaiot.jsonl": {
+   "sha256": "adeeccd0f32feb3bc80c74401ced955c1192b6dfdc2daf410c7122e8e8bd2a7d",
+   "bytes": 343279
+  },
+  "results/novelty/competence_ceiling_cic.jsonl": {
+   "sha256": "c2f7a4e110996fc67f56b40c48595ab032c877626bb3f2954d2f54c6034b0773",
+   "bytes": 33905
+  },
+  "results/novelty/competence_ceiling_iot23_iid.jsonl": {
+   "sha256": "e91b0f7f5ba026bc85847f618a9dc4e3f7732a6da08716842420810cd6823c4b",
+   "bytes": 37274
+  },
+  "results/novelty/competence_ceiling_iot23_main.jsonl": {
+   "sha256": "18ec9dfe9cce63b98cb23a074cbff7106bff86d049fb5f5636c7a8c883116c30",
+   "bytes": 43707
+  },
+  "results/novelty/maxflow_decoder_cic.jsonl": {
+   "sha256": "8e83ea0705868a42941d99eedbf20c1fc16bdb529cc6dc0422541bdab3ec5f4c",
+   "bytes": 39367
+  },
+  "results/novelty/maxflow_decoder_iot23.jsonl": {
+   "sha256": "f14e0ff1754b22b249ed4e467eea23c7c2321e25432505fadabf5a02588d66af",
+   "bytes": 38630
+  },
+  "results/novelty/maxflow_decoder_iot23_frac0.005.jsonl": {
+   "sha256": "f5bbd31973563e6ea6f00dc1b87bc89490506c1c9ebc5cbf70a58350088daca0",
+   "bytes": 71202
+  },
+  "results/novelty/maxflow_decoder_iot23_frac0.01.jsonl": {
+   "sha256": "c8308d2d56623e3edcaacd2b8fabc44995a63b7042c5b39870ec213e2e3e3df5",
+   "bytes": 71304
+  },
+  "results/novelty/maxflow_decoder_iot23_frac0.02.jsonl": {
+   "sha256": "8413aba04a9485b7daa1aa1fc424ea97484445ced1564c9587e3584843b9c2e7",
+   "bytes": 38601
+  },
+  "results/novelty/maxflow_decoder_iot23_r3.jsonl": {
+   "sha256": "a3470947d503a6ee6ea42308eaa4d28b659c24eaef21c0e5e1b9ca460fdd7eb4",
+   "bytes": 71306
+  },
+  "results/novelty/maxflow_decoder_nbaiot.jsonl": {
+   "sha256": "df6958f96814522275a9d13274346099a1af96b0e56cd2ff55e4d36d1c77faf7",
+   "bytes": 71165
   }
  }
 }
