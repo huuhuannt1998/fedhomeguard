@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Figure: class coverage per member, not partition divergence, tells the k=1 regimes apart.
 
-Figure fig:coverage of the TMLR manuscript (added 2026-10-07).
+Figure fig:coverage of the manuscript (added 2026-10-07).
 One marker per partition draw at k=1, read from the 318-cell instrument audit
 (results/analysis/instruments.jsonl, written by scripts/gen_instruments.py; the same rows behind
 Table tab:instruments and the pooled rank correlations in Section 6). The figure computes nothing
@@ -33,7 +33,7 @@ import matplotlib.pyplot as plt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "results", "analysis", "instruments.jsonl")
-from _manuscript import FIGURES as FIG  # TMLR figures/ (FHG_FIGURES overrides)
+from _manuscript import FIGURES as FIG  # figures/ (FHG_FIGURES overrides)
 
 # Paper palette (scripts/gen_teaser.py): IID blue and device-derived orange as in Figure 1; a third
 # validated categorical slot for N-BaIoT; the three Dirichlet-style families in ink with distinct
@@ -56,8 +56,8 @@ GROUPS = [
 plt.rcParams.update({
     "pgf.texsystem": "pdflatex", "pgf.rcfonts": False,
     "pgf.preamble": r"\pdftrailerid{}\usepackage[T1]{fontenc}\usepackage{lmodern}\usepackage{amsmath}",
-    "font.family": "serif", "font.size": 9, "axes.labelsize": 9, "legend.fontsize": 8,
-    "xtick.labelsize": 8, "ytick.labelsize": 8, "axes.linewidth": 0.6,
+    "font.family": "serif", "font.size": 10, "axes.labelsize": 10, "legend.fontsize": 9,
+    "xtick.labelsize": 9, "ytick.labelsize": 9, "axes.linewidth": 0.6,
     "legend.handletextpad": 0.2, "legend.columnspacing": 1.6, "legend.labelspacing": 0.25,
 })
 
@@ -87,10 +87,11 @@ def main():
     if missing or sum(len(v) for v in by.values()) != len(rows):
         sys.exit(f"unexpected groups in {SRC}: missing {missing}, have {sorted(by, key=str)}")
 
-    # Exactly the TMLR text width (6.5in), so the figure is included at scale 1 and its 8-9pt
-    # labels print at that size beside the 10pt body text.
-    fig, (axl, axr) = plt.subplots(1, 2, figsize=(6.5, 2.1), sharey=True)
-    fig.subplots_adjust(left=0.075, right=0.995, bottom=0.19, top=0.815, wspace=0.07)
+    # Exactly the journal text width (408pt = 5.646in; round isj3 r2, review r2 issue 31: was 6.5in, which
+    # the paper scaled to 87% and set the ticks near 7pt), so the figure is included at scale 1 and its 8.5-10pt
+    # labels print at that size beside the body text.
+    fig, (axl, axr) = plt.subplots(1, 2, figsize=(5.646, 2.45), sharey=True)
+    fig.subplots_adjust(left=0.088, right=0.995, bottom=0.175, top=0.80, wspace=0.08)
     for ax in (axl, axr):
         style(ax)
         ax.axhline(BETA_GEO_K1, color=MUTED, linewidth=2.6, alpha=0.35, zorder=1,
@@ -112,7 +113,7 @@ def main():
         handles.append((h, label))
 
     axl.set_xlabel(r"partition divergence $S_{\mathrm{JS}}$")
-    axr.set_xlabel(r"share of nearly one-class clients, $\mathrm{fracDegen}$")
+    axr.set_xlabel(r"nearly one-class share, $\mathrm{fracDegen}$")
     axl.set_ylabel(r"$\beta^{*}$ at $k=1$")
     axl.set_ylim(-0.025, 0.49)
     axl.set_yticks([0, 0.1, 0.2, 0.3, 0.4])
@@ -121,15 +122,15 @@ def main():
         ax.set_xlim(-0.06, 0.95)
         ax.set_xticks([0, 0.2, 0.4, 0.6, 0.8])
         ax.set_xticklabels(["0", "0.2", "0.4", "0.6", "0.8"])
-    axr.text(0.93, BETA_GEO_K1 + 0.01, r"ceiling", color=MUTED, fontsize=8, ha="right", va="bottom")
+    axr.text(0.93, BETA_GEO_K1 + 0.01, r"plurality limit", color=MUTED, fontsize=8.5, ha="right", va="bottom")
     # The one contrast the figure exists to show, direct-labelled: same divergence, opposite outcome.
-    axl.annotate(r"N-BaIoT", xy=(0.79, BETA_GEO_K1 - 0.008), xytext=(0.64, 0.37), fontsize=8, color=INK,
+    axl.annotate(r"N-BaIoT", xy=(0.79, BETA_GEO_K1 - 0.008), xytext=(0.64, 0.37), fontsize=8.5, color=INK,
                  ha="center", arrowprops=dict(arrowstyle="-", color=MUTED, linewidth=0.6, shrinkB=2))
-    axl.annotate(r"IoT-23", xy=(0.785, 0.075), xytext=(0.66, 0.075), fontsize=8, color=INK,
+    axl.annotate(r"IoT-23", xy=(0.785, 0.075), xytext=(0.64, 0.075), fontsize=8.5, color=INK,
                  ha="center", va="center",
                  arrowprops=dict(arrowstyle="-", color=MUTED, linewidth=0.6, shrinkB=2))
     fig.legend([h for h, _ in handles], [l for _, l in handles], loc="upper center",
-               ncol=3, frameon=False, bbox_to_anchor=(0.535, 1.0), borderaxespad=0.2)
+               ncol=3, frameon=False, bbox_to_anchor=(0.54, 1.0), borderaxespad=0.2, columnspacing=1.0)
     out = os.path.join(FIG, "fig_coverage.pdf")
     fig.savefig(out, metadata={"Creator": None, "Producer": None})  # no tool URL in the embedded Info dict
     plt.close(fig)

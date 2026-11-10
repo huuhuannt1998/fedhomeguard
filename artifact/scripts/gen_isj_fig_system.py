@@ -13,6 +13,9 @@ ceiling over every g). Indices are symbolic.
   FHG_FIGURES=<dir> python3 scripts/gen_isj_fig_system.py
 
 Writes <dir>/fig_system.pdf (TikZ, pdflatex, Latin Modern T1, 6.5in wide; reproducible byte for byte).
+Round isj3 r1 (2026-11-07, review r1 issue 31): text at \\small (was \\footnotesize), 'trained on h_i' (local training
+at k = 1) instead of 'FedAvg on h_i', and the member-output-vector label moved clear of the member boxes.
+Round isj3b (2026-11-07, review r4 #26): the column header reads 'one input x' (the unit differs by corpus).
 """
 import os
 import shutil
@@ -39,19 +42,19 @@ TEX = r"""
 \definecolor{adv}{HTML}{C8302F}
 \definecolor{advfill}{HTML}{FBE9E7}
 \begin{document}
-\begin{tikzpicture}[x=1in,y=1in,font=\footnotesize,
+\begin{tikzpicture}[x=1in,y=1in,font=\small,
   box/.style={draw=ink2,line width=0.5pt,rounded corners=1.5pt,fill=white,minimum height=0.22in,inner xsep=3pt},
   hh/.style={box,minimum width=0.70in},
-  mem/.style={box,minimum width=0.80in},
+  mem/.style={box,minimum width=0.95in},
   advbox/.style={draw=adv,fill=advfill,line width=0.8pt},
   touched/.style={draw=adv,line width=0.8pt,dash pattern=on 2.2pt off 1.4pt},
   flow/.style={-{Stealth[length=1.5mm]},draw=ink2,line width=0.55pt},
-  hdr/.style={font=\footnotesize\bfseries,text=ink,anchor=south,inner sep=0pt},
-  note/.style={font=\footnotesize,text=ink2,align=center,anchor=north,inner sep=0pt,
+  hdr/.style={font=\small\bfseries,text=ink,anchor=south,inner sep=0pt},
+  note/.style={font=\small,text=ink2,align=center,anchor=north,inner sep=0pt,
                execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
   dev/.style={draw=ink2,fill=white,line width=0.45pt,inner sep=0pt,minimum size=4.2pt},
 ]
-\useasboundingbox (0,0.02) rectangle (6.5,1.86);
+\useasboundingbox (0,-0.04) rectangle (6.5,1.86);
 \newcommand{\dA}[1]{\node[dev,circle] at (#1) {};}
 \newcommand{\dB}[1]{\node[dev,rectangle] at (#1) {};}
 \newcommand{\dC}[1]{\node[dev,regular polygon,regular polygon sides=3,minimum size=5.6pt] at (#1) {};}
@@ -59,7 +62,7 @@ TEX = r"""
 \def\yH{1.72} \def\yA{1.54} \def\yB{1.30} \def\yC{1.06} \def\yD{0.86} \def\yN{0.66}
 
 % device types
-\node[hdr,anchor=south west] at (0.0,\yH) {device types};
+\node[hdr,anchor=south west] at (0.0,\yH) {devices};
 \foreach \y in {\yA,\yB,\yC,\yN} { \node[box,minimum width=0.30in] at (0.17,\y) {}; }
 \dA{0.17,\yA} \dB{0.17,\yB} \dC{0.17,\yC} \dD{0.17,\yN}
 \node[text=ink2] at (0.17,\yD) {$\vdots$};
@@ -78,39 +81,39 @@ TEX = r"""
 \dA{1.32,\yN} \dC{1.43,\yN} \dD{1.54,\yN}
 
 % members, one per household (k = 1)
-\node[hdr] at (2.34,\yH) {$K=N$ members};
-\node[mem] (f1) at (2.34,\yA) {$f_1$: FedAvg on $h_1$};
-\node[mem,touched] (f2) at (2.34,\yB) {$f_2$: FedAvg on $h_2$};
-\node[mem] (f3) at (2.34,\yC) {$f_3$: FedAvg on $h_3$};
-\node[text=ink2] at (2.34,\yD) {$\vdots$};
-\node[mem] (fN) at (2.34,\yN) {$f_N$: FedAvg on $h_N$};
+\node[hdr] at (2.50,\yH) {$K=N$ members};
+\node[mem] (f1) at (2.50,\yA) {$f_1$: trained on $h_1$};
+\node[mem,touched] (f2) at (2.50,\yB) {$f_2$: trained on $h_2$};
+\node[mem] (f3) at (2.50,\yC) {$f_3$: trained on $h_3$};
+\node[text=ink2] at (2.50,\yD) {$\vdots$};
+\node[mem] (fN) at (2.50,\yN) {$f_N$: trained on $h_N$};
 \foreach \h/\f in {h1/f1,h3/f3,hN/fN} { \draw[flow] (\h.east) -- (\f.west); }
 \draw[flow,draw=adv] (h2.east) -- (f2.west);
 \node[note,text width=2.85in,anchor=north west,align=left] at (0.02,0.46)
   {\textcolor{adv}{red}: the malicious set $B$ of at most $m$ clients, which sends arbitrary training updates; its members' votes (\textcolor{adv}{dashed}) can take any value};
 
 % member-output vector
-\node[box,fill=panel,align=center,minimum width=0.58in,minimum height=0.86in] (vec) at (3.22,1.12)
+\node[box,fill=panel,align=center,minimum width=0.58in,minimum height=0.86in] (vec) at (3.42,1.12)
   {$v(x)$\\[2pt]$f_1(x)$\\[-1pt]\textcolor{adv}{$f_2(x)$}\\[-1pt]$\vdots$\\[-1pt]$f_N(x)$};
 \foreach \f in {f1,f2,f3,fN} { \draw[flow] (\f.east) -- (vec.west); }
-\node[hdr] at (3.22,\yH) {one flow $x$};
-\node[note,text width=0.72in] at (3.22,0.62) {member-output vector};
+\node[hdr] at (3.42,\yH) {one input $x$};
+\node[note,text width=0.66in] at (3.42,0.62) {member-\\output\\vector};
 
 % aggregation rule
-\node[box,fill=panel,align=center,text width=1.04in,minimum height=0.60in,execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}] (g) at (4.22,1.24)
+\node[box,fill=panel,align=center,text width=1.02in,minimum height=0.60in,execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}] (g) at (4.40,1.24)
   {aggregation rule $g$:\\[1pt]plurality, abstention or max-flow certified decoder};
 \draw[flow] (vec.east) -- (vec.east -| g.west);
-\node[hdr] at (4.20,\yH) {label $g(v(x))$};
-\node[box,align=center,text width=1.00in] (srv) at (4.22,0.50) {labeled server set\\[-1pt](decoder only)};
+\node[hdr] at (4.40,\yH) {label $g(v(x))$};
+\node[box,align=center,text width=1.02in] (srv) at (4.40,0.48) {labeled server set\\[-1pt](decoder only)};
 \draw[flow] (srv.north) -- (g.south);
 
 % certificate
-\node[box,align=left,fill=panel,inner sep=4.5pt,text width=1.48in,anchor=west,
-      execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}] (cert) at (4.86,1.22)
+\node[box,align=left,fill=panel,inner sep=4.5pt,text width=1.30in,anchor=west,
+      execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}] (cert) at (5.06,1.22)
   {$x$ is certified at budget $m$ when $g$ returns $y(x)$ on every vector within Hamming distance $c(m)=m$ of $v(x)$.};
 \draw[flow] (g.east) -- (cert.west);
 \node[hdr] at (cert.north |- 0,\yH) {certificate};
-\node[note,text width=1.55in] at (cert.south |- 0,0.80)
+\node[note,text width=1.40in] at (cert.south |- 0,0.70)
   {competence ceiling: the most inputs any $g$ certifies, by one max-flow (Section 4)};
 \end{tikzpicture}
 \end{document}

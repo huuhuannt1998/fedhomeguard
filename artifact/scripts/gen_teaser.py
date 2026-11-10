@@ -16,7 +16,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-from _manuscript import FIGURES as FIG, GENERATED as OUT  # TMLR figures/ and generated/ (FHG_* override)
+from _manuscript import FIGURES as FIG, GENERATED as OUT  # figures/ and generated/ (FHG_* override)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bstar import bstar as _bstar  # the one definition of beta* (per-draw, then median over draws)
 BLUE, ORANGE, MUTED, GRID = "#2a78d6", "#eb6834", "#898781", "#e1e0d9"
@@ -78,7 +78,7 @@ def main():
     fig, ax = plt.subplots(figsize=(3.4, 2.05))
     style(ax)
     ax.plot(x, ceil, color=MUTED, linewidth=3.2, alpha=0.45, solid_capstyle="round",
-            zorder=1, label=r"ceiling $\beta_{\mathrm{geo}}(20,k)$")
+            zorder=1, label=r"plurality limit $\beta_{\mathrm{geo}}(20,k)$")  # round isj3 r1 (2026-11-07): locked term T-018@2
     ax.plot(x, iid, color=BLUE, marker="o", markersize=5, linestyle="-",
             markeredgecolor="#fcfcfb", markeredgewidth=0.8, zorder=3,
             label=r"IID partition")

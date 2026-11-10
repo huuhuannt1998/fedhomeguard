@@ -1,8 +1,34 @@
 # Supplementary material: code, result rows and generators
 
-Anonymized artifact for the submission "How Much Can an Ensemble Certify? Competence Ceilings and a Max-Flow Certified Decoder for Federated IoT Intrusion Detection" (the ISJ-GP round, added 2026-11-04, is described first below; the earlier rounds of the same project follow). It is built locally from the code and the result rows after both corrections
-described in Appendix B (the determinism re-run and the NaN correction). Nothing here identifies
-the authors; absolute paths were replaced by `<artifact-root>` or repository-relative paths.
+Anonymized artifact for the submission "When Client-Count Certificates Leave Alarms Uncovered: Competence Ceilings and
+a Max-Flow Certified Decoder for Federated IoT Intrusion Detection". Every number, table and figure in the paper is
+written by a generator in `artifact/scripts/` from the result rows in `artifact/results/`. Nothing here identifies the
+authors; absolute paths were replaced by `<artifact-root>` or repository-relative paths.
+
+## Where to look
+
+Section, table and figure numbers are those of the submitted paper. Run every command from `artifact/` with
+`PYTHONPATH="$PWD/src"`; the generators write to `out/` (or `$FHG_OUT`, `$FHG_GENERATED`, `$FHG_FIGURES`).
+
+| Paper | Finding | Result rows | Generator |
+|---|---|---|---|
+| Section 1, Section 7 | at four of 20 households, plurality certifies a median 0.925 of benign flows and no attack flow on 21 of the 30 IoT-23 draws of the decoder set | `results/novelty/maxflow_decoder_iot23.jsonl` (per-class rates in `maxflow_decoder_iot23_r3.jsonl`) | `scripts/gen_isj_decoder_table.py` |
+| Section 2, Figure 1 | the setting: households, members, the vote and the certificate | (schematic) | `scripts/gen_isj_fig_system.py` (needs pdflatex and TikZ) |
+| Section 3, Figure 2; Table A1 | the plurality limit and its exact values | `results/canonical/`, `results/beta_geo.json` | `scripts/gen_teaser.py`, `scripts/gen_stagec_tables.py` |
+| Section 4, Figure 3; Appendix A | the competence ceiling, exact by bipartite max-flow, against plurality and abstention | `results/novelty/competence_ceiling_*.jsonl` | `scripts/novelty/competence_ceiling.py` (runs), `scripts/gen_isj_ceiling_fig.py` |
+| Section 5, Section 7, Table 2 | the max-flow certified decoder on IoT-23, N-BaIoT and CIC IoT-IDAD 2024, server sets of 0.5% to 10% | `results/novelty/maxflow_decoder_*.jsonl` | `scripts/novelty/maxflow_decoder.py` (runs), `scripts/gen_isj_decoder_table.py` |
+| Section 6, Table 1 | every predeclared run: corpus, households, draws, seeds, rows evaluated, trivial floor, budgets | `results/novelty/*.jsonl` | `scripts/gen_isj_runs_table.py` |
+| Appendix B, Table B1 | the alternatives that failed their success criteria: abstention, anomaly votes, certified anomaly-based ensemble | `results/novelty/abstain_feasibility.json`, `anomaly_vote_*`, `certified_anomaly_*` | `scripts/novelty/{abstain_feasibility,anomaly_vote,certified_anomaly}.py`, `scripts/gen_isj_alternatives_table.py` |
+| Appendix C, Figure C1, Table C1 | coverage of the certificate against the share of nearly one-class households; the device- against label-Dirichlet runs and the clustered regression | `results/analysis/instruments.jsonl`, `results/canonical/e7_volskew.jsonl`, `results/tmlr_rev/pb13_15_rows.jsonl`, `pb19_decomposition.json` | `scripts/gen_fig_coverage.py`, `scripts/gen_e7.py` |
+| Appendix C, Figure C2 | tightness: certified against attacked accuracy of the same ensemble; the exact worst case over malicious sets | `results/r6_nan_fix/corrected/` (through `scripts/aggregate.py`), `results/tmlr_rev/pb10/`, `pb10_worstcase.json` | `scripts/make_fig_main.py` |
+| Appendix C, Table C2 | the cross-dataset comparison | `results/canonical/e5f_*.jsonl`, `nb9_cert_*.jsonl`, `results/analysis/instruments.jsonl` | `scripts/gen_crossdataset.py` (needs the raw corpora) |
+| Data availability | the six predeclarations of the runs above, with the SHA-256 prefixes the paper prints | `predeclarations/*_2026-11-03.md`, `predeclarations/PREDECLARATION_HASHES_ISJGP.md` | `shasum -a 256` |
+
+The table generators (`gen_isj_decoder_table.py`, `gen_isj_alternatives_table.py`, `gen_isj_runs_table.py`) and the
+numbers file of `gen_isj_ceiling_fig.py` reproduce the paper's files byte for byte. The sections after "Contents"
+document how the earlier versions of the project added files; their appendix letters refer to those versions, not to
+the submitted paper. File names keep the internal round labels (`jisa_*`, `tmlr_*`) under which they were recorded,
+because their hashes are listed in `results/MANIFEST.json` and in the predeclarations.
 
 ## Contents (`artifact/`)
 - `src/fedhomeguard/`: partitions, members, the deployed-ensemble certificate, attacks.
@@ -28,8 +54,8 @@ the authors; absolute paths were replaced by `<artifact-root>` or repository-rel
 - `literature/`: the screen protocol and inventories behind Appendix D.
 - `configs/`, `tests/`, `docker/`, `environment.yml`, `pyproject.toml`, `Makefile`.
 
-## ISJ-GP round: competence ceiling and max-flow certified decoder (added 2026-11-04)
-Everything new in this version of the paper; nothing listed under the earlier rounds was changed.
+## Competence ceiling and max-flow certified decoder (added 2026-11-04, generators updated 2026-11-10)
+Everything new in the submitted paper; nothing listed under the earlier rounds was changed except the generators named here.
 - `predeclarations/*_2026-11-03.md`: the six predeclarations of the paper's new runs (competence ceiling, max-flow
   certified decoder, decoder follow-up runs, abstention, anomaly votes, certified anomaly-based ensemble with its
   dated deviation), byte-identical to the files as hashed; `PREDECLARATION_HASHES_ISJGP.md` lists the full SHA-256
@@ -40,13 +66,17 @@ Everything new in this version of the paper; nothing listed under the earlier ro
 - `results/novelty/`: their result rows, one JSON line per partition draw (hashes in `results/MANIFEST.json`):
   `competence_ceiling_*`, `maxflow_decoder_*` (IoT-23 primary; server-set fractions 0.5%, 1%, 2%; per-class rates in
   `_r3`; N-BaIoT; CIC IoT-IDAD 2024), `abstain_feasibility.json`, `anomaly_vote_*`, `certified_anomaly_*`.
-- Generators: `scripts/gen_isj_decoder_table.py`, `gen_isj_alternatives_table.py`, `gen_isj_ceiling_fig.py` (read
+- Generators: `scripts/gen_isj_decoder_table.py`, `gen_isj_alternatives_table.py`, `gen_isj_runs_table.py`, `gen_isj_ceiling_fig.py` (read
   only `results/novelty/`; write `out/generated/` and `out/figures/`, or `$FHG_OUT`) and `gen_isj_fig_system.py`
-  (the setting schematic; needs pdflatex and TikZ; writes to `FHG_FIGURES`, default `out/figures`).
+  (the setting schematic; needs pdflatex and TikZ; writes to `FHG_FIGURES`, default `out/figures`). On 2026-11-10 the
+  decoder table gained its per-class panel and the four rules' collapse counts, the runs table was added, and the
+  figure scripts (`gen_isj_ceiling_fig.py`, `gen_isj_fig_system.py`, `gen_teaser.py`, `gen_fig_coverage.py`,
+  `make_fig_main.py`) were set to the journal's text width and its terms; they read the same result rows.
 
 ```
 python3 scripts/gen_isj_decoder_table.py         # decoder table and its numbers (out/generated/)
 python3 scripts/gen_isj_alternatives_table.py    # the failed alternatives table
+python3 scripts/gen_isj_runs_table.py            # the table of runs (Table 1)
 python3 scripts/gen_isj_ceiling_fig.py           # ceiling figure and its numbers
 shasum -a 256 predeclarations/*_2026-11-03.md    # compare with PREDECLARATION_HASHES_ISJGP.md
 # re-running the experiments needs the raw corpora (scripts/fetch_data.py) and the member bank:
@@ -55,8 +85,8 @@ python3 scripts/novelty/maxflow_decoder.py --set iot23 [--frac 0.10]
 Run from `artifact/` with `PYTHONPATH="$PWD/src"`. The table generators reproduce the paper's tables byte for byte
 from the rows above.
 
-## JISA training round (added 2026-11-01)
-- `predeclarations/jisa_*.md`: the three predeclarations of the runs added in the JISA revision, and
+## Training runs of an earlier revision (files `jisa_*`, added 2026-11-01)
+- `predeclarations/jisa_*.md`: the three predeclarations of the runs added in that revision, and
   `PREDECLARATION_HASHES.md`, their SHA-256 hashes as recorded before any run, with how to recompute them.
 - `results/jisa/`: member seeds 1-4 (`x1_*`), the equal-step-budget and repair runs (`x_runs.jsonl`), the 8-class
   re-run at k = 1 (`x4_*`), federation size (`js02_*`), member capacity (`js03_*`), the CIC IoT-IDAD 2024
@@ -91,7 +121,7 @@ corpora (IoT-23, N-BaIoT; about 10 GB) are not included; `scripts/fetch_data.py`
 from their public sources, and re-running the experiments themselves takes hours
 (`make experiments`).
 
-## Revision analyses (round tmlr2)
+## Earlier revision analyses (round tmlr2, files `tmlr_*`)
 The revision's analyses add, without changing any earlier file except the four generators named here:
 - `results/tmlr_rev/`: their result files, among them the exact worst case per deployed ensemble
   (`pb10/`, summary `pb10_worstcase.json`), the coverage-vote count per draw (`pb03_cvm_draws.jsonl`),
@@ -112,7 +142,7 @@ The revision's analyses add, without changing any earlier file except the four g
   registry dated them, and post hoc analyses are marked as such in them and in the paper.
 - `results/tmlr_rev/pb09_timing.json` (5 repeats of the PB09 protocol on one core, `scripts/tmlr_rev/pb09_timing_repeat.py`) and `pb09_cert_timing.json` (certification time, post hoc, `scripts/tmlr_rev/pb09_cert_timing.py`) give Appendix A's training times; `gen_paper_numbers.py` prints them in the cost table.
 
-## Revision analyses (round tmlr4)
+## Earlier revision analyses (round tmlr4, files `tmlr_*`)
 - `results/tmlr_rev/pb13_15_rows.jsonl` and `pb13_15_summary.json` (`scripts/tmlr_rev/pb13_15_runs.py`): the
   predeclared runs PB13 (device- against label-Dirichlet, 30 draws per concentration), PB14 (coverage dial on
   N-BaIoT) and PB15 (pairing by class shares at k = 2); protocols in `predeclarations/tmlr_PB13..15_*.md`.
@@ -124,7 +154,7 @@ The revision's analyses add, without changing any earlier file except the four g
   device and label rows of Table 2 from PB13; `gen_tmlr2_tables.py` adds the PB13 and PB14 rows and the mean
   signed error to the coverage-count table.
 
-## Revision analyses (round tmlr5)
+## Earlier revision analyses (round tmlr5, files `tmlr_*`)
 - `results/tmlr_rev/pb17_18_rows.jsonl` and `pb17_18_summary.json` (`scripts/tmlr_rev/pb17_18_runs.py`): PB17,
   the predeclared standardization rerun (pooled control, per-member statistics, a 5% reference sample; variant
   `Rf`, the floored reference sample, is post hoc), and PB18, the predeclared volume dial with budget-scaled local
@@ -148,7 +178,7 @@ The revision's analyses add, without changing any earlier file except the four g
   generators they call do not depend on those steps. `scripts/tmlr_rev/build_claim_evidence.py` still names `scripts/gen_appendix.py`
   as the source of one historical table row.
 
-## Revision analyses (round tmlr6)
+## Earlier revision analyses (round tmlr6, files `tmlr_*`)
 No new training run; all three files are post hoc descriptions of existing rows and of the corpus files.
 - `results/tmlr_rev/pb21_capture_table.json` (`scripts/tmlr_rev/pb21_capture_table.py`): the ten IoT-23 captures as
   the loader uses them (Table in Appendix D): labelled rows in full and read, rows kept, benign and malicious rows, test
@@ -160,7 +190,7 @@ No new training run; all three files are post hoc descriptions of existing rows 
   deduplicated subset over the 30 draws of Table 1, and the strict rule's tie case.
 - `scripts/gen_tmlr2_tables.py` now also prints the capture table and the table of every draw set (Appendix D).
 
-## Revision analyses (round tmlr7)
+## Earlier revision analyses (round tmlr7, files `tmlr_*`)
 The PB11 audit of CIC IoT-IDAD 2024 (Appendix D), run on a sample of the corpus (the first file of each of its 28
 packet-feature traffic types) with no training; the corpus itself is not included and enters no other result.
 - `results/tmlr_rev/pb11_idad_audit.json` (`scripts/tmlr_rev/pb11_idad_audit.py`, predeclared in

@@ -14,6 +14,8 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+# round isj3 r1 (2026-11-07): serif text as in the other figures; legend below the axes, off the plurality band
+plt.rcParams.update({"font.family": "serif", "mathtext.fontset": "cm", "font.size": 9})
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "results", "novelty", "maxflow_decoder_iot23.jsonl")
@@ -28,7 +30,7 @@ def main():
     tau = float(np.median([r["tau"] for r in rows]))
     nums = {"source": os.path.relpath(SRC, ROOT), "source_sha256": hashlib.sha256(open(SRC, "rb").read()).hexdigest(),
             "n_draws": len(rows), "m": ms, "tau_median": tau, "arms": {}}
-    fig, ax = plt.subplots(figsize=(4.6, 3.1))
+    fig, ax = plt.subplots(figsize=(4.6, 3.6))
     for key, label, colour, marker in ARMS:
         v = np.array([[r["by_m"][str(m)][key] for m in ms] for r in rows])
         med, q1, q3 = np.median(v, 0), np.percentile(v, 25, 0), np.percentile(v, 75, 0)
@@ -40,12 +42,12 @@ def main():
             rgb = np.array(matplotlib.colors.to_rgb(colour))
             ax.fill_between(ms, q1, q3, color=tuple(1 - 0.12 * (1 - rgb)), lw=0, zorder=0)  # opaque tint: EPS has no alpha
     ax.axhline(tau, color="#999999", ls=":", lw=1.0)
-    ax.text(ms[-1] - 0.35, tau - 0.015, r"trivial floor $\tau_{\mathrm{triv}}$", ha="right", va="top", fontsize=7, color="#666666")
+    ax.text(ms[0] + 0.05, tau - 0.02, r"trivial floor $\tau_{\mathrm{triv}}$", ha="left", va="top", fontsize=8, color="#666666")
     ax.set_xlabel("malicious clients $m$ (of $N = 20$)")
     ax.set_ylabel("certified accuracy")
     ax.set_xticks(ms)
     ax.set_ylim(0, 1.0)
-    ax.legend(fontsize=7, loc="lower left", frameon=False)
+    ax.legend(fontsize=8, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2, frameon=False)
     fig.tight_layout()
     os.makedirs(os.path.join(OUT, "figures"), exist_ok=True)
     os.makedirs(os.path.join(OUT, "generated"), exist_ok=True)

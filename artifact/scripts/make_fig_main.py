@@ -36,10 +36,12 @@ def main():
     gt = gap_table(rows)
     tau = rows[0]["tau_triv"]
 
-    plt.rcParams.update({"font.family": "serif", "font.size": 8,
-                         "axes.titlesize": 9, "axes.labelsize": 8,
-                         "legend.fontsize": 7, "pdf.fonttype": 42})
-    fig, axes = plt.subplots(1, 2, figsize=(5.884, 2.65), sharey=True)
+    # round isj3 r1: was 8 (review: tiny text); r2 (review r2 issue 31): drawn at the journal text width (5.646in) so
+    # it prints at scale 1, ticks and legend at 9pt, and math in the same serif family as the text.
+    plt.rcParams.update({"font.family": "serif", "font.size": 9.5, "mathtext.fontset": "dejavuserif",
+                         "axes.titlesize": 10, "axes.labelsize": 9.5, "xtick.labelsize": 9, "ytick.labelsize": 9,
+                         "legend.fontsize": 9, "pdf.fonttype": 42})
+    fig, axes = plt.subplots(1, 2, figsize=(5.646, 2.75), sharey=True)
     for ax, (p, title) in zip(axes, (("iid", "IID partition"),
                                       ("device_derived", "Device-derived partition"))):
         for k, ls, mk in ((1, "-", "o"), (2, "--", "s")):
@@ -62,12 +64,12 @@ def main():
             ax.spines[s].set_color("#A5A5A5")
         ax.tick_params(colors="#595959", length=2.5)
     axes[0].set_ylabel("accuracy")
-    axes[0].text(0.0, tau + 0.025, r"$\tau_{\mathrm{triv}}$", fontsize=7, color="#595959")
+    axes[0].text(0.0, tau + 0.025, r"$\tau_{\mathrm{triv}}$", fontsize=8.5, color="#595959")
     # review D2 (F-35): the legend sat inside the IID panel, where the k=2 curves fall between
     # beta=0.2 and 0.3; it now sits below both panels, outside the axes, in one row.
     handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, ncol=4, loc="lower center", frameon=False, handlelength=2.2,
-               columnspacing=1.2, bbox_to_anchor=(0.5, 0.0))
+    fig.legend(handles, labels, ncol=4, loc="lower center", frameon=False, handlelength=1.8,
+               columnspacing=0.8, handletextpad=0.5, bbox_to_anchor=(0.5, 0.0))
     fig.tight_layout(pad=0.3, w_pad=1.2, rect=(0, 0.08, 1, 1))
     os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     fig.savefig(a.out)

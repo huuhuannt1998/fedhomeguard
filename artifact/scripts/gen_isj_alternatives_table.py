@@ -9,7 +9,7 @@ generated/tab_alternatives.tex and generated/tab_alternatives_numbers.json in th
 
     python3 scripts/gen_isj_alternatives_table.py
 """
-import hashlib, json, os
+import re, hashlib, json, os
 import numpy as np
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -68,6 +68,7 @@ def main():
     for i, (alt, pred, res, held) in enumerate(out):
         if alt and i:
             lines.append("\\midrule")
+        res = re.sub(r"(?<![\w$])-(?=\d)", "$-$", res)  # round isj3 r1 (2026-11-07): a true minus, as elsewhere
         lines.append(f"{alt} & {pred} & {res} & {'yes' if held else 'no'} \\\\")
     lines += ["\\bottomrule", "\\end{tabular}"]
     os.makedirs(os.path.join(OUT, "generated"), exist_ok=True)
